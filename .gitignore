@@ -1,0 +1,24 @@
+.env
+.env.local
+
+# R5 — regenerable, large, never committed
+data/cache/
+
+# Go
+agent/scouter
+agent/bin/
+*.test
+*.out
+
+# Astro
+site/node_modules/
+site/dist/
+site/.astro/
+site/public/pagefind/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
