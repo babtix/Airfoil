@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <!-- Background Plate -->
+  <rect width="400" height="400" fill="#0a0a0a" rx="8" />
+
+  <!-- Tactical Boundary Grid -->
+  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#262626" stroke-width="1" />
+  
+  <!-- Telemetry Calibration Marks -->
+  <path d="M 20 24 L 28 24 M 24 20 L 24 28" stroke="#a0a0a0" stroke-width="1" />
+  <path d="M 372 24 L 380 24 M 376 20 L 376 28" stroke="#a0a0a0" stroke-width="1" />
+  <path d="M 20 376 L 28 376 M 24 372 L 24 380" stroke="#a0a0a0" stroke-width="1" />
+  <path d="M 372 376 L 380 376 M 376 372 L 376 380" stroke="#a0a0a0" stroke-width="1" />
+
+  <!-- Center Datum Crosshair (Subtle) -->
+  <line x1="200" y1="40" x2="200" y2="360" stroke="#262626" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="40" y1="200" x2="360" y2="200" stroke="#262626" stroke-width="1" stroke-dasharray="2 4" />
+
+  <!-- Streamline Curves (Wind Tunnel / Lift Vectors) -->
+  <path d="M 60 145 C 140 145 170 133 200 132 C 240 131 300 140 340 145" stroke="#262626" stroke-width="1.2" fill="none" />
+  <path d="M 60 255 C 140 255 200 259 340 257" stroke="#262626" stroke-width="1.2" fill="none" />
+
+  <!-- Airfoil / Tactical Delta Profile (Forms 'A') -->
+  <!-- Wing Body Fill & Primary Outline -->
+  <path d="M 200 85 L 85 295 L 200 250 L 315 295 Z" 
+        fill="#141414" 
+        stroke="#f5f5f5" 
+        stroke-width="2" 
+        stroke-linejoin="round" />
+
+  <!-- Chord / Camber Reference Lines -->
+  <line x1="200" y1="85" x2="200" y2="250" stroke="#a0a0a0" stroke-width="1" stroke-dasharray="3 3" />
+  
+  <!-- Tactical Span Crossbar (Kai Red) -->
+  <line x1="125" y1="225" x2="275" y2="225" stroke="#ff3b3b" stroke-width="2.5" stroke-linecap="square" />
+
+  <!-- Leading Edge Signal Node -->
+  <circle cx="200" cy="85" r="3.5" fill="#ff3b3b" />
+
+  <!-- Monospace Telemetry Annotation -->
+  <text x="200" y="340" 
+        text-anchor="middle" 
+        font-family="'JetBrains Mono', monospace" 
+        font-size="10" 
+        letter-spacing="3" 
+        fill="#a0a0a0">AIRFOIL // LIFT-01</text>
+</svg>
