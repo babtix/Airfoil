@@ -1,0 +1,318 @@
+[
+  {
+    "id": "s1-deepseek-r1",
+    "slug": "deepseek-r1-open-weights-reasoning-mit",
+    "title": "DeepSeek Open-Sources R1 Reasoning Weights & Distill Suite Under MIT",
+    "score": 98,
+    "cluster": 34,
+    "ts": "2026-08-17T21:30:00Z",
+    "summary": "Full 671B MoE reasoning weights and 1.5B–70B distilled models released under MIT license. Architecture relies on Multi-Head Latent Attention and pure RL without SFT cold-start.",
+    "body": [
+      "DeepSeek released the full weights and technical report for DeepSeek-R1, alongside six distilled models based on Qwen 2.5 and Llama 3 ranging from 1.5B to 70B parameters under a permissive MIT license.",
+      "The flagship 671B model activates 37B parameters per token using Multi-Head Latent Attention (MLA) and DeepSeekMoE. Training validated that reasoning capabilities emerge natively through large-scale Reinforcement Learning (DeepSeek-R1-Zero) before cold-start curation.",
+      "Distilled checkpoints have already landed on Hugging Face and Ollama, allowing developers to run competitive math and coding reasoning models on single-GPU edge devices."
+    ],
+    "takeaways": [
+      "Full weights released under permissive MIT license on Hugging Face",
+      "Matches frontier proprietary models on AIME 2024 (79.8%) and MATH-500",
+      "Six distilled models (1.5B–70B) viable on consumer GPUs and Apple Silicon"
+    ],
+    "tags": ["OPEN SOURCE", "REASONING", "DEEPSEEK"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "DeepSeek AI", "type": "lab", "tier": 1, "url": "https://github.com/deepseek-ai/DeepSeek-R1" },
+      { "name": "HuggingFace", "type": "lab", "tier": 2, "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1" },
+      { "name": "Hacker News", "type": "community", "tier": 5, "url": "https://news.ycombinator.com/item?id=42774945", "metrics": { "points": 2840, "comments": 890 } },
+      { "name": "r/LocalLLaMA", "type": "community", "tier": 5, "url": "https://reddit.com/r/LocalLLaMA", "metrics": { "upvotes": 2150 } }
+    ]
+  },
+  {
+    "id": "s2-claude-code-mcp",
+    "slug": "anthropic-claude-code-mcp-agent-cli",
+    "title": "Anthropic Launches Claude Code CLI & Updates Model Context Protocol Standard",
+    "score": 95,
+    "cluster": 26,
+    "ts": "2026-08-17T21:00:00Z",
+    "summary": "Anthropic unveiled Claude Code, an agentic terminal tool for autonomous multi-file refactoring, alongside MCP 2026-07-28 transition to a stateless universal context architecture.",
+    "body": [
+      "Anthropic introduced Claude Code, a research-preview command-line tool that operates directly within developer terminals, executing multi-file codebase edits, git workflows, and test runs via autonomous subagents.",
+      "Claude Code is built natively on top of the Model Context Protocol (MCP), utilizing standard server connections to query databases, inspect issues on GitHub, and tail live telemetry logs without proprietary integrations.",
+      "The MCP specification update transitions transport layers toward stateless architectures, introducing standardized primitives for long-running batch agent tasks."
+    ],
+    "takeaways": [
+      "Terminal-native agent with automated multi-file editing and test execution",
+      "MCP protocol upgrade adds standardized stateless RPC and tool interfaces",
+      "Integrates directly with local Git, npm/cargo toolchains, and IDE sidecars"
+    ],
+    "tags": ["AGENTS", "TOOLS", "ANTHROPIC"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "Anthropic Blog", "type": "lab", "tier": 1, "url": "https://anthropic.com/news/claude-code" },
+      { "name": "Model Context Protocol", "type": "lab", "tier": 1, "url": "https://modelcontextprotocol.io" },
+      { "name": "Hacker News", "type": "community", "tier": 5, "url": "https://news.ycombinator.com", "metrics": { "points": 1690, "comments": 512 } },
+      { "name": "GitHub Trending", "type": "community", "tier": 5, "url": "https://github.com/anthropics", "metrics": { "stars": 12400 } }
+    ]
+  },
+  {
+    "id": "s3-openai-o3-mini",
+    "slug": "openai-o3-mini-reasoning-model-effort-levels",
+    "title": "OpenAI Launches o3-mini Reasoning Model with Granular Effort Controls in API",
+    "score": 94,
+    "cluster": 29,
+    "ts": "2026-08-17T20:15:00Z",
+    "summary": "OpenAI rolled out o3-mini for coding, math, and STEM reasoning, featuring low, medium, and high reasoning effort tiers alongside structured output and developer message support.",
+    "body": [
+      "OpenAI made o3-mini available across the Chat Completions and Assistants APIs, delivering frontier STEM reasoning at a fraction of o1's latency and cost profile.",
+      "Developers can configure a new reasoning_effort parameter ('low', 'medium', 'high') to balance token generation speed against reasoning depth, enabling fine-grained control for interactive vs background agent tasks.",
+      "Unlike initial reasoning previews, o3-mini ships with day-one support for Function Calling, Structured JSON Outputs, Vision context, and system developer instructions."
+    ],
+    "takeaways": [
+      "Configurable reasoning_effort parameter allows tuning latency vs accuracy",
+      "Native function calling, structured outputs, and developer system prompts",
+      "Priced competitively with GPT-4o-mini at $1.10 / 1M input tokens"
+    ],
+    "tags": ["REASONING", "API", "OPENAI"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "OpenAI", "type": "lab", "tier": 1, "url": "https://openai.com/index/openai-o3-mini/" },
+      { "name": "OpenAI Docs", "type": "lab", "tier": 1, "url": "https://platform.openai.com/docs/models/o3-mini" },
+      { "name": "Hacker News", "type": "community", "tier": 5, "url": "https://news.ycombinator.com", "metrics": { "points": 2100, "comments": 740 } },
+      { "name": "TechCrunch", "type": "press", "tier": 4, "url": "https://techcrunch.com" }
+    ]
+  },
+  {
+    "id": "s4-gemini-2-flash",
+    "slug": "google-gemini-2-flash-live-multimodal-api",
+    "title": "Google Releases Gemini 2.0 Flash into GA with Realtime Multimodal Live API",
+    "score": 93,
+    "cluster": 24,
+    "ts": "2026-08-17T18:40:00Z",
+    "summary": "Gemini 2.0 Flash is now generally available via Google AI Studio and Vertex API. Includes sub-300ms bidirectional audio/video streaming, built-in search grounding, and code execution.",
+    "body": [
+      "Google has graduated Gemini 2.0 Flash to General Availability. The model features a 1-million-token context window, enhanced speed, and integrated multi-tool orchestration with native Python execution.",
+      "Alongside the core model, the Multimodal Live API entered public preview, enabling developers to build bidirectional audio and video streaming voice agents with under 300ms round-trip latency.",
+      "Pricing remains aggressive at $0.10 per million input tokens, positioning Gemini 2.0 Flash as an infrastructure-tier workhorse for high-frequency extraction, summarization, and agent workflows."
+    ],
+    "takeaways": [
+      "GA release with 1M token context window at $0.10/M input tokens",
+      "Multimodal Live API enables sub-300ms streaming voice and vision agents",
+      "Built-in Google Search grounding and native sandboxed Python runtime"
+    ],
+    "tags": ["LLM", "API", "GOOGLE"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "Google DeepMind", "type": "lab", "tier": 1, "url": "https://deepmind.google/technologies/gemini/" },
+      { "name": "Google AI for Developers", "type": "lab", "tier": 1, "url": "https://ai.google.dev" },
+      { "name": "Hacker News", "type": "community", "tier": 5, "url": "https://news.ycombinator.com", "metrics": { "points": 1420, "comments": 460 } },
+      { "name": "The Verge", "type": "press", "tier": 4, "url": "https://theverge.com" }
+    ]
+  },
+  {
+    "id": "s5-qwen-2-5-coder",
+    "slug": "qwen-2-5-coder-32b-state-of-the-art-open-code",
+    "title": "Alibaba Ships Qwen 2.5-Coder 32B: Matches GPT-4o on EvalPlus Benchmarks",
+    "score": 92,
+    "cluster": 22,
+    "ts": "2026-08-17T17:10:00Z",
+    "summary": "Alibaba Cloud released Qwen 2.5-Coder-32B-Instruct, achieving top-tier results across EvalPlus, MultiPL-E, and repo-level completion benchmarks with native 128k context support.",
+    "body": [
+      "Alibaba's Qwen team released the complete Qwen 2.5-Coder family, headlined by a 32B parameter model that outperforms all previous open-weight models on coding benchmarks.",
+      "The model supports 128k tokens of context window and 8k generated tokens, scoring 86.2 on HumanEval-Plus and 65.4 on Aider polyglot diff benchmarks.",
+      "With 4-bit AWQ/GGUF quantization, the 32B variant runs smoothly on a single RTX 4090 (24GB VRAM) or Apple M-series hardware, making it a viable local replacement for commercial code completion APIs."
+    ],
+    "takeaways": [
+      "86.2% on HumanEval-Plus, matching frontier closed models in code generation",
+      "Native 128K context window for whole-repository reasoning and refactoring",
+      "Runs at 45+ tok/sec on consumer 24GB GPUs via vLLM and Ollama"
+    ],
+    "tags": ["CODE", "OPEN SOURCE", "BENCHMARK"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "Alibaba Qwen", "type": "lab", "tier": 1, "url": "https://qwenlm.github.io/blog/qwen2.5-coder/" },
+      { "name": "HuggingFace", "type": "lab", "tier": 2, "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct" },
+      { "name": "r/LocalLLaMA", "type": "community", "tier": 5, "url": "https://reddit.com/r/LocalLLaMA", "metrics": { "upvotes": 1480 } }
+    ]
+  },
+  {
+    "id": "s6-vllm-0-7",
+    "slug": "vllm-0-7-chunked-prefill-fp8-deepseek-mla",
+    "title": "vLLM 0.7 Lands Native DeepSeek MLA Kernels & Chunked Prefill Acceleration",
+    "score": 90,
+    "cluster": 17,
+    "ts": "2026-08-17T15:30:00Z",
+    "summary": "Major vLLM engine release introduces fused Triton kernels for Multi-Head Latent Attention (MLA), cutting KV cache memory overhead by 70% and boosting MoE batch throughput 3.4x.",
+    "body": [
+      "vLLM version 0.7 officially landed with full support for DeepSeek's Multi-Head Latent Attention (MLA) architecture, decoupling key-value vector compression to drastically lower GPU VRAM pressure during concurrent serving.",
+      "The update incorporates optimized FP8 GEMM kernels for NVIDIA Ada/Hopper architectures and refactors the chunked prefill scheduler to maintain sub-15ms Time To First Token (TTFT) even under heavy multi-tenant load.",
+      "Engine benchmarks show a 3.4x throughput increase on 8x H100 nodes when serving large MoE mixture models with long context prefixes."
+    ],
+    "takeaways": [
+      "70% reduction in KV cache footprint through optimized MLA decoding",
+      "Zero-overhead chunked prefill scheduling stabilizes P99 inference latencies",
+      "Native support for FlashAttention-3 and Hopper FP8 Tensor Cores"
+    ],
+    "tags": ["INFRA", "PERFORMANCE", "OPEN SOURCE"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "vLLM Project", "type": "lab", "tier": 1, "url": "https://github.com/vllm-project/vllm/releases" },
+      { "name": "vLLM Blog", "type": "lab", "tier": 1, "url": "https://blog.vllm.ai" },
+      { "name": "Hacker News", "type": "community", "tier": 5, "url": "https://news.ycombinator.com", "metrics": { "points": 940, "comments": 210 } }
+    ]
+  },
+  {
+    "id": "s7-llama-3-3-70b",
+    "slug": "meta-llama-3-3-70b-released",
+    "title": "Meta Releases Llama 3.3 70B: Delivers 405B-Level Quality at 70B Compute Cost",
+    "score": 88,
+    "cluster": 19,
+    "ts": "2026-08-17T12:00:00Z",
+    "summary": "Meta open-sourced Llama 3.3 70B Instruct, matching the previous flagship 405B model across core industry benchmarks while retaining an efficient 70B architecture with 128k context.",
+    "body": [
+      "Meta AI released Llama 3.3 70B under the Llama Community License. Through upgraded synthetic distillation and multi-token prediction objectives, the model matches Llama 3.1 405B capabilities on MMLU-Pro, MATH, and HumanEval.",
+      "The release solves the operational bottleneck for enterprise teams that could not host the 405B parameter cluster, allowing 70B weights to be served from dual RTX 3090/4090 systems or a single Mac Studio.",
+      "Quantized GGUF and EXL2 checkpoints were published within hours across Hugging Face community repositories."
+    ],
+    "takeaways": [
+      "Matches 405B-tier benchmarks at 1/5th the hardware footprint",
+      "Full 128K context window with upgraded multilingual reasoning",
+      "Deployable on dual consumer GPUs or single workstation nodes"
+    ],
+    "tags": ["OPEN SOURCE", "META", "LLM"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "Meta AI", "type": "lab", "tier": 1, "url": "https://ai.meta.com/blog/llama-3-3/" },
+      { "name": "HuggingFace", "type": "lab", "tier": 2, "url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct" },
+      { "name": "r/LocalLLaMA", "type": "community", "tier": 5, "url": "https://reddit.com/r/LocalLLaMA", "metrics": { "upvotes": 1890 } }
+    ]
+  },
+  {
+    "id": "s8-swe-bench-verified",
+    "slug": "swe-bench-verified-curated-software-benchmark",
+    "title": "SWE-bench Verified Released: 500 Curated Problems to Eliminate Evaluation Noise",
+    "score": 86,
+    "cluster": 11,
+    "ts": "2026-08-16T22:30:00Z",
+    "summary": "OpenAI and Princeton researchers released SWE-bench Verified, a curated subset of 500 real GitHub issues verified by human engineers to resolve under-specified test flakes.",
+    "body": [
+      "The SWE-bench benchmark team, in collaboration with OpenAI, published SWE-bench Verified to address known ambiguities in the original 2,294-issue dataset.",
+      "Professional software engineers reviewed unit tests, issue descriptions, and evaluation harnesses to filter out underspecified problem statements and over-fitted test suites.",
+      "The new subset provides a more reliable ground truth for measuring autonomous coding agents without noisy benchmark variance skewing ranking leaderboards."
+    ],
+    "takeaways": [
+      "500 human-validated real GitHub issues with robust reproduction environments",
+      "Eliminates flaky evaluation tests and ambiguous problem descriptions",
+      "Adopted as the primary evaluation standard across frontier coding models"
+    ],
+    "tags": ["BENCHMARK", "CODE"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "OpenAI Research", "type": "lab", "tier": 1, "url": "https://openai.com/index/swe-bench-verified/" },
+      { "name": "SWE-bench", "type": "lab", "tier": 1, "url": "https://www.swebench.com" },
+      { "name": "Hacker News", "type": "community", "tier": 5, "url": "https://news.ycombinator.com", "metrics": { "points": 760, "comments": 195 } }
+    ]
+  },
+  {
+    "id": "s9-hf-smolagents",
+    "slug": "huggingface-smolagents-code-first-ai-agents",
+    "title": "Hugging Face Releases smolagents: Code-First Agent Framework in <1k LOC",
+    "score": 85,
+    "cluster": 13,
+    "ts": "2026-08-16T18:00:00Z",
+    "summary": "Hugging Face launched smolagents, a lightweight library where LLMs write raw executable Python actions instead of JSON tool blobs, slashing token overhead by 30%.",
+    "body": [
+      "Hugging Face introduced smolagents, an intentionally minimalist agent framework designed to prioritize code-driven action spaces over brittle JSON tool schemas.",
+      "By prompting language models to write standard Python code blocks for intermediate tool calls, the library reduces prompt token overhead by up to 30% and simplifies complex nested data transformations.",
+      "The entire core library is contained in under 1,000 lines of readable Python, supporting sandboxed local execution via WASM/E2B and seamless Hugging Face Hub integration."
+    ],
+    "takeaways": [
+      "Code-action paradigm replaces verbose JSON function calling schemas",
+      "Under 1,000 lines of zero-dependency Python with sandboxed execution",
+      "Direct integration with Hugging Face Hub tools and any OpenAI/Anthropic endpoint"
+    ],
+    "tags": ["AGENTS", "OPEN SOURCE", "TOOLS"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "HuggingFace Blog", "type": "lab", "tier": 1, "url": "https://huggingface.co/blog/smolagents" },
+      { "name": "GitHub", "type": "lab", "tier": 1, "url": "https://github.com/huggingface/smolagents", "metrics": { "stars": 10200 } },
+      { "name": "Hacker News", "type": "community", "tier": 5, "url": "https://news.ycombinator.com", "metrics": { "points": 820, "comments": 240 } }
+    ]
+  },
+  {
+    "id": "s10-apple-mlx-moe",
+    "slug": "apple-mlx-native-moe-metal-acceleration",
+    "title": "Apple MLX Adds Native MoE Offloading & 2-bit Quantization on Apple Silicon",
+    "score": 83,
+    "cluster": 10,
+    "ts": "2026-08-16T11:00:00Z",
+    "summary": "Apple's open-source MLX framework introduced fused Metal kernels for Mixture-of-Experts routing and sub-3-bit quantization, running 70B+ models on 64GB/128GB unified RAM.",
+    "body": [
+      "Apple's machine learning research group shipped a major update to MLX, optimizing Mixture-of-Experts (MoE) dispatch kernels directly in Apple Silicon Metal shader code.",
+      "The update adds native 2-bit and 3-bit quantization algorithms, allowing developers on M-series MacBooks and Mac Studios to run large MoE checkpoints at over 30 tokens per second without cloud GPU instances.",
+      "Community tooling has rapidly adopted MLX as a primary local inference runtime alongside llama.cpp."
+    ],
+    "takeaways": [
+      "Metal-accelerated MoE kernel routing optimized for unified memory bandwidth",
+      "Sub-3-bit quantization runs 70B+ weights on 64GB and 128GB M-series Macs",
+      "Python and C++ native APIs with PyTorch-style ergonomic syntax"
+    ],
+    "tags": ["APPLE", "LOCAL", "HARDWARE"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "Apple ML Research", "type": "lab", "tier": 1, "url": "https://github.com/ml-explore/mlx" },
+      { "name": "r/MacStudio", "type": "community", "tier": 5, "url": "https://reddit.com/r/MacStudio", "metrics": { "upvotes": 620 } },
+      { "name": "Hacker News", "type": "community", "tier": 5, "url": "https://news.ycombinator.com", "metrics": { "points": 580, "comments": 140 } }
+    ]
+  },
+  {
+    "id": "s11-nvidia-cosmos",
+    "slug": "nvidia-cosmos-world-foundation-models-robotics",
+    "title": "NVIDIA Open-Sources Cosmos World Foundation Models for Physical AI & Robotics",
+    "score": 81,
+    "cluster": 8,
+    "ts": "2026-08-15T16:00:00Z",
+    "summary": "NVIDIA released Cosmos, a family of generative world foundation models designed for physical AI, robotics simulation, and autonomous vehicle synthetic trajectory generation.",
+    "body": [
+      "NVIDIA announced the open-source release of the Cosmos world foundation models, spanning continuous and discrete tokenizers alongside diffusion-based physical simulators.",
+      "Cosmos models are trained on spatial-temporal physical dynamics, allowing robotics developers to generate photorealistic, physics-consistent sensor data and corner-case scenarios in simulation.",
+      "Model weights, tokenizers, and dataset curation pipelines were published under an open license on Hugging Face and NVIDIA NGC."
+    ],
+    "takeaways": [
+      "Physics-informed generative world models for robotics and spatial AI",
+      "Open weights, spatio-temporal tokenizers, and post-training recipes on Hugging Face",
+      "Accelerates synthetic data generation for autonomous vehicle policy training"
+    ],
+    "tags": ["ROBOTICS", "PHYSICAL AI", "NVIDIA"],
+    "builder_relevant": true,
+    "sources": [
+      { "name": "NVIDIA Newsroom", "type": "lab", "tier": 1, "url": "https://blogs.nvidia.com/blog/cosmos-world-foundation-models/" },
+      { "name": "HuggingFace", "type": "lab", "tier": 2, "url": "https://huggingface.co/nvidia/Cosmos" },
+      { "name": "VentureBeat", "type": "press", "tier": 4, "url": "https://venturebeat.com" }
+    ]
+  },
+  {
+    "id": "s12-eu-ai-act",
+    "slug": "eu-ai-act-enforcement-watermarking-standards",
+    "title": "EU AI Act Enters Enforcement: Final Standards for GPAI Models and Synthetic Watermarking",
+    "score": 68,
+    "cluster": 7,
+    "ts": "2026-08-14T09:00:00Z",
+    "summary": "EU AI Office published final technical guidance as the AI Act enters initial enforcement phases, mandating machine-readable watermarks and training data transparency summaries.",
+    "body": [
+      "The European AI Office released finalized compliance standards for General-Purpose AI (GPAI) model providers as enforcement timelines commence across member states.",
+      "Key obligations mandate machine-readable watermarks on AI-generated audiovisual content, detailed technical documentation for systemic risk models, and standardized copyright summaries.",
+      "Open-source models released without commercial monetization retain specific exemptions, providing legal clarity for European research institutions and independent developers."
+    ],
+    "takeaways": [
+      "Mandatory machine-readable watermarking for generative synthetic media",
+      "Standardized copyright and training data summary templates published",
+      "Research exemptions preserved for non-monetized open-source weights"
+    ],
+    "tags": ["POLICY", "GOVERNANCE"],
+    "builder_relevant": false,
+    "sources": [
+      { "name": "EU AI Office", "type": "lab", "tier": 1, "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office" },
+      { "name": "Reuters", "type": "press", "tier": 4, "url": "https://reuters.com" },
+      { "name": "Euractiv", "type": "press", "tier": 4, "url": "https://euractiv.com" }
+    ]
+  }
+]

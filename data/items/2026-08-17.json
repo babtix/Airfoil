@@ -1,0 +1,114 @@
+[
+  {
+    "id": "item-deepseek-r1-gh",
+    "source_id": "github-trending-ai",
+    "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "excerpt": "DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks. Open weights, distill checkpoints, and training recipe published under MIT license.",
+    "author": "DeepSeek-AI",
+    "published_at": "2026-08-17T21:30:00Z",
+    "fetched_at": "2026-08-17T21:35:00Z",
+    "metrics": {
+      "github_stars": 92400
+    },
+    "repo_url": "https://github.com/deepseek-ai/DeepSeek-R1",
+    "paper_url": "https://arxiv.org/abs/2501.12948"
+  },
+  {
+    "id": "item-deepseek-r1-hn",
+    "source_id": "hn",
+    "url": "https://news.ycombinator.com/item?id=42774945",
+    "title": "DeepSeek-R1: Open Reasoning Models and Distillations",
+    "excerpt": "Discussion on DeepSeek R1 MoE architecture, Multi-Head Latent Attention memory savings, and local inference benchmarks across consumer RTX 4090 and Apple Silicon GPUs.",
+    "author": "dang",
+    "published_at": "2026-08-17T21:32:00Z",
+    "fetched_at": "2026-08-17T21:35:00Z",
+    "metrics": {
+      "hn_points": 2840,
+      "hn_comments": 890
+    }
+  },
+  {
+    "id": "item-claude-code-anthropic",
+    "source_id": "anthropic",
+    "url": "https://anthropic.com/news/claude-code",
+    "title": "Claude Code: An Agentic Terminal Interface for Software Engineering",
+    "excerpt": "Anthropic introduces Claude Code CLI tool. Directly interacts with developer filesystems, git repositories, and build tools via Model Context Protocol (MCP) integrations.",
+    "author": "Anthropic Engineering",
+    "published_at": "2026-08-17T21:00:00Z",
+    "fetched_at": "2026-08-17T21:05:00Z",
+    "metrics": {},
+    "repo_url": "https://github.com/anthropics"
+  },
+  {
+    "id": "item-openai-o3-mini",
+    "source_id": "openai",
+    "url": "https://openai.com/index/openai-o3-mini/",
+    "title": "OpenAI o3-mini: High-Intelligence STEM Reasoning in API",
+    "excerpt": "OpenAI launches o3-mini with configurable low, medium, high reasoning effort parameters, native function calling, structured outputs, and developer system messages.",
+    "author": "OpenAI",
+    "published_at": "2026-08-17T20:15:00Z",
+    "fetched_at": "2026-08-17T20:20:00Z",
+    "metrics": {
+      "hn_points": 2100,
+      "hn_comments": 740
+    }
+  },
+  {
+    "id": "item-gemini-2-flash-deepmind",
+    "source_id": "deepmind",
+    "url": "https://deepmind.google/technologies/gemini/",
+    "title": "Gemini 2.0 Flash is Now Generally Available",
+    "excerpt": "Google graduates Gemini 2.0 Flash to GA with Multimodal Live API, sub-300ms streaming voice and video capabilities, and built-in search grounding at $0.10/1M tokens.",
+    "author": "Google DeepMind",
+    "published_at": "2026-08-17T18:40:00Z",
+    "fetched_at": "2026-08-17T18:45:00Z",
+    "metrics": {
+      "hn_points": 1420,
+      "hn_comments": 460
+    }
+  },
+  {
+    "id": "item-qwen-2-5-coder-hf",
+    "source_id": "hf-blog",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+    "title": "Qwen 2.5-Coder: Open-Source Code Intelligence at Scale",
+    "excerpt": "Alibaba Cloud releases Qwen 2.5-Coder 32B with 128k context, scoring 86.2% on HumanEval-Plus and matching frontier closed models on multi-file repo synthesis.",
+    "author": "Qwen Team",
+    "published_at": "2026-08-17T17:10:00Z",
+    "fetched_at": "2026-08-17T17:15:00Z",
+    "metrics": {
+      "hf_upvotes": 1480
+    },
+    "repo_url": "https://github.com/QwenLM/Qwen2.5-Coder"
+  },
+  {
+    "id": "item-vllm-0-7-gh",
+    "source_id": "github-trending-ai",
+    "url": "https://github.com/vllm-project/vllm/releases",
+    "title": "vLLM 0.7: DeepSeek MLA Triton Kernels & Chunked Prefill",
+    "excerpt": "vLLM 0.7 ships fused Multi-Head Latent Attention decoding, reducing KV cache footprint by 70% and accelerating long-context MoE batch throughput by 3.4x.",
+    "author": "vLLM Project",
+    "published_at": "2026-08-17T15:30:00Z",
+    "fetched_at": "2026-08-17T15:35:00Z",
+    "metrics": {
+      "github_stars": 34800,
+      "hn_points": 940
+    },
+    "repo_url": "https://github.com/vllm-project/vllm"
+  },
+  {
+    "id": "item-meta-llama-3-3",
+    "source_id": "meta-ai",
+    "url": "https://ai.meta.com/blog/llama-3-3/",
+    "title": "Llama 3.3 70B Instruct: 405B-Level Quality at 70B Efficiency",
+    "excerpt": "Meta open-sources Llama 3.3 70B with 128K context window, matching 405B benchmark scores across MMLU-Pro and HumanEval while running on dual consumer GPUs.",
+    "author": "Meta AI",
+    "published_at": "2026-08-17T12:00:00Z",
+    "fetched_at": "2026-08-17T12:05:00Z",
+    "metrics": {
+      "reddit_upvotes": 1890
+    },
+    "repo_url": "https://github.com/meta-llama/llama3"
+  }
+]

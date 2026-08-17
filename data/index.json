@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-08-17T21:30:00Z",
+  "stories": [
+    {
+      "id": "s1-deepseek-r1",
+      "slug": "deepseek-r1-open-weights-reasoning-mit",
+      "title": "DeepSeek Open-Sources R1 Reasoning Weights & Distill Suite Under MIT",
+      "summary": "Full 671B MoE reasoning weights and 1.5B–70B distilled models released under MIT license. Architecture relies on Multi-Head Latent Attention and pure RL without SFT cold-start.",
+      "score": 98,
+      "tier": "major",
+      "tags": ["OPEN SOURCE", "REASONING", "DEEPSEEK"],
+      "builder_relevant": true,
+      "date": "2026-08-17T21:30:00Z",
+      "cluster_size": 34
+    },
+    {
+      "id": "s2-claude-code-mcp",
+      "slug": "anthropic-claude-code-mcp-agent-cli",
+      "title": "Anthropic Launches Claude Code CLI & Updates Model Context Protocol Standard",
+      "summary": "Anthropic unveiled Claude Code, an agentic terminal tool for autonomous multi-file refactoring, alongside MCP 2026-07-28 transition to a stateless universal context architecture.",
+      "score": 95,
+      "tier": "major",
+      "tags": ["AGENTS", "TOOLS", "ANTHROPIC"],
+      "builder_relevant": true,
+      "date": "2026-08-17T21:00:00Z",
+      "cluster_size": 26
+    },
+    {
+      "id": "s3-openai-o3-mini",
+      "slug": "openai-o3-mini-reasoning-model-effort-levels",
+      "title": "OpenAI Launches o3-mini Reasoning Model with Granular Effort Controls in API",
+      "summary": "OpenAI rolled out o3-mini for coding, math, and STEM reasoning, featuring low, medium, and high reasoning effort tiers alongside structured output and developer message support.",
+      "score": 94,
+      "tier": "major",
+      "tags": ["REASONING", "API", "OPENAI"],
+      "builder_relevant": true,
+      "date": "2026-08-17T20:15:00Z",
+      "cluster_size": 29
+    },
+    {
+      "id": "s4-gemini-2-flash",
+      "slug": "google-gemini-2-flash-live-multimodal-api",
+      "title": "Google Releases Gemini 2.0 Flash into GA with Realtime Multimodal Live API",
+      "summary": "Gemini 2.0 Flash is now generally available via Google AI Studio and Vertex API. Includes sub-300ms bidirectional audio/video streaming, built-in search grounding, and code execution.",
+      "score": 93,
+      "tier": "major",
+      "tags": ["LLM", "API", "GOOGLE"],
+      "builder_relevant": true,
+      "date": "2026-08-17T18:40:00Z",
+      "cluster_size": 24
+    },
+    {
+      "id": "s5-qwen-2-5-coder",
+      "slug": "qwen-2-5-coder-32b-state-of-the-art-open-code",
+      "title": "Alibaba Ships Qwen 2.5-Coder 32B: Matches GPT-4o on EvalPlus Benchmarks",
+      "summary": "Alibaba Cloud released Qwen 2.5-Coder-32B-Instruct, achieving top-tier results across EvalPlus, MultiPL-E, and repo-level completion benchmarks with native 128k context support.",
+      "score": 92,
+      "tier": "major",
+      "tags": ["CODE", "OPEN SOURCE", "BENCHMARK"],
+      "builder_relevant": true,
+      "date": "2026-08-17T17:10:00Z",
+      "cluster_size": 22
+    },
+    {
+      "id": "s6-vllm-0-7",
+      "slug": "vllm-0-7-chunked-prefill-fp8-deepseek-mla",
+      "title": "vLLM 0.7 Lands Native DeepSeek MLA Kernels & Chunked Prefill Acceleration",
+      "summary": "Major vLLM engine release introduces fused Triton kernels for Multi-Head Latent Attention (MLA), cutting KV cache memory overhead by 70% and boosting MoE batch throughput 3.4x.",
+      "score": 90,
+      "tier": "major",
+      "tags": ["INFRA", "PERFORMANCE", "OPEN SOURCE"],
+      "builder_relevant": true,
+      "date": "2026-08-17T15:30:00Z",
+      "cluster_size": 17
+    },
+    {
+      "id": "s7-llama-3-3-70b",
+      "slug": "meta-llama-3-3-70b-released",
+      "title": "Meta Releases Llama 3.3 70B: Delivers 405B-Level Quality at 70B Compute Cost",
+      "summary": "Meta open-sourced Llama 3.3 70B Instruct, matching the previous flagship 405B model across core industry benchmarks while retaining an efficient 70B architecture with 128k context.",
+      "score": 88,
+      "tier": "major",
+      "tags": ["OPEN SOURCE", "META", "LLM"],
+      "builder_relevant": true,
+      "date": "2026-08-17T12:00:00Z",
+      "cluster_size": 19
+    },
+    {
+      "id": "s8-swe-bench-verified",
+      "slug": "swe-bench-verified-curated-software-benchmark",
+      "title": "SWE-bench Verified Released: 500 Curated Problems to Eliminate Evaluation Noise",
+      "summary": "OpenAI and Princeton researchers released SWE-bench Verified, a curated subset of 500 real GitHub issues verified by human engineers to resolve under-specified test flakes.",
+      "score": 86,
+      "tier": "major",
+      "tags": ["BENCHMARK", "CODE"],
+      "builder_relevant": true,
+      "date": "2026-08-16T22:30:00Z",
+      "cluster_size": 11
+    },
+    {
+      "id": "s9-hf-smolagents",
+      "slug": "huggingface-smolagents-code-first-ai-agents",
+      "title": "Hugging Face Releases smolagents: Code-First Agent Framework in <1k LOC",
+      "summary": "Hugging Face launched smolagents, a lightweight library where LLMs write raw executable Python actions instead of JSON tool blobs, slashing token overhead by 30%.",
+      "score": 85,
+      "tier": "major",
+      "tags": ["AGENTS", "OPEN SOURCE", "TOOLS"],
+      "builder_relevant": true,
+      "date": "2026-08-16T18:00:00Z",
+      "cluster_size": 13
+    },
+    {
+      "id": "s10-apple-mlx-moe",
+      "slug": "apple-mlx-native-moe-metal-acceleration",
+      "title": "Apple MLX Adds Native MoE Offloading & 2-bit Quantization on Apple Silicon",
+      "summary": "Apple's open-source MLX framework introduced fused Metal kernels for Mixture-of-Experts routing and sub-3-bit quantization, running 70B+ models on 64GB/128GB unified RAM.",
+      "score": 83,
+      "tier": "major",
+      "tags": ["APPLE", "LOCAL", "HARDWARE"],
+      "builder_relevant": true,
+      "date": "2026-08-16T11:00:00Z",
+      "cluster_size": 10
+    },
+    {
+      "id": "s11-nvidia-cosmos",
+      "slug": "nvidia-cosmos-world-foundation-models-robotics",
+      "title": "NVIDIA Open-Sources Cosmos World Foundation Models for Physical AI & Robotics",
+      "summary": "NVIDIA released Cosmos, a family of generative world foundation models designed for physical AI, robotics simulation, and autonomous vehicle synthetic trajectory generation.",
+      "score": 81,
+      "tier": "major",
+      "tags": ["ROBOTICS", "PHYSICAL AI", "NVIDIA"],
+      "builder_relevant": true,
+      "date": "2026-08-15T16:00:00Z",
+      "cluster_size": 8
+    },
+    {
+      "id": "s12-eu-ai-act",
+      "slug": "eu-ai-act-enforcement-watermarking-standards",
+      "title": "EU AI Act Enters Enforcement: Final Standards for GPAI Models and Synthetic Watermarking",
+      "summary": "EU AI Office published final technical guidance as the AI Act enters initial enforcement phases, mandating machine-readable watermarks and training data transparency summaries.",
+      "score": 68,
+      "tier": "notable",
+      "tags": ["POLICY", "GOVERNANCE"],
+      "builder_relevant": false,
+      "date": "2026-08-14T09:00:00Z",
+      "cluster_size": 7
+    }
+  ]
+}
