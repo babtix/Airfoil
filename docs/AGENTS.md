@@ -10,7 +10,7 @@ Everything in this file is a summary of those two.
 
 ## What this is
 
-**Scouter** — a static AI-news site produced by a local Go agent.
+**Airfoil** — a static AI-news site produced by a local Go agent.
 No database. No server. Git is the storage layer.
 
 ```
@@ -51,8 +51,8 @@ ingest → normalize → embed → cluster → score → summarize → write .md
 
 ## Style
 
-**Go**
-- `internal/` for everything; `cmd/scouter` is a thin main
+**Go / Python**
+- `internal/` for everything; `cmd/airfoil` or `agent/main.py` is a thin main
 - Config is a struct passed explicitly. No globals, no init() magic.
 - `fmt.Errorf("stage: %w", err)` for wrapping
 - Log with `log/slog`, structured, never `fmt.Println`

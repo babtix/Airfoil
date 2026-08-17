@@ -1,5 +1,5 @@
 {
-  "$comment": "Tier 1 = official lab. 2 = research. 3 = dev/tools. 4 = press. 5 = community. Verify every feed URL with `scouter doctor` before trusting it — feed paths change.",
+  "$comment": "Tier 1 = official lab. 2 = research. 3 = dev/tools. 4 = press. 5 = community. Verify every feed URL with `airfoil doctor` before trusting it — feed paths change.",
   "sources": [
     {
       "id": "anthropic",

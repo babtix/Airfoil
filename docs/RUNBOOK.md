@@ -24,11 +24,12 @@ Claude Code for review. One phase at a time. Do not batch phases.
 
 | Thing | Why | Note |
 |---|---|---|
-| Go 1.22+ | The agent | |
-| Node 20+ | Astro | |
-| Ollama + `nomic-embed-text` | Local embeddings | `ollama pull nomic-embed-text` |
-| Gemini API key | Summaries, CI embeddings | Free tier |
-| OpenRouter API key | Fallback | Free tier is ~50 req/day unfunded — fallback only, never primary |
+| Python 3.11+ | The agent | Local ingestion, clustering, scoring, and writing pipeline |
+| Node 20+ | React + Vite frontend | `npm run dev` / `npm run build` |
+| Ollama + `nomic-embed-text` | Local embeddings & LLMs | `ollama pull nomic-embed-text` |
+| Gemini API key | Summaries, CI embeddings | Free / paid tier |
+| OpenRouter API key | Cloud LLM fallback / primary | Access to diverse models |
+| NVIDIA NIM (`nvidia_nim`) | High-throughput LLM inference | Hosted enterprise & open models via NIM endpoints |
 | GitHub repo under **personal** account | Vercel Hobby rejects Git-org repos | |
 
 ---
@@ -36,9 +37,9 @@ Claude Code for review. One phase at a time. Do not batch phases.
 ## Daily operation
 
 ```bash
-scouter doctor          # check providers and feeds before anything else
-scouter run --dry       # full pipeline, no LLM calls, no push
-scouter run             # for real
+airfoil doctor          # check providers and feeds before anything else
+airfoil run --dry       # full pipeline, no LLM calls, no push
+airfoil run             # for real
 ```
 
 Review `data/digest/YYYY-MM-DD-linkedin.md` before posting. That one
@@ -52,14 +53,14 @@ Never tune two things in the same pass.
 
 **Clustering wrong**
 ```bash
-scouter cluster --debug     # prints pairs between 0.75 and 0.90
+airfoil cluster --debug     # prints pairs between 0.75 and 0.90
 ```
 Same story split across clusters → lower threshold.
 Unrelated stories merged → raise it. Move in 0.02 steps.
 
 **Ranking wrong**
 ```bash
-scouter rank && head -40 data/index.json
+airfoil rank && head -40 data/index.json
 ```
 Press outranking lab blogs → raise `weights.tier`.
 Old stories sticking around → shorten `recency.half_life_hours`.
@@ -67,7 +68,7 @@ Slop getting through → add phrases to `hype_signals`.
 
 **Summaries wrong**
 See the maintenance table at the bottom of `docs/PROMPTS.md`.
-Rerun `scouter write --dry` over the same clusters to compare fairly.
+Rerun `airfoil write --dry` over the same clusters to compare fairly.
 
 ---
 
@@ -75,12 +76,12 @@ Rerun `scouter write --dry` over the same clusters to compare fairly.
 
 | Symptom | Cause | Fix |
 |---|---|---|
-| One source returns nothing | Feed URL changed | `scouter doctor`, update `sources.json` |
+| One source returns nothing | Feed URL changed | `airfoil doctor`, update `sources.json` |
 | Reddit returns 429 | Missing/generic User-Agent | Set `REDDIT_USER_AGENT` |
-| All LLM calls fail | Free model rotated out | Update model ID in `.env`; the chain should already have fallen through |
+| All LLM calls fail | Free model rotated out | Update model ID in `.env`; the chain should already have fallen through (Gemini -> NVIDIA NIM -> OpenRouter -> Ollama) |
 | CI cron stopped firing | Actions disables schedules after 60d repo inactivity | Should never happen — pipeline commits every run. If it does, push manually to re-arm |
 | Duplicate stories appear | `state.json` not written or pruned wrong | Check R7; the second run of `--dry` must produce zero new items |
-| Site build fails after agent run | Frontmatter violates the Zod schema | This is the safety net working. Fix the writer, not the schema |
+| Site build fails after agent run | Frontmatter violates the data schema | This is the safety net working. Fix the writer, not the schema |
 | Vercel won't connect the repo | Repo is under a Git organization | Move it to your personal account |
 
 ---

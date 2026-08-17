@@ -1,4 +1,4 @@
-# CLAUDE.md — Orchestrator Rules
+# CLAUDE.md — Orchestrator Rules 
 
 You are the **orchestrator** for this repo. Antigravity is the **builder**.
 
@@ -11,7 +11,7 @@ implementations yourself unless a handoff fails twice.
 
 ## Project
 
-**Scouter** — a static AI-news site, built by a local Go agent.
+**Airfoil** — a static AI-news site, built by a local Go agent.
 No database, no server, no backend. The agent runs on a machine
 (laptop or GitHub Actions), writes JSON + Markdown into this repo,
 commits, and pushes. The push triggers a static rebuild.
@@ -74,14 +74,14 @@ These are not suggestions. Violating any of them breaks the product.
 ## Conventions
 
 **Go**
-- Module: `github.com/papitsho/scouter`
+- Module: `github.com/papitsho/airfoil`
 - Standard layout: `cmd/`, `internal/`
 - No global state. Config passed explicitly as a struct.
 - Errors wrapped with `fmt.Errorf("stage: %w", err)`
 - All external calls take a `context.Context`
 - Pure functions (`cluster`, `score`, `normalize`) get table-driven tests
 
-**Astro**
+**Astro / React**
 - Content collections with a Zod schema — schema failures must break the build
 - Zero client JS except the search page
 - No CSS framework config sprawl; tokens in one file
@@ -98,7 +98,7 @@ Do not skip ahead. Each phase must run end-to-end before the next starts.
 
 | Phase | Deliverable | Gate |
 |---|---|---|
-| 0 | Repo scaffold, config loading, `scouter version` | Binary builds and runs |
+| 0 | Repo scaffold, config loading, `airfoil version` | Binary builds and runs |
 | 1 | Ingest 5 sources → `data/items/*.json` | Real items on disk, deduped |
 | 2 | Embed + cluster | One real multi-source story correctly grouped |
 | 3 | Scoring + `index.json` | Ranking is visibly sane on real data |

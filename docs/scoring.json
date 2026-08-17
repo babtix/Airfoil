@@ -1,5 +1,5 @@
 {
-  "$comment": "Tune these against real data. Never guess — run `scouter rank` and look at the top 20 before changing anything.",
+  "$comment": "Tune these against real data. Never guess — run `airfoil rank` and look at the top 20 before changing anything.",
 
   "clustering": {
     "similarity_threshold": 0.82,

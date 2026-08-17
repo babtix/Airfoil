@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIRFOIL // AI NEWS — KAIOKEN EDITION</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/500.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { deep:'#0a0a0a', surf:'#141414', prim:'#f5f5f5', sec:'#a0a0a0', kai:'#ff3b3b', line:'#262626' },
+    fontFamily: { sans:['Inter','system-ui','sans-serif'], mono:['"JetBrains Mono"','monospace'] }
+  }}
+}
+</script>
+
+<style type="text/tailwindcss">
+body { @apply bg-deep text-prim font-sans antialiased selection:bg-kai selection:text-deep; }
+.mono-label { @apply font-mono text-[11px] uppercase tracking-widest text-sec; }
+.tagpill { @apply bg-surf border border-line rounded px-1 py-0.5 font-mono text-[10px] text-sec cursor-pointer hover:border-kai hover:text-kai transition-colors; }
+.tagpill-on { @apply border-kai text-kai; }
+.rail-h { @apply mono-label border-b border-line pb-2 mb-3; }
+.card { @apply bg-surf border border-line rounded-md p-4 cursor-pointer transition-colors hover:border-kai/60; }
+.btn-ghost { @apply mono-label border border-line rounded px-2 py-1 cursor-pointer hover:border-kai hover:text-kai transition-colors; }
+.btn-ghost-on { @apply border-kai text-kai; }
+input:focus { outline: 1px solid #ff3b3b; outline-offset: -1px; }
+</style>
+<style>
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:#262626}
+</style>
+</head>
+
+<body class="min-h-screen">
+
+<!-- ══════════ FIXED HEADER ══════════ -->
+<header class="fixed top-0 inset-x-0 z-50 bg-deep/90 backdrop-blur border-b border-line">
+  <div class="max-w-[1400px] mx-auto px-4 h-14 flex items-center gap-3">
+    <!-- Airfoil logo -->
+    <button onclick="goHome()" class="flex items-center gap-2 shrink-0" title="Back to feed">
+      <svg width="34" height="18" viewBox="0 0 34 18" fill="none">
+        <path d="M1 12 C8 3 20 2 33 9 C20 14 8 15 1 12 Z" stroke="#ff3b3b" stroke-width="1.4"/>
+        <line x1="1" y1="12" x2="33" y2="9" stroke="#a0a0a0" stroke-width="0.8" stroke-dasharray="2 2"/>
+      </svg>
+      <span class="font-mono font-medium tracking-tight text-lg">AIRFOIL<span class="text-kai">_</span></span>
+    </button>
+    <span class="mono-label hidden md:block">AI SIGNAL TELEMETRY // KAIOKEN BUILD</span>
+
+    <div class="ml-auto flex items-center gap-2">
+      <button id="search-toggle" class="btn-ghost" title="Search">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="10" cy="10" r="7"/><line x1="15" y1="15" x2="22" y2="22"/></svg>
+        <span class="hidden sm:inline">SEARCH</span>
+      </button>
+      <a href="https://github.com" target="_blank" rel="noopener" class="btn-ghost" title="GitHub">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        <span class="hidden sm:inline">GITHUB</span>
+      </a>
+      <button id="menu-toggle" class="btn-ghost lg:hidden" title="Menu">
+        <svg width="14" height="12" viewBox="0 0 14 12" stroke="currentColor" stroke-width="2"><line x1="0" y1="1" x2="14" y2="1"/><line x1="0" y1="6" x2="14" y2="6"/><line x1="0" y1="11" x2="14" y2="11"/></svg>
+      </button>
+    </div>
+  </div>
+  <!-- Search row -->
+  <div id="search-row" class="hidden border-t border-line bg-deep">
+    <div class="max-w-[1400px] mx-auto px-4 py-2">
+      <input id="global-search" type="text" placeholder="> query signals…"
+        class="w-full bg-surf border border-line rounded px-3 py-2 font-mono text-sm text-prim placeholder-sec">
+    </div>
+  </div>
+</header>
+
+<!-- ══════════ MOBILE OVERLAY ══════════ -->
+<div id="mobile-overlay" class="fixed inset-0 z-40 bg-deep/97 hidden overflow-y-auto pt-16 pb-8 px-4">
+  <div class="flex justify-between items-center mb-4">
+    <span class="mono-label text-kai">// CONTROL SURFACES</span>
+    <button id="menu-close" class="btn-ghost">✕ CLOSE</button>
+  </div>
+  <div id="mobile-left"></div>
+  <div id="mobile-right" class="mt-8"></div>
+</div>
+
+<!-- ══════════ BODY GRID 20 / 50 / 30 ══════════ -->
+<div class="pt-14 max-w-[1400px] mx-auto lg:grid lg:grid-cols-[1fr_2.5fr_1.5fr]">
+
+  <!-- LEFT RAIL -->
+  <aside class="hidden lg:block border-r border-line p-4 sticky top-14 self-start max-h-[calc(100vh-3.5rem)] overflow-y-auto" id="rail-left"></aside>
+
+  <!-- MAIN FEED / STORY PAGE -->
+  <main class="p-4 min-h-[70vh]">
+    <div id="feed-view" class="space-y-3"></div>
+    <div id="story-view" class="hidden max-w-[800px] mx-auto"></div>
+  </main>
+
+  <!-- RIGHT RAIL -->
+  <aside class="hidden lg:block border-l border-line p-4 sticky top-14 self-start max-h-[calc(100vh-3.5rem)] overflow-y-auto" id="rail-right"></aside>
+</div>
+
+<footer class="border-t border-line">
+  <div class="max-w-[1400px] mx-auto px-4 py-3 flex flex-wrap gap-x-6 gap-y-1 justify-between mono-label">
+    <span id="stat-line">—</span>
+    <span>COMPILED BY KAI-NEWS AGENT · ZERO-JS SHIP</span>
+  </div>
+</footer>
+
+<script>
+// ══════════ DATA — replace with fetch('/data/index.json') when Go agent lands ══════════
+const NOW = Date.now();
+const ago = m => new Date(NOW - m*60000).toISOString();
+const S = [
+ { id:"s1", title:"Gemini 2.5 Pro Hits 98% on SWE-Bench Verified", score:94, cluster:14, ts:ago(42),
+   summary:"Google DeepMind checkpoint shows a step change in autonomous coding reliability. Three major IDE integrations announced same day.",
+   body:["Google DeepMind's latest checkpoint posts 98% on SWE-Bench Verified, a result that would have been state-of-the-art fiction eighteen months ago. More telling than the headline number is the variance: failure cases cluster in multi-repo refactors, not single-file logic.","The cluster around this story grew 14x in six hours — IDE vendors shipped integrations before the blog post cooled. Expect the adoption wave to peak within 48 hours."],
+   tags:["LLM","BENCHMARK","GOOGLE"],
+   sources:[{n:"DeepMind Blog",t:"lab",u:"https://deepmind.google"},{n:"Hacker News",t:"community",u:"https://news.ycombinator.com"},{n:"The Verge",t:"press",u:"https://theverge.com"}] },
+ { id:"s2", title:"Local 4-bit Quantization Matches FP16 Within 1% Perplexity", score:88, cluster:9, ts:ago(187),
+   summary:"New AWQ variant cuts VRAM 60% with no measurable quality loss. 70B-class models now viable on a single consumer GPU.",
+   body:["A new AWQ variant reduces VRAM requirements by 60% while holding perplexity within 1% of FP16 baselines. Practically: 70B-parameter models now serve from a single consumer GPU.","Weights and CUDA kernels shipped under Apache-2.0. The r/LocalLLaMA thread is the fastest-growing community node in today's cluster."],
+   tags:["OPEN SOURCE","INFRA"],
+   sources:[{n:"arXiv",t:"lab",u:"https://arxiv.org"},{n:"r/LocalLLaMA",t:"community",u:"https://reddit.com/r/LocalLLaMA"},{n:"HuggingFace",t:"lab",u:"https://huggingface.co"}] },
+ { id:"s3", title:"EU AI Act: Final Enforcement Standards for High-Risk Systems", score:72, cluster:6, ts:ago(310),
+   summary:"Technical compliance standards published. Open-source exemption narrowed to research-only use; grace period ends Q4.",
+   body:["The EU Commission published final technical standards for high-risk AI systems. The open-source exemption now covers research-only use, narrowing earlier drafts.","Compliance grace periods end Q4. Startups that planned around the draft text face audit requirements previously scoped for enterprise deployers."],
+   tags:["POLICY"],
+   sources:[{n:"EU Commission",t:"lab",u:"https://commission.europa.eu"},{n:"Reuters",t:"press",u:"https://reuters.com"},{n:"Politico",t:"press",u:"https://politico.eu"}] },
+ { id:"s4", title:"Anthropic Ships Constitutional Classifiers v2, Blocks 99.1% of Jailbreaks", score:81, cluster:11, ts:ago(540),
+   summary:"Second-generation classifiers cut jailbreak success below 1% while adding only 2% latency. Drop-in middleware released.",
+   body:["Anthropic's second-generation constitutional classifiers reduce jailbreak success to 0.9% in red-team evaluation, with a 2% latency tax — small enough to be default-on.","Released as drop-in middleware, which matters more than the model: adoption friction was always the real safety bottleneck."],
+   tags:["SAFETY","ANTHROPIC"],
+   sources:[{n:"Anthropic",t:"lab",u:"https://anthropic.com"},{n:"Hacker News",t:"community",u:"https://news.ycombinator.com"},{n:"TechCrunch",t:"press",u:"https://techcrunch.com"}] },
+ { id:"s5", title:"Meta Open-Sources Video World Model, 10x Cheaper Than SOTA", score:90, cluster:12, ts:ago(760),
+   summary:"V-JEPA 3 generates physically consistent 60s video at one-tenth the inference cost of closed rivals. Weights released.",
+   body:["Meta's V-JEPA 3 generates physically consistent 60-second video at one-tenth the inference cost of closed frontier rivals. Weights, training code, and the dataset manifest are public.","The cost curve is the story: world-model inference just entered the budget range of indie studios."],
+   tags:["VIDEO","OPEN SOURCE","META"],
+   sources:[{n:"Meta AI",t:"lab",u:"https://ai.meta.com"},{n:"arXiv",t:"lab",u:"https://arxiv.org"},{n:"Wired",t:"press",u:"https://wired.com"}] },
+ { id:"s6", title:"NVIDIA Blackwell Ultra Drivers Hit Stable, +22% Inference Throughput", score:65, cluster:4, ts:ago(1120),
+   summary:"Stable CUDA 13.2 stack lands with native FP4 kernel support. 22% throughput gain on LLM serving without model changes.",
+   body:["The stable CUDA 13.2 stack ships native FP4 kernel support. Early benchmarks show 22% throughput gains on LLM serving with zero model changes.","Quiet but load-bearing: every cluster operator upgrades within a quarter, which makes driver releases de facto infrastructure news."],
+   tags:["INFRA","HARDWARE"],
+   sources:[{n:"NVIDIA",t:"lab",u:"https://nvidia.com"},{n:"Phoronix",t:"press",u:"https://phoronix.com"}] },
+ { id:"s7", title:"Agent Swarm Sets Record: 72-Hour Autonomous Research Cycle", score:78, cluster:8, ts:ago(1500),
+   summary:"Multi-agent pipeline ran unsupervised for three days, produced two peer-review-ready results. Memory beat context.",
+   body:["A multi-agent pipeline ran unsupervised for 72 hours and produced two peer-review-ready results. The ablation that matters: memory consolidation between agents outperformed raw context length.","The record is less important than the design pattern — expect 'consolidation layers' to appear in every agent stack this quarter."],
+   tags:["AGENTS","LLM"],
+   sources:[{n:"arXiv",t:"lab",u:"https://arxiv.org"},{n:"Hacker News",t:"community",u:"https://news.ycombinator.com"}] },
+ { id:"s8", title:"Japan's Fugaku-2 Repurposed for National LLM Training Run", score:59, cluster:3, ts:ago(2100),
+   summary:"40% of Fugaku-2 compute allocated to a sovereign 200B model trained on licensed Japanese corpora. Checkpoint due Q1.",
+   body:["Japan allocated 40% of Fugaku-2 compute to a sovereign 200B-parameter model trained entirely on licensed Japanese-language corpora.","First checkpoint expected Q1. The licensing-first data pipeline is the novel part — a template for other national programs."],
+   tags:["POLICY","LLM"],
+   sources:[{n:"Nikkei",t:"press",u:"https://nikkei.com"},{n:"RIKEN",t:"lab",u:"https://riken.jp"}] }
+];
+
+const state = { date:"ALL", tag:null, source:null, query:"", story:null };
+const ALL_TAGS = [...new Set(S.flatMap(s=>s.tags))].sort();
+const AGE_H = s => (NOW - new Date(s.ts).getTime())/3600000;
+const ageTxt = s => { const h=AGE_H(s); return h<1?`${Math.max(1,Math.round(h*60))}M AGO`:`${Math.round(h)}H AGO`; };
+const scoreBadge = sc => `<span class="font-mono text-sm font-medium px-2 py-0.5 rounded border ${sc>80?"text-kai border-kai/60":"text-sec border-line"}">${sc}</span>`;
+
+const filtered = () => S.filter(s =>
+  (state.date==="ALL" || AGE_H(s) <= (state.date==="24H"?24:168)) &&
+  (!state.tag || s.tags.includes(state.tag)) &&
+  (!state.source || s.sources.some(x=>x.n===state.source)) &&
+  (!state.query || (s.title+s.summary+s.tags.join(" ")).toLowerCase().includes(state.query))
+).sort((a,b)=>new Date(b.ts)-new Date(a.ts));
+
+// ══════════ AIRFOIL FIGURE (inspired by reference diagrams) ══════════
+const AIRFOIL_SVG = `
+<svg viewBox="0 0 320 150" class="w-full">
+  ${[18,30,42].map(y=>`<path d="M0 ${y} C90 ${y} 120 ${y-8} 160 ${y-9} C220 ${y-10} 270 ${y-2} 320 ${y}" stroke="#262626" fill="none"/>`).join("")}
+  ${[108,122,136].map(y=>`<path d="M0 ${y} C90 ${y} 140 ${y+3} 320 ${y+2}" stroke="#262626" fill="none"/>`).join("")}
+  <path d="M40 82 C95 52 205 50 286 76 C205 90 95 92 40 82 Z" fill="#141414" stroke="#f5f5f5" stroke-width="1"/>
+  <line x1="40" y1="82" x2="286" y2="76" stroke="#a0a0a0" stroke-dasharray="4 3" stroke-width="0.8"/>
+  <path d="M40 82 C110 62 210 62 286 76" stroke="#ff3b3b" stroke-dasharray="4 3" fill="none" stroke-width="0.9"/>
+  <line x1="160" y1="52" x2="160" y2="14" stroke="#ff3b3b" stroke-width="1.2"/>
+  <path d="M156 20 L160 12 L164 20" stroke="#ff3b3b" fill="none" stroke-width="1.2"/>
+  <text x="168" y="18" font-family="JetBrains Mono" font-size="8" fill="#ff3b3b">LIFT = SCORE</text>
+  <text x="6" y="98" font-family="JetBrains Mono" font-size="7" fill="#a0a0a0">LEADING EDGE</text>
+  <text x="238" y="98" font-family="JetBrains Mono" font-size="7" fill="#a0a0a0">TRAILING EDGE</text>
+  <text x="52" y="74" font-family="JetBrains Mono" font-size="7" fill="#a0a0a0">CHORD</text>
+  <text x="120" y="58" font-family="JetBrains Mono" font-size="7" fill="#ff3b3b">CAMBER</text>
+</svg>`;
+
+// ══════════ RAILS ══════════
+function railLeftHTML(){
+  const srcCounts = {};
+  S.forEach(s=>s.sources.forEach(x=>srcCounts[x.n]=(srcCounts[x.n]||0)+1));
+  const topSrc = Object.entries(srcCounts).sort((a,b)=>b[1]-a[1]).slice(0,6);
+  return `
+  <div class="rail-h">// DATE WINDOW</div>
+  <div class="flex gap-2 mb-6">${["ALL","24H","7D"].map(d=>
+    `<button class="btn-ghost ${state.date===d?"btn-ghost-on":""}" onclick="setDate('${d}')">${d}</button>`).join("")}</div>
+  <div class="rail-h">// TAGS</div>
+  <div class="flex flex-wrap gap-1.5 mb-6">${ALL_TAGS.map(t=>
+    `<button class="tagpill ${state.tag===t?"tagpill-on":""}" onclick="setTag('${t}')">${t}</button>`).join("")}</div>
+  <div class="rail-h">// TOP SOURCES</div>
+  <div class="space-y-1.5">${topSrc.map(([n,c])=>`
+    <button onclick="setSource('${n}')" class="w-full flex justify-between items-center font-mono text-xs py-1 border-b border-line/60 ${state.source===n?"text-kai":"text-sec hover:text-prim"} transition-colors">
+      <span>${n}</span><span class="text-[10px]">×${c}</span></button>`).join("")}</div>`;
+}
+
+function railRightHTML(){
+  const top = [...S].sort((a,b)=>b.score-a.score)[0];
+  return `
+  <div class="rail-h">// TODAY'S TOP SCORE</div>
+  <div class="card cursor-pointer mb-6" onclick="openStory('${top.id}')">
+    <div class="flex justify-between items-start gap-2 mb-2"><span class="mono-label text-kai">MACH LEADER</span>${scoreBadge(top.score)}</div>
+    <p class="font-bold leading-snug mb-1">${top.title}</p>
+    <p class="font-mono text-[10px] text-sec">${ageTxt(top)} · CLUSTER ×${top.cluster}</p>
+  </div>
+  <div class="rail-h">// FIG.01 — SIGNAL AERODYNAMICS</div>
+  <div class="border border-line rounded-md bg-surf p-2 mb-6">${AIRFOIL_SVG}</div>
+  <div class="rail-h">// NEWSLETTER</div>
+  <form id="nl-form" class="mb-6">
+    <input id="nl-email" type="email" required placeholder="pilot@base.io"
+      class="w-full bg-surf border border-line rounded px-3 py-2 font-mono text-xs text-prim placeholder-sec mb-2">
+    <button class="w-full bg-kai text-deep font-mono text-xs font-medium tracking-widest uppercase rounded px-3 py-2 hover:bg-prim transition-colors">Engage — Daily Digest</button>
+  </form>
+  <div class="rail-h">// ABOUT</div>
+  <p class="text-sm text-sec leading-relaxed">Airfoil ingests 17 tiered sources, clusters duplicates, scores signal strength, and ships a static digest. No ads, no tracking, zero JS shipped to readers.</p>`;
+}
+
+// ══════════ FEED ══════════
+function renderFeed(){
+  const list = filtered();
+  document.getElementById("feed-view").innerHTML = list.length ? list.map(s=>`
+    <article class="card" onclick="openStory('${s.id}')">
+      <div class="flex items-start justify-between gap-3 mb-2">
+        <h2 class="font-bold text-base md:text-lg leading-snug">${s.title}</h2>
+        ${scoreBadge(s.score)}
+      </div>
+      <p class="text-sm text-sec leading-relaxed line-clamp-2 mb-3">${s.summary}</p>
+      <div class="flex flex-wrap items-center gap-1.5">
+        ${s.tags.map(t=>`<button class="tagpill ${state.tag===t?"tagpill-on":""}" onclick="event.stopPropagation();setTag('${t}')">${t}</button>`).join("")}
+        <span class="ml-auto font-mono text-[10px] text-sec">${ageTxt(s)} · ${s.sources.length} SRC</span>
+      </div>
+    </article>`).join("")
+  : `<div class="border border-line rounded-md p-10 text-center mono-label">NO SIGNALS IN WINDOW — ADJUST FILTERS</div>`;
+}
+
+// ══════════ STORY PAGE ══════════
+function openStory(id){
+  const s = S.find(x=>x.id===id); state.story = id;
+  document.getElementById("feed-view").classList.add("hidden");
+  const v = document.getElementById("story-view"); v.classList.remove("hidden");
+  v.innerHTML = `
+    <button onclick="goHome()" class="btn-ghost mb-6">← BACK TO FEED</button>
+    <div class="flex items-center gap-3 mb-3">${scoreBadge(s.score)}<span class="font-mono text-[11px] text-sec">${ageTxt(s)} · CLUSTER ×${s.cluster}</span></div>
+    <h1 class="font-bold text-2xl md:text-[2.5rem] leading-tight mb-4">${s.title}</h1>
+    <div class="flex flex-wrap gap-1.5 mb-6">${s.tags.map(t=>`<span class="tagpill">${t}</span>`).join("")}</div>
+    ${s.body.map(p=>`<p class="text-base leading-[1.6] text-prim/90 mb-4">${p}</p>`).join("")}
+    <div class="border-t border-line mt-8 pt-4">
+      <div class="rail-h">SOURCES</div>
+      <div class="space-y-2">${s.sources.map(x=>`
+        <a href="${x.u}" target="_blank" rel="noopener" class="flex items-center gap-3 group">
+          <span class="font-mono text-[10px] uppercase px-1.5 py-0.5 border ${x.t==="lab"?"border-kai text-kai":x.t==="community"?"border-sec text-sec":"border-line text-sec"}">${x.t}</span>
+          <span class="font-mono text-xs text-sec group-hover:text-kai underline decoration-dotted underline-offset-4 transition-colors">${x.n} ↗</span>
+        </a>`).join("")}
+      </div>
+    </div>`;
+  window.scrollTo(0,0);
+}
+function goHome(){ state.story=null;
+  document.getElementById("story-view").classList.add("hidden");
+  document.getElementById("feed-view").classList.remove("hidden");
+}
+
+// ══════════ ACTIONS / CHROME ══════════
+function setDate(d){ state.date=d; renderAll(); }
+function setTag(t){ state.tag = state.tag===t?null:t; renderAll(); }
+function setSource(n){ state.source = state.source===n?null:n; renderAll(); }
+
+function renderAll(){
+  const L = railLeftHTML(), R = railRightHTML();
+  document.getElementById("rail-left").innerHTML = L;
+  document.getElementById("mobile-left").innerHTML = L;
+  document.getElementById("rail-right").innerHTML = R;
+  document.getElementById("mobile-right").innerHTML = R;
+  bindNewsletter();
+  if (!state.story) renderFeed();
+  document.getElementById("stat-line").textContent =
+    `${filtered().length}/${S.length} SIGNALS IN WINDOW · ${new Set(S.flatMap(s=>s.sources.map(x=>x.n))).size} SOURCES TRACKED`;
+}
+function bindNewsletter(){
+  document.querySelectorAll("#nl-form").forEach(f=>{
+    f.onsubmit = e => { e.preventDefault();
+      const em = f.querySelector("#nl-email").value;
+      f.outerHTML = `<div class="border border-kai/60 rounded-md p-3 font-mono text-xs text-kai mb-6">CONFIRMED // DIGEST ARMED FOR ${em.toUpperCase()}</div>`;
+    };
+  });
+}
+
+document.getElementById("search-toggle").onclick = () => {
+  const r = document.getElementById("search-row"); r.classList.toggle("hidden");
+  if (!r.classList.contains("hidden")) document.getElementById("global-search").focus();
+};
+document.getElementById("global-search").oninput = e => { state.query = e.target.value.toLowerCase(); goHome(); renderAll(); };
+document.getElementById("menu-toggle").onclick = () => document.getElementById("mobile-overlay").classList.remove("hidden");
+document.getElementById("menu-close").onclick = () => document.getElementById("mobile-overlay").classList.add("hidden");
+
+renderAll();
+</script>
+</body>
+</html>

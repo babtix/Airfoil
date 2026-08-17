@@ -220,5 +220,5 @@ Return ONLY a JSON object. No markdown fences.
 | Tags are wrong | The tag list is too abstract — make tags more concrete |
 | JSON parse failures spike | The model was rotated out. Check the provider chain first |
 
-Change one thing at a time and rerun `scouter write --dry` over the same
+Change one thing at a time and rerun `airfoil write --dry` over the same
 cluster set to compare. Do not tune prompts and scoring in the same pass.

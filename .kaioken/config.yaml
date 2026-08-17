@@ -1,0 +1,19 @@
+# ainow configuration — edit freely.
+# `notes` are injected into every generation prompt: use them to teach
+# the model conventions, guardrails, and tribal knowledge.
+version: 1
+model: deepseek/deepseek-v4-flash-0731
+provider: openrouter
+base_url: ""
+concurrency: 4
+max_module_tokens: 60000
+scope:
+    include: []
+    exclude:
+        - '**/*.lock'
+        - '**/pnpm-lock.yaml'
+        - '**/package-lock.json'
+        - '**/uv.lock'
+        - '**/*.min.js'
+        - '**/*.map'
+notes: []

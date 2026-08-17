@@ -1,4 +1,4 @@
-# Scouter — Build Spec
+# Airfoil — Build Spec
 
 A static AI-news site with a local Go agent that does the work.
 No database. No backend. Git is the database.
@@ -43,7 +43,7 @@ Clustering is what makes this not an RSS reader.
 ┌─────────────────────────────────────────┐
 │  Local machine  OR  GitHub Actions      │
 │                                         │
-│   scouter run                           │
+│   airfoil run                           │
 │     ingest → normalize → embed →        │
 │     cluster → score → summarize →       │
 │     write → publish                     │
@@ -56,36 +56,35 @@ Clustering is what makes this not an RSS reader.
                │ webhook
                ▼
         ┌─────────────┐
-        │   Vercel    │  astro build → static
+        │   Vercel    │  build → static
         └─────────────┘
 ```
 
-Same binary runs locally and in CI. One code path.
+Same binary/script runs locally and in CI. One code path.
 
 ---
 
 ## 3. Repo layout
 
 ```
-scouter/
+airfoil/
 ├── CLAUDE.md
 ├── AGENTS.md
 ├── BUILD_SPEC.md
 ├── .env.example
 ├── .gitignore
 │
-├── agent/                          # Go module
-│   ├── go.mod                      # github.com/papitsho/scouter
-│   ├── cmd/scouter/main.go
+├── agent/                          # Agent module
+│   ├── main.py / cmd/airfoil/main.go
 │   └── internal/
 │       ├── config/                 # env + config/sources.json loading
 │       ├── model/                  # Item, Story, Source, Cluster types
-│       ├── ingest/                 # rss.go hn.go reddit.go hf.go github.go
+│       ├── ingest/                 # rss, hn, reddit, hf, github
 │       ├── normalize/              # canonical URL, dedupe, excerpt
 │       ├── embed/                  # provider interface: ollama, gemini
 │       ├── cluster/                # cosine + greedy agglomerative
 │       ├── score/                  # pure scoring function
-│       ├── llm/                    # provider chain: gemini → openrouter
+│       ├── llm/                    # provider chain: gemini → nvidia_nim → openrouter → ollama
 │       ├── write/                  # markdown + frontmatter emit
 │       ├── digest/                 # newsletter + social payloads
 │       └── store/                  # JSON read/write, atomic
@@ -285,7 +284,7 @@ n ≈ 600 items → O(n²) is ~360k comparisons. Fine. Do not optimize.
 
 **Cluster title** = title of the highest-tier, earliest item in the cluster.
 
-Tunable in `config/scoring.json`. Ship a `scouter cluster --debug` flag
+Tunable in `config/scoring.json`. Ship an `airfoil cluster --debug` flag
 that prints pairs between 0.75 and 0.90 so the threshold can be tuned
 against real data instead of guesses.
 
@@ -401,35 +400,32 @@ Validation failure = abort before commit (R9).
 ---
 
 ## 6. CLI
-
+ 
 | Command | Does |
 |---|---|
-| `scouter ingest` | Sources → `data/items/` |
-| `scouter cluster` | Embed + group. `--debug` prints similarity pairs |
-| `scouter rank` | Score, write `index.json` |
-| `scouter write` | LLM summaries → `.md` |
-| `scouter digest` | Build newsletter + social payloads |
-| `scouter publish` | Validate, prune, commit, push |
-| `scouter run` | All of the above |
-| `scouter run --dry` | Everything except LLM calls and push |
-| `scouter doctor` | Check env, providers, feed reachability |
-
+| `airfoil ingest` | Sources → `data/items/` |
+| `airfoil cluster` | Embed + group. `--debug` prints similarity pairs |
+| `airfoil rank` | Score, write `index.json` |
+| `airfoil write` | LLM summaries → `.md` |
+| `airfoil digest` | Build newsletter + social payloads |
+| `airfoil publish` | Validate, prune, commit, push |
+| `airfoil run` | All of the above |
+| `airfoil run --dry` | Everything except LLM calls and push |
+| `airfoil doctor` | Check env, providers, feed reachability |
+ 
 Global flags: `--config`, `--data`, `--verbose`, `--since`
-
+ 
 ---
-
+ 
 ## 7. Site
-
-**Stack:** Astro 5, content collections, Tailwind, Pagefind.
-Zero client JS except `/search`.
-
-Content schema (`site/src/content/config.ts`) uses Zod and mirrors the
-frontmatter exactly. A schema violation must break the build — that is
-the safety net for agent-generated content.
-
+ 
+**Stack:** React + Vite, TypeScript, Tailwind / Design Tokens.
+ 
+Content schema mirrors the frontmatter exactly.
+ 
 **Design direction:** dense and readable, not a blog template.
 Reference: Hacker News density with modern typography.
-
+ 
 | Token | Value |
 |---|---|
 | Body | Inter or system sans |
@@ -438,31 +434,30 @@ Reference: Hacker News density with modern typography.
 | Tier styling | `major` = larger + accent bar, `notable` = normal, `minor` = compact single line |
 | Dark mode | Default, respects `prefers-color-scheme` |
 | Density | Feed shows ~25 stories per screen on desktop |
-
+ 
 Every story card shows: score, title, source count, primary source name,
 relative time, and a `SHIP` badge when `builder_relevant`.
-
-**Performance targets:** Lighthouse 100 across the board. Every page
-statically generated. No layout shift.
-
+ 
+**Performance targets:** Lighthouse 100 across the board. Fast client-side transitions.
+ 
 ---
-
+ 
 ## 8. CI
-
+ 
 `.github/workflows/pipeline.yml`
-
+ 
 ```yaml
 on:
   schedule:
     - cron: '0 6,12,18 * * *'   # 3x daily UTC
   workflow_dispatch:
 ```
-
-Steps: checkout → setup-go → build → `scouter run` → commit → push.
+ 
+Steps: checkout → setup python/node → `airfoil run` → commit → push.
 Vercel auto-deploys on push.
-
+ 
 **Free-tier constraints, designed around:**
-
+ 
 | Constraint | Handling |
 |---|---|
 | Actions disables cron after 60d repo inactivity | Pipeline commits on every run — repo never goes idle |
@@ -470,17 +465,17 @@ Vercel auto-deploys on push.
 | Vercel Hobby cron is once-per-day only | Not used. Actions is the scheduler |
 | Vercel Hobby forbids Git-org repos | Repo must live under a personal account |
 | Free LLM models rotate out | Provider chain is config-driven |
-
-Env via GitHub Secrets: `GEMINI_API_KEY`, `OPENROUTER_API_KEY`.
+ 
+Env via GitHub Secrets: `GEMINI_API_KEY`, `NVIDIA_NIM_API_KEY`, `OPENROUTER_API_KEY`.
 Embedder in CI = `gemini`.
-
+ 
 ---
-
+ 
 ## 9. Phase gates
-
+ 
 | Phase | Done when |
 |---|---|
-| 0 | `scouter version` runs; config loads; sources.json parses |
+| 0 | `airfoil version` runs; config loads; sources.json parses |
 | 1 | 5 sources ingested, real items on disk, second run adds zero duplicates |
 | 2 | One real multi-outlet story correctly grouped; `--debug` output inspected |
 | 3 | Top 10 by score looks right to you on real data |
