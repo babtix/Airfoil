@@ -257,7 +257,9 @@ func (m *Model) footerView() string {
 		styleKey.Render("?") + styleFooter.Render(" help  ") +
 		styleKey.Render("q") + styleFooter.Render(" quit")
 
-	return rule(m.width) + "\n" + truncate(hints+global, m.width)
+	// hints and global carry ANSI styling. Rune-truncating them would cut an
+	// escape sequence in half; the frame-level MaxWidth in View clamps safely.
+	return rule(m.width) + "\n" + hints + global
 }
 
 func (m *Model) helpView() string {
@@ -274,7 +276,9 @@ func (m *Model) helpView() string {
 		{"Run", [][2]string{
 			{"↑ ↓", "choose a stage"},
 			{"enter", "start the selected stage"},
-			{"d", "toggle dry run"},
+			{"d", "toggle dry run — write nothing"},
+			{"p", "arm push, so publish reaches the remote"},
+			{"y / n", "answer the push confirmation"},
 			{"ctrl+x", "cancel a running stage"},
 			{"c", "clear the log"},
 		}},
@@ -301,9 +305,19 @@ func (m *Model) helpView() string {
 			{"↑ ↓", "scroll results"},
 		}},
 		{"Browse", [][2]string{
-			{"←  →", "switch between items and clusters"},
+			{"← →", "items, clusters, ranked, stories"},
 			{"↑ ↓", "move"},
 			{"enter", "open the detail pane"},
+			{"R", "reload from disk"},
+		}},
+		{"Stages", [][2]string{
+			{"Ingest", "sources into data/items/"},
+			{"Cluster", "embed and group into stories"},
+			{"Rank", "score and set the LLM budget"},
+			{"Write", "summarize, then emit .md, index, stories"},
+			{"Digest", "newsletter, X thread, LinkedIn draft"},
+			{"Publish", "validate, prune, commit, optionally push"},
+			{"Run all", "ingest through write, in order"},
 		}},
 	}
 

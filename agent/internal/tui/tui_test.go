@@ -703,3 +703,211 @@ func stripANSI(s string) string {
 	}
 	return b.String()
 }
+
+// --- stage coverage ---------------------------------------------------------
+
+// Every pipeline stage must be reachable from the interface. This is the test
+// that fails when a stage is added to the pipeline but not surfaced here.
+func TestEveryPipelineStageIsExposed(t *testing.T) {
+	want := []string{"ingest", "cluster", "rank", "write", "digest", "publish", "run"}
+
+	got := make(map[string]bool, len(stages))
+	for _, s := range stages {
+		got[s.key] = true
+	}
+	for _, key := range want {
+		if !got[key] {
+			t.Errorf("stage %q is not reachable from the Run tab", key)
+		}
+	}
+	if len(stages) != len(want) {
+		t.Errorf("got %d stages, want %d", len(stages), len(want))
+	}
+}
+
+func TestStagesAreWellFormed(t *testing.T) {
+	for _, s := range stages {
+		if s.key == "" || s.name == "" || s.about == "" {
+			t.Errorf("stage %+v is missing a label", s)
+		}
+		if s.run == nil {
+			t.Errorf("stage %q has no implementation", s.key)
+		}
+	}
+}
+
+func TestRunPageStageNavigation(t *testing.T) {
+	m := testModel(t)
+	key(m, "2")
+
+	page := m.pages[viewRun].(*runPage)
+	if page.cursor != 0 {
+		t.Fatalf("cursor started at %d", page.cursor)
+	}
+
+	for range len(stages) + 5 {
+		key(m, "down")
+	}
+	if page.cursor != len(stages)-1 {
+		t.Errorf("cursor = %d, want it clamped to %d", page.cursor, len(stages)-1)
+	}
+
+	for range len(stages) + 5 {
+		key(m, "up")
+	}
+	if page.cursor != 0 {
+		t.Errorf("cursor = %d, want it clamped to 0", page.cursor)
+	}
+}
+
+func TestRunPageTogglesDryAndPush(t *testing.T) {
+	m := testModel(t)
+	key(m, "2")
+	page := m.pages[viewRun].(*runPage)
+
+	if page.dry || page.push {
+		t.Fatal("dry and push should both start off")
+	}
+
+	key(m, "d")
+	if !page.dry {
+		t.Error("d did not turn dry run on")
+	}
+	key(m, "p")
+	if !page.push {
+		t.Error("p did not arm push")
+	}
+	key(m, "d")
+	key(m, "p")
+	if page.dry || page.push {
+		t.Error("the toggles did not turn back off")
+	}
+}
+
+// Pushing reaches outside this machine, so it must never start on one keypress.
+func TestPublishAsksBeforePushing(t *testing.T) {
+	m := testModel(t)
+	key(m, "2")
+	page := m.pages[viewRun].(*runPage)
+
+	page.cursor = stageIndex(t, "publish")
+	key(m, "p") // arm push
+	key(m, "enter")
+
+	if page.confirming == nil {
+		t.Fatal("publish with push armed started without asking")
+	}
+	if page.running {
+		t.Fatal("the stage started before the confirmation was answered")
+	}
+
+	key(m, "n")
+	if page.confirming != nil {
+		t.Error("n did not dismiss the confirmation")
+	}
+	if page.running {
+		t.Error("n started the stage anyway")
+	}
+}
+
+// Without push armed, publish only commits locally and needs no confirmation.
+func TestPublishWithoutPushDoesNotAsk(t *testing.T) {
+	m := testModel(t)
+	key(m, "2")
+	page := m.pages[viewRun].(*runPage)
+
+	page.cursor = stageIndex(t, "publish")
+	key(m, "enter")
+
+	if page.confirming != nil {
+		t.Error("publish asked for confirmation when push was not armed")
+	}
+}
+
+// A dry run cannot reach the remote, so it needs no confirmation either.
+func TestPublishDryDoesNotAsk(t *testing.T) {
+	m := testModel(t)
+	key(m, "2")
+	page := m.pages[viewRun].(*runPage)
+
+	page.cursor = stageIndex(t, "publish")
+	key(m, "p")
+	key(m, "d")
+	key(m, "enter")
+
+	if page.confirming != nil {
+		t.Error("a dry publish asked to confirm a push it cannot perform")
+	}
+}
+
+// Stages needing a provider must say so rather than failing deep in the run.
+func TestLLMStagesRefuseWithoutAProvider(t *testing.T) {
+	for _, name := range []string{"write", "digest"} {
+		t.Run(name, func(t *testing.T) {
+			m := testModel(t)
+			t.Setenv("GEMINI_API_KEY", "")
+			t.Setenv("NVIDIA_NIM_API_KEY", "")
+			t.Setenv("OPENROUTER_API_KEY", "")
+
+			key(m, "2")
+			page := m.pages[viewRun].(*runPage)
+			page.cursor = stageIndex(t, name)
+
+			if m.pipe.HasLLM() {
+				t.Skip("a provider is configured in this environment")
+			}
+			key(m, "enter")
+
+			if page.running {
+				t.Error("the stage started without a provider")
+			}
+			if !m.statusErr {
+				t.Error("no error explained the missing provider")
+			}
+			if !strings.Contains(m.status, "API_KEY") {
+				t.Errorf("status = %q, want it to name the missing key", m.status)
+			}
+		})
+	}
+}
+
+func stageIndex(t *testing.T, key string) int {
+	t.Helper()
+	for i, s := range stages {
+		if s.key == key {
+			return i
+		}
+	}
+	t.Fatalf("no stage named %q", key)
+	return 0
+}
+
+// --- browse coverage --------------------------------------------------------
+
+func TestBrowseCyclesEveryMode(t *testing.T) {
+	m := testModel(t)
+	key(m, "7")
+	page := m.pages[viewBrowse].(*browsePage)
+
+	seen := map[int]bool{page.mode: true}
+	for range modeCount {
+		key(m, "right")
+		seen[page.mode] = true
+	}
+	if len(seen) != modeCount {
+		t.Errorf("reached %d of %d browse modes", len(seen), modeCount)
+	}
+
+	// Cycling right all the way round returns to where it started.
+	if page.mode != modeItems {
+		t.Errorf("mode = %d after a full cycle, want %d", page.mode, modeItems)
+	}
+}
+
+func TestBrowseModeLabelsAreComplete(t *testing.T) {
+	for i, label := range modeLabels {
+		if label == "" {
+			t.Errorf("browse mode %d has no label", i)
+		}
+	}
+}

@@ -2,6 +2,7 @@ package tui
 
 import (
 	"fmt"
+	"path/filepath"
 	"strings"
 	"time"
 
@@ -9,6 +10,7 @@ import (
 
 	"github.com/papitsho/airfoil/internal/config"
 	"github.com/papitsho/airfoil/internal/model"
+	"github.com/papitsho/airfoil/internal/score"
 	"github.com/papitsho/airfoil/internal/store"
 )
 
@@ -24,7 +26,12 @@ type dataStats struct {
 	ItemDays    int
 	Clusters    int
 	MultiSource int
+	Ranked      int
+	Major       int
+	Notable     int
 	Stories     int
+	Markdown    int
+	DigestFiles int
 	SeenURLs    int
 	LastRun     *time.Time
 	Err         error
@@ -91,9 +98,31 @@ func loadStats(cfg *config.Config) tea.Cmd {
 			}
 		}
 
+		ranked, err := store.ReadJSONOr(cfg.DataDir+"/ranked.json", []score.Result(nil))
+		if err == nil {
+			out.Ranked = len(ranked)
+			for _, r := range ranked {
+				switch r.Tier {
+				case model.TierMajor:
+					out.Major++
+				case model.TierNotable:
+					out.Notable++
+				}
+			}
+		}
+
 		stories, err := store.ReadJSONOr(cfg.StoriesPath(), []model.Story(nil))
 		if err == nil {
 			out.Stories = len(stories)
+		}
+
+		// The markdown collection is the product; count it directly rather
+		// than trusting stories.json to match.
+		if files, err := filepath.Glob(filepath.Join(cfg.StoriesDir, "*.md")); err == nil {
+			out.Markdown = len(files)
+		}
+		if files, err := filepath.Glob(filepath.Join(cfg.DigestDir(), "*")); err == nil {
+			out.DigestFiles = len(files)
 		}
 
 		return statsMsg(out)
@@ -113,7 +142,9 @@ func (d *dashboard) View(m *Model, width, height int) string {
 	s := d.stats
 	left.WriteString(statLine("items on disk", fmt.Sprintf("%d across %d days", s.Items, s.ItemDays)))
 	left.WriteString(statLine("clusters", fmt.Sprintf("%d (%d multi-source)", s.Clusters, s.MultiSource)))
-	left.WriteString(statLine("stories", fmt.Sprint(s.Stories)))
+	left.WriteString(statLine("ranked", fmt.Sprintf("%d — %d major, %d notable", s.Ranked, s.Major, s.Notable)))
+	left.WriteString(statLine("stories", fmt.Sprintf("%d (%d markdown files)", s.Stories, s.Markdown)))
+	left.WriteString(statLine("digest files", fmt.Sprint(s.DigestFiles)))
 	left.WriteString(statLine("seen urls", fmt.Sprint(s.SeenURLs)))
 
 	lastRun := styleDim.Render("never")
