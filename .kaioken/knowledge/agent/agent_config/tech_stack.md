@@ -1,0 +1,1 @@
+Go standard library only (os, filepath, strings, bufio, errors, fmt, io/fs). JSON decoding via internal/store.ReadJSON (generic wrapper around encoding/json). No external config libraries (viper, etc.) or .env parsers (godotenv).

@@ -1,0 +1,1 @@
+Thin Cobra CLI entry point for the Airfoil agent. Defines root command with persistent flags (--config, --data, --verbose, --since), a version subcommand printing build metadata, and a doctor subcommand that validates configuration, embedder/LLM provider setup, and ingest credentials. All business logic delegates to internal/ packages; main.go only executes the root command.

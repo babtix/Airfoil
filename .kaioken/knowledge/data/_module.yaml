@@ -1,0 +1,10 @@
+description: 'Runtime outputs: ranked index, deduplication state, and published stories.'
+file_count: 3
+generated_at: "2026-08-17T22:08:10Z"
+id: data
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+scope:
+    - data/index.json
+    - data/state.json
+    - data/stories.json
+title: Generated Pipeline Data

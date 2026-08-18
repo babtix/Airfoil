@@ -1,0 +1,10 @@
+description: Top-level configuration, environment template, and agent documentation.
+file_count: 3
+generated_at: "2026-08-17T22:05:32Z"
+id: root
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+scope:
+    - .env.example
+    - .gitignore
+    - AGENTS.md
+title: Repository Root

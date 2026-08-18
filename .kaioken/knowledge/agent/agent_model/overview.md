@@ -1,0 +1,1 @@
+The model package defines the core data contracts (Item, Cluster, Story, Index, State) that flow between the agent's pipeline stages: ingest, cluster, score, and write. It also provides the State type persisted to data/state.json for idempotent runs (R7) and the SourceType helper that maps source tiers to site-rendered categories.

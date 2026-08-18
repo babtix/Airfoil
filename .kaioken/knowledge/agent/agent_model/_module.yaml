@@ -1,0 +1,8 @@
+description: Shared Go structs for items, stories, sources, and pipeline state.
+file_count: 1
+generated_at: "2026-08-17T22:06:22Z"
+id: agent/agent_model
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+scope:
+    - agent/internal/model/types.go
+title: Core Data Types
