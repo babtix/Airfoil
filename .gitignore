@@ -22,3 +22,8 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+data/clusters.json
+data/ranked.json
+
+# Third-party tool binary, not part of the project
+kaioken-v*.exe
