@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "airfoil-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "--prefix", "site", "dev"],
+      "port": 5173
+    }
+  ]
+}
