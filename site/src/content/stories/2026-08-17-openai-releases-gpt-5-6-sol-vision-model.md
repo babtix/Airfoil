@@ -2,8 +2,8 @@
 id: "3f46ecb123a1a1cc"
 title: "OpenAI releases GPT 5.6 Sol vision model"
 summary: "OpenAI announced GPT 5.6 Sol, describing it as its best vision model to date. The release provides developers with a state‑of‑the‑art model for image understanding tasks."
-score: 41
-tier: "notable"
+score: 28
+tier: "minor"
 tags: ["models", "research"]
 builder_relevant: true
 date: 2026-08-17T12:09:42Z

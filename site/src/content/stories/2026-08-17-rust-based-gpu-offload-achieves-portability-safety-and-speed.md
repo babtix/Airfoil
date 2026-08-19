@@ -2,8 +2,8 @@
 id: "4d8cbc4899b712a3"
 title: "Rust-based GPU offload achieves portability, safety, and speed"
 summary: "The paper presents a Rust-based approach to GPU offloading that emphasizes portability, safety, and performance."
-score: 40
-tier: "notable"
+score: 28
+tier: "minor"
 tags: ["tools", "infra", "coding"]
 builder_relevant: true
 date: 2026-08-17T17:54:59Z

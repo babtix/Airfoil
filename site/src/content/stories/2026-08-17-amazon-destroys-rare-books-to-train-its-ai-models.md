@@ -2,8 +2,8 @@
 id: "fef31711e9a27fc7"
 title: "Amazon destroys rare books to train its AI models"
 summary: "Amazon has been destroying rare books, with tracked shipments ending at its AI training facilities. The company says rare texts are valuable for training large language models because online data alone is insufficient. Evidence includes AirTag tracking and facility logs."
-score: 45
-tier: "notable"
+score: 25
+tier: "minor"
 tags: ["models", "business", "infra"]
 builder_relevant: true
 date: 2026-08-17T13:44:23Z

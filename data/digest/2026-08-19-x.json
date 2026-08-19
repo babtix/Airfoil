@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "text": "Two arXiv papers detail uncertainty estimation methods for medical image segmentation, highlighting trade‑offs between single‑forward‑pass efficiency and capturing ambiguity.",
+      "url": ""
+    },
+    {
+      "text": "Two arXiv papers on medical image seg uncertainty: SegWithU (single‑forward‑pass) and a note on uncertainty limits for 3D nodule detection. https://arxiv.org/abs/2604.15271",
+      "url": "https://arxiv.org/abs/2604.15271"
+    },
+    {
+      "text": "Self-distillation can recover LLM performance lost to compression but may impair mathematical reasoning. https://arxiv.org/abs/2604.15794",
+      "url": "https://arxiv.org/abs/2604.15794"
+    },
+    {
+      "text": "Cerebras CS-4 announcement lacks detail; only a Hacker News title points to the product page. https://www.cerebras.ai/cs4",
+      "url": "https://www.cerebras.ai/cs4"
+    },
+    {
+      "text": "Article shows how to geolocate a random island using geometric formulas implemented in CUDA for GPU acceleration. https://yassa9.github.io/osint/gralhix-004",
+      "url": "https://yassa9.github.io/osint/gralhix-004"
+    },
+    {
+      "text": "Web app lets users play a theremin by moving hands in front of a webcam, using browser motion detection to generate sound. https://theremin.bizibah.com",
+      "url": "https://theremin.bizibah.com"
+    },
+    {
+      "text": "https://airfoil.example.com",
+      "url": "https://airfoil.example.com"
+    }
+  ]
+}

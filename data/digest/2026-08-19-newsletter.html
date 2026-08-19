@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Airfoil — 2026-08-19</title>
+</head><body style="font-family:-apple-system,Segoe UI,sans-serif;max-width:640px;margin:0 auto;padding:24px;color:#111;line-height:1.5">
+<h1 style="font-size:20px;margin:0 0 4px">Airfoil</h1>
+<p style="color:#666;margin:0 0 24px;font-size:14px">Wednesday, 19 August 2026</p>
+<p style="font-size:16px;margin:0 0 32px">Today’s selections highlight how developers balance speed, accuracy, and robustness when moving from theory to practice. Examples range from GPU‑accelerated geometric localization and webcam‑based musical interaction to uncertainty estimates in medical segmentation and the effects of self‑distillation on language models. Together they underscore recurring trade‑offs in algorithm design.</p>
+<div style="margin:0 0 32px;padding:0 0 24px;border-bottom:1px solid #eee">
+<h2 style="font-size:17px;margin:0 0 8px">1. Geolocating a random island with geometry and CUDA <span style="color:#999;font-weight:normal;font-size:14px">52</span></h2>
+<p style="margin:0 0 12px">The article explains how to determine the location of a random island by applying geometric formulas and implementing them in CUDA for GPU acceleration, providing code snippets and performance considerations.</p>
+<ul style="margin:0 0 12px;padding-left:20px;color:#333">
+<li>Uses GPU acceleration via CUDA for geographic calculations.</li>
+<li>Demonstrates geometric methods to pinpoint island coordinates.</li>
+<li>Shows practical coding example for developers working with spatial data.</li>
+</ul>
+<p style="margin:0;font-size:13px;color:#666">
+<a href="https://yassa9.github.io/osint/gralhix-004" style="color:#0066cc">Hacker News</a>
+</p>
+</div>
+<div style="margin:0 0 32px;padding:0 0 24px;border-bottom:1px solid #eee">
+<h2 style="font-size:17px;margin:0 0 8px">2. Air Theremin: Browser Theremin Controlled via Webcam <span style="color:#999;font-weight:normal;font-size:14px">49</span></h2>
+<p style="margin:0 0 12px">Air Theremin is a web application that lets users play a theremin by moving their hands in front of a webcam, using browser-based motion detection to generate sound.</p>
+<ul style="margin:0 0 12px;padding-left:20px;color:#333">
+<li>Uses webcam motion detection for theremin control</li>
+<li>Runs entirely in the browser</li>
+<li>Open to anyone with a webcam</li>
+</ul>
+<p style="margin:0;font-size:13px;color:#666">
+<a href="https://theremin.bizibah.com" style="color:#0066cc">Hacker News</a>
+</p>
+</div>
+<div style="margin:0 0 32px;padding:0 0 24px;border-bottom:1px solid #eee">
+<h2 style="font-size:17px;margin:0 0 8px">3. Two papers examine uncertainty estimation for medical image segmentation <span style="color:#999;font-weight:normal;font-size:14px">48</span></h2>
+<p style="margin:0 0 12px">Researchers released two arXiv papers on uncertainty estimation for medical image segmentation. One introduces SegWithU, a single-forward-pass method that treats uncertainty as perturbation energy for risk-aware segmentation. The other shows aggregated aleatoric uncertainty fails to capture presence ambiguity in 3D lung nodule segmentation, suggesting limits of current entropy-based measures. For developers, these works highlight trade-offs between efficiency and fidelity in uncertainty quantification for medical imaging pipelines.</p>
+<ul style="margin:0 0 12px;padding-left:20px;color:#333">
+<li>SegWithU enables single-pass uncertainty estimation for faster risk-aware segmentation.</li>
+<li>Aggregated aleatoric uncertainty may miss presence ambiguity in 3D lung nodule tasks.</li>
+<li>Developers must balance speed and uncertainty fidelity in medical imaging pipelines.</li>
+</ul>
+<p style="margin:0;font-size:13px;color:#666">
+<a href="https://arxiv.org/abs/2604.15271" style="color:#0066cc">arXiv cs.AI</a> · <a href="https://arxiv.org/abs/2608.14766" style="color:#0066cc">arXiv cs.LG</a>
+</p>
+</div>
+<div style="margin:0 0 32px;padding:0 0 24px;border-bottom:1px solid #eee">
+<h2 style="font-size:17px;margin:0 0 8px">4. Cerebras CS-4 announcement details lacking <span style="color:#999;font-weight:normal;font-size:14px">47</span></h2>
+<p style="margin:0 0 12px">The provided sources contain only the title &#39;Cerebras CS-4&#39; from a Hacker News post with 405 points; no further details are available to summarize the announcement.</p>
+<ul style="margin:0 0 12px;padding-left:20px;color:#333">
+<li>Source: Hacker News article titled Cerebras CS-4</li>
+<li>HN points: 405</li>
+</ul>
+<p style="margin:0;font-size:13px;color:#666">
+<a href="https://www.cerebras.ai/cs4" style="color:#0066cc">Hacker News</a>
+</p>
+</div>
+<div style="margin:0 0 32px;padding:0 0 24px;border-bottom:1px solid #eee">
+<h2 style="font-size:17px;margin:0 0 8px">5. Self-distillation improves LLM retention but can hurt mathematical reasoning <span style="color:#999;font-weight:normal;font-size:14px">45</span></h2>
+<p style="margin:0 0 12px">Recent papers show self-distillation can recover LLM performance lost to compression and catastrophic forgetting, yet it may shorten responses and impair mathematical reasoning. For developers, this means applying self-distillation aids general robustness but requires checking task‑specific accuracy, especially in math‑heavy applications.</p>
+<ul style="margin:0 0 12px;padding-left:20px;color:#333">
+<li>Self-distillation counters compression and catastrophic forgetting in LLMs.</li>
+<li>Self-distillation may shorten responses and degrade mathematical reasoning.</li>
+<li>Developers must test self-distillation per task, particularly for math‑heavy use cases.</li>
+</ul>
+<p style="margin:0;font-size:13px;color:#666">
+<a href="https://arxiv.org/abs/2604.15794" style="color:#0066cc">arXiv cs.AI</a> · <a href="https://arxiv.org/abs/2603.24472" style="color:#0066cc">arXiv cs.CL</a>
+</p>
+</div>
+<p style="font-size:14px"><a href="https://airfoil.example.com">Read more on Airfoil</a></p>
+</body></html>

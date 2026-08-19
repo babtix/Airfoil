@@ -1,0 +1,839 @@
+[
+  {
+    "id": "086507d579a99587",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/pg83/solo",
+    "title": "Solo – a .so loader for static Linux binaries",
+    "excerpt": "",
+    "author": "zX41ZdbW",
+    "published_at": "2026-08-18T23:51:49Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 181,
+      "hn_comments": 205
+    },
+    "repo_url": "https://github.com/pg83/solo"
+  },
+  {
+    "id": "47b57fe9ee426cc0",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform",
+    "title": "Cursor capitalizes on GitHub frustration, launches rival hosting platform",
+    "excerpt": "Cursor, known for its AI Code Editor, is launching a new code-hosting platform to rival developers' long preferred favorite, GitHub.",
+    "author": "Lucas Ropek",
+    "published_at": "2026-08-18T22:14:25Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "75bb8d6c5587bf66",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://linear.app/data",
+    "title": "AI usage patterns in software teams",
+    "excerpt": "",
+    "author": "giuliomagnifico",
+    "published_at": "2026-08-18T22:08:07Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 171,
+      "hn_comments": 110
+    }
+  },
+  {
+    "id": "26ed078844ac8285",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://artificialanalysis.ai/models/glm-5-3",
+    "title": "GLM-5.3 Artificial Analysis Benchmarks",
+    "excerpt": "",
+    "author": "apitman",
+    "published_at": "2026-08-18T22:06:10Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 138,
+      "hn_comments": 52
+    }
+  },
+  {
+    "id": "679a48504aa8fd21",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vs3joh/glm53_artificial_analysis_benchmarks",
+    "title": "GLM5.3 Artificial Analysis Benchmarks",
+    "excerpt": "submitted by /u/anderspitman [link] [comments]",
+    "author": "/u/anderspitman",
+    "published_at": "2026-08-18T22:05:13Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "8393c843a171d723",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+    "title": "ChatGPT Ads expands across Europe",
+    "excerpt": "ChatGPT Ads is expanding to 31 European markets. Learn how advertisers can reach people as they explore, compare options, and make decisions.",
+    "published_at": "2026-08-18T22:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "9d46ade5d1942892",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/DenisSergeevitch/desktop-fly",
+    "title": "A 3D fruit fly on macOS desktop powered by the real FlyWire connectome",
+    "excerpt": "",
+    "author": "phoenix120",
+    "published_at": "2026-08-18T21:50:33Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 354,
+      "hn_comments": 163
+    },
+    "repo_url": "https://github.com/DenisSergeevitch/desktop-fly"
+  },
+  {
+    "id": "13dfb1b159b3c4e8",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vs2tsn/dflash_2_available_for_qwen_38_27b_and_muse",
+    "title": "DFlash 2 available for Qwen 3.8 27B and Muse Glimmer",
+    "excerpt": "Apparently a second version of DFlash from the original authors of DFlash GGUF quants are already made available with an accompanying llama.cpp PR: https://github.com/ggml-org/llama.cpp/pull/27342 submitted by /u/rerri [link] [comments]",
+    "author": "/u/rerri",
+    "published_at": "2026-08-18T21:36:48Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {},
+    "repo_url": "https://github.com/ggml-org/llama.cpp"
+  },
+  {
+    "id": "2335b295c04177ec",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://cdn.kuber.studio/chat/hp-laser-1008a-driver",
+    "title": "Claude Code teaching macOS to natively print to the HP Laser 1008a",
+    "excerpt": "",
+    "author": "amrrs",
+    "published_at": "2026-08-18T21:14:21Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 128,
+      "hn_comments": 3
+    }
+  },
+  {
+    "id": "54380f7923a5d988",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://lawsofsoftwareengineering.com/laws/dilbert-principle",
+    "title": "Companies promote incompetent employees to management to limit damage they do",
+    "excerpt": "",
+    "author": "behnamoh",
+    "published_at": "2026-08-18T21:13:30Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 75,
+      "hn_comments": 76
+    }
+  },
+  {
+    "id": "9dacb070e2467d0d",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vs0wsl/alibabas_riscv_cpu_xuantie_c950_runs_qwen38_27b",
+    "title": "Alibaba's RISC-V CPU, XuanTie C950, Runs Qwen-3.8 27B at 30 tps",
+    "excerpt": "Who needs GPUs? submitted by /u/DeltaSqueezer [link] [comments]",
+    "author": "/u/DeltaSqueezer",
+    "published_at": "2026-08-18T20:24:39Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "068161fbb4e485c8",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
+    "title": "Robin Williams’ Instagram account brought back to fight ‘AI abuse’",
+    "excerpt": "Robin Williams' children are taking over their father's Instagram account after his daughter spoke out against the use of his AI likeness, as reported earlier by The Wrap. In a post on Tuesday, Zak, Zelda, and Cody Williams write that they want the late actor's Instagram profile to be a \"safe…",
+    "author": "Emma Roth",
+    "published_at": "2026-08-18T19:48:26Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "5918a741bcb0759e",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+    "title": "OpenAI lays out new security changes after its AI hacked Hugging Face",
+    "excerpt": "OpenAI is announcing security updates following the July news that its AI broke out of a sandboxed environment and accidentally hacked Hugging Face, including improvements to its research environments, monitoring, and alignment techniques. The company had already put the brakes on a new model…",
+    "author": "Jay Peters",
+    "published_at": "2026-08-18T19:28:30Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "f0aa91974e0ad6ca",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+    "title": "Strengthening democratic oversight in national security",
+    "excerpt": "OpenAI launches an initiative to strengthen democratic oversight of AI in national security, supporting government institutions with tools, training, and expertise.",
+    "published_at": "2026-08-18T19:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "a0e9441b39e890dc",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vry2ns/and_here_we_are",
+    "title": "and here we are",
+    "excerpt": "submitted by /u/johnnyApplePRNG [link] [comments]",
+    "author": "/u/johnnyApplePRNG",
+    "published_at": "2026-08-18T18:43:52Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "5ba78b757300e8cc",
+    "source_id": "hf-blog",
+    "source_name": "Hugging Face Blog",
+    "source_tier": 2,
+    "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+    "title": "How Much Memory Does Your Agent Actually Need?",
+    "excerpt": "",
+    "published_at": "2026-08-18T18:09:38Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "c99f54343031ec1f",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/RyanCodrai/turbovec",
+    "title": "Turbovec – Google's TurboQuant for vector search in Rust",
+    "excerpt": "",
+    "author": "fittingopposite",
+    "published_at": "2026-08-18T18:07:21Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 282,
+      "hn_comments": 32
+    },
+    "repo_url": "https://github.com/RyanCodrai/turbovec"
+  },
+  {
+    "id": "1a3ef848db3d8725",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach",
+    "title": "OpenAI institutes new safeguards after Hugging Face breach",
+    "excerpt": "The new safeguards include more detailed monitoring of models during the development process, as well as greater emphasis on alignment and security during the post-training process.",
+    "author": "Russell Brandom",
+    "published_at": "2026-08-18T18:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "e3f6c39df17e7317",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrwsfl/memory_prices_climb_500_in_12_months_up_to_10x",
+    "title": "Memory prices climb 500% in 12 months, up to 10x the lowest ever tracked prices - 128GB of DDR5 now $3,399",
+    "excerpt": "submitted by /u/johnnyApplePRNG [link] [comments]",
+    "author": "/u/johnnyApplePRNG",
+    "published_at": "2026-08-18T17:59:01Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "d975dad9da538d93",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/024501/1233035/Data-Center-Waste-Heat-as-an-Emerging-Urban",
+    "title": "Field measurements of neighborhood-scale air temperature impacts of data centers",
+    "excerpt": "",
+    "author": "cwwc",
+    "published_at": "2026-08-18T17:24:53Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 307,
+      "hn_comments": 471
+    }
+  },
+  {
+    "id": "27811b48920ab769",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month",
+    "title": "Etched’s valuation doubles to $21B in a month",
+    "excerpt": "Jane Street has installed Etched's first shipped AI cluster system, and was so impressed, it led another massive round, the startup says.",
+    "author": "Julie Bort",
+    "published_at": "2026-08-18T17:21:58Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "684bacf7345eca9f",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
+    "title": "Claude Code May–August 2026 weekly limits promotion",
+    "excerpt": "",
+    "author": "tyre",
+    "published_at": "2026-08-18T17:02:15Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 286,
+      "hn_comments": 256
+    }
+  },
+  {
+    "id": "643e0d1b98ca53a7",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/977733/amazon-order-emails-google-gmail-ai-agents-data",
+    "title": "Why your Amazon order confirmation emails have become so unhelpful",
+    "excerpt": "",
+    "author": "Macha",
+    "published_at": "2026-08-18T16:54:42Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 75,
+      "hn_comments": 30
+    }
+  },
+  {
+    "id": "850258eb8ed156d5",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://status.claude.com/incidents/q7txxvbsftgq",
+    "title": "Degraded performance for multiple models",
+    "excerpt": "",
+    "author": "matt89",
+    "published_at": "2026-08-18T16:28:20Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 149,
+      "hn_comments": 132
+    }
+  },
+  {
+    "id": "3e6d22f2b773ec27",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://cursor.com/blog/git-at-any-scale",
+    "title": "Git at Any Scale",
+    "excerpt": "",
+    "author": "meetpateltech",
+    "published_at": "2026-08-18T16:26:56Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 51,
+      "hn_comments": 5
+    }
+  },
+  {
+    "id": "970990b3d767b409",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://machine0.io",
+    "title": "Launch HN: machine0 (YC S26) – Persistent CPU and GPU VMs from the CLI",
+    "excerpt": "Hi HN! I’m Barnaby, founder of machine0 (https://machine0.io). I’m building a CLI for long horizon agent compute: `machine0 new mybox` gives your agent a persistent cloud VM, billed by the minute, from $0.013/hr up to 60 vCPU / 240 GB RAM and GPUs (H100s, H200s etc), with 99.99% VM level uptime.…",
+    "author": "bwm",
+    "published_at": "2026-08-18T16:26:42Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 80,
+      "hn_comments": 43
+    }
+  },
+  {
+    "id": "b8ecc51d8d48a9aa",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear",
+    "title": "Why Apple’s camera-equipped AirPods may not be the ‘pervert pods’ consumers fear",
+    "excerpt": "Apple’s leaked camera-equipped AirPods might avoid the privacy pitfalls of other AI wearables by preventing users from recording photos and videos.",
+    "author": "Sarah Perez",
+    "published_at": "2026-08-18T16:19:10Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "1fe17a71daf8307e",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/therepanic/openleetcode",
+    "title": "Show HN: Openleetcode – Local LeetCode runner where tests live in the repo",
+    "excerpt": "You write a standard solution, just like on LeetCode, and run it through the CLI. It identifies the problem by ID or title, executes your code against local test cases, and shows the result. It currently supports around 1.4k problems and multiple languages, including Python, C++, Rust, Java, Go…",
+    "author": "therepanic",
+    "published_at": "2026-08-18T15:30:40Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 68,
+      "hn_comments": 17
+    },
+    "repo_url": "https://github.com/therepanic/openleetcode"
+  },
+  {
+    "id": "0f04423ffac2528a",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrqf4f/running_deepseek_v4_flash_q4_k_xl_at_100_toks",
+    "title": "Running DeepSeek V4 Flash Q4_K_XL at ~100 tok/s prompt processing on 4× RTX 3060 12GB",
+    "excerpt": "I managed to run the 143–144 GiB DeepSeek-V4-Flash-0731 UD-Q4_K_XL GGUF on four RTX 3060 12GB cards while keeping a 360k–376k context window. Hardware: CPU: Intel Core i9-10920X, 12C/24T RAM: 128 GB DDR4-3200, quad-channel GPU: 4× NVIDIA RTX 3060 12GB Total VRAM: 48 GB Storage: NVMe SSD Engine…",
+    "author": "/u/syscomua",
+    "published_at": "2026-08-18T14:15:29Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "171f975911a6f857",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development",
+    "title": "Warp’s new system is an out-of-the-box software factory for AI development",
+    "excerpt": "On Tuesday, Warp introduced Warp Factories, a new infrastructure system designed to make building AI software factories as easy as possible.",
+    "author": "Russell Brandom",
+    "published_at": "2026-08-18T14:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "7aa778327f7a4203",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it",
+    "title": "OpenAI launches a safer ChatGPT for teens — years after teens started using it",
+    "excerpt": "ChatGPT for Teens adds age-appropriate safety measures, parental controls, and learning tools designed to steer teens away from harmful content — and from using AI to cheat on their homework.",
+    "author": "Sarah Perez",
+    "published_at": "2026-08-18T13:50:30Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "921d4bbc23fd8b84",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india",
+    "title": "Perplexity’s free AI offer left it with millions more users in India",
+    "excerpt": "Perplexity's India revenue rose about 60% after the Airtel offer ended for new users, even as downloads declined.",
+    "author": "Jagmeet Singh",
+    "published_at": "2026-08-18T13:45:40Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "c9c7f84c9c0c1ab3",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
+    "title": "Firefox’s Smart Window promises a better AI browser",
+    "excerpt": "Starting today, AI chats in Firefox's Smart Window AI browsing mode can pull from current web info and show source links in chat responses through a partnership with Exa. Smart Window can also now automatically suggest tab groups and show visual previews of pages you previously visited when you…",
+    "author": "Stevie Bonifield",
+    "published_at": "2026-08-18T13:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "8a29e8cb39cdb074",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://twitter.com/kuberwastaken/status/2089377982536388964",
+    "title": "Claude writing a macOS driver for my obscure HP printer built only for Windows",
+    "excerpt": "https://xcancel.com/kuberwastaken/status/2089377982536388964 https://cdn.kuber.studio/chat/hp-laser-1008a-driver",
+    "author": "porridgeraisin",
+    "published_at": "2026-08-18T12:22:58Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 284,
+      "hn_comments": 205
+    }
+  },
+  {
+    "id": "64ee2a6e04f6a448",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/tech/981269/google-home-gemini-pet-memory-nest-camera-review",
+    "title": "Google’s Pet Memory forgot who my cats are",
+    "excerpt": "One of the best things my smart home does is help me care for my pets, and security cameras are particularly useful for keeping track of my many critters. But the barrage of notifications they send often means I miss important ones. So, when Google announced its new Pet Memory feature for Gemini…",
+    "author": "Jennifer Pattison Tuohy",
+    "published_at": "2026-08-18T12:01:29Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "6d4ec902c728a021",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/partnering-with-codeai",
+    "title": "Partnering with CodeAI to prepare the first AI generation",
+    "excerpt": "OpenAI and CodeAI are partnering to help students build AI literacy, think critically about AI, and develop the skills to use and shape it responsibly.",
+    "published_at": "2026-08-18T11:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "9c25f4ae7a186d68",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+    "title": "Pacing model development in an era of cyber-critical capabilities",
+    "excerpt": "OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development.",
+    "published_at": "2026-08-18T11:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "c3b0ed374d416807",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/chatgpt-for-teens",
+    "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+    "excerpt": "ChatGPT for Teens helps teens learn, think critically, and use AI with confidence, with stronger built-in protections, healthy-use features, and additional controls for parents.",
+    "published_at": "2026-08-18T11:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "bf599835c6da6b18",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/transportation/981194/faa-air-traffic-elon-musk-peter-thiel-palantir",
+    "title": "Elon Musk broke the FAA — Palantir is picking up the pieces",
+    "excerpt": "On August 6th, the Minneapolis Air Route Traffic Control Center lost radar and communications for around two hours. The outage disrupted more than 1,100 flights across the center's 330,000 square mile, nine-state airspace sector. Two days earlier, on August 4th, President Donald Trump departed the…",
+    "author": "Darryl Campbell",
+    "published_at": "2026-08-18T11:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "ba537370f7532a78",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
+    "title": "ChatGPT is getting a dedicated mode for teens",
+    "excerpt": "ChatGPT for Teens includes safeguards and parental controls. | Image: OpenAI OpenAI is introducing a dedicated ChatGPT mode for teenagers, combining existing youth safeguards and new safety features under one roof. The launch comes amid mounting public scrutiny over how AI tools affect younger…",
+    "author": "Robert Hart",
+    "published_at": "2026-08-18T11:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "16a7068d982b3f82",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
+    "title": "Google has acquired the data of failed US airline Spirit",
+    "excerpt": "",
+    "author": "pseudolus",
+    "published_at": "2026-08-18T10:13:28Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 593,
+      "hn_comments": 413
+    }
+  },
+  {
+    "id": "abe15a101a64c60a",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/tech/981326/apple-airpods-with-cameras-demo-video-leak",
+    "title": "Apple’s camera-equipped AirPods appear in leaked video",
+    "excerpt": "The AirPods in the video look like a chunkier version of Apple’s AirPods Pro 3. | Image: Apple / MacRumors We may have our first glimpse of Apple's rumored camera-equipped AirPods, thanks to a video that MacRumors found in the macOS Tahoe 26.7 Release Candidate. The short video clip features a man…",
+    "author": "Jess Weatherbed",
+    "published_at": "2026-08-18T09:00:01Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "6023038a8912cd08",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/asana",
+    "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+    "excerpt": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years for about $12K.",
+    "published_at": "2026-08-18T07:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "3cd8d1ae7a9d22dd",
+    "source_id": "github-trending-ai",
+    "source_name": "GitHub Trending",
+    "source_tier": 3,
+    "url": "https://github.com/amitshekhariitbhu/llm-inference-engineering",
+    "title": "amitshekhariitbhu/llm-inference-engineering: Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.",
+    "excerpt": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.",
+    "author": "amitshekhariitbhu",
+    "published_at": "2026-08-18T03:10:26Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "github_stars": 161
+    },
+    "repo_url": "https://github.com/amitshekhariitbhu/llm-inference-engineering"
+  },
+  {
+    "id": "0d4b8df95f80a5c5",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://news.ycombinator.com/item?id=49340013",
+    "title": "Ask HN: Does anyone else feel like nothing matters anymore?",
+    "excerpt": "New software releases? Who cares. Learning new CS concepts? Whatever. Studying for the next interview? Job probably won't even exist in a year. Working on that side project? No one will care because it's just another addition to the mountain of slop, and the guy bagging your groceries can do it.…",
+    "author": "ramesh31",
+    "published_at": "2026-08-18T01:28:48Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 262,
+      "hn_comments": 166
+    }
+  },
+  {
+    "id": "99bcb51538272292",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.axios.com/2026/08/17/google-spirit-airlines-bankruptcy",
+    "title": "Google wins bankruptcy auction for Spirit Airlines emails, chats, documents",
+    "excerpt": "",
+    "author": "sgustard",
+    "published_at": "2026-08-18T00:29:15Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 94,
+      "hn_comments": 38
+    }
+  },
+  {
+    "id": "baf07daff59f271b",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/nvidia/chatgpt-work",
+    "title": "How NVIDIA scales expertise with ChatGPT Work",
+    "excerpt": "NVIDIA teams use ChatGPT Work to reduce manual tasks, connect fast-moving signals, and scale successful workflows globally.",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "d9524ab76177d5be",
+    "source_id": "hf-blog",
+    "source_name": "Hugging Face Blog",
+    "source_tier": 2,
+    "url": "https://huggingface.co/blog/multi-vector-encoder",
+    "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
+    "excerpt": "",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "332a3b0abd8c2804",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.18063",
+    "title": "EDITBRIDGE: Towards Faithful and Efficient Ultra-High-Resolution Image Editing",
+    "excerpt": "High-resolution image editing is increasingly demanded in professional workflows, yet existing diffusion-based models remain constrained to resolutions below 1K due to quadratic attention complexity and prohibitive memory requirements. A prevalent workaround employs a two-stage pipeline: editing…",
+    "author": "Jiayi Song",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hf_upvotes": 20
+    },
+    "paper_url": "https://arxiv.org/abs/2608.18063"
+  },
+  {
+    "id": "90732607d4ed49a1",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.17566",
+    "title": "CoinVE-200K: A Large-Scale High-Quality Dataset for Compositional Instruction-Guided Video Editing",
+    "excerpt": "The quality and diversity of instruction-based video editing datasets are steadily improving, yet existing datasets mainly focus on single editing operations and fall short in supporting compositional instruction-guided video editing. In particular, multiple editing intents must be jointly…",
+    "author": "Fuchen Long",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hf_upvotes": 13
+    },
+    "paper_url": "https://arxiv.org/abs/2608.17566"
+  },
+  {
+    "id": "dcca84c4e1f973c3",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.17528",
+    "title": "Agent Lightning v1.0: Towards Harnessed Agentic RL",
+    "excerpt": "Modern agents operate inside agent harnesses that manage tools, context, and control flow, making the harness a critical part of the agent system. Our original Agent Lightning introduced a disaggregated architecture that connects arbitrary agents to RL training through an LLM endpoint proxy, an…",
+    "author": "Zhiyuan He",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hf_upvotes": 15
+    },
+    "paper_url": "https://arxiv.org/abs/2608.17528"
+  },
+  {
+    "id": "c0ce74898e369f33",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.17597",
+    "title": "HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety",
+    "excerpt": "Large language models are increasingly deployed through agent harnesses that manage tools, extensions, persistent state, permissions, and external actions. Existing safety benchmarks mainly target individual attack mechanisms or a limited subset of operational settings, making it difficult to…",
+    "author": "Yajing Bai",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hf_upvotes": 7
+    },
+    "paper_url": "https://arxiv.org/abs/2608.17597"
+  },
+  {
+    "id": "f3ad333754ed0e54",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.17512",
+    "title": "Embodied-Navigator: Point, Think, Memorize, and Align for Efficient Navigation",
+    "excerpt": "Although Large Vision-Language Models (VLMs) have significantly advanced embodied navigation, their direct deployment remains challenging, as existing methods often force VLMs into unnatural action spaces that misalign with their 2D pre-training priors, compounded by rigid reasoning schedules and…",
+    "author": "Hongyan Feng",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hf_upvotes": 38
+    },
+    "paper_url": "https://arxiv.org/abs/2608.17512"
+  },
+  {
+    "id": "58b88af007ff5662",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.18076",
+    "title": "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation",
+    "excerpt": "Large-scale image generation has benefited from advances in data scale, quality, rebalancing, and recaptioning, yet conventional pipelines typically optimize task-specific datasets in isolation. A central challenge is not only how to curate each task-specific corpus, but also how to organize…",
+    "author": "Xingjian Wang",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hf_upvotes": 9
+    },
+    "paper_url": "https://arxiv.org/abs/2608.18076"
+  },
+  {
+    "id": "885bf07b179258b5",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.17271",
+    "title": "ASI-Bench: At the Dawn of Artificial Superintelligence",
+    "excerpt": "Artificial superintelligence (ASI) requires AI to move beyond mastering existing knowledge toward exploring the unknown, creating new knowledge, and turning new ideas into verifiable results. However, the capabilities of today's AI systems are still largely built on learning, compressing, and…",
+    "author": "Junwei Zhou",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hf_upvotes": 48
+    },
+    "paper_url": "https://arxiv.org/abs/2608.17271"
+  },
+  {
+    "id": "89c0331b7b94f4b1",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.17286",
+    "title": "Abra: Scaling Diffusion Image Training",
+    "excerpt": "Compute-optimal scaling laws guide the training of frontier language models yet remain largely unexplored for visual generation. We present a systematic scaling law study for text-to-image diffusion models using Abra, a controlled family of flow-matching transformers trained across three orders of…",
+    "author": "Kyle Chickering",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hf_upvotes": 6
+    },
+    "paper_url": "https://arxiv.org/abs/2608.17286"
+  },
+  {
+    "id": "9c56cb8a64c3f655",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.17800",
+    "title": "StartupBench: Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows",
+    "excerpt": "Recent advances in Large Language Models(LLMs) and agents have substantially improved the ability of AI systems to execute complex tasks. Yet existing benchmarks largely rely on researcher-selected tasks, leaving uncertain whether such progress extends to the work that real-world users actually…",
+    "author": "Liya Zhu",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hf_upvotes": 8
+    },
+    "paper_url": "https://arxiv.org/abs/2608.17800"
+  },
+  {
+    "id": "435bfd44fbd008da",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.17310",
+    "title": "Agentic ESOpt: Fine-Tuning Long-Horizon LLM Agents with Minimal GPU Requirements",
+    "excerpt": "Reinforcement Learning (RL) has been promising in single-turn LLM fine-tuning. However, long-horizon agentic reasoning introduces increasingly branching interactions and sparse rewards, exposing several limitations of RL: its heavyweight backpropagation-based training stack makes it impractical to…",
+    "author": "Zhi Zheng",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hf_upvotes": 88
+    },
+    "paper_url": "https://arxiv.org/abs/2608.17310"
+  }
+]

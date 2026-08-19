@@ -1,5 +1,34 @@
 [
   {
+    "id": "2b3016495e0d30c1",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b",
+    "title": "Anthropic’s annualized revenue surges to $65B",
+    "excerpt": "The model maker added $18 billion in annualized revenue in two months.",
+    "author": "Marina Temkin",
+    "published_at": "2026-08-17T23:56:26Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "2327d9ca60e79ebc",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.fast.ai/posts/2026-08-18-returning-to-AI",
+    "title": "My friends all hate AI; I just joined an AI startup",
+    "excerpt": "",
+    "author": "eamag",
+    "published_at": "2026-08-17T21:47:30Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 57,
+      "hn_comments": 206
+    }
+  },
+  {
     "id": "65be739f4b8bdbbb",
     "source_id": "techcrunch-ai",
     "source_name": "TechCrunch AI",
@@ -11,6 +40,54 @@
     "published_at": "2026-08-17T21:27:05Z",
     "fetched_at": "2026-08-17T22:17:22.9924177Z",
     "metrics": {}
+  },
+  {
+    "id": "f8a2ad7a615b241b",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://openrouter.ai/openai/gpt-5.6-sol",
+    "title": "GPT-5.6 Sol Pricing Cut by 50% on OpenRouter",
+    "excerpt": "",
+    "author": "Topfi",
+    "published_at": "2026-08-17T21:03:18Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 625,
+      "hn_comments": 448
+    }
+  },
+  {
+    "id": "afbb84ca6d46ccd4",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://responsiblestatecraft.org/israel-influence-chatgpt",
+    "title": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
+    "excerpt": "",
+    "author": "DeepLogin",
+    "published_at": "2026-08-17T20:46:10Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 1036,
+      "hn_comments": 795
+    }
+  },
+  {
+    "id": "bdcdafaa32cd6560",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://status.cursor.com/incidents/l9h9vrd726jv",
+    "title": "GitHub degradation affects Cursor Origin, its new Git platform",
+    "excerpt": "",
+    "author": "KGC3D",
+    "published_at": "2026-08-17T20:13:27Z",
+    "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {
+      "hn_points": 67,
+      "hn_comments": 27
+    }
   },
   {
     "id": "7d49aacaa67b4da8",

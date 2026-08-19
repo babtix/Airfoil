@@ -2,8 +2,8 @@
 id: "daef366a463427db"
 title: "Qwen3.8 27B Achieves Score 52 on Artificial Analysis"
 summary: "The Qwen3.8 27B language model obtained a score of 52 on the Artificial Analysis benchmark, according to a Hacker News post that received 256 points."
-score: 40
-tier: "notable"
+score: 28
+tier: "minor"
 tags: ["models", "research"]
 builder_relevant: true
 date: 2026-08-17T17:25:17Z
