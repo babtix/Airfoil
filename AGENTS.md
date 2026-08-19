@@ -33,6 +33,7 @@
 - **Content limits**: Max 300 chars of source text stored. Max one quote per source, <15 words. Summaries are original LLM prose.
 - **Zero client JS** except `/search` page.
 - **Design tokens**: `site/src/styles/tokens.css` — reference everywhere, no inline values.
+- **Wordmark**: `agent/AIRFOIL-settings.json` is the logo export the TUI banner is cut from (block face, `#ff0000 → #ffffff` diagonal). `internal/tui/logo.go` mirrors it — re-export and update both together.
 - **Dense layout**: ~25 stories per desktop screen on `/feed`.
 - **Agent commits**: `content: YYYY-MM-DD — N stories` — only commits touching `data/` or `site/src/content/`.
 

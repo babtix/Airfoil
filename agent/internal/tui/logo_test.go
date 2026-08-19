@@ -143,3 +143,49 @@ func TestGradientLeavesBlanksTransparent(t *testing.T) {
 		t.Errorf("gradient(blank) = %q, want two plain spaces", got)
 	}
 }
+
+// The dashboard is the widest thing the program draws. Whatever the terminal
+// size, it must stay inside it — and the banner must yield when the numbers
+// need the rows.
+func TestDashboardFitsAndYieldsTheBanner(t *testing.T) {
+	m := testModel(t)
+	d := m.pages[viewDashboard].(*dashboard)
+	d.loaded = true
+	d.stats = dataStats{Items: 1441, ItemDays: 30, Clusters: 812, MultiSource: 96,
+		Ranked: 812, Major: 41, Notable: 180, Stories: 120, Markdown: 120}
+
+	tests := []struct {
+		name          string
+		width, height int
+		banner        bool
+	}{
+		{"tall and wide", 120, 40, true},
+		{"short", 120, 18, false},
+		{"stacked and short", 60, 24, false},
+		{"too narrow for the mark", 40, 60, false},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			out := d.View(m, tt.width, tt.height)
+			for _, line := range strings.Split(out, "\n") {
+				if w := lipgloss.Width(line); w > tt.width {
+					t.Errorf("line is %d cells wide, over the %d given: %q", w, tt.width, line)
+				}
+			}
+			if got := strings.Contains(out, logoArt(logoWord)[0]); got != tt.banner {
+				t.Errorf("banner drawn = %v, want %v", got, tt.banner)
+			}
+			// Panels are dropped from the bottom when the rows run out, but
+			// the funnel and the most diagnostic panel are never optional.
+			if !strings.Contains(out, "pipeline") || !strings.Contains(out, "ingest by source") {
+				t.Error("a panel that should always be drawn went missing")
+			}
+			// Banner or not, the rail never loses the mark.
+			if !tt.banner && tt.width >= logoWidth()+4+statsMinWidth &&
+				!strings.Contains(out, logoWordmark()) {
+				t.Error("the rail lost its wordmark")
+			}
+		})
+	}
+}

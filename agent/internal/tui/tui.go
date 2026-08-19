@@ -338,12 +338,29 @@ func (m *Model) helpView() string {
 	return b.String()
 }
 
+// card renders a titled box with optional right-aligned metadata in the header.
+func card(title, meta, body string, width int) string {
+	inner := max(width-4, 8)
+	header := styleHeader.Render(title)
+	if meta != "" {
+		metaStyled := styleDim.Render(meta)
+		gap := max(inner-lipgloss.Width(header)-lipgloss.Width(metaStyled), 1)
+		header = header + repeat(" ", gap) + metaStyled
+	}
+	content := header + "\n" + body
+	return stylePanel.Width(max(width-2, 10)).Render(content)
+}
+
 // panel renders a titled box whose total width, borders included, is width.
 // lipgloss counts padding inside Width but draws the border outside it, so the
 // text a caller may fit is width-4.
 func panel(title string, body string, width int) string {
-	content := styleHeader.Render(title) + "\n" + body
-	return stylePanel.Width(max(width-2, 10)).Render(content)
+	return card(title, "", body, width)
+}
+
+// box is panel without a heading, for content that carries its own.
+func box(body string, width int) string {
+	return stylePanel.Width(max(width-2, 10)).Render(body)
 }
 
 // columns lays out two blocks side by side.
