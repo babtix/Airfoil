@@ -1,0 +1,52 @@
+[
+  {
+    "id": "230379597ffab64c",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/turtushig22-blip/tea5767-radio-tuner",
+    "title": "Tea5767-Radio-Tuner",
+    "excerpt": "",
+    "author": "turtushig22",
+    "published_at": "2026-08-15T23:54:35Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 58,
+      "hn_comments": 4
+    },
+    "repo_url": "https://github.com/turtushig22-blip/tea5767-radio-tuner"
+  },
+  {
+    "id": "bd34eaff7ea69c25",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://abc7.com/story/credit-card-debt-rises-126-trillion-nearing-time-record/19667289",
+    "title": "Credit card debt rises to $1.26T, nearing all-time record",
+    "excerpt": "",
+    "author": "lxm",
+    "published_at": "2026-08-15T23:22:59Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 64,
+      "hn_comments": 94
+    }
+  },
+  {
+    "id": "623bfefcef891201",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://arxiv.org/abs/2608.13122",
+    "title": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+    "excerpt": "",
+    "author": "Jimmc414",
+    "published_at": "2026-08-15T22:41:51Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 56,
+      "hn_comments": 7
+    },
+    "paper_url": "https://arxiv.org/abs/2608.13122"
+  }
+]

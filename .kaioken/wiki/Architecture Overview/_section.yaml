@@ -1,0 +1,14 @@
+generated_at: "2026-08-17T22:14:45Z"
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+section:
+    id: architecture_overview
+    title: Architecture Overview
+    goal: 'Describe the end-to-end system architecture: the Go agent pipeline (ingest → normalize → embed → cluster → score → summarize → write → commit → push), the static React site, Git as storage layer, and data flow between agent and site.'
+    files:
+        - AGENTS.md
+        - docs/AGENTS.md
+        - docs/CLAUDE.md
+        - agent/internal/config/config.go
+        - agent/internal/model/types.go
+        - site/src/types/story.ts
+summary: This section provides a high-level architectural tour of Airfoil, covering the two-process system (Go agent + static React site), the nine-stage agent pipeline, Git as the sole storage layer, and the data contracts that bind agent output to site input. It introduces the core Go types (Item, Cluster, Story, Index, State) and their TypeScript mirrors, the configuration-driven directory layout, and the idempotent data flow from ingestion through to deployed site.

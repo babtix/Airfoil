@@ -1,0 +1,11 @@
+description: Cobra command definitions for run, version, and doctor subcommands.
+file_count: 4
+generated_at: "2026-08-17T22:05:40Z"
+id: agent/agent_cmd
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+scope:
+    - agent/cmd/airfoil/doctor.go
+    - agent/cmd/airfoil/main.go
+    - agent/cmd/airfoil/root.go
+    - agent/cmd/airfoil/version.go
+title: CLI Entry Point

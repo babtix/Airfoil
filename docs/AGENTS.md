@@ -17,7 +17,7 @@ No database. No server. Git is the storage layer.
 ingest → normalize → embed → cluster → score → summarize → write .md → commit → push
 ```
 
-`agent/` is Go. `site/` is Astro. `config/` is JSON. `data/` is generated.
+`agent/` is Go. `site/` is React + Vite. `config/` is JSON. `data/` is generated.
 
 ---
 
@@ -45,7 +45,9 @@ ingest → normalize → embed → cluster → score → summarize → write .md
 - Implement exactly the interface you were given. If the interface is
   wrong, say so before implementing — do not silently change it.
 - No new dependencies without asking. Current allowed set:
-  `gofeed`, `cobra`, `errgroup`. Standard library for everything else.
+  `gofeed`, `cobra`, `errgroup`, and — for the TUI only —
+  `bubbletea`, `bubbles`, `lipgloss`. Standard library for everything else.
+  The Charm trio is confined to `internal/tui`; no pipeline package may import it.
 - No TODOs left in merged code. Either implement it or raise it.
 - Write the test alongside the code for pure functions.
 
@@ -57,8 +59,8 @@ ingest → normalize → embed → cluster → score → summarize → write .md
 - `fmt.Errorf("stage: %w", err)` for wrapping
 - Log with `log/slog`, structured, never `fmt.Println`
 
-**Astro**
-- Content collections with a Zod schema that mirrors frontmatter exactly
+**React + Vite**
+- Story types in `site/src/types/story.ts` mirror the frontmatter exactly
 - Zero client JS outside `/search`
 - Design tokens in `site/src/styles/tokens.css`, referenced everywhere
 - Dense layout — ~25 stories per desktop screen on `/feed`
@@ -66,7 +68,7 @@ ingest → normalize → embed → cluster → score → summarize → write .md
 ## Do not
 
 - Do not add a database, server, ORM, or API layer.
-- Do not add React, Vue, or Svelte to the Astro site.
+- Do not add a UI framework beyond the React + Vite stack already in `site/`.
 - Do not add features that are not in `BUILD_SPEC.md`.
 - Do not optimize the O(n²) clustering. n is ~600. It is fine.
 - Do not "fix" the spec. Raise it with Claude Code instead.

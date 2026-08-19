@@ -1,0 +1,60 @@
+{
+  "modules": {
+    "agent": {
+      "source_hash": "199cb72c2ecdfbee4a4a3f73a7f8979540f67c5a2e7e658f3980a36d80426fa3",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "generated_at": "2026-08-17T22:05:07.1015902Z",
+      "file_count": 2,
+      "commit": "75e19258c2dbad5a3a71104fd619944ea842ecb0"
+    },
+    "agent/agent_cmd": {
+      "source_hash": "9d950c0f9d47b5c8b5d00f9f0943084f7df67dbeaa64ca57b563fe4d73990c2d",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "generated_at": "2026-08-17T22:05:40.8462112Z",
+      "file_count": 4,
+      "commit": "75e19258c2dbad5a3a71104fd619944ea842ecb0"
+    },
+    "agent/agent_config": {
+      "source_hash": "7fa4e8b943d0bbb9c881fcb8beefc7e0ff43372e60e11fad7c6565ee94e35352",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "generated_at": "2026-08-17T22:06:22.2207209Z",
+      "file_count": 4,
+      "commit": "75e19258c2dbad5a3a71104fd619944ea842ecb0"
+    },
+    "agent/agent_model": {
+      "source_hash": "79912163a3bb1664554ebb98a6bbd13376609e0ce2ae34c21dcf29146e6f702b",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "generated_at": "2026-08-17T22:06:22.7150782Z",
+      "file_count": 1,
+      "commit": "75e19258c2dbad5a3a71104fd619944ea842ecb0"
+    },
+    "agent/agent_store": {
+      "source_hash": "36a26e2765310e2ea2f9dda4ac3539be0fd704ec37b1bc1112765591e67d1551",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "generated_at": "2026-08-17T22:07:57.0033375Z",
+      "file_count": 1,
+      "commit": "75e19258c2dbad5a3a71104fd619944ea842ecb0"
+    },
+    "config": {
+      "source_hash": "3d4a52227122201cb0d7c9bd91ab0ed94e46c507eef245067823faaf2c2e5bc4",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "generated_at": "2026-08-17T22:07:29.301726Z",
+      "file_count": 3,
+      "commit": "75e19258c2dbad5a3a71104fd619944ea842ecb0"
+    },
+    "data": {
+      "source_hash": "564b63fcd394b126ef4add44619bf9a7dbc8f417deaf73b95f008b16363bf923",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "generated_at": "2026-08-17T22:08:10.0629918Z",
+      "file_count": 3,
+      "commit": "75e19258c2dbad5a3a71104fd619944ea842ecb0"
+    },
+    "root": {
+      "source_hash": "9ad16f9a47cc32c3da6b0b28acd6fd8bc7d7066c38f5df5b76eb1a2b1f380ef5",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "generated_at": "2026-08-17T22:05:32.9233516Z",
+      "file_count": 3,
+      "commit": "75e19258c2dbad5a3a71104fd619944ea842ecb0"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+description: Reads and writes pipeline data (index, state, stories) as JSON files.
+file_count: 1
+generated_at: "2026-08-17T22:07:57Z"
+id: agent/agent_store
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+scope:
+    - agent/internal/store/json.go
+title: JSON Persistence

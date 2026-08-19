@@ -1,0 +1,181 @@
+# kaioken wiki plan — pass 1 of the deep documentation pipeline.
+# EDIT FREELY: rename sections, adjust goals/files, add or remove sections,
+# then run the wiki again. Delete this file to force a fresh global plan.
+version: 1
+multiplier: 3
+sections:
+    - id: getting_started
+      title: Getting Started
+      goal: Explain how to set up the development environment, configure environment variables, build the Go agent, run the React dev server, and execute the full pipeline locally.
+      files:
+        - .env.example
+        - AGENTS.md
+        - agent/go.mod
+        - agent/cmd/airfoil/main.go
+        - site/package.json
+        - site/vite.config.ts
+    - id: architecture_overview
+      title: Architecture Overview
+      goal: 'Describe the end-to-end system architecture: the Go agent pipeline (ingest → normalize → embed → cluster → score → summarize → write → commit → push), the static React site, Git as storage layer, and data flow between agent and site.'
+      files:
+        - AGENTS.md
+        - docs/AGENTS.md
+        - docs/CLAUDE.md
+        - agent/internal/config/config.go
+        - agent/internal/model/types.go
+        - site/src/types/story.ts
+    - id: agent_pipeline
+      title: Agent Pipeline Stages
+      goal: 'Detail each pipeline stage: ingest (RSS, HN, Reddit, HFPapers, GitHub), normalize (text cleaning, URL canonicalization, deduplication), embed (vector generation with fallback chain), cluster (O(n²) similarity grouping), score (tier-based weighting), summarize (LLM with provider fallback), and write (markdown + JSON output).'
+      files:
+        - agent/internal/ingest/ingest.go
+        - agent/internal/ingest/hn.go
+        - agent/internal/ingest/rss.go
+        - agent/internal/ingest/http.go
+        - agent/internal/normalize/normalize.go
+        - agent/internal/normalize/text.go
+        - agent/internal/normalize/url.go
+        - agent/internal/normalize/extract.go
+        - agent/internal/model/types.go
+        - agent/internal/store/json.go
+    - id: configuration_system
+      title: Configuration System
+      goal: Document the configuration loading mechanism (config.Load), environment variable precedence, JSON config files (sources.json, scoring.json, keywords.json), derived paths (ItemsDir, CacheDir, IndexPath, etc.), source enabling/disabling, and validation rules.
+      files:
+        - agent/internal/config/config.go
+        - agent/internal/config/files.go
+        - agent/internal/config/dotenv.go
+        - agent/internal/config/config_test.go
+        - config/sources.json
+        - config/scoring.json
+        - config/keywords.json
+    - id: data_models
+      title: Data Models & Types
+      goal: Define all core Go types (Item, Cluster, Story, IndexEntry, State, Source, Metrics) and their TypeScript mirrors (Story, Source, FilterState, DateWindow, SortOrder), including tier constants, serialization formats, and the 300-char excerpt limit enforcement.
+      files:
+        - agent/internal/model/types.go
+        - site/src/types/story.ts
+        - agent/internal/normalize/normalize.go
+        - agent/internal/config/files.go
+    - id: ingestion_sources
+      title: Ingestion Sources
+      goal: Detail each supported source type (RSS, Hacker News, Reddit, HuggingFace Papers, GitHub), their adapter implementations, fetch logic, rate limit handling, User-Agent requirements, and how source-specific options are configured in sources.json.
+      files:
+        - agent/internal/ingest/hn.go
+        - agent/internal/ingest/rss.go
+        - agent/internal/ingest/http.go
+        - agent/internal/ingest/ingest.go
+        - config/sources.json
+        - agent/internal/config/files.go
+    - id: normalization_deduplication
+      title: Normalization & Deduplication
+      goal: Explain text processing (HTML stripping, space collapsing, excerpt capping at 300 chars, title cleaning), URL canonicalization (wrapper unwrapping, variant collapsing, recursion bounds), repo/paper URL extraction, and idempotent deduplication via State.Seen/MarkSeen.
+      files:
+        - agent/internal/normalize/text.go
+        - agent/internal/normalize/url.go
+        - agent/internal/normalize/extract.go
+        - agent/internal/normalize/normalize.go
+        - agent/internal/normalize/normalize_test.go
+        - agent/internal/model/types.go
+    - id: embedding_clustering
+      title: Embedding & Clustering
+      goal: Document the embedder configuration (Ollama local default, Gemini for CI), model IDs via env vars, embedding cache at data/cache/, the O(n²) clustering algorithm, cluster-to-story conversion, and tier assignment (Major/Notable/Minor).
+      files:
+        - agent/internal/config/config.go
+        - agent/internal/model/types.go
+        - agent/internal/normalize/normalize.go
+        - data/index.json
+        - data/state.json
+    - id: scoring_ranking
+      title: Scoring & Ranking
+      goal: 'Detail the scoring algorithm: tier weights from scoring.json, keyword boosting from keywords.json, source type multipliers, recency decay, and how the final ranked index.json is produced for the site.'
+      files:
+        - config/scoring.json
+        - config/keywords.json
+        - agent/internal/config/files.go
+        - agent/internal/model/types.go
+        - data/index.json
+    - id: llm_summarization
+      title: LLM Summarization & Provider Fallback
+      goal: Describe the summarization prompt chain (PROMPTS.md), the provider fallback sequence (Gemini → NVIDIA NIM → OpenRouter → Ollama), timeout handling, context passing, and how summaries are constrained to original prose with max one short quote per source.
+      files:
+        - docs/PROMPTS.md
+        - agent/internal/config/config.go
+        - agent/internal/model/types.go
+        - AGENTS.md
+    - id: site_architecture
+      title: Site Architecture & Routing
+      goal: Cover the React + Vite + React Router setup, page components (Home, Feed, Story, Search, Top, Ship, Digest), component hierarchy (Header, LeftRail, RightRail, StoryCard, StoryDetail, ActiveFilterBar, TagPill, ScoreBadge), and zero-JS constraint except /search.
+      files:
+        - site/src/App.tsx
+        - site/src/main.tsx
+        - site/src/pages/HomePage.tsx
+        - site/src/pages/FeedPage.tsx
+        - site/src/pages/StoryPage.tsx
+        - site/src/pages/SearchPage.tsx
+        - site/src/pages/TopPage.tsx
+        - site/src/pages/ShipPage.tsx
+        - site/src/pages/DigestPage.tsx
+        - site/src/components/
+    - id: state_management_hooks
+      title: State Management & Custom Hooks
+      goal: Document the filter state machine (useAirfoilSignals) with date window, tag, source, query, and sort controls, the theme hook (useTheme), and how filtered/sorted story lists are derived from the raw story data.
+      files:
+        - site/src/hooks/useAirfoilSignals.ts
+        - site/src/hooks/useTheme.ts
+        - site/src/types/story.ts
+        - site/src/components/ActiveFilterBar.tsx
+    - id: styling_design_system
+      title: Styling & Design System
+      goal: Explain the token-based CSS architecture (tokens.css, global.css), font loading (Inter, JetBrains Mono), dense layout targets (~25 stories/desktop screen), component-scoped CSS, and the AirfoilSVG logo component.
+      files:
+        - site/src/styles/tokens.css
+        - site/src/styles/global.css
+        - site/src/components/AirfoilSVG.tsx
+        - site/package.json
+        - site/public/
+    - id: deployment_ci
+      title: Deployment & CI/CD
+      goal: 'Cover the GitHub Actions workflow (implied): agent runs on schedule/push, validates before commit, commits only data/ and site/src/content/stories/ with conventional message format, pushes to trigger static rebuild, and secrets management for API keys.'
+      files:
+        - AGENTS.md
+        - docs/AGENTS.md
+        - docs/CLAUDE.md
+        - agent/cmd/airfoil/root.go
+        - agent/cmd/airfoil/doctor.go
+        - .gitignore
+        - site/package.json
+    - id: development_guide
+      title: Development Guide
+      goal: 'Provide contributor workflows: running the agent (doctor, version, run), React dev server, linting (Oxlint), type-checking (tsc), table-driven test conventions for pure functions, adding new sources, modifying scoring weights, and the one-package-per-task rule.'
+      files:
+        - AGENTS.md
+        - docs/AGENTS.md
+        - docs/CLAUDE.md
+        - docs/BUILD_SPEC.md
+        - agent/internal/normalize/normalize_test.go
+        - agent/internal/config/config_test.go
+        - site/package.json
+        - agent/go.mod
+    - id: troubleshooting
+      title: Troubleshooting & Gotchas
+      goal: 'Catalog known issues: embedder cache size (never commit data/cache/), rate limits (GitHub token, Reddit User-Agent), LLM fallback chain failures, validation gate aborts, idempotency expectations, 300-char excerpt enforcement, and O(n²) clustering performance at n≈600.'
+      files:
+        - AGENTS.md
+        - docs/AGENTS.md
+        - docs/CLAUDE.md
+        - agent/internal/config/config.go
+        - agent/internal/ingest/http.go
+        - agent/internal/normalize/normalize.go
+        - data/
+    - id: api_reference
+      title: API Reference (Internal)
+      goal: Reference documentation for all public Go interfaces (config.Load, ingest.Runner.Run, normalize.Build/Dedupe, store.ReadJSON/WriteJSON, model.State methods) and TypeScript types (Story, Source, FilterState, DateWindow, SortOrder) with usage examples.
+      files:
+        - agent/internal/config/config.go
+        - agent/internal/ingest/ingest.go
+        - agent/internal/normalize/normalize.go
+        - agent/internal/store/json.go
+        - agent/internal/model/types.go
+        - site/src/types/story.ts
+        - site/src/hooks/useAirfoilSignals.ts

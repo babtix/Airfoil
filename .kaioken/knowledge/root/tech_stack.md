@@ -1,0 +1,1 @@
+Go (stdlib + `log/slog`, `context`) for the agent; React 18 + Vite + Astro for the static site; Oxlint for linting; Ollama (local) or Gemini (CI) for embeddings; LLM providers: Gemini, NVIDIA NIM, OpenRouter, Ollama (fallback chain).

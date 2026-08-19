@@ -1,0 +1,1 @@
+The agent/internal/store package provides atomic JSON file persistence for pipeline data (index, state, stories). All writes use a temp-file-then-rename pattern to guarantee crash-safe atomicity; reads surface missing-file errors via os.IsNotExist so callers can decide on fallbacks.

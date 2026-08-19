@@ -1,0 +1,14 @@
+generated_at: "2026-08-17T22:15:04Z"
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+section:
+    id: getting_started
+    title: Getting Started
+    goal: Explain how to set up the development environment, configure environment variables, build the Go agent, run the React dev server, and execute the full pipeline locally.
+    files:
+        - .env.example
+        - AGENTS.md
+        - agent/go.mod
+        - agent/cmd/airfoil/main.go
+        - site/package.json
+        - site/vite.config.ts
+summary: 'This section guides developers through setting up the Airfoil development environment from scratch: installing prerequisites, configuring environment variables from the provided template, building the Go agent binary, installing and running the React + Vite dev server, and executing the full ingest→generate→render pipeline locally.'

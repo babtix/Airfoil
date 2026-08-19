@@ -1,0 +1,15 @@
+generated_at: "2026-08-17T22:34:54Z"
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+section:
+    id: configuration_system
+    title: Configuration System
+    goal: Document the configuration loading mechanism (config.Load), environment variable precedence, JSON config files (sources.json, scoring.json, keywords.json), derived paths (ItemsDir, CacheDir, IndexPath, etc.), source enabling/disabling, and validation rules.
+    files:
+        - agent/internal/config/config.go
+        - agent/internal/config/files.go
+        - agent/internal/config/dotenv.go
+        - agent/internal/config/config_test.go
+        - config/sources.json
+        - config/scoring.json
+        - config/keywords.json
+summary: This section documents Airfoil's configuration system, covering the config.Load mechanism, environment variable precedence with .env file support, three JSON configuration files (sources.json, scoring.json, keywords.json), derived filesystem paths, source enablement logic, and validation rules that gate the pipeline.

@@ -1,0 +1,94 @@
+name: pipeline
+
+on:
+  schedule:
+    # 06:00, 12:00, 18:00 UTC. Because the run commits on every pass, the
+    # repository never goes idle and Actions never disables this cron.
+    - cron: "0 6,12,18 * * *"
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: "Run without writing, summarizing, or committing"
+        type: boolean
+        default: false
+
+# One pipeline run at a time. Two concurrent runs would both read state.json,
+# both ingest the same items, and race on the commit.
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    permissions:
+      # Required to push the generated content back to the repository.
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: agent/go.mod
+          cache-dependency-path: agent/go.sum
+
+      - name: Build
+        working-directory: agent
+        run: go build -ldflags "-X main.version=${GITHUB_SHA::7}" -o bin/airfoil ./cmd/airfoil
+
+      - name: Test
+        working-directory: agent
+        run: go test ./...
+
+      - name: Doctor
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AIRFOIL_EMBEDDER: nvidia_nim
+          NVIDIA_NIM_EMBED_MODEL: nvidia/nemotron-3-embed-1b
+        # Ping providers and feeds before spending a run on them. This is
+        # advisory: a single dead feed must not stop the pipeline, and R9
+        # already aborts ingest if more than half the sources fail.
+        run: ./agent/bin/airfoil doctor --ping || true
+
+      - name: Run pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT || 'airfoil/0.1 (+https://github.com/papitsho/airfoil)' }}
+          AIRFOIL_EMBEDDER: nvidia_nim
+          NVIDIA_NIM_EMBED_MODEL: nvidia/nemotron-3-embed-1b
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          if [ "${{ inputs.dry }}" = "true" ]; then
+            ./agent/bin/airfoil run --dry --verbose
+          else
+            ./agent/bin/airfoil run --verbose
+          fi
+
+      - name: Digest
+        if: ${{ inputs.dry != true }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NVIDIA_NIM_API_KEY: ${{ secrets.NVIDIA_NIM_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        # The digest is a convenience for a human to post later, so it must
+        # never fail the run that produced the stories.
+        run: ./agent/bin/airfoil digest || true
+
+      - name: Publish
+        if: ${{ inputs.dry != true }}
+        env:
+          AIRFOIL_EMBEDDER: nvidia_nim
+        run: |
+          git config user.name  "airfoil[bot]"
+          git config user.email "airfoil[bot]@users.noreply.github.com"
+          ./agent/bin/airfoil publish --push

@@ -1,0 +1,1 @@
+The agent module is a Go CLI application (module github.com/papitsho/airfoil) built with Cobra v1.10.2 for command-line parsing. It declares Go 1.26.5 and has no direct dependencies beyond Cobra; all other entries in go.sum are transitive (pflag, mousetrap, blackfriday, yaml, check).

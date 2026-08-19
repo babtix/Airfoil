@@ -1,0 +1,385 @@
+[
+  {
+    "id": "1b4b1216de83a61f",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
+    "title": "Anthropic's ‘watermark’ text adulteration in Claude is a perversion of writing",
+    "excerpt": "",
+    "author": "ropbear",
+    "published_at": "2026-08-16T21:53:43Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 749,
+      "hn_comments": 659
+    }
+  },
+  {
+    "id": "b33db50a64506b60",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://futurism.com/artificial-intelligence/young-people-ai-ceos-executives-poll",
+    "title": "Young People Hate AI CEOs So Passionately That It's Almost Hard to Believe",
+    "excerpt": "",
+    "author": "healsdata",
+    "published_at": "2026-08-16T21:34:06Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 147,
+      "hn_comments": 172
+    }
+  },
+  {
+    "id": "d1b7ed52e00e3aef",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
+    "title": "OpenAI reportedly disbanded its preparedness team",
+    "excerpt": "According to the Financial Times, OpenAI disbanded its preparedness team at the end of last month. The job of the preparedness team was to assess if models posed serious risks and develop ways to mitigate those risks. (You know, like the possibility that it could go rogue and hack another…",
+    "author": "Terrence O’Brien",
+    "published_at": "2026-08-16T21:32:56Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {}
+  },
+  {
+    "id": "345b81487115ab84",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b",
+    "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+    "excerpt": "OpenRouter's CEO recently described the startup as Stripe for AI.",
+    "author": "Anthony Ha",
+    "published_at": "2026-08-16T20:57:04Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {}
+  },
+  {
+    "id": "bcc30bfa4deed580",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://ivan-gavran.github.io/0-social-processes-paper",
+    "title": "The Case Against Formal Verification, 50 Years Later",
+    "excerpt": "",
+    "author": "ghuntley",
+    "published_at": "2026-08-16T20:38:58Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 94,
+      "hn_comments": 113
+    }
+  },
+  {
+    "id": "c5adf37c175f060e",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future",
+    "title": "Why people aren’t buying Mark Zuckerberg’s AI future",
+    "excerpt": "On the latest episode of Equity podcast, we discuss why not everyone is buying Zuckerberg’s vision.",
+    "author": "Anthony Ha",
+    "published_at": "2026-08-16T20:32:01Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {}
+  },
+  {
+    "id": "0535013f5a2cd2b8",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
+    "title": "Red queen hypothesis – A new way forward for self-improving AI",
+    "excerpt": "",
+    "author": "hardlianotion",
+    "published_at": "2026-08-16T20:01:13Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 95,
+      "hn_comments": 26
+    }
+  },
+  {
+    "id": "7eb0f5b64cdb07a8",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.motherjones.com/politics/2026/08/donald-trump-world-liberty-regulatory-approval",
+    "title": "The Trumps' Crypto Project Just Got One Step Closer to Becoming a Bank",
+    "excerpt": "",
+    "author": "rib3ye",
+    "published_at": "2026-08-16T19:41:18Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 55,
+      "hn_comments": 31
+    }
+  },
+  {
+    "id": "cf6ec781d9fa6fab",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://w4g1.dev/blog/models-are-getting-dumber-on-purpose",
+    "title": "Models Are Getting Dumber on Purpose",
+    "excerpt": "",
+    "author": "hruvhwe",
+    "published_at": "2026-08-16T19:04:26Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 327,
+      "hn_comments": 186
+    }
+  },
+  {
+    "id": "15d023cc990b17f7",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://math-ai-org.github.io/mathcode",
+    "title": "MathCode, Mathematical Coding Agent",
+    "excerpt": "",
+    "author": "homarp",
+    "published_at": "2026-08-16T18:17:10Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 115,
+      "hn_comments": 29
+    }
+  },
+  {
+    "id": "ad4ca21a13bb0a4c",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://news.ycombinator.com/item?id=49322107",
+    "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
+    "excerpt": "A few hours ago I switched my nameservers to Cloudflare in order to enable R2 bucket serving through my own subdomain, and I found out that it silently had injected a JS analytics snippet in my HTML-only JS-free site textlog.cc — I had to go to the Analytics dashboard, Add the site to the…",
+    "author": "stagas",
+    "published_at": "2026-08-16T17:49:46Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 613,
+      "hn_comments": 191
+    }
+  },
+  {
+    "id": "c132c1e1c64dad92",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust",
+    "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
+    "excerpt": "Dario Amodei is pushing back against the idea that he's been painting an overly pessimistic picture of AI.",
+    "author": "Anthony Ha",
+    "published_at": "2026-08-16T16:53:51Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {}
+  },
+  {
+    "id": "e9dd21da4958bf71",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.wptv.com/news/treasure-coast/region-st-lucie-county/saint-lucie-nuclear-power-plant-unit-1-manually-shut-down-after-3-control-rods-drop-into-reactor-core",
+    "title": "St Lucie Nuclear Reactor Unit 1 manually shutdown, 3 control rods drop into core",
+    "excerpt": "",
+    "author": "toomuchtodo",
+    "published_at": "2026-08-16T15:16:06Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 193,
+      "hn_comments": 148
+    }
+  },
+  {
+    "id": "99f79a191e7351c9",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
+    "title": "ChatGPT’s Computer History tracks your clicks and keystrokes",
+    "excerpt": "ChatGPT's desktop app on macOS has a new feature called Computer History that turns your actions into training data, learning how you work, suggesting automations, and even picking up tasks you left half done. It uses your activity to build a timeline that ChatGPT and Codex can reference when you…",
+    "author": "Terrence O’Brien",
+    "published_at": "2026-08-16T14:56:40Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {}
+  },
+  {
+    "id": "47451c29630b8b7e",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.newyorker.com/news/annals-of-inquiry/gps-and-the-lost-art-of-getting-lost",
+    "title": "GPS and the Lost Art of Getting Lost",
+    "excerpt": "",
+    "author": "karakoram",
+    "published_at": "2026-08-16T14:53:14Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 96,
+      "hn_comments": 99
+    }
+  },
+  {
+    "id": "16ac10544a8682f6",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+    "title": "The AI Credit Resale Economy",
+    "excerpt": "",
+    "author": "mlenhard",
+    "published_at": "2026-08-16T14:44:55Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 322,
+      "hn_comments": 127
+    }
+  },
+  {
+    "id": "7ec0a6d5af8e30d0",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://wildstatic.com",
+    "title": "Show HN: A public AI whose memory is shared across all users",
+    "excerpt": "",
+    "author": "adjohu",
+    "published_at": "2026-08-16T13:21:45Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 80,
+      "hn_comments": 69
+    }
+  },
+  {
+    "id": "eb4edca3b5b87822",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+    "title": "Claude: System Prompts",
+    "excerpt": "",
+    "author": "tosh",
+    "published_at": "2026-08-16T12:48:21Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 737,
+      "hn_comments": 281
+    }
+  },
+  {
+    "id": "8ccd370b2e0a7293",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/column/980337/rogue-ai-science-fiction-openai",
+    "title": "Rogue AI aren’t science fiction anymore",
+    "excerpt": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on AI safety, follow Robert Hart. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started It all started in July, when one of OpenAI's…",
+    "author": "Robert Hart",
+    "published_at": "2026-08-16T12:00:00Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {}
+  },
+  {
+    "id": "865cee0f88e08e99",
+    "source_id": "github-trending-ai",
+    "source_name": "GitHub Trending",
+    "source_tier": 3,
+    "url": "https://github.com/Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report",
+    "title": "Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report: DeepSeek V4 × J-Space capability realization report — benchmark evidence that J-Space reduces capability-realization loss on DeepSeek V4 (Flash/Pro).",
+    "excerpt": "DeepSeek V4 × J-Space capability realization report — benchmark evidence that J-Space reduces capability-realization loss on DeepSeek V4 (Flash/Pro).",
+    "author": "Tiger3807861189",
+    "published_at": "2026-08-16T11:38:42Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "github_stars": 354
+    },
+    "repo_url": "https://github.com/Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report"
+  },
+  {
+    "id": "a59d26fe1fd85b87",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://news.ycombinator.com/item?id=49318906",
+    "title": "Ask HN: Do you know of any company that went back to hand-written code?",
+    "excerpt": "This is intended as a question about the current phase of the LLM hype cycle, and, at the same time, as a reality check about whether reluctance to rely on LLMs is economically viable for an average developer. You've definitely seen that many companies progressed from \"use LLMs for anything and…",
+    "author": "antipurist",
+    "published_at": "2026-08-16T11:05:47Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 104,
+      "hn_comments": 120
+    }
+  },
+  {
+    "id": "5b1192903d684a21",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://peterbloem.nl/blog/craft-coding",
+    "title": "AI Coding Without the Vibes",
+    "excerpt": "",
+    "author": "riskone",
+    "published_at": "2026-08-16T10:31:36Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 96,
+      "hn_comments": 55
+    }
+  },
+  {
+    "id": "a2831daca59aa411",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://littlelearner-ll.github.io",
+    "title": "What happens when an LLM never sees material beyond fifth grade?",
+    "excerpt": "",
+    "author": "porridgeraisin",
+    "published_at": "2026-08-16T07:37:53Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 243,
+      "hn_comments": 208
+    }
+  },
+  {
+    "id": "3024fe00b473981e",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/jitpass/jit",
+    "title": "Show HN: Laptop is the last place your secrets are still in plaintext",
+    "excerpt": "",
+    "author": "bukershok",
+    "published_at": "2026-08-16T06:55:04Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 54,
+      "hn_comments": 79
+    },
+    "repo_url": "https://github.com/jitpass/jit"
+  },
+  {
+    "id": "96d2b899e3d87c1f",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://breck.lol/plMakers.html",
+    "title": "The quirky personal homepages of programming language creators",
+    "excerpt": "",
+    "author": "cjlm",
+    "published_at": "2026-08-16T04:24:00Z",
+    "fetched_at": "2026-08-17T22:17:22.9924177Z",
+    "metrics": {
+      "hn_points": 64,
+      "hn_comments": 21
+    }
+  }
+]

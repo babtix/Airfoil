@@ -1,0 +1,11 @@
+description: Loads config from JSON files and .env, derives all runtime paths.
+file_count: 4
+generated_at: "2026-08-17T22:06:22Z"
+id: agent/agent_config
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+scope:
+    - agent/internal/config/config.go
+    - agent/internal/config/dotenv.go
+    - agent/internal/config/dotenv_test.go
+    - agent/internal/config/files.go
+title: Configuration Loading

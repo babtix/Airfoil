@@ -1,0 +1,12 @@
+generated_at: "2026-08-17T22:47:21Z"
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+section:
+    id: data_models
+    title: Data Models & Types
+    goal: Define all core Go types (Item, Cluster, Story, IndexEntry, State, Source, Metrics) and their TypeScript mirrors (Story, Source, FilterState, DateWindow, SortOrder), including tier constants, serialization formats, and the 300-char excerpt limit enforcement.
+    files:
+        - agent/internal/model/types.go
+        - site/src/types/story.ts
+        - agent/internal/normalize/normalize.go
+        - agent/internal/config/files.go
+summary: This section defines the complete type system shared between the Go agent and React site. It covers all core Go models (Item, Cluster, Story, IndexEntry, State, Metrics) with their tier constants and serialization formats, the normalization pipeline types (Raw, Build, 300-char excerpt enforcement), configuration types (Source, Scoring, Keywords), and their exact TypeScript mirrors (Story, Source, FilterState, DateWindow, SortOrder, SourceType) used by the static site at build time.

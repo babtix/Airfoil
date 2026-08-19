@@ -24,7 +24,7 @@ Claude Code for review. One phase at a time. Do not batch phases.
 
 | Thing | Why | Note |
 |---|---|---|
-| Python 3.11+ | The agent | Local ingestion, clustering, scoring, and writing pipeline |
+| Go 1.24+ | The agent | Local ingestion, clustering, scoring, and writing pipeline. Builds to a single binary |
 | Node 20+ | React + Vite frontend | `npm run dev` / `npm run build` |
 | Ollama + `nomic-embed-text` | Local embeddings & LLMs | `ollama pull nomic-embed-text` |
 | Gemini API key | Summaries, CI embeddings | Free / paid tier |

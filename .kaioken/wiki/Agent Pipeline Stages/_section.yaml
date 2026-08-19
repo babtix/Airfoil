@@ -1,0 +1,18 @@
+generated_at: "2026-08-17T22:27:02Z"
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+section:
+    id: agent_pipeline
+    title: Agent Pipeline Stages
+    goal: 'Detail each pipeline stage: ingest (RSS, HN, Reddit, HFPapers, GitHub), normalize (text cleaning, URL canonicalization, deduplication), embed (vector generation with fallback chain), cluster (O(n²) similarity grouping), score (tier-based weighting), summarize (LLM with provider fallback), and write (markdown + JSON output).'
+    files:
+        - agent/internal/ingest/ingest.go
+        - agent/internal/ingest/hn.go
+        - agent/internal/ingest/rss.go
+        - agent/internal/ingest/http.go
+        - agent/internal/normalize/normalize.go
+        - agent/internal/normalize/text.go
+        - agent/internal/normalize/url.go
+        - agent/internal/normalize/extract.go
+        - agent/internal/model/types.go
+        - agent/internal/store/json.go
+summary: This section details the Go agent's pipeline stages from ingestion through normalization, covering the Runner orchestration, source adapters (Hacker News, RSS for Reddit/HF Papers/GitHub), HTTP fetching with retries, text processing (HTML stripping, excerpt capping at 300 chars, title cleaning), URL canonicalization (wrapper unwrapping, tracking param removal, ItemID generation), entity extraction (GitHub repos, arXiv papers), item construction, deduplication against State.Seen, and the core data models (Item, Cluster, Story, Index, State) with JSON persistence.

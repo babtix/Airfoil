@@ -1,0 +1,10 @@
+description: JSON files that control sources, scoring weights, and keyword extraction.
+file_count: 3
+generated_at: "2026-08-17T22:07:29Z"
+id: config
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+scope:
+    - config/keywords.json
+    - config/scoring.json
+    - config/sources.json
+title: Pipeline Configuration

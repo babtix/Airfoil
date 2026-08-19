@@ -1,0 +1,9 @@
+description: Local Go CLI that runs the ingest→normalize→embed→cluster→score→summarize→write pipeline.
+file_count: 2
+generated_at: "2026-08-17T22:05:07Z"
+id: agent
+model: nvidia/nemotron-3-ultra-550b-a55b:free
+scope:
+    - agent/go.mod
+    - agent/go.sum
+title: Go Agent

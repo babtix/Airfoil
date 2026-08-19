@@ -1,0 +1,58 @@
+{
+  "$comment": "Tune these against real data. Never guess — run `airfoil rank` and look at the top 20 before changing anything. clustering.similarity_threshold=0.70 was set 2026-08-18 against nvidia/nemotron-3-embed-1b on the real 498-item corpus: a known cross-outlet story (TechCrunch + 2 HN threads on the Amazon rare-books piece) measured at cosine 0.61-0.75 between its own pairs, while unrelated arXiv papers start chaining into runaway clusters above ~0.75-0.80. 0.70 is the stable plateau that captures the real story without chaining (see docs/PROGRESS.md). Re-tune if the embed model changes.",
+
+  "clustering": {
+    "similarity_threshold": 0.70,
+    "window_hours": 48,
+    "debug_range": [0.60, 0.80]
+  },
+
+  "weights": {
+    "sources": 22.0,
+    "tier": 25.0,
+    "hn": 6.0,
+    "reddit": 5.0,
+    "builder": 4.0,
+    "hype": 6.0
+  },
+
+  "tier_weights": {
+    "1": 1.00,
+    "2": 0.85,
+    "3": 0.80,
+    "4": 0.50,
+    "5": 0.30
+  },
+
+  "recency": {
+    "half_life_hours": 48
+  },
+
+  "caps": {
+    "builder_signal_max": 5,
+    "hype_signal_max": 5,
+    "llm_calls_per_run": 15
+  },
+
+  "tiers": {
+    "major_min_score": 70,
+    "notable_min_score": 40
+  },
+
+  "builder_relevant_min_signals": 2,
+
+  "limits": {
+    "excerpt_max_chars": 300,
+    "summary_max_words": 80,
+    "takeaways_max": 3,
+    "verbatim_overlap_max_words": 12,
+    "quotes_max": 1,
+    "quote_max_words": 15
+  },
+
+  "retention": {
+    "items_days": 30,
+    "seen_urls_days": 30,
+    "embedding_cache_days": 7
+  }
+}
