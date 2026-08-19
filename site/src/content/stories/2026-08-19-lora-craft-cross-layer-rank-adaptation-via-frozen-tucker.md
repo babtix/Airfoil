@@ -2,7 +2,7 @@
 id: "b936a5c8ba7ef604"
 title: "LoRA-CRAFT: Cross-layer rank adaptation via frozen Tucker"
 summary: "LoRA-CRAFT proposes a parameter‑efficient fine‑tuning technique that applies frozen Tucker tensor decomposition to the attention weights of a pre‑trained model, adapting ranks across layers to reduce trainable parameters while preserving performance."
-score: 44
+score: 43
 tier: "notable"
 tags: ["models", "research", "tools"]
 builder_relevant: true

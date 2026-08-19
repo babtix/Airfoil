@@ -2,7 +2,7 @@
 id: "291da6c4500f8272"
 title: "Centered Residual Signatures Enable Language Model Lineage Verification"
 summary: "Researchers introduce centered residual signatures, a data‑free white‑box technique that inspects model weights to determine whether two compatible checkpoints share a common origin, even after fine‑tuning, quantization, pruning, or merging, providing a provenance tool for open‑weight language models."
-score: 44
+score: 43
 tier: "notable"
 tags: ["models", "research", "open-source"]
 builder_relevant: true

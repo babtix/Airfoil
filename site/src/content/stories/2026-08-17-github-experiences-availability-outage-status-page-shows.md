@@ -2,7 +2,7 @@
 id: "4c97beaa9845f81d"
 title: "GitHub experiences availability outage, status page shows normal"
 summary: "GitHub users reported receiving 'No server is currently available' errors and inability to access pull requests while the status page indicated normal operation. Multiple posts noted recurring downtime over recent months and discussed considering alternative hosting services."
-score: 24
+score: 23
 tier: "minor"
 tags: ["infra", "business", "tools"]
 builder_relevant: true

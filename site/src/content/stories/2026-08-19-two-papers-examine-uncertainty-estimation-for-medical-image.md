@@ -2,7 +2,7 @@
 id: "161578c3c3fc9cc9"
 title: "Two papers examine uncertainty estimation for medical image segmentation"
 summary: "Researchers released two arXiv papers on uncertainty estimation for medical image segmentation. One introduces SegWithU, a single-forward-pass method that treats uncertainty as perturbation energy for risk-aware segmentation. The other shows aggregated aleatoric uncertainty fails to capture presence ambiguity in 3D lung nodule segmentation, suggesting limits of current entropy-based measures. For developers, these works highlight trade-offs between efficiency and fidelity in uncertainty quantification for medical imaging pipelines."
-score: 48
+score: 47
 tier: "notable"
 tags: ["models", "research", "tools"]
 builder_relevant: true

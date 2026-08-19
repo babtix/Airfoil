@@ -2,7 +2,7 @@
 id: "375bd306aef936f5"
 title: "Solo: .so loader for static Linux binaries"
 summary: "Solo is a GitHub-hosted tool that loads shared object (.so) files into statically linked Linux binaries, letting developers add plugin capabilities without abandoning static linking."
-score: 46
+score: 45
 tier: "notable"
 tags: ["open-source", "tools"]
 builder_relevant: true

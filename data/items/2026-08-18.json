@@ -391,6 +391,23 @@
     "metrics": {}
   },
   {
+    "id": "62fa1e9b9e0d327d",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/vixhal-baraiya/microgpt-c",
+    "title": "Microgpt in pure C hits 10M tps on Apple m5",
+    "excerpt": "",
+    "author": "dhorthy",
+    "published_at": "2026-08-18T15:46:46Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {
+      "hn_points": 57,
+      "hn_comments": 19
+    },
+    "repo_url": "https://github.com/vixhal-baraiya/microgpt-c"
+  },
+  {
     "id": "1fe17a71daf8307e",
     "source_id": "hn",
     "source_name": "Hacker News",
@@ -578,6 +595,19 @@
       "hn_points": 593,
       "hn_comments": 413
     }
+  },
+  {
+    "id": "46bf19114869ba0a",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vrk7t5/trained_an_diffusion_model_that_runs_on_264kb_of",
+    "title": "Trained an diffusion model that runs on 264KB of RAM [P]",
+    "excerpt": "I recently bought a Shrike lite which has got 264KB of SRAM. I decided to train an image generation model that generates 32*32 pixel images. The microcontroller also has an FPGA onboard which I used to create two parallel INT8 MAC engines with 16 bit accumulation to speed up calculations, however…",
+    "author": "/u/PandaBean18",
+    "published_at": "2026-08-18T09:26:21Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {}
   },
   {
     "id": "abe15a101a64c60a",

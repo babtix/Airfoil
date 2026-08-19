@@ -1,10 +1,10 @@
 AIRFOIL — Wednesday, 19 August 2026
-balancing performance and accuracy
+GPU acceleration, privacy, and medical uncertainty
 ============================================================
 
-Today’s selections highlight how developers balance speed, accuracy, and robustness when moving from theory to practice. Examples range from GPU‑accelerated geometric localization and webcam‑based musical interaction to uncertainty estimates in medical segmentation and the effects of self‑distillation on language models. Together they underscore recurring trade‑offs in algorithm design.
+Today’s selections show how low‑level optimization (CUDA geometry), privacy‑first model access, and browser‑based motion sensing are being paired with deeper work on quantifying uncertainty in medical image segmentation. One story lacks sufficient detail for a summary.
 
-1. [52] Geolocating a random island with geometry and CUDA
+1. [51] Geolocating a random island with geometry and CUDA
 
 The article explains how to determine the location of a random island by applying geometric formulas and implementing them in CUDA for GPU acceleration, providing code snippets and performance considerations.
 
@@ -16,7 +16,19 @@ The article explains how to determine the location of a random island by applyin
 
 ------------------------------------------------------------
 
-2. [49] Air Theremin: Browser Theremin Controlled via Webcam
+2. [48] OpenAI Offers Zero Data Retention for Frontier Models
+
+OpenAI announced that eligible API customers can use its frontier models with zero data retention, ensuring no stored prompts or outputs. It also previewed Private Safety Processing, a method to run advanced safety checks without exposing user data.
+
+   - Zero data retention applies to eligible API users of frontier models.
+   - Private Safety Processing enables safety checks without storing user data.
+   - The features aim to improve privacy for developers using OpenAI APIs.
+
+   OpenAI: https://openai.com/index/our-commitment-to-zero-data-retention
+
+------------------------------------------------------------
+
+3. [48] Air Theremin: Browser Theremin Controlled via Webcam
 
 Air Theremin is a web application that lets users play a theremin by moving their hands in front of a webcam, using browser-based motion detection to generate sound.
 
@@ -28,7 +40,7 @@ Air Theremin is a web application that lets users play a theremin by moving thei
 
 ------------------------------------------------------------
 
-3. [48] Two papers examine uncertainty estimation for medical image segmentation
+4. [47] Two papers examine uncertainty estimation for medical image segmentation
 
 Researchers released two arXiv papers on uncertainty estimation for medical image segmentation. One introduces SegWithU, a single-forward-pass method that treats uncertainty as perturbation energy for risk-aware segmentation. The other shows aggregated aleatoric uncertainty fails to capture presence ambiguity in 3D lung nodule segmentation, suggesting limits of current entropy-based measures. For developers, these works highlight trade-offs between efficiency and fidelity in uncertainty quantification for medical imaging pipelines.
 
@@ -41,27 +53,14 @@ Researchers released two arXiv papers on uncertainty estimation for medical imag
 
 ------------------------------------------------------------
 
-4. [47] Cerebras CS-4 announcement details lacking
+5. [46] Insufficient details to summarize Ornith-1.5 self-scaffolding article
 
-The provided sources contain only the title 'Cerebras CS-4' from a Hacker News post with 405 points; no further details are available to summarize the announcement.
+The source provides only the article title and metadata, with no excerpt or description of Ornith-1.5's self-scaffolding to self-improvement transition. Without additional details, a factual summary of what changed or its implications for software builders cannot be produced.
 
-   - Source: Hacker News article titled Cerebras CS-4
-   - HN points: 405
+   - No excerpt or details about Ornith-1.5 provided
+   - Cannot determine changes or builder relevance from title alone
 
-   Hacker News: https://www.cerebras.ai/cs4
-
-------------------------------------------------------------
-
-5. [45] Self-distillation improves LLM retention but can hurt mathematical reasoning
-
-Recent papers show self-distillation can recover LLM performance lost to compression and catastrophic forgetting, yet it may shorten responses and impair mathematical reasoning. For developers, this means applying self-distillation aids general robustness but requires checking task‑specific accuracy, especially in math‑heavy applications.
-
-   - Self-distillation counters compression and catastrophic forgetting in LLMs.
-   - Self-distillation may shorten responses and degrade mathematical reasoning.
-   - Developers must test self-distillation per task, particularly for math‑heavy use cases.
-
-   arXiv cs.AI: https://arxiv.org/abs/2604.15794
-   arXiv cs.CL: https://arxiv.org/abs/2603.24472
+   Hacker News: https://ornith.ai/ornith_1_5.html
 
 ------------------------------------------------------------
 

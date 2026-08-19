@@ -1,5 +1,56 @@
 [
   {
+    "id": "f1e200b4b4b995c8",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/our-commitment-to-zero-data-retention",
+    "title": "Offering Zero Data Retention for frontier models",
+    "excerpt": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
+    "published_at": "2026-08-19T17:30:15.8013123Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {}
+  },
+  {
+    "id": "26abc1950a12af9b",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/video/meet-the-startup-helping-wall-street-put-a-price-on-ai-compute",
+    "title": "Meet the startup helping Wall Street put a price on AI compute",
+    "excerpt": "The AI buildout shows no signs of slowing. And with hundreds of billions of dollars a year going into data centers and GPUs, compute has become the single biggest cost for anyone building AI products. But for all that spending, there still isn’t a straightforward way to put a price on compute — or…",
+    "author": "Theresa Loconsolo",
+    "published_at": "2026-08-19T17:26:48Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {}
+  },
+  {
+    "id": "e24875277dd9c8e6",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+    "title": "OpenAI hit the brakes. Now what?",
+    "excerpt": "With a looming IPO, intense competition from Anthropic, and Chinese and open-weight rivals nipping at its heels, OpenAI has plenty of reasons to move fast. Instead, it hit the brakes. On Tuesday, the company said it had slowed the pace of some AI development while it tightened security and…",
+    "author": "Robert Hart",
+    "published_at": "2026-08-19T17:10:09Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {}
+  },
+  {
+    "id": "f05312c96fe3c222",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
+    "title": "Meta AI is getting a Mac app",
+    "excerpt": "Meta AI can create content and make suggestions based on what it “sees” on your screen. | Image: Meta Meta is launching a new Mac app dedicated to its AI chatbot. In an announcement on Wednesday, Meta says you can share your window with its AI chatbot, which can provide suggestions, answer…",
+    "author": "Emma Roth",
+    "published_at": "2026-08-19T17:00:00Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {}
+  },
+  {
     "id": "31ea4c69496d4d37",
     "source_id": "reddit-localllama",
     "source_name": "r/LocalLLaMA",
@@ -91,6 +142,35 @@
     "author": "/u/KokaOP",
     "published_at": "2026-08-19T14:58:07Z",
     "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "e23acc07445f9e74",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://ornith.ai/ornith_1_5.html",
+    "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+    "excerpt": "",
+    "author": "CommonGuy",
+    "published_at": "2026-08-19T14:48:39Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {
+      "hn_points": 64,
+      "hn_comments": 7
+    }
+  },
+  {
+    "id": "8e80e0869b45e01e",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vsnwcv/same_effective_batch_does_not_mean_same_training",
+    "title": "Same effective batch does not mean same training time with gradient accumulation, tested on LoRA on T4 and L4 [D]",
+    "excerpt": "I had assumed 1 × 4, 2 × 2 and 4 × 1 will take somewhat similar time because effective batch is 4 in all cases. They did not. I ran Qwen3-1.7B with TRL and LoRA for 100 optimizer updates. GPU 1 × 4 2 × 2 4 × 1 T4 287.6s 258.8s 238.2s L4 213.02s 119.47s 124.76s Model, data, sequence length…",
+    "author": "/u/traceml-ai",
+    "published_at": "2026-08-19T14:23:22Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
     "metrics": {}
   },
   {
@@ -252,6 +332,19 @@
     "fetched_at": "2026-08-19T16:29:52.2689593Z",
     "metrics": {},
     "repo_url": "https://github.com/ggml-org/llama.cpp"
+  },
+  {
+    "id": "d7fe94b51bfb0a58",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vsjlzj/looking_for_1_teammate_realpde_competition",
+    "title": "Looking for 1 teammate — RealPDE Competition (NeurIPS 2026)[D]",
+    "excerpt": "Registering for RealPDE (Sim2Real / LTTTA tracks — real PIV + CFD fluid dynamics data). Team cap is 3. If you've got a strong ML background and wanna participate, just DM me. Deadline's Aug 20, so move fast. 🔗 https://realpdecompetition.github.io submitted by /u/Alternative_Push9328 [link]…",
+    "author": "/u/Alternative_Push9328",
+    "published_at": "2026-08-19T11:22:50Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {}
   },
   {
     "id": "03f75742a47a7eb1",
@@ -12907,6 +13000,19 @@
     "author": "/u/sleepy_roger",
     "published_at": "2026-08-19T02:44:37Z",
     "fetched_at": "2026-08-19T16:29:52.2689593Z",
+    "metrics": {}
+  },
+  {
+    "id": "8cf0301cfabed84d",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vs96rm/iconip_2026_what_happens_if_the_sole_author",
+    "title": "ICONIP 2026 — what happens if the sole author cannot attend in person? [D]",
+    "excerpt": "Hi everyone 👋 My paper was recently accepted to ICONIP 2026, but I’m the sole author and most likely won’t be able to attend the conference in person due to work commitments. I’m trying to understand what options might be available before I contact the organizers. Has anyone here attended or…",
+    "author": "/u/Melodic_Divide7368",
+    "published_at": "2026-08-19T02:07:15Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
     "metrics": {}
   },
   {

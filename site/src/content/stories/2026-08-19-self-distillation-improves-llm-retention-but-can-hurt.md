@@ -2,7 +2,7 @@
 id: "845bd2f8a5a99a97"
 title: "Self-distillation improves LLM retention but can hurt mathematical reasoning"
 summary: "Recent papers show self-distillation can recover LLM performance lost to compression and catastrophic forgetting, yet it may shorten responses and impair mathematical reasoning. For developers, this means applying self-distillation aids general robustness but requires checking task‑specific accuracy, especially in math‑heavy applications."
-score: 45
+score: 44
 tier: "notable"
 tags: ["models", "research"]
 builder_relevant: true

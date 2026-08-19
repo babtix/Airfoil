@@ -13,6 +13,32 @@
     "metrics": {}
   },
   {
+    "id": "e2c0ee9400c0c252",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vr6cd2/weve_got_a_workshop_on_production",
+    "title": "We’ve got a workshop on production retrieval-augmented generation with open models, benchmarked end to end, thought it’d be relevant here [D]",
+    "excerpt": "There’s a hands-on workshop on August 29 that builds and benchmarks this properly, end to end, using entirely open models, no API calls involved. Led by Ben Auffarth, AI Consultant and Founder of Chelsea AI Ventures. What it covers: • Hybrid retrieval (vector + keyword, not vector alone) •…",
+    "author": "/u/camerongreen95",
+    "published_at": "2026-08-17T22:02:45Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {}
+  },
+  {
+    "id": "523e0df562f69a64",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vr6644/iclr_numbered_citations_possible_r",
+    "title": "ICLR numbered citations possible? [R]",
+    "excerpt": "The instructions say Author Year format. But I was wondering if do numbered instead (no space lol), will it be straight desk rejection? Has anyone submitted with numbered format before? How did it go? submitted by /u/confirm-jannati [link] [comments]",
+    "author": "/u/confirm-jannati",
+    "published_at": "2026-08-17T21:56:06Z",
+    "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {}
+  },
+  {
     "id": "2327d9ca60e79ebc",
     "source_id": "hn",
     "source_name": "Hacker News",

@@ -2,7 +2,7 @@
 id: "1a2f2ccc7aa2054b"
 title: "GLM-5.3 Artificial Analysis Benchmarks mentioned but details lacking"
 summary: "The two sources only reference the title 'GLM-5.3 Artificial Analysis Benchmarks' and provide no performance data, methodology, or implications for developers. Without additional details, no meaningful summary of the event can be constructed."
-score: 50
+score: 49
 tier: "minor"
 tags: ["models", "research"]
 builder_relevant: false

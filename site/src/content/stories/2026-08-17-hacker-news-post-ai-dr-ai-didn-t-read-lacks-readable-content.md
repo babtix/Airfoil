@@ -2,7 +2,7 @@
 id: "7cc71c2e67a7cd6b"
 title: "Hacker News post AI;DR (AI; Didn't Read) lacks readable content"
 summary: "The provided Hacker News article titled AI;DR (AI; Didn't Read) contains no excerpt or readable content, offering no factual information to summarize. Therefore no meaningful summary can be generated from the given input."
-score: 31
+score: 30
 tier: "minor"
 tags: ["research", "tools"]
 builder_relevant: false
