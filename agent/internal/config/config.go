@@ -118,17 +118,50 @@ type Options struct {
 // A config file that does not parse or does not validate is a hard error here,
 // at startup, rather than a surprise halfway through a run.
 func Load(opts Options) (*Config, error) {
+	root := findRepoRoot()
+
 	// A .env file is convenience for local runs; CI supplies real env vars.
 	// Values already present in the environment always win.
+	if err := loadDotEnv(filepath.Join(root, ".env")); err != nil {
+		return nil, err
+	}
 	if err := loadDotEnv(".env"); err != nil {
 		return nil, err
 	}
 
+	dataDir := firstNonEmpty(opts.DataDir, os.Getenv("AIRFOIL_DATA_DIR"))
+	if dataDir == "" {
+		if _, err := os.Stat(filepath.Join(root, "data")); err == nil {
+			dataDir = filepath.Join(root, "data")
+		} else {
+			dataDir = "./data"
+		}
+	}
+
+	configDir := firstNonEmpty(opts.ConfigDir, os.Getenv("AIRFOIL_CONFIG_DIR"))
+	if configDir == "" {
+		if _, err := os.Stat(filepath.Join(root, "config")); err == nil {
+			configDir = filepath.Join(root, "config")
+		} else {
+			configDir = "./config"
+		}
+	}
+
+	storiesDir := firstNonEmpty(os.Getenv("AIRFOIL_STORIES_DIR"))
+	if storiesDir == "" {
+		if _, err := os.Stat(filepath.Join(root, "site", "src", "content", "stories")); err == nil {
+			storiesDir = filepath.Join(root, "site", "src", "content", "stories")
+		} else {
+			storiesDir = filepath.Join("site", "src", "content", "stories")
+		}
+	}
+
 	cfg := &Config{
-		DataDir:   firstNonEmpty(opts.DataDir, os.Getenv("AIRFOIL_DATA_DIR"), "./data"),
-		ConfigDir: firstNonEmpty(opts.ConfigDir, os.Getenv("AIRFOIL_CONFIG_DIR"), "./config"),
-		LogLevel:  firstNonEmpty(os.Getenv("AIRFOIL_LOG_LEVEL"), "info"),
-		SiteURL:   os.Getenv("SITE_URL"),
+		DataDir:    dataDir,
+		ConfigDir:  configDir,
+		StoriesDir: storiesDir,
+		LogLevel:   firstNonEmpty(os.Getenv("AIRFOIL_LOG_LEVEL"), "info"),
+		SiteURL:    os.Getenv("SITE_URL"),
 
 		LLM: LLMConfig{
 			NvidiaNIM: ProviderCreds{
@@ -153,12 +186,6 @@ func Load(opts Options) (*Config, error) {
 			RedditUserAgent: firstNonEmpty(os.Getenv("REDDIT_USER_AGENT"), "airfoil/0.1"),
 		},
 	}
-
-	// The markdown collection lives in the site, not in data/.
-	cfg.StoriesDir = firstNonEmpty(
-		os.Getenv("AIRFOIL_STORIES_DIR"),
-		filepath.Join("site", "src", "content", "stories"),
-	)
 
 	if err := cfg.loadFiles(); err != nil {
 		return nil, err
@@ -249,4 +276,29 @@ func firstNonEmpty(vals ...string) string {
 		}
 	}
 	return ""
+}
+
+// findRepoRoot walks up from the current working directory to locate the Airfoil
+// repository root (identified by config/sources.json or data directory).
+func findRepoRoot() string {
+	dir, err := os.Getwd()
+	if err != nil {
+		return "."
+	}
+	for {
+		if _, err := os.Stat(filepath.Join(dir, "config", "sources.json")); err == nil {
+			return dir
+		}
+		if _, err := os.Stat(filepath.Join(dir, "data")); err == nil {
+			if _, err2 := os.Stat(filepath.Join(dir, "config")); err2 == nil {
+				return dir
+			}
+		}
+		parent := filepath.Dir(dir)
+		if parent == dir || parent == "" {
+			break
+		}
+		dir = parent
+	}
+	return "."
 }

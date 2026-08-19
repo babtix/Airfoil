@@ -5,6 +5,7 @@ import (
 	"testing"
 
 	"github.com/charmbracelet/lipgloss"
+	"github.com/papitsho/airfoil/internal/config"
 )
 
 func TestTopCounts(t *testing.T) {
@@ -236,5 +237,20 @@ func TestDashboardLayoutBalanced(t *testing.T) {
 				t.Errorf("at %dx%d, line exceeds width (%d > %d): %q", size.w, size.h, w, size.w, line)
 			}
 		}
+	}
+}
+
+func TestLoadStatsReal(t *testing.T) {
+	cfg, err := config.Load(config.Options{})
+	if err != nil {
+		t.Logf("config.Load error: %v", err)
+		return
+	}
+	msg := loadStats(cfg)()
+	stats := dataStats(msg.(statsMsg))
+	t.Logf("Stats: Items=%d, Clusters=%d, Stories=%d, SeenURLs=%d, LastRun=%v, Err=%v",
+		stats.Items, stats.Clusters, stats.Stories, stats.SeenURLs, stats.LastRun, stats.Err)
+	if stats.Items == 0 && stats.Stories == 0 {
+		t.Errorf("loadStats returned zero items and stories: err=%v", stats.Err)
 	}
 }

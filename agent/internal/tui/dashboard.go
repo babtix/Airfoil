@@ -86,7 +86,6 @@ func (d *dashboard) Update(msg tea.Msg, m *Model) (tea.Cmd, bool) {
 
 	case tea.KeyMsg:
 		if msg.String() == "R" {
-			d.loaded = false
 			return loadStats(m.cfg), true
 		}
 	}
@@ -109,13 +108,13 @@ func loadStats(cfg *config.Config) tea.Cmd {
 		today := now.Format(time.DateOnly)
 
 		state, err := store.LoadState(cfg.StatePath())
-		if err != nil {
+		if err == nil && state != nil {
+			out.SeenURLs = len(state.SeenURLs)
+			out.Cursors = len(state.Cursors)
+			out.LastRun = state.LastRun
+		} else if err != nil {
 			out.Err = err
-			return statsMsg(out)
 		}
-		out.SeenURLs = len(state.SeenURLs)
-		out.Cursors = len(state.Cursors)
-		out.LastRun = state.LastRun
 
 		items, err := store.LoadItemsSince(cfg.ItemsDir(), now, 30)
 		if err == nil {
@@ -149,7 +148,7 @@ func loadStats(cfg *config.Config) tea.Cmd {
 			}
 		}
 
-		clusters, err := store.ReadJSONOr(cfg.DataDir+"/clusters.json", []model.Cluster(nil))
+		clusters, err := store.ReadJSONOr(filepath.Join(cfg.DataDir, "clusters.json"), []model.Cluster(nil))
 		if err == nil {
 			out.Clusters = len(clusters)
 			for _, c := range clusters {
@@ -159,7 +158,7 @@ func loadStats(cfg *config.Config) tea.Cmd {
 			}
 		}
 
-		ranked, err := store.ReadJSONOr(cfg.DataDir+"/ranked.json", []score.Result(nil))
+		ranked, err := store.ReadJSONOr(filepath.Join(cfg.DataDir, "ranked.json"), []score.Result(nil))
 		if err == nil {
 			out.Ranked = len(ranked)
 			for _, r := range ranked {
