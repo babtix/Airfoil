@@ -8,8 +8,23 @@
       "type": "rss",
       "url": "https://www.anthropic.com/rss.xml",
       "tier": 1,
-      "tags": ["labs"],
-      "enabled": false
+      "tags": [
+        "labs"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "openai",
@@ -17,8 +32,23 @@
       "type": "rss",
       "url": "https://openai.com/news/rss.xml",
       "tier": 1,
-      "tags": ["labs"],
-      "enabled": true
+      "tags": [
+        "labs"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "google-ai",
@@ -26,8 +56,23 @@
       "type": "rss",
       "url": "https://blog.google/technology/ai/rss/",
       "tier": 1,
-      "tags": ["labs"],
-      "enabled": true
+      "tags": [
+        "labs"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "deepmind",
@@ -35,8 +80,23 @@
       "type": "rss",
       "url": "https://deepmind.google/blog/rss.xml",
       "tier": 1,
-      "tags": ["labs"],
-      "enabled": true
+      "tags": [
+        "labs"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "$comment": "ai.meta.com serves no feed; engineering.fb.com is Meta's publishing surface for model and infrastructure work.",
@@ -45,8 +105,23 @@
       "type": "rss",
       "url": "https://engineering.fb.com/feed/",
       "tier": 1,
-      "tags": ["labs"],
-      "enabled": true
+      "tags": [
+        "labs"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "mistral",
@@ -54,8 +129,23 @@
       "type": "rss",
       "url": "https://mistral.ai/rss.xml",
       "tier": 1,
-      "tags": ["labs"],
-      "enabled": true
+      "tags": [
+        "labs"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "hf-blog",
@@ -63,8 +153,24 @@
       "type": "rss",
       "url": "https://huggingface.co/blog/feed.xml",
       "tier": 2,
-      "tags": ["tools", "open-source"],
-      "enabled": true
+      "tags": [
+        "tools",
+        "open-source"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "hf-papers",
@@ -72,9 +178,23 @@
       "type": "hf_papers",
       "url": "https://huggingface.co/api/daily_papers",
       "tier": 2,
-      "tags": ["research"],
+      "tags": [
+        "research"
+      ],
       "enabled": true,
-      "options": { "min_upvotes": 5 }
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 5,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "arxiv-ai",
@@ -82,8 +202,23 @@
       "type": "rss",
       "url": "https://rss.arxiv.org/rss/cs.AI",
       "tier": 2,
-      "tags": ["research"],
-      "enabled": true
+      "tags": [
+        "research"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "arxiv-lg",
@@ -91,8 +226,23 @@
       "type": "rss",
       "url": "https://rss.arxiv.org/rss/cs.LG",
       "tier": 2,
-      "tags": ["research"],
-      "enabled": true
+      "tags": [
+        "research"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "arxiv-cl",
@@ -100,8 +250,23 @@
       "type": "rss",
       "url": "https://rss.arxiv.org/rss/cs.CL",
       "tier": 2,
-      "tags": ["research"],
-      "enabled": true
+      "tags": [
+        "research"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "github-trending-ai",
@@ -109,10 +274,26 @@
       "type": "github",
       "url": "https://api.github.com/search/repositories",
       "tier": 3,
-      "tags": ["tools", "repos"],
+      "tags": [
+        "tools",
+        "repos"
+      ],
       "enabled": true,
       "options": {
-        "queries": ["llm", "ai-agent", "rag", "inference", "fine-tuning"],
+        "queries": [
+          "llm",
+          "ai-agent",
+          "rag",
+          "inference",
+          "fine-tuning"
+        ],
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
         "created_within_days": 7,
         "min_stars": 100,
         "max_per_query": 5
@@ -124,8 +305,23 @@
       "type": "rss",
       "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
       "tier": 4,
-      "tags": ["press"],
-      "enabled": true
+      "tags": [
+        "press"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "venturebeat-ai",
@@ -133,8 +329,23 @@
       "type": "rss",
       "url": "https://venturebeat.com/category/ai/feed/",
       "tier": 4,
-      "tags": ["press"],
-      "enabled": true
+      "tags": [
+        "press"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "theverge-ai",
@@ -142,8 +353,23 @@
       "type": "rss",
       "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
       "tier": 4,
-      "tags": ["press"],
-      "enabled": true
+      "tags": [
+        "press"
+      ],
+      "enabled": true,
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "hn",
@@ -151,12 +377,30 @@
       "type": "hn",
       "url": "https://hn.algolia.com/api/v1/search_by_date",
       "tier": 5,
-      "tags": ["community"],
+      "tags": [
+        "community"
+      ],
       "enabled": true,
       "options": {
-        "queries": ["AI", "LLM", "GPT", "Claude", "Gemini", "open weights", "inference"],
+        "queries": [
+          "AI",
+          "LLM",
+          "GPT",
+          "Claude",
+          "Gemini",
+          "open weights",
+          "inference"
+        ],
         "min_points": 50,
-        "hours_back": 48
+        "hours_back": 48,
+        "limit": 0,
+        "min_score": 0,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
       }
     },
     {
@@ -165,9 +409,24 @@
       "type": "reddit",
       "url": "https://www.reddit.com/r/LocalLLaMA/hot.json",
       "tier": 5,
-      "tags": ["community", "open-source"],
+      "tags": [
+        "community",
+        "open-source"
+      ],
       "enabled": true,
-      "options": { "limit": 50, "min_score": 100 }
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 50,
+        "min_score": 100,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     },
     {
       "id": "reddit-ml",
@@ -175,9 +434,24 @@
       "type": "reddit",
       "url": "https://www.reddit.com/r/MachineLearning/hot.json",
       "tier": 5,
-      "tags": ["community", "research"],
+      "tags": [
+        "community",
+        "research"
+      ],
       "enabled": true,
-      "options": { "limit": 50, "min_score": 100 }
+      "options": {
+        "queries": null,
+        "min_points": 0,
+        "hours_back": 0,
+        "limit": 50,
+        "min_score": 100,
+        "min_upvotes": 0,
+        "min_likes": 0,
+        "sort": "",
+        "created_within_days": 0,
+        "min_stars": 0,
+        "max_per_query": 0
+      }
     }
   ]
 }

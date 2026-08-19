@@ -12,6 +12,7 @@ const (
 	SourceHN       = "hn"
 	SourceReddit   = "reddit"
 	SourceHFPapers = "hf_papers"
+	SourceHFModels = "hf_models"
 	SourceGitHub   = "github"
 )
 
@@ -20,6 +21,7 @@ var validSourceTypes = map[string]bool{
 	SourceHN:       true,
 	SourceReddit:   true,
 	SourceHFPapers: true,
+	SourceHFModels: true,
 	SourceGitHub:   true,
 }
 
@@ -50,6 +52,10 @@ type SourceOptions struct {
 
 	// hf_papers
 	MinUpvotes int `json:"min_upvotes"`
+
+	// hf_models
+	MinLikes int    `json:"min_likes"`
+	Sort     string `json:"sort"`
 
 	// github
 	CreatedWithinDays int `json:"created_within_days"`

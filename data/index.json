@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T17:34:59.5027839Z",
+  "generated_at": "2026-08-19T18:09:31.8794127Z",
   "stories": [
     {
       "id": "5670397364c3ff0f",
@@ -79,22 +79,6 @@
       "cluster_size": 2
     },
     {
-      "id": "db79310acf13e6ee",
-      "slug": "2026-08-18-3d-fruit-fly-visualization-runs-on-macos-using-flywire",
-      "title": "3D Fruit Fly Visualization Runs on macOS Using FlyWire Connectome",
-      "summary": "A developer released an open‑source macOS application that renders a three‑dimensional model of a fruit fly brain using data from the FlyWire connectome project. The visualization runs on the desktop and lets users explore neural structures in real time.",
-      "score": 47,
-      "tier": "notable",
-      "tags": [
-        "open-source",
-        "tools",
-        "models"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-18T21:50:33Z",
-      "cluster_size": 1
-    },
-    {
       "id": "503c1703e87547bc",
       "slug": "2026-08-19-insufficient-details-to-summarize-ornith-1-5-self",
       "title": "Insufficient details to summarize Ornith-1.5 self-scaffolding article",
@@ -124,19 +108,19 @@
       "cluster_size": 1
     },
     {
-      "id": "b54ad377dd58ce65",
-      "slug": "2026-08-19-tool-detects-and-patches-walking-dead-states-in-sierra",
-      "title": "Tool detects and patches walking-dead states in Sierra adventure games",
-      "summary": "Lucasartsifier is a tool that automatically detects walking-dead states in Sierra adventure games and applies patches to restore playability, helping players avoid dead ends without manual save management.",
-      "score": 45,
+      "id": "db79310acf13e6ee",
+      "slug": "2026-08-18-3d-fruit-fly-visualization-runs-on-macos-using-flywire",
+      "title": "3D Fruit Fly Visualization Runs on macOS Using FlyWire Connectome",
+      "summary": "A developer released an open‑source macOS application that renders a three‑dimensional model of a fruit fly brain using data from the FlyWire connectome project. The visualization runs on the desktop and lets users explore neural structures in real time.",
+      "score": 46,
       "tier": "notable",
       "tags": [
         "open-source",
         "tools",
-        "coding"
+        "models"
       ],
       "builder_relevant": true,
-      "date": "2026-08-19T01:58:33Z",
+      "date": "2026-08-18T21:50:33Z",
       "cluster_size": 1
     },
     {
@@ -168,6 +152,22 @@
       "builder_relevant": true,
       "date": "2026-08-19T04:00:00Z",
       "cluster_size": 2
+    },
+    {
+      "id": "b54ad377dd58ce65",
+      "slug": "2026-08-19-tool-detects-and-patches-walking-dead-states-in-sierra",
+      "title": "Tool detects and patches walking-dead states in Sierra adventure games",
+      "summary": "Lucasartsifier is a tool that automatically detects walking-dead states in Sierra adventure games and applies patches to restore playability, helping players avoid dead ends without manual save management.",
+      "score": 44,
+      "tier": "notable",
+      "tags": [
+        "open-source",
+        "tools",
+        "coding"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T01:58:33Z",
+      "cluster_size": 1
     },
     {
       "id": "291da6c4500f8272",
@@ -295,11 +295,25 @@
       "cluster_size": 1
     },
     {
+      "id": "1da645bef6685ed7",
+      "slug": "2026-08-18-introducing-chatgpt-for-teens-built-for-learning-backed-by",
+      "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+      "summary": "",
+      "score": 41,
+      "tier": "notable",
+      "tags": [
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-18T11:00:00Z",
+      "cluster_size": 3
+    },
+    {
       "id": "4638cea1b44ba35c",
       "slug": "2026-08-19-comic-reference-aware-safety-gating-for-multimodal-large",
       "title": "COMIC: Reference-Aware Safety Gating for Multimodal Large Language Models",
       "summary": "",
-      "score": 41,
+      "score": 40,
       "tier": "notable",
       "tags": [
         "research",
@@ -314,7 +328,7 @@
       "slug": "2026-08-19-d-2-acci-a-dual-loop-diagnostic-protocol-for-evidence",
       "title": "D$^2$ACCI: A Dual-Loop Diagnostic Protocol for Evidence-Preserving Agent Memory",
       "summary": "",
-      "score": 41,
+      "score": 40,
       "tier": "notable",
       "tags": [
         "agents",
@@ -330,7 +344,7 @@
       "slug": "2026-08-19-policy-invariant-reward-shaping-from-llm-feedback-a",
       "title": "Policy-Invariant Reward Shaping from LLM Feedback: A Framework for Hybrid RL Agents",
       "summary": "",
-      "score": 41,
+      "score": 40,
       "tier": "notable",
       "tags": [
         "agents",
@@ -347,7 +361,7 @@
       "slug": "2026-08-19-efficient-rlvr-scheduling-via-graph-structured-online",
       "title": "Efficient RLVR Scheduling via Graph-Structured Online Difficulty Estimation",
       "summary": "",
-      "score": 41,
+      "score": 40,
       "tier": "notable",
       "tags": [
         "research"
@@ -355,32 +369,6 @@
       "builder_relevant": false,
       "date": "2026-08-19T04:00:00Z",
       "cluster_size": 2
-    },
-    {
-      "id": "d30b63e52a2780cb",
-      "slug": "2026-08-18-ai-usage-patterns-in-software-teams",
-      "title": "AI usage patterns in software teams",
-      "summary": "",
-      "score": 41,
-      "tier": "notable",
-      "tags": [],
-      "builder_relevant": false,
-      "date": "2026-08-18T22:08:07Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "1da645bef6685ed7",
-      "slug": "2026-08-18-introducing-chatgpt-for-teens-built-for-learning-backed-by",
-      "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
-      "summary": "",
-      "score": 41,
-      "tier": "notable",
-      "tags": [
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-18T11:00:00Z",
-      "cluster_size": 3
     },
     {
       "id": "01631307ad337b23",
@@ -836,6 +824,18 @@
       "cluster_size": 1
     },
     {
+      "id": "d30b63e52a2780cb",
+      "slug": "2026-08-18-ai-usage-patterns-in-software-teams",
+      "title": "AI usage patterns in software teams",
+      "summary": "",
+      "score": 40,
+      "tier": "notable",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-18T22:08:07Z",
+      "cluster_size": 1
+    },
+    {
       "id": "7b0caafd08f67d28",
       "slug": "2026-08-18-field-measurements-of-neighborhood-scale-air-temperature",
       "title": "Field measurements of neighborhood-scale air temperature impacts of data centers",
@@ -860,20 +860,6 @@
       ],
       "builder_relevant": false,
       "date": "2026-08-18T17:02:15Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "2b2f391481bda227",
-      "slug": "2026-08-18-show-hn-openleetcode-local-leetcode-runner-where-tests-live",
-      "title": "Show HN: Openleetcode – Local LeetCode runner where tests live in the repo",
-      "summary": "",
-      "score": 39,
-      "tier": "minor",
-      "tags": [
-        "coding"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-18T15:30:40Z",
       "cluster_size": 1
     },
     {
@@ -903,2237 +889,17 @@
       "cluster_size": 1
     },
     {
-      "id": "03347c13183977c8",
-      "slug": "2026-08-19-codequant-unified-clustering-and-quantization-for-enhanced",
-      "title": "CodeQuant: Unified Clustering and Quantization for Enhanced Outlier Smoothing in Low-Precision Mixture-of-Experts",
+      "id": "2b2f391481bda227",
+      "slug": "2026-08-18-show-hn-openleetcode-local-leetcode-runner-where-tests-live",
+      "title": "Show HN: Openleetcode – Local LeetCode runner where tests live in the repo",
       "summary": "",
-      "score": 37,
+      "score": 38,
       "tier": "minor",
       "tags": [
-        "research"
+        "coding"
       ],
       "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "053b3721af5dc3b4",
-      "slug": "2026-08-19-the-price-of-thinking-reasoning-effort-as-a-model-specific",
-      "title": "The Price of Thinking: Reasoning Effort as a Model-Specific API Contract",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "0808537a68e24154",
-      "slug": "2026-08-19-dept-document-embedding-preservation-tuning-for-unified",
-      "title": "DEPT: Document Embedding Preservation Tuning for Unified Query Expansion and Retrieval",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "rag",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "0864bc15f29ef177",
-      "slug": "2026-08-19-subzero-efficient-zeroth-order-llm-fine-tuning-via-large",
-      "title": "SubZero+: Efficient Zeroth-Order LLM Fine-Tuning via Large Learning Rates",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "0a9955ecc7a8424c",
-      "slug": "2026-08-19-the-acknowledgment-point-is-the-system-durable-policy",
-      "title": "The Acknowledgment Point Is the System: Durable Policy-Decision Receipts for AI Audit Evidence",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "0b9240fccf109156",
-      "slug": "2026-08-19-fda-opt-federated-fine-tuning-via-dynamic-update-schedules",
-      "title": "FDA-Opt: Federated Fine-Tuning via Dynamic Update Schedules",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "0c278a527fe6a8fb",
-      "slug": "2026-08-19-learning-auditable-classifier-models-source-disjoint-tree",
-      "title": "Learning Auditable Classifier Models: Source-Disjoint Tree Ensembles",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "0c319326ad0a6c27",
-      "slug": "2026-08-19-multi-turn-conversational-ai-from-text-to-multimodal",
-      "title": "Multi-turn Conversational AI from Text to Multimodal Interaction: Data, Models, Evaluation, and Open Challenges",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "0d2b90c3b99cc414",
-      "slug": "2026-08-19-behaviour-is-an-incomplete-measure-of-reasoning-development",
-      "title": "Behaviour Is an Incomplete Measure of Reasoning Development: Cross-surface pre-arrival accessibility and the limits of developmental inference in a recurrent-depth reasoner",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "0e85682e3de4d10c",
-      "slug": "2026-08-19-improving-influence-based-instruction-tuning-data-selection",
-      "title": "Improving Influence-based Instruction Tuning Data Selection for Balanced Learning of Diverse Capabilities",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "106b391788bbaf40",
-      "slug": "2026-08-19-m-linkx-multiview-graph-learning-for-brain-cognitive",
-      "title": "M-LINKX: Multiview Graph Learning for Brain Cognitive Disease Detection",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "10ec607c3641e7d3",
-      "slug": "2026-08-19-the-note-chord-voice-framework-structured-source-separation",
-      "title": "The Note-Chord-Voice Framework: Structured Source Separation and Causal Inference for EV Charging Data",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "15b65863152d89b8",
-      "slug": "2026-08-19-task-anchored-representation-shaping-for-pre-trained-model",
-      "title": "Task-Anchored Representation Shaping for Pre-Trained Model-Based Continual Learning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "1687504525f461d5",
-      "slug": "2026-08-19-rethinking-reverse-kl-as-adaptive-entropy-distillation",
-      "title": "Rethinking Reverse KL as Adaptive Entropy Distillation",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 3
-    },
-    {
-      "id": "16f45c4b9b30aeb4",
-      "slug": "2026-08-19-task-specialization-fine-tuning-for-contextual",
-      "title": "Task Specialization Fine-Tuning for Contextual Reinforcement Learning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "17b4b0a668add72d",
-      "slug": "2026-08-19-q-learning-with-world-models",
-      "title": "Q-Learning With World Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 2
-    },
-    {
-      "id": "1c2499081b5673c4",
-      "slug": "2026-08-19-wip-llm-odyssey-a-game-based-platform-for-teaching-llm",
-      "title": "WIP: LLM Odyssey: A Game-Based Platform for Teaching LLM Engineering Concepts",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research",
-        "models",
-        "open-source"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "1c4b6bf77c958401",
-      "slug": "2026-08-19-an-empirical-study-of-reward-specification-and-benchmark",
-      "title": "An Empirical Study of Reward Specification and Benchmark Reliability in GRPO-based LLM Unlearning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "1cac8c77a9075503",
-      "slug": "2026-08-19-spectral-rank-certification-for-foundation-model-adapters",
-      "title": "Spectral Rank Certification for Foundation Model Adapters",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "1dd4a5b419f54ab7",
-      "slug": "2026-08-19-the-working-set-of-a-coding-agent-coherence-debt-in",
-      "title": "The Working Set of a Coding Agent: Coherence Debt in Repository-Scale Tasks",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "agents",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "22247fc53940b115",
-      "slug": "2026-08-19-from-uniform-to-learned-knots-a-study-of-spline-based",
-      "title": "From Uniform to Learned Knots: A Study of Spline-Based Numerical Encodings for Tabular Deep Learning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "22982a87412efab1",
-      "slug": "2026-08-19-stop-indexing-at-full-precision-revisiting-clustering-for",
-      "title": "Stop Indexing at Full Precision: Revisiting Clustering for Vector Embeddings",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "242a68b15e7b3953",
-      "slug": "2026-08-19-invariant-pretraining-for-robust-code-representations",
-      "title": "Invariant Pretraining for Robust Code Representations",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "coding",
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "24d68987cc3a7861",
-      "slug": "2026-08-19-decided-upstream-written-late-locating-and-pricing-the",
-      "title": "Decided Upstream, Written Late: Locating and Pricing the Cross-Lingual Refusal Circuit of a Multilingual MoE",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "safety",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "27ffe1ed093c1b5e",
-      "slug": "2026-08-19-benchmarking-the-benchmarks-evaluating-automated-safety",
-      "title": "Benchmarking the Benchmarks: Evaluating Automated Safety Benchmarks for Small Language Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "policy",
-        "research",
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "29e9631400484f9d",
-      "slug": "2026-08-19-breaking-the-compression-barrier-cross-architecture",
-      "title": "Breaking the Compression Barrier: Cross-Architecture Compression Boundary Learning via Reverse Regrowth",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 2
-    },
-    {
-      "id": "310e0300d1ef5221",
-      "slug": "2026-08-19-a-blueprint-for-equilibrium-based-differentiable-continuous",
-      "title": "A Blueprint for Equilibrium-Based Differentiable Continuous-Variable Thermodynamic Computing",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "314f76245ecae3c8",
-      "slug": "2026-08-19-finfraudbench-a-heterogeneous-graph-benchmark-for-financial",
-      "title": "FinFraudBench: A Heterogeneous Graph Benchmark for Financial Fraud Detection",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "3188847ba5790e72",
-      "slug": "2026-08-19-odtlearn-a-package-for-learning-optimal-decision-trees-for",
-      "title": "ODTlearn: A Package for Learning Optimal Decision Trees for Prediction and Prescription",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "open-source",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "3224216815e9f093",
-      "slug": "2026-08-19-rethinking-token-wise-feature-caching-accelerating",
-      "title": "Rethinking Token-wise Feature Caching: Accelerating Diffusion Transformers with Dual Feature Caching",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 2
-    },
-    {
-      "id": "38a746031fcdfd16",
-      "slug": "2026-08-19-constitutional-midtraining-content-presence-drives",
-      "title": "Constitutional Midtraining: Content Presence Drives Alignment Gains",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research",
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "39be9cfbeb5c7014",
-      "slug": "2026-08-19-temporal-leakage-in-financial-news-nlp-a-multi-architecture",
-      "title": "Temporal Leakage in Financial News NLP: A Multi-Architecture Audit with a Regime-Specific M\u0026A Signal",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "3c1e6ba0773d038a",
-      "slug": "2026-08-19-temporal-graph-prototype-conditioned-conformal-prediction",
-      "title": "Temporal Graph Prototype-conditioned Conformal Prediction for Fraud Detection",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "3d18af37f63b651b",
-      "slug": "2026-08-19-effects-of-answer-format-variation-on-gender-bias-in-large",
-      "title": "Effects of Answer Format Variation on Gender Bias in Large Language Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "3ed45ac666ab7e16",
-      "slug": "2026-08-19-quantumnovelty-a-skill-orchestrating-language-agent-for",
-      "title": "QuantumNovelty: A Skill-Orchestrating Language Agent for Referee-Style Review and Patentability Screening of Quantum Papers and Patents",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "agents",
-        "models",
-        "open-source",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "4228e61b012a4f7a",
-      "slug": "2026-08-19-mcts-kbqa-monte-carlo-tree-search-with-information-gain",
-      "title": "MCTS-KBQA: Monte Carlo Tree Search with Information Gain Rewards for Knowledge Base Question Answering",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "44ddf7fffbb007fc",
-      "slug": "2026-08-19-whose-gold-annotator-pool-disagreement-is-large-at-the-item",
-      "title": "Whose Gold? Annotator-Pool Disagreement Is Large at the Item Level, and Hidden by Small Leaderboards",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "456063918a933cdf",
-      "slug": "2026-08-19-fast-test-time-refinement-for-robust-learned-image",
-      "title": "Fast Test-Time Refinement for Robust Learned Image Compression",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "471eef030cc46b7c",
-      "slug": "2026-08-19-cross-model-memory-transfer-via-target-side-reader",
-      "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "478d56d286ae8779",
-      "slug": "2026-08-19-learning-multi-timescale-interventions-under-safety-and",
-      "title": "Learning Multi-Timescale Interventions under Safety and Resource Constraints",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research",
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "482db986e7403de1",
-      "slug": "2026-08-19-vdgr-rag-vectors-directories-graphs-and-reflection-are-all",
-      "title": "VDGR-RAG: Vectors, Directories, Graphs, and Reflection Are All You Need for Unified Reasoning over Hierarchical Enterprise Knowledge",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "4890b034723b73eb",
-      "slug": "2026-08-19-from-global-benchmarks-to-local-evaluations-benchmarking",
-      "title": "From Global Benchmarks to Local Evaluations: Benchmarking LLMs for the German Public Sector",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "4909c068652c7443",
-      "slug": "2026-08-19-on-the-subgaussianity-of-quantized-linear-maps-an-ai",
-      "title": "On the Subgaussianity of Quantized Linear Maps: An AI-Assisted Note",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "4f0136a82537d6fb",
-      "slug": "2026-08-19-the-model-s-tell-measuring-context-leakage-attack-signals",
-      "title": "The Model's Tell: Measuring Context-Leakage Attack Signals with Behavior Gauges",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "5105326f3bca378e",
-      "slug": "2026-08-19-neuro-symbolic-learning-over-owl-2-dl-via-consequence-based",
-      "title": "Neuro-symbolic learning over OWL 2 DL via consequence-based compilation to differentiable circuits",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "515f742a60845731",
-      "slug": "2026-08-19-the-economics-of-ai-inference-inflation-dynamics-welfare",
-      "title": "The Economics of AI Inference: Inflation Dynamics, Welfare Costs, and Optimal Monetary Policy under the Inference-Cost Phillips Curve",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "53f4c58dec8d9c70",
-      "slug": "2026-08-19-sod-step-wise-on-policy-distillation-for-small-language",
-      "title": "SOD: Step-wise On-policy Distillation for Small Language Model Agents",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "594bc063b0e0b6fb",
-      "slug": "2026-08-19-prediction-inference-of-time-series-with-standard-relu-deep",
-      "title": "Prediction Inference of Time Series with Standard ReLU Deep Neural Networks",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research",
-        "infra"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "5ccb9e84778f0caa",
-      "slug": "2026-08-19-generative-model-unlearning-a-survey-through-target-events",
-      "title": "Generative Model Unlearning: A Survey through Target Events, Unlearning Operators, and Evaluation Protocols",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research",
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "5d289522c77c2424",
-      "slug": "2026-08-19-when-single-dataset-conclusions-fail-a-45-task-study-of",
-      "title": "When Single-Dataset Conclusions Fail: A 45-Task Study of Threshold Tuning and Resampling for Imbalanced Classification",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "60b42ba9984f8111",
-      "slug": "2026-08-19-tsquerybench-llm-as-a-judge-for-time-series-explanations",
-      "title": "TSQueryBench: LLM-as-a-Judge for Time Series Explanations",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "63e1675f3661292d",
-      "slug": "2026-08-19-paired-exact-reset-evaluation-of-a-prediction-derived",
-      "title": "Paired Exact-Reset Evaluation of a Prediction-Derived Medium-to-Full World-Model Cascade",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "646182a853293186",
-      "slug": "2026-08-19-efficient-table-qa-via-tablegrid-navigation-and-progressive",
-      "title": "Efficient Table QA via TableGrid Navigation and Progressive Inference Prompting",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "651a5166ad0b2011",
-      "slug": "2026-08-19-from-lab-to-reality-a-practical-evaluation-of-deep-learning",
-      "title": "From Lab to Reality: A Practical Evaluation of Deep Learning Models and LLMs for Vulnerability Detection",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "680885cc4c1a0376",
-      "slug": "2026-08-19-learning-what-not-to-learn-adversarial-disentangled-prompt",
-      "title": "Learning What Not to Learn: Adversarial Disentangled Prompt Tuning for Robust Vision-Language Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "68cac37ef92598f8",
-      "slug": "2026-08-19-cross-corpus-evaluation-of-generalizable-vulnerability",
-      "title": "Cross-Corpus Evaluation of Generalizable Vulnerability Detection in IoT Firmware",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "6af0d2435946a369",
-      "slug": "2026-08-19-generalised-transportability-via-causal-abstractions",
-      "title": "Generalised Transportability via Causal Abstractions",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "6e0461e132de8cc0",
-      "slug": "2026-08-19-mdp-planning-as-policy-inference",
-      "title": "MDP Planning as Policy Inference",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "71d9365566d24147",
-      "slug": "2026-08-19-speechsense-a-paralinguistic-focused-dataset-for-fine",
-      "title": "SpeechSense: A Paralinguistic-Focused Dataset for Fine-Grained Speech Sentiment Analysis",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "747939c3e351efad",
-      "slug": "2026-08-19-dynamic-pricing-and-advertising-with-demand-learning",
-      "title": "Dynamic Pricing and Advertising with Demand Learning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "754efc5c22aa2813",
-      "slug": "2026-08-19-signalreasoner-assessing-the-upper-bound-of-3b-models-for",
-      "title": "SignalReasoner: Assessing the Upper Bound of 3B Models for Signal Mathematical Reasoning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "77f8d25bac158c55",
-      "slug": "2026-08-19-sape-sandwich-adapters-for-parameter-efficiency-in-large",
-      "title": "SAPE: Sandwich Adapters for Parameter Efficiency in Large Language Model Fine-Tuning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "782a1fd056dc6923",
-      "slug": "2026-08-19-h-2-mt-semantic-hierarchy-aware-hierarchical-memory",
-      "title": "H$^{2}$MT: Semantic Hierarchy-Aware Hierarchical Memory Transformer",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "78918acb4cf64f39",
-      "slug": "2026-08-19-fvspec-real-world-property-based-tests-as-lean-challenges",
-      "title": "FVSpec: Real-World Property-Based Tests as Lean Challenges",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "78eacc78019e5767",
-      "slug": "2026-08-19-recurrentgpt-expressive-depth-through-recurrent-modulation",
-      "title": "RecurrentGPT: Expressive Depth through Recurrent Modulation in Transformers",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "79626e06347d3fc2",
-      "slug": "2026-08-19-multilook-coherent-imaging-theoretical-guarantees-and",
-      "title": "Multilook Coherent Imaging: Theoretical Guarantees and Algorithms",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "7cd729f94fe7ed44",
-      "slug": "2026-08-19-arash-adaptive-retrieval-and-shot-selection-for-tabular",
-      "title": "ARASH: Adaptive Retrieval And Shot Selection for Tabular Prediction",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "7d810ff5e8e845cf",
-      "slug": "2026-08-19-sage-self-evolving-storyboard-skills-via-attribution-guided",
-      "title": "SAGE: Self-Evolving Storyboard Skills via Attribution-Guided Rule Evolution",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "7e2c6c089605db72",
-      "slug": "2026-08-19-unsupervised-learning-of-cell-instances-with-generative",
-      "title": "Unsupervised Learning of Cell Instances with Generative Routing Pyramids",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "7f0a740ff3f8e0ba",
-      "slug": "2026-08-19-dominotree-conditional-tree-structured-drafting-with-domino",
-      "title": "DominoTree: Conditional Tree-Structured Drafting with Domino for Speculative Decoding",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "7fb53c06677e5fd8",
-      "slug": "2026-08-19-parametric-knowledge-in-rag-sft-for-domain-specific",
-      "title": "Parametric Knowledge in RAG-SFT for Domain-Specific Document Generation",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "803b58d90502510d",
-      "slug": "2026-08-19-phase-aware-cnn-for-real-time-5g-6g-channel-estimation-with",
-      "title": "Phase-Aware CNN for Real-Time 5G/6G Channel Estimation with Hardware-in-the-loop Validation",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 2
-    },
-    {
-      "id": "80e6d5dab5c6f307",
-      "slug": "2026-08-19-koala-koopman-operator-learning-for-wifi-based-anticipatory",
-      "title": "KOALA: Koopman Operator Learning for WiFi-Based Anticipatory Hum",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "81c67f01f5a88a48",
-      "slug": "2026-08-19-mitigating-rubric-interference-in-llm-judges-via-on-policy",
-      "title": "Mitigating Rubric Interference in LLM Judges via On-Policy Self-Distillation",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "8232c5cbb212621d",
-      "slug": "2026-08-19-which-source-wins-task-dependent-reliance-in-vision",
-      "title": "Which Source Wins? Task-Dependent Reliance in Vision-Language Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "8300e5f401974baa",
-      "slug": "2026-08-19-does-unification-come-at-a-cost-uni-safebench-a-safety",
-      "title": "Does Unification Come at a Cost? Uni-SafeBench: A Safety Benchmark for Unified Multimodal Large Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research",
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "8a4773627e170a7e",
-      "slug": "2026-08-19-ptxbench-benchmark-and-adapt-llms-for-gpu-kernel",
-      "title": "PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "8c20e5918a12c9bd",
-      "slug": "2026-08-19-calibench-are-the-stochastic-dynamics-of-video-world-models",
-      "title": "CaliBench: Are the Stochastic Dynamics of Video World Models Physically Calibrated?",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "9086cfc74d5a91cd",
-      "slug": "2026-08-19-lagsplat-inferring-physics-governed-interactive-simulation",
-      "title": "LaGSplat: Inferring Physics-Governed Interactive Simulation from Monocular Video Using Latent Lagrangian Gaussian Splatting",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "9472eee2ccf3f7a4",
-      "slug": "2026-08-19-hierarchical-copula-gumbel-top-k-routing-two-sided",
-      "title": "Hierarchical Copula-Gumbel-Top-K Routing: Two-Sided Dependence Control for Frozen Mixture-of-Experts at Fixed Per-Token Routing Laws",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "94b62352461ebf58",
-      "slug": "2026-08-19-mora-mobility-as-the-backbone-for-geospatial-representation",
-      "title": "MoRA: Mobility as the Backbone for Geospatial Representation Learning at Scale",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "974fefa3fe1d5dab",
-      "slug": "2026-08-19-non-crossing-deep-quantile-regression-for-distributional",
-      "title": "Non-Crossing Deep Quantile Regression for Distributional Survival Prediction",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "97e3fa2e7142cb4e",
-      "slug": "2026-08-19-a-unified-geometric-framework-for-developmental-analysis-of",
-      "title": "A Unified Geometric Framework for Developmental Analysis of Spatial Transcriptomic Data",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "9dec94c862e4ea3c",
-      "slug": "2026-08-19-rethinking-irregular-time-series-forecasting-from-the",
-      "title": "Rethinking Irregular Time Series Forecasting from the Perspective of Basis Functions",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "9e28e328e4f00c5b",
-      "slug": "2026-08-19-factreview-evidence-grounded-peer-review-with-execution",
-      "title": "FactReview: Evidence-Grounded Peer Review with Execution-Based Claim Verification",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "coding",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "a060dc3e44f5645f",
-      "slug": "2026-08-19-architecture-dependent-causal-transfer-of-activation-states",
-      "title": "Architecture-Dependent Causal Transfer of Activation States Across Large Language Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "a06de2cb83e6b10b",
-      "slug": "2026-08-19-moe-enhanced-explainable-deep-manifold-transformation-for",
-      "title": "MoE-Enhanced Explainable Deep Manifold Transformation for Complex Data Embedding and Visualization",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "a0f38bb78d696dcd",
-      "slug": "2026-08-19-where-a-new-concept-must-enter-entry-point-gates-cross-task",
-      "title": "Where a New Concept Must Enter: Entry Point Gates Cross-Task Usability in Unified Multimodal Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "a1c4d842945cbd97",
-      "slug": "2026-08-19-atlas-scaffold-free-algorithm-synthesis-by-llms-via",
-      "title": "ATLAS: Scaffold-Free Algorithm Synthesis by LLMs via Embedding-Guided Quality-Diversity Search",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "a1e52f9ef9dba134",
-      "slug": "2026-08-19-g-react-graph-guided-deep-search-via-structure-state-co",
-      "title": "G-ReAct: Graph-Guided Deep Search via Structure-State Co-Evolution",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "a47f8105bb24f102",
-      "slug": "2026-08-19-omegause-officeval-benchmarking-llm-agents-on-long-horizon",
-      "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "a4fca5245c7d7b3c",
-      "slug": "2026-08-19-equilibrium-forcing-adaptive-video-generation-without-noise",
-      "title": "Equilibrium Forcing: Adaptive Video Generation Without Noise Conditioning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "a5585614a2d8a0dd",
-      "slug": "2026-08-19-l3cube-indicquest-v2-a-large-scale-multilingual-benchmark",
-      "title": "L3Cube-IndicQuest v2: A Large-Scale Multilingual Benchmark for Evaluating Factual Knowledge of Large Language Models Across Indic Languages",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "a90463367618d471",
-      "slug": "2026-08-19-certifying-compressed-language-models-an-audit-and-a",
-      "title": "Certifying Compressed Language Models: An Audit and a Statistical Toolkit",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "ab64bd971c875938",
-      "slug": "2026-08-19-provenance-not-behaviour-a-serialisation-artifact-in-edge",
-      "title": "Provenance, Not Behaviour: A Serialisation Artifact in Edge-IIoTset and a Leakage-Free Benchmark for Precision-Agriculture Intrusion Detection",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "abe89ed7fcd77438",
-      "slug": "2026-08-19-dmt-dens-density-preserving-manifold-visualization-for",
-      "title": "DMT-Dens: Density-preserving manifold visualization for biological data",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "aeafeeec09c4f23a",
-      "slug": "2026-08-19-tracesql-traceable-answerability-estimation-for-reference",
-      "title": "TraceSQL: Traceable Answerability Estimation for Reference-Free Text-to-SQL Verification",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "aeee85d36186636c",
-      "slug": "2026-08-19-expected-free-energy-as-an-information-constraint-on-the",
-      "title": "Expected free energy as an information constraint on the Bethe Lagrangian",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "b12dff36912d2cea",
-      "slug": "2026-08-19-retrompa-a-molecular-property-aware-auxiliary-framework-for",
-      "title": "RetroMPA: A Molecular Property-Aware Auxiliary Framework for Enhancing Retrosynthesis Prediction",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "b1bf0d6c5ded741e",
-      "slug": "2026-08-19-no-gaussian-required-contrastive-inverse-dynamics-for-jepa",
-      "title": "No Gaussian Required: Contrastive Inverse Dynamics for JEPA World Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "b23dcad234d5e9ba",
-      "slug": "2026-08-19-mone-modular-neural-memory-for-efficient-long-context",
-      "title": "MoNe: Modular Neural Memory for Efficient Long Context Inference",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "b59d3e616bdc1491",
-      "slug": "2026-08-19-kernelarc-a-multi-agent-framework-for-gpu-kernel",
-      "title": "KernelArc: A Multi-Agent Framework for GPU Kernel Optimization",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "agents",
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "b8597e36d8b9e649",
-      "slug": "2026-08-19-language-has-two-parameters-narrative-induced-semantic",
-      "title": "Language Has Two Parameters: Narrative-Induced Semantic Plasticity and Phase-Sensitive Interpretation",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "b8cc72e8db90e81b",
-      "slug": "2026-08-19-earth-observation-foundation-models-for-terrestrial",
-      "title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "ba681505bcf16a58",
-      "slug": "2026-08-19-when-to-plan-when-to-polish-noise-level-as-a-granularity",
-      "title": "When to Plan, When to Polish: Noise Level as a Granularity Axis for Diffusion Language Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "bc1045b135dd1096",
-      "slug": "2026-08-19-less-data-faster-convergence-goal-driven-data-optimization",
-      "title": "Less Data, Faster Convergence: Goal-Driven Data Optimization for Multimodal Instruction Tuning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "bd063e17ac8972b8",
-      "slug": "2026-08-19-bro-jepa-learning-modular-transformations-in-latent-space",
-      "title": "BRo-JEPA: Learning Modular Transformations in Latent Space",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "bdf7761965bff091",
-      "slug": "2026-08-19-lexkairos-benchmarking-legal-temporal-capabilities-in-llms",
-      "title": "LexKairos: Benchmarking Legal Temporal Capabilities in LLMs",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "bf09daec533643a8",
-      "slug": "2026-08-19-guaranteed-adaptive-modality-acquisition-when-the-policy",
-      "title": "Guaranteed Adaptive Modality Acquisition: When the Policy Chooses Its Own Calibration Group",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "business",
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "c11fa99f733bf7d6",
-      "slug": "2026-08-19-star-fl-secure-federated-learning-with-spatial-temporal",
-      "title": "STAR-FL: Secure Federated Learning with Spatial-Temporal Analysis and Robust Aggregation",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "c4e54ba83d726f12",
-      "slug": "2026-08-19-llms-for-medical-consultation-are-evaluated-too-late-the",
-      "title": "LLMs for Medical Consultation Are Evaluated Too Late: The Preformulation Gap",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "c5c22805c864361a",
-      "slug": "2026-08-19-the-spectral-neuron",
-      "title": "The Spectral Neuron",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "c7c60592e4740394",
-      "slug": "2026-08-19-co-rl-unsupervised-reasoning-emerges-from-diverse-cohort-in",
-      "title": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "agents",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "c7c7ade7d1f32d85",
-      "slug": "2026-08-19-confretro-a-3d-aware-template-free-method-for-enhancing",
-      "title": "ConfRetro: a 3D-aware template-free method for enhancing retrosynthesis via molecular conformer information",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "cab7ea548f2bb54f",
-      "slug": "2026-08-19-auxiliary-uncertainty-signals-for-llm-assisted-systematic",
-      "title": "Auxiliary uncertainty signals for LLM-assisted systematic review screening: a benchmark across eight Cohen drug-class reviews",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "cce27faf843c76e6",
-      "slug": "2026-08-19-deploying-frontier-agentic-technology-in-moosenger-a",
-      "title": "Deploying Frontier Agentic Technology in MOOSEnger, a Multiphysics-Capable AI Assistant",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "agents",
-        "open-source",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "cd2054d2d046602b",
-      "slug": "2026-08-19-amortised-post-hoc-explanation-with-exact-preservation-for",
-      "title": "Amortised Post-Hoc Explanation with Exact Preservation for Dynamic Graph Anomaly Detectors",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "d03fca55ef7608b5",
-      "slug": "2026-08-19-interpretable-cross-lingual-alignment-in-small-language",
-      "title": "Interpretable Cross-Lingual Alignment in Small Language Models: Probing Cultural and Pragmatic Reasoning in Japanese-English Bilingual LLMs",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research",
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "d10c8c36fa3f8ff2",
-      "slug": "2026-08-19-lightweight-deep-learning-based-channel-estimation-for-ris",
-      "title": "Lightweight Deep Learning-Based Channel Estimation for RIS-Aided Extremely Large-Scale MIMO Systems on Resource-Limited Edge Devices",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "d57c1d19fa18bfcb",
-      "slug": "2026-08-19-when-does-the-best-sampling-temperature-rise-with-the",
-      "title": "When Does the Best Sampling Temperature Rise with the Budget? Sufficient Conditions for Pass@k",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "d5c095b6afec62a3",
-      "slug": "2026-08-19-phyxmamba-chaotic-system-reconstruction-from-short-context",
-      "title": "PhyxMamba: Chaotic System Reconstruction from Short Context Observations with Generative State-Space Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "d5f9008b6fdc4d5a",
-      "slug": "2026-08-19-coarse-to-fine-multi-resolution-diffusion-models-for",
-      "title": "Coarse-to-Fine Multi-Resolution Diffusion Models for Trajectory Generation in Urban Systems",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "d780c7d15be67434",
-      "slug": "2026-08-19-pallas-a-proactive-kv-cache-migration-framework-for-llm",
-      "title": "Pallas: A Proactive KV Cache Migration Framework for LLM Inference in AI-RAN",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "d7d7c40c54832587",
-      "slug": "2026-08-19-model-inversion-attacks-a-survey-of-approaches-and",
-      "title": "Model Inversion Attacks: A Survey of Approaches and Countermeasures",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "business",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "dda4894d9639ed2d",
-      "slug": "2026-08-19-search-g1-grounded-search-agents-via-representation-based",
-      "title": "Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "de7fb6280a63e523",
-      "slug": "2026-08-19-roc-n-reroll-how-verifier-imperfection-affects-test-time",
-      "title": "ROC-n-reroll: How verifier imperfection affects test-time scaling",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "e0ff804c63a236ef",
-      "slug": "2026-08-19-speculative-rollback-correction-for-quality-diverse-web",
-      "title": "Speculative Rollback Correction for Quality-Diverse Web Agent Imitation",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "agents",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "e1f8a51b435d094b",
-      "slug": "2026-08-19-benchmarking-quantum-machine-learning-for-power-system",
-      "title": "Benchmarking Quantum Machine Learning for Power-System Attack Detection: Evaluation Choices Decide the Outcome Before the Models Do",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "e405ec7ca89e9b6c",
-      "slug": "2026-08-19-look-before-you-lift-visual-and-quantitative-diagnostics",
-      "title": "Look Before You Lift: Visual and Quantitative Diagnostics for Topological Deep Learning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "e4ae0d788409ee04",
-      "slug": "2026-08-19-whether-llms-can-navigate-beliefs-and-facts-depends-on-how",
-      "title": "Whether LLMs Can Navigate Beliefs and Facts Depends on How You Phrase It",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "e5e2ba4e77d1d889",
-      "slug": "2026-08-19-reflex-guard-a-low-latency-guardrail-for-llm-prompt-safety",
-      "title": "Reflex-Guard: A Low-Latency Guardrail for LLM Prompt Safety Using Dense Semantic Embeddings",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research",
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "e79274f4a40f07d4",
-      "slug": "2026-08-19-j-miner-recovering-executable-decision-knowledge-from",
-      "title": "J-Miner: Recovering Executable Decision Knowledge from Language-Model Classifiers",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "efea327a692e1609",
-      "slug": "2026-08-19-llm-only-pddl-domain-repair-with-open-weight-models",
-      "title": "LLM-Only PDDL Domain Repair with Open-Weight Models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "f1b504554a37ff26",
-      "slug": "2026-08-19-towards-unified-world-models-for-visual-navigation-via",
-      "title": "Towards Unified World Models for Visual Navigation via Memory-Augmented Planning and Foresight",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "f2c46c06234bcab5",
-      "slug": "2026-08-19-information-geometry-of-message-passing",
-      "title": "Information Geometry of Message Passing",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "f46698892e0e193a",
-      "slug": "2026-08-19-leveraging-machine-unlearning-for-cost-efficient-preference",
-      "title": "Leveraging Machine Unlearning for Cost-Efficient Preference Alignment",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research",
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "f4c60229448a2cca",
-      "slug": "2026-08-19-contraction-aware-reinforcement-learning-for-nonlinear",
-      "title": "Contraction-Aware Reinforcement Learning for Nonlinear Control with Statistical Robustness",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "f553823809f1d827",
-      "slug": "2026-08-19-chain-of-experience-for-continual-llm-improvement",
-      "title": "Chain-of-Experience for Continual LLM Improvement",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research",
-        "infra",
-        "models"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "f75f50121fac47b5",
-      "slug": "2026-08-19-unitac-universal-task-aware-compression-via-weighted",
-      "title": "UniTAC: Universal Task-Aware Compression via Weighted Distortion Measures",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "f7f6a8630daffe39",
-      "slug": "2026-08-19-closing-the-loop-a-control-theoretic-framework-for-provably",
-      "title": "Closing the Loop: A Control-Theoretic Framework for Provably Stable Time Series Forecasting with LLMs",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "f99973b65a3af1db",
-      "slug": "2026-08-19-can-llms-reliably-self-report-adversarial-prefills-and-how",
-      "title": "Can LLMs Reliably Self-Report Adversarial Prefills, and How?",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "models",
-        "research",
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "fa0f31b0178623ac",
-      "slug": "2026-08-19-memory-bounded-continuation-of-greedy-sampling-for",
-      "title": "Memory-Bounded Continuation of Greedy Sampling for Continual Anomaly Detection",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "fc8458922d96416b",
-      "slug": "2026-08-19-every-expert-counts-exactmoe-for-memory-efficient-w4a16",
-      "title": "Every Expert Counts: ExactMoE for Memory-Efficient W4A16 Inference",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "fc87ca2bd1a7926f",
-      "slug": "2026-08-19-how-benchmarks-and-evaluation-protocols-shape-conclusions",
-      "title": "How Benchmarks and Evaluation Protocols Shape Conclusions in Provenance-Based Intrusion Detection",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "fcd34d1d84e0b016",
-      "slug": "2026-08-19-comprehensive-framework-for-evaluation-of-deep-neural",
-      "title": "Comprehensive framework for evaluation of deep neural networks in detection and quantification of lymphoma from PET/CT images: clinical insights, pitfalls, and observer agreement analyses",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "fd3e88655f08fb1b",
-      "slug": "2026-08-19-neuroute-logit-guided-neural-routing-for-billion-scale",
-      "title": "NeuRoute: Logit-Guided Neural Routing for Billion-Scale Vector Search with Sub-Hour Index Construction",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "rag",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "fe7765f3e85c6751",
-      "slug": "2026-08-19-representation-signatures-and-risk-feedback-alignment-in",
-      "title": "Representation Signatures and Risk-Feedback Alignment in LLM Trading Agents",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "agents",
-        "models",
-        "research",
-        "safety"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "febbaa6c0bdfc16e",
-      "slug": "2026-08-19-privact-internalizing-contextual-privacy-preservation-via",
-      "title": "PrivAct: Internalizing Contextual Privacy Preservation via Multi-Agent Preference Training",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "agents",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "ff2d23b08cc4a6cf",
-      "slug": "2026-08-19-reference-free-logged-energy-oracle-recovery-for-neural",
-      "title": "Reference-free logged energy-oracle recovery for neural approximations of symmetric coercive variational problems: conforming Riesz reconstruction and archive-level selection",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "ffd9810fd9a7513d",
-      "slug": "2026-08-19-midas-a-multimodal-data-acquisition-system-and-dataset-for",
-      "title": "MiDAS: A Multimodal Data Acquisition System and Dataset for Robot-Assisted Minimally Invasive Surgery",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "business",
-        "open-source",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "ffe10d4af190d087",
-      "slug": "2026-08-19-palmyra-x6-technical-report-an-agentic-tool-use-model-post",
-      "title": "Palmyra x6 Technical Report: An Agentic, Tool-Use Model Post-Trained via Anchored Supervised Fine-Tuning",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [
-        "agents",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-19T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "b2f569fb03d31ba3",
-      "slug": "2026-08-18-degraded-performance-for-multiple-models",
-      "title": "Degraded performance for multiple models",
-      "summary": "",
-      "score": 37,
-      "tier": "minor",
-      "tags": [],
-      "builder_relevant": false,
-      "date": "2026-08-18T16:28:20Z",
+      "date": "2026-08-18T15:30:40Z",
       "cluster_size": 1
     },
     {
@@ -3167,6 +933,2228 @@
       "cluster_size": 2
     },
     {
+      "id": "03347c13183977c8",
+      "slug": "2026-08-19-codequant-unified-clustering-and-quantization-for-enhanced",
+      "title": "CodeQuant: Unified Clustering and Quantization for Enhanced Outlier Smoothing in Low-Precision Mixture-of-Experts",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "053b3721af5dc3b4",
+      "slug": "2026-08-19-the-price-of-thinking-reasoning-effort-as-a-model-specific",
+      "title": "The Price of Thinking: Reasoning Effort as a Model-Specific API Contract",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "0808537a68e24154",
+      "slug": "2026-08-19-dept-document-embedding-preservation-tuning-for-unified",
+      "title": "DEPT: Document Embedding Preservation Tuning for Unified Query Expansion and Retrieval",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "rag",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "0864bc15f29ef177",
+      "slug": "2026-08-19-subzero-efficient-zeroth-order-llm-fine-tuning-via-large",
+      "title": "SubZero+: Efficient Zeroth-Order LLM Fine-Tuning via Large Learning Rates",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "0a9955ecc7a8424c",
+      "slug": "2026-08-19-the-acknowledgment-point-is-the-system-durable-policy",
+      "title": "The Acknowledgment Point Is the System: Durable Policy-Decision Receipts for AI Audit Evidence",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "0b9240fccf109156",
+      "slug": "2026-08-19-fda-opt-federated-fine-tuning-via-dynamic-update-schedules",
+      "title": "FDA-Opt: Federated Fine-Tuning via Dynamic Update Schedules",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "0c278a527fe6a8fb",
+      "slug": "2026-08-19-learning-auditable-classifier-models-source-disjoint-tree",
+      "title": "Learning Auditable Classifier Models: Source-Disjoint Tree Ensembles",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "0c319326ad0a6c27",
+      "slug": "2026-08-19-multi-turn-conversational-ai-from-text-to-multimodal",
+      "title": "Multi-turn Conversational AI from Text to Multimodal Interaction: Data, Models, Evaluation, and Open Challenges",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "0d2b90c3b99cc414",
+      "slug": "2026-08-19-behaviour-is-an-incomplete-measure-of-reasoning-development",
+      "title": "Behaviour Is an Incomplete Measure of Reasoning Development: Cross-surface pre-arrival accessibility and the limits of developmental inference in a recurrent-depth reasoner",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "0e85682e3de4d10c",
+      "slug": "2026-08-19-improving-influence-based-instruction-tuning-data-selection",
+      "title": "Improving Influence-based Instruction Tuning Data Selection for Balanced Learning of Diverse Capabilities",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "106b391788bbaf40",
+      "slug": "2026-08-19-m-linkx-multiview-graph-learning-for-brain-cognitive",
+      "title": "M-LINKX: Multiview Graph Learning for Brain Cognitive Disease Detection",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "10ec607c3641e7d3",
+      "slug": "2026-08-19-the-note-chord-voice-framework-structured-source-separation",
+      "title": "The Note-Chord-Voice Framework: Structured Source Separation and Causal Inference for EV Charging Data",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "15b65863152d89b8",
+      "slug": "2026-08-19-task-anchored-representation-shaping-for-pre-trained-model",
+      "title": "Task-Anchored Representation Shaping for Pre-Trained Model-Based Continual Learning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "1687504525f461d5",
+      "slug": "2026-08-19-rethinking-reverse-kl-as-adaptive-entropy-distillation",
+      "title": "Rethinking Reverse KL as Adaptive Entropy Distillation",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 3
+    },
+    {
+      "id": "16f45c4b9b30aeb4",
+      "slug": "2026-08-19-task-specialization-fine-tuning-for-contextual",
+      "title": "Task Specialization Fine-Tuning for Contextual Reinforcement Learning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "17b4b0a668add72d",
+      "slug": "2026-08-19-q-learning-with-world-models",
+      "title": "Q-Learning With World Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 2
+    },
+    {
+      "id": "1c2499081b5673c4",
+      "slug": "2026-08-19-wip-llm-odyssey-a-game-based-platform-for-teaching-llm",
+      "title": "WIP: LLM Odyssey: A Game-Based Platform for Teaching LLM Engineering Concepts",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research",
+        "models",
+        "open-source"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "1c4b6bf77c958401",
+      "slug": "2026-08-19-an-empirical-study-of-reward-specification-and-benchmark",
+      "title": "An Empirical Study of Reward Specification and Benchmark Reliability in GRPO-based LLM Unlearning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "1cac8c77a9075503",
+      "slug": "2026-08-19-spectral-rank-certification-for-foundation-model-adapters",
+      "title": "Spectral Rank Certification for Foundation Model Adapters",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "1dd4a5b419f54ab7",
+      "slug": "2026-08-19-the-working-set-of-a-coding-agent-coherence-debt-in",
+      "title": "The Working Set of a Coding Agent: Coherence Debt in Repository-Scale Tasks",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "agents",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "22247fc53940b115",
+      "slug": "2026-08-19-from-uniform-to-learned-knots-a-study-of-spline-based",
+      "title": "From Uniform to Learned Knots: A Study of Spline-Based Numerical Encodings for Tabular Deep Learning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "22982a87412efab1",
+      "slug": "2026-08-19-stop-indexing-at-full-precision-revisiting-clustering-for",
+      "title": "Stop Indexing at Full Precision: Revisiting Clustering for Vector Embeddings",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "242a68b15e7b3953",
+      "slug": "2026-08-19-invariant-pretraining-for-robust-code-representations",
+      "title": "Invariant Pretraining for Robust Code Representations",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "coding",
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "24d68987cc3a7861",
+      "slug": "2026-08-19-decided-upstream-written-late-locating-and-pricing-the",
+      "title": "Decided Upstream, Written Late: Locating and Pricing the Cross-Lingual Refusal Circuit of a Multilingual MoE",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "safety",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "27ffe1ed093c1b5e",
+      "slug": "2026-08-19-benchmarking-the-benchmarks-evaluating-automated-safety",
+      "title": "Benchmarking the Benchmarks: Evaluating Automated Safety Benchmarks for Small Language Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "policy",
+        "research",
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "29e9631400484f9d",
+      "slug": "2026-08-19-breaking-the-compression-barrier-cross-architecture",
+      "title": "Breaking the Compression Barrier: Cross-Architecture Compression Boundary Learning via Reverse Regrowth",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 2
+    },
+    {
+      "id": "310e0300d1ef5221",
+      "slug": "2026-08-19-a-blueprint-for-equilibrium-based-differentiable-continuous",
+      "title": "A Blueprint for Equilibrium-Based Differentiable Continuous-Variable Thermodynamic Computing",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "314f76245ecae3c8",
+      "slug": "2026-08-19-finfraudbench-a-heterogeneous-graph-benchmark-for-financial",
+      "title": "FinFraudBench: A Heterogeneous Graph Benchmark for Financial Fraud Detection",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "3188847ba5790e72",
+      "slug": "2026-08-19-odtlearn-a-package-for-learning-optimal-decision-trees-for",
+      "title": "ODTlearn: A Package for Learning Optimal Decision Trees for Prediction and Prescription",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "open-source",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "3224216815e9f093",
+      "slug": "2026-08-19-rethinking-token-wise-feature-caching-accelerating",
+      "title": "Rethinking Token-wise Feature Caching: Accelerating Diffusion Transformers with Dual Feature Caching",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 2
+    },
+    {
+      "id": "38a746031fcdfd16",
+      "slug": "2026-08-19-constitutional-midtraining-content-presence-drives",
+      "title": "Constitutional Midtraining: Content Presence Drives Alignment Gains",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research",
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "39be9cfbeb5c7014",
+      "slug": "2026-08-19-temporal-leakage-in-financial-news-nlp-a-multi-architecture",
+      "title": "Temporal Leakage in Financial News NLP: A Multi-Architecture Audit with a Regime-Specific M\u0026A Signal",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "3c1e6ba0773d038a",
+      "slug": "2026-08-19-temporal-graph-prototype-conditioned-conformal-prediction",
+      "title": "Temporal Graph Prototype-conditioned Conformal Prediction for Fraud Detection",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "3d18af37f63b651b",
+      "slug": "2026-08-19-effects-of-answer-format-variation-on-gender-bias-in-large",
+      "title": "Effects of Answer Format Variation on Gender Bias in Large Language Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "3ed45ac666ab7e16",
+      "slug": "2026-08-19-quantumnovelty-a-skill-orchestrating-language-agent-for",
+      "title": "QuantumNovelty: A Skill-Orchestrating Language Agent for Referee-Style Review and Patentability Screening of Quantum Papers and Patents",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "agents",
+        "models",
+        "open-source",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "4228e61b012a4f7a",
+      "slug": "2026-08-19-mcts-kbqa-monte-carlo-tree-search-with-information-gain",
+      "title": "MCTS-KBQA: Monte Carlo Tree Search with Information Gain Rewards for Knowledge Base Question Answering",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "44ddf7fffbb007fc",
+      "slug": "2026-08-19-whose-gold-annotator-pool-disagreement-is-large-at-the-item",
+      "title": "Whose Gold? Annotator-Pool Disagreement Is Large at the Item Level, and Hidden by Small Leaderboards",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "456063918a933cdf",
+      "slug": "2026-08-19-fast-test-time-refinement-for-robust-learned-image",
+      "title": "Fast Test-Time Refinement for Robust Learned Image Compression",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "471eef030cc46b7c",
+      "slug": "2026-08-19-cross-model-memory-transfer-via-target-side-reader",
+      "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "478d56d286ae8779",
+      "slug": "2026-08-19-learning-multi-timescale-interventions-under-safety-and",
+      "title": "Learning Multi-Timescale Interventions under Safety and Resource Constraints",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research",
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "482db986e7403de1",
+      "slug": "2026-08-19-vdgr-rag-vectors-directories-graphs-and-reflection-are-all",
+      "title": "VDGR-RAG: Vectors, Directories, Graphs, and Reflection Are All You Need for Unified Reasoning over Hierarchical Enterprise Knowledge",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "4890b034723b73eb",
+      "slug": "2026-08-19-from-global-benchmarks-to-local-evaluations-benchmarking",
+      "title": "From Global Benchmarks to Local Evaluations: Benchmarking LLMs for the German Public Sector",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "4909c068652c7443",
+      "slug": "2026-08-19-on-the-subgaussianity-of-quantized-linear-maps-an-ai",
+      "title": "On the Subgaussianity of Quantized Linear Maps: An AI-Assisted Note",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "4f0136a82537d6fb",
+      "slug": "2026-08-19-the-model-s-tell-measuring-context-leakage-attack-signals",
+      "title": "The Model's Tell: Measuring Context-Leakage Attack Signals with Behavior Gauges",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "5105326f3bca378e",
+      "slug": "2026-08-19-neuro-symbolic-learning-over-owl-2-dl-via-consequence-based",
+      "title": "Neuro-symbolic learning over OWL 2 DL via consequence-based compilation to differentiable circuits",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "515f742a60845731",
+      "slug": "2026-08-19-the-economics-of-ai-inference-inflation-dynamics-welfare",
+      "title": "The Economics of AI Inference: Inflation Dynamics, Welfare Costs, and Optimal Monetary Policy under the Inference-Cost Phillips Curve",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "53f4c58dec8d9c70",
+      "slug": "2026-08-19-sod-step-wise-on-policy-distillation-for-small-language",
+      "title": "SOD: Step-wise On-policy Distillation for Small Language Model Agents",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "594bc063b0e0b6fb",
+      "slug": "2026-08-19-prediction-inference-of-time-series-with-standard-relu-deep",
+      "title": "Prediction Inference of Time Series with Standard ReLU Deep Neural Networks",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research",
+        "infra"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "5ccb9e84778f0caa",
+      "slug": "2026-08-19-generative-model-unlearning-a-survey-through-target-events",
+      "title": "Generative Model Unlearning: A Survey through Target Events, Unlearning Operators, and Evaluation Protocols",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research",
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "5d289522c77c2424",
+      "slug": "2026-08-19-when-single-dataset-conclusions-fail-a-45-task-study-of",
+      "title": "When Single-Dataset Conclusions Fail: A 45-Task Study of Threshold Tuning and Resampling for Imbalanced Classification",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "60b42ba9984f8111",
+      "slug": "2026-08-19-tsquerybench-llm-as-a-judge-for-time-series-explanations",
+      "title": "TSQueryBench: LLM-as-a-Judge for Time Series Explanations",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "63e1675f3661292d",
+      "slug": "2026-08-19-paired-exact-reset-evaluation-of-a-prediction-derived",
+      "title": "Paired Exact-Reset Evaluation of a Prediction-Derived Medium-to-Full World-Model Cascade",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "646182a853293186",
+      "slug": "2026-08-19-efficient-table-qa-via-tablegrid-navigation-and-progressive",
+      "title": "Efficient Table QA via TableGrid Navigation and Progressive Inference Prompting",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "651a5166ad0b2011",
+      "slug": "2026-08-19-from-lab-to-reality-a-practical-evaluation-of-deep-learning",
+      "title": "From Lab to Reality: A Practical Evaluation of Deep Learning Models and LLMs for Vulnerability Detection",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "680885cc4c1a0376",
+      "slug": "2026-08-19-learning-what-not-to-learn-adversarial-disentangled-prompt",
+      "title": "Learning What Not to Learn: Adversarial Disentangled Prompt Tuning for Robust Vision-Language Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "68cac37ef92598f8",
+      "slug": "2026-08-19-cross-corpus-evaluation-of-generalizable-vulnerability",
+      "title": "Cross-Corpus Evaluation of Generalizable Vulnerability Detection in IoT Firmware",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "6af0d2435946a369",
+      "slug": "2026-08-19-generalised-transportability-via-causal-abstractions",
+      "title": "Generalised Transportability via Causal Abstractions",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "6e0461e132de8cc0",
+      "slug": "2026-08-19-mdp-planning-as-policy-inference",
+      "title": "MDP Planning as Policy Inference",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "71d9365566d24147",
+      "slug": "2026-08-19-speechsense-a-paralinguistic-focused-dataset-for-fine",
+      "title": "SpeechSense: A Paralinguistic-Focused Dataset for Fine-Grained Speech Sentiment Analysis",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "747939c3e351efad",
+      "slug": "2026-08-19-dynamic-pricing-and-advertising-with-demand-learning",
+      "title": "Dynamic Pricing and Advertising with Demand Learning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "754efc5c22aa2813",
+      "slug": "2026-08-19-signalreasoner-assessing-the-upper-bound-of-3b-models-for",
+      "title": "SignalReasoner: Assessing the Upper Bound of 3B Models for Signal Mathematical Reasoning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "77f8d25bac158c55",
+      "slug": "2026-08-19-sape-sandwich-adapters-for-parameter-efficiency-in-large",
+      "title": "SAPE: Sandwich Adapters for Parameter Efficiency in Large Language Model Fine-Tuning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "782a1fd056dc6923",
+      "slug": "2026-08-19-h-2-mt-semantic-hierarchy-aware-hierarchical-memory",
+      "title": "H$^{2}$MT: Semantic Hierarchy-Aware Hierarchical Memory Transformer",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "78918acb4cf64f39",
+      "slug": "2026-08-19-fvspec-real-world-property-based-tests-as-lean-challenges",
+      "title": "FVSpec: Real-World Property-Based Tests as Lean Challenges",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "78eacc78019e5767",
+      "slug": "2026-08-19-recurrentgpt-expressive-depth-through-recurrent-modulation",
+      "title": "RecurrentGPT: Expressive Depth through Recurrent Modulation in Transformers",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "79626e06347d3fc2",
+      "slug": "2026-08-19-multilook-coherent-imaging-theoretical-guarantees-and",
+      "title": "Multilook Coherent Imaging: Theoretical Guarantees and Algorithms",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "7cd729f94fe7ed44",
+      "slug": "2026-08-19-arash-adaptive-retrieval-and-shot-selection-for-tabular",
+      "title": "ARASH: Adaptive Retrieval And Shot Selection for Tabular Prediction",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "7d810ff5e8e845cf",
+      "slug": "2026-08-19-sage-self-evolving-storyboard-skills-via-attribution-guided",
+      "title": "SAGE: Self-Evolving Storyboard Skills via Attribution-Guided Rule Evolution",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "7e2c6c089605db72",
+      "slug": "2026-08-19-unsupervised-learning-of-cell-instances-with-generative",
+      "title": "Unsupervised Learning of Cell Instances with Generative Routing Pyramids",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "7f0a740ff3f8e0ba",
+      "slug": "2026-08-19-dominotree-conditional-tree-structured-drafting-with-domino",
+      "title": "DominoTree: Conditional Tree-Structured Drafting with Domino for Speculative Decoding",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "7fb53c06677e5fd8",
+      "slug": "2026-08-19-parametric-knowledge-in-rag-sft-for-domain-specific",
+      "title": "Parametric Knowledge in RAG-SFT for Domain-Specific Document Generation",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "803b58d90502510d",
+      "slug": "2026-08-19-phase-aware-cnn-for-real-time-5g-6g-channel-estimation-with",
+      "title": "Phase-Aware CNN for Real-Time 5G/6G Channel Estimation with Hardware-in-the-loop Validation",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 2
+    },
+    {
+      "id": "80e6d5dab5c6f307",
+      "slug": "2026-08-19-koala-koopman-operator-learning-for-wifi-based-anticipatory",
+      "title": "KOALA: Koopman Operator Learning for WiFi-Based Anticipatory Hum",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "81c67f01f5a88a48",
+      "slug": "2026-08-19-mitigating-rubric-interference-in-llm-judges-via-on-policy",
+      "title": "Mitigating Rubric Interference in LLM Judges via On-Policy Self-Distillation",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "8232c5cbb212621d",
+      "slug": "2026-08-19-which-source-wins-task-dependent-reliance-in-vision",
+      "title": "Which Source Wins? Task-Dependent Reliance in Vision-Language Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "8300e5f401974baa",
+      "slug": "2026-08-19-does-unification-come-at-a-cost-uni-safebench-a-safety",
+      "title": "Does Unification Come at a Cost? Uni-SafeBench: A Safety Benchmark for Unified Multimodal Large Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research",
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "8a4773627e170a7e",
+      "slug": "2026-08-19-ptxbench-benchmark-and-adapt-llms-for-gpu-kernel",
+      "title": "PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "8c20e5918a12c9bd",
+      "slug": "2026-08-19-calibench-are-the-stochastic-dynamics-of-video-world-models",
+      "title": "CaliBench: Are the Stochastic Dynamics of Video World Models Physically Calibrated?",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "9086cfc74d5a91cd",
+      "slug": "2026-08-19-lagsplat-inferring-physics-governed-interactive-simulation",
+      "title": "LaGSplat: Inferring Physics-Governed Interactive Simulation from Monocular Video Using Latent Lagrangian Gaussian Splatting",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "9472eee2ccf3f7a4",
+      "slug": "2026-08-19-hierarchical-copula-gumbel-top-k-routing-two-sided",
+      "title": "Hierarchical Copula-Gumbel-Top-K Routing: Two-Sided Dependence Control for Frozen Mixture-of-Experts at Fixed Per-Token Routing Laws",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "94b62352461ebf58",
+      "slug": "2026-08-19-mora-mobility-as-the-backbone-for-geospatial-representation",
+      "title": "MoRA: Mobility as the Backbone for Geospatial Representation Learning at Scale",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "974fefa3fe1d5dab",
+      "slug": "2026-08-19-non-crossing-deep-quantile-regression-for-distributional",
+      "title": "Non-Crossing Deep Quantile Regression for Distributional Survival Prediction",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "97e3fa2e7142cb4e",
+      "slug": "2026-08-19-a-unified-geometric-framework-for-developmental-analysis-of",
+      "title": "A Unified Geometric Framework for Developmental Analysis of Spatial Transcriptomic Data",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "9dec94c862e4ea3c",
+      "slug": "2026-08-19-rethinking-irregular-time-series-forecasting-from-the",
+      "title": "Rethinking Irregular Time Series Forecasting from the Perspective of Basis Functions",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "9e28e328e4f00c5b",
+      "slug": "2026-08-19-factreview-evidence-grounded-peer-review-with-execution",
+      "title": "FactReview: Evidence-Grounded Peer Review with Execution-Based Claim Verification",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "coding",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a060dc3e44f5645f",
+      "slug": "2026-08-19-architecture-dependent-causal-transfer-of-activation-states",
+      "title": "Architecture-Dependent Causal Transfer of Activation States Across Large Language Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a06de2cb83e6b10b",
+      "slug": "2026-08-19-moe-enhanced-explainable-deep-manifold-transformation-for",
+      "title": "MoE-Enhanced Explainable Deep Manifold Transformation for Complex Data Embedding and Visualization",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a0f38bb78d696dcd",
+      "slug": "2026-08-19-where-a-new-concept-must-enter-entry-point-gates-cross-task",
+      "title": "Where a New Concept Must Enter: Entry Point Gates Cross-Task Usability in Unified Multimodal Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a1c4d842945cbd97",
+      "slug": "2026-08-19-atlas-scaffold-free-algorithm-synthesis-by-llms-via",
+      "title": "ATLAS: Scaffold-Free Algorithm Synthesis by LLMs via Embedding-Guided Quality-Diversity Search",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a1e52f9ef9dba134",
+      "slug": "2026-08-19-g-react-graph-guided-deep-search-via-structure-state-co",
+      "title": "G-ReAct: Graph-Guided Deep Search via Structure-State Co-Evolution",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a47f8105bb24f102",
+      "slug": "2026-08-19-omegause-officeval-benchmarking-llm-agents-on-long-horizon",
+      "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a4fca5245c7d7b3c",
+      "slug": "2026-08-19-equilibrium-forcing-adaptive-video-generation-without-noise",
+      "title": "Equilibrium Forcing: Adaptive Video Generation Without Noise Conditioning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a5585614a2d8a0dd",
+      "slug": "2026-08-19-l3cube-indicquest-v2-a-large-scale-multilingual-benchmark",
+      "title": "L3Cube-IndicQuest v2: A Large-Scale Multilingual Benchmark for Evaluating Factual Knowledge of Large Language Models Across Indic Languages",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a90463367618d471",
+      "slug": "2026-08-19-certifying-compressed-language-models-an-audit-and-a",
+      "title": "Certifying Compressed Language Models: An Audit and a Statistical Toolkit",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "ab64bd971c875938",
+      "slug": "2026-08-19-provenance-not-behaviour-a-serialisation-artifact-in-edge",
+      "title": "Provenance, Not Behaviour: A Serialisation Artifact in Edge-IIoTset and a Leakage-Free Benchmark for Precision-Agriculture Intrusion Detection",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "abe89ed7fcd77438",
+      "slug": "2026-08-19-dmt-dens-density-preserving-manifold-visualization-for",
+      "title": "DMT-Dens: Density-preserving manifold visualization for biological data",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "aeafeeec09c4f23a",
+      "slug": "2026-08-19-tracesql-traceable-answerability-estimation-for-reference",
+      "title": "TraceSQL: Traceable Answerability Estimation for Reference-Free Text-to-SQL Verification",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "aeee85d36186636c",
+      "slug": "2026-08-19-expected-free-energy-as-an-information-constraint-on-the",
+      "title": "Expected free energy as an information constraint on the Bethe Lagrangian",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "b12dff36912d2cea",
+      "slug": "2026-08-19-retrompa-a-molecular-property-aware-auxiliary-framework-for",
+      "title": "RetroMPA: A Molecular Property-Aware Auxiliary Framework for Enhancing Retrosynthesis Prediction",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "b1bf0d6c5ded741e",
+      "slug": "2026-08-19-no-gaussian-required-contrastive-inverse-dynamics-for-jepa",
+      "title": "No Gaussian Required: Contrastive Inverse Dynamics for JEPA World Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "b23dcad234d5e9ba",
+      "slug": "2026-08-19-mone-modular-neural-memory-for-efficient-long-context",
+      "title": "MoNe: Modular Neural Memory for Efficient Long Context Inference",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "b59d3e616bdc1491",
+      "slug": "2026-08-19-kernelarc-a-multi-agent-framework-for-gpu-kernel",
+      "title": "KernelArc: A Multi-Agent Framework for GPU Kernel Optimization",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "agents",
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "b8597e36d8b9e649",
+      "slug": "2026-08-19-language-has-two-parameters-narrative-induced-semantic",
+      "title": "Language Has Two Parameters: Narrative-Induced Semantic Plasticity and Phase-Sensitive Interpretation",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "b8cc72e8db90e81b",
+      "slug": "2026-08-19-earth-observation-foundation-models-for-terrestrial",
+      "title": "Earth Observation Foundation Models for Terrestrial Ecohydrology: From Representation Learning to Process Inference",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "ba681505bcf16a58",
+      "slug": "2026-08-19-when-to-plan-when-to-polish-noise-level-as-a-granularity",
+      "title": "When to Plan, When to Polish: Noise Level as a Granularity Axis for Diffusion Language Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "bc1045b135dd1096",
+      "slug": "2026-08-19-less-data-faster-convergence-goal-driven-data-optimization",
+      "title": "Less Data, Faster Convergence: Goal-Driven Data Optimization for Multimodal Instruction Tuning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "bd063e17ac8972b8",
+      "slug": "2026-08-19-bro-jepa-learning-modular-transformations-in-latent-space",
+      "title": "BRo-JEPA: Learning Modular Transformations in Latent Space",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "bdf7761965bff091",
+      "slug": "2026-08-19-lexkairos-benchmarking-legal-temporal-capabilities-in-llms",
+      "title": "LexKairos: Benchmarking Legal Temporal Capabilities in LLMs",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "bf09daec533643a8",
+      "slug": "2026-08-19-guaranteed-adaptive-modality-acquisition-when-the-policy",
+      "title": "Guaranteed Adaptive Modality Acquisition: When the Policy Chooses Its Own Calibration Group",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "business",
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "c11fa99f733bf7d6",
+      "slug": "2026-08-19-star-fl-secure-federated-learning-with-spatial-temporal",
+      "title": "STAR-FL: Secure Federated Learning with Spatial-Temporal Analysis and Robust Aggregation",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "c4e54ba83d726f12",
+      "slug": "2026-08-19-llms-for-medical-consultation-are-evaluated-too-late-the",
+      "title": "LLMs for Medical Consultation Are Evaluated Too Late: The Preformulation Gap",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "c5c22805c864361a",
+      "slug": "2026-08-19-the-spectral-neuron",
+      "title": "The Spectral Neuron",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "c7c60592e4740394",
+      "slug": "2026-08-19-co-rl-unsupervised-reasoning-emerges-from-diverse-cohort-in",
+      "title": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "agents",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "c7c7ade7d1f32d85",
+      "slug": "2026-08-19-confretro-a-3d-aware-template-free-method-for-enhancing",
+      "title": "ConfRetro: a 3D-aware template-free method for enhancing retrosynthesis via molecular conformer information",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "cab7ea548f2bb54f",
+      "slug": "2026-08-19-auxiliary-uncertainty-signals-for-llm-assisted-systematic",
+      "title": "Auxiliary uncertainty signals for LLM-assisted systematic review screening: a benchmark across eight Cohen drug-class reviews",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "cce27faf843c76e6",
+      "slug": "2026-08-19-deploying-frontier-agentic-technology-in-moosenger-a",
+      "title": "Deploying Frontier Agentic Technology in MOOSEnger, a Multiphysics-Capable AI Assistant",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "agents",
+        "open-source",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "cd2054d2d046602b",
+      "slug": "2026-08-19-amortised-post-hoc-explanation-with-exact-preservation-for",
+      "title": "Amortised Post-Hoc Explanation with Exact Preservation for Dynamic Graph Anomaly Detectors",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "d03fca55ef7608b5",
+      "slug": "2026-08-19-interpretable-cross-lingual-alignment-in-small-language",
+      "title": "Interpretable Cross-Lingual Alignment in Small Language Models: Probing Cultural and Pragmatic Reasoning in Japanese-English Bilingual LLMs",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research",
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "d10c8c36fa3f8ff2",
+      "slug": "2026-08-19-lightweight-deep-learning-based-channel-estimation-for-ris",
+      "title": "Lightweight Deep Learning-Based Channel Estimation for RIS-Aided Extremely Large-Scale MIMO Systems on Resource-Limited Edge Devices",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "d57c1d19fa18bfcb",
+      "slug": "2026-08-19-when-does-the-best-sampling-temperature-rise-with-the",
+      "title": "When Does the Best Sampling Temperature Rise with the Budget? Sufficient Conditions for Pass@k",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "d5c095b6afec62a3",
+      "slug": "2026-08-19-phyxmamba-chaotic-system-reconstruction-from-short-context",
+      "title": "PhyxMamba: Chaotic System Reconstruction from Short Context Observations with Generative State-Space Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "d5f9008b6fdc4d5a",
+      "slug": "2026-08-19-coarse-to-fine-multi-resolution-diffusion-models-for",
+      "title": "Coarse-to-Fine Multi-Resolution Diffusion Models for Trajectory Generation in Urban Systems",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "d780c7d15be67434",
+      "slug": "2026-08-19-pallas-a-proactive-kv-cache-migration-framework-for-llm",
+      "title": "Pallas: A Proactive KV Cache Migration Framework for LLM Inference in AI-RAN",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "d7d7c40c54832587",
+      "slug": "2026-08-19-model-inversion-attacks-a-survey-of-approaches-and",
+      "title": "Model Inversion Attacks: A Survey of Approaches and Countermeasures",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "business",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "dda4894d9639ed2d",
+      "slug": "2026-08-19-search-g1-grounded-search-agents-via-representation-based",
+      "title": "Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "de7fb6280a63e523",
+      "slug": "2026-08-19-roc-n-reroll-how-verifier-imperfection-affects-test-time",
+      "title": "ROC-n-reroll: How verifier imperfection affects test-time scaling",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "e0ff804c63a236ef",
+      "slug": "2026-08-19-speculative-rollback-correction-for-quality-diverse-web",
+      "title": "Speculative Rollback Correction for Quality-Diverse Web Agent Imitation",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "agents",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "e1f8a51b435d094b",
+      "slug": "2026-08-19-benchmarking-quantum-machine-learning-for-power-system",
+      "title": "Benchmarking Quantum Machine Learning for Power-System Attack Detection: Evaluation Choices Decide the Outcome Before the Models Do",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "e405ec7ca89e9b6c",
+      "slug": "2026-08-19-look-before-you-lift-visual-and-quantitative-diagnostics",
+      "title": "Look Before You Lift: Visual and Quantitative Diagnostics for Topological Deep Learning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "e4ae0d788409ee04",
+      "slug": "2026-08-19-whether-llms-can-navigate-beliefs-and-facts-depends-on-how",
+      "title": "Whether LLMs Can Navigate Beliefs and Facts Depends on How You Phrase It",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "e5e2ba4e77d1d889",
+      "slug": "2026-08-19-reflex-guard-a-low-latency-guardrail-for-llm-prompt-safety",
+      "title": "Reflex-Guard: A Low-Latency Guardrail for LLM Prompt Safety Using Dense Semantic Embeddings",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research",
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "e79274f4a40f07d4",
+      "slug": "2026-08-19-j-miner-recovering-executable-decision-knowledge-from",
+      "title": "J-Miner: Recovering Executable Decision Knowledge from Language-Model Classifiers",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "efea327a692e1609",
+      "slug": "2026-08-19-llm-only-pddl-domain-repair-with-open-weight-models",
+      "title": "LLM-Only PDDL Domain Repair with Open-Weight Models",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "f1b504554a37ff26",
+      "slug": "2026-08-19-towards-unified-world-models-for-visual-navigation-via",
+      "title": "Towards Unified World Models for Visual Navigation via Memory-Augmented Planning and Foresight",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "f2c46c06234bcab5",
+      "slug": "2026-08-19-information-geometry-of-message-passing",
+      "title": "Information Geometry of Message Passing",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "f46698892e0e193a",
+      "slug": "2026-08-19-leveraging-machine-unlearning-for-cost-efficient-preference",
+      "title": "Leveraging Machine Unlearning for Cost-Efficient Preference Alignment",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research",
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "f4c60229448a2cca",
+      "slug": "2026-08-19-contraction-aware-reinforcement-learning-for-nonlinear",
+      "title": "Contraction-Aware Reinforcement Learning for Nonlinear Control with Statistical Robustness",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "f553823809f1d827",
+      "slug": "2026-08-19-chain-of-experience-for-continual-llm-improvement",
+      "title": "Chain-of-Experience for Continual LLM Improvement",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research",
+        "infra",
+        "models"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "f75f50121fac47b5",
+      "slug": "2026-08-19-unitac-universal-task-aware-compression-via-weighted",
+      "title": "UniTAC: Universal Task-Aware Compression via Weighted Distortion Measures",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "f7f6a8630daffe39",
+      "slug": "2026-08-19-closing-the-loop-a-control-theoretic-framework-for-provably",
+      "title": "Closing the Loop: A Control-Theoretic Framework for Provably Stable Time Series Forecasting with LLMs",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "f99973b65a3af1db",
+      "slug": "2026-08-19-can-llms-reliably-self-report-adversarial-prefills-and-how",
+      "title": "Can LLMs Reliably Self-Report Adversarial Prefills, and How?",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "research",
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "fa0f31b0178623ac",
+      "slug": "2026-08-19-memory-bounded-continuation-of-greedy-sampling-for",
+      "title": "Memory-Bounded Continuation of Greedy Sampling for Continual Anomaly Detection",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "fc8458922d96416b",
+      "slug": "2026-08-19-every-expert-counts-exactmoe-for-memory-efficient-w4a16",
+      "title": "Every Expert Counts: ExactMoE for Memory-Efficient W4A16 Inference",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "fc87ca2bd1a7926f",
+      "slug": "2026-08-19-how-benchmarks-and-evaluation-protocols-shape-conclusions",
+      "title": "How Benchmarks and Evaluation Protocols Shape Conclusions in Provenance-Based Intrusion Detection",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "fcd34d1d84e0b016",
+      "slug": "2026-08-19-comprehensive-framework-for-evaluation-of-deep-neural",
+      "title": "Comprehensive framework for evaluation of deep neural networks in detection and quantification of lymphoma from PET/CT images: clinical insights, pitfalls, and observer agreement analyses",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "fd3e88655f08fb1b",
+      "slug": "2026-08-19-neuroute-logit-guided-neural-routing-for-billion-scale",
+      "title": "NeuRoute: Logit-Guided Neural Routing for Billion-Scale Vector Search with Sub-Hour Index Construction",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "rag",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "fe7765f3e85c6751",
+      "slug": "2026-08-19-representation-signatures-and-risk-feedback-alignment-in",
+      "title": "Representation Signatures and Risk-Feedback Alignment in LLM Trading Agents",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "agents",
+        "models",
+        "research",
+        "safety"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "febbaa6c0bdfc16e",
+      "slug": "2026-08-19-privact-internalizing-contextual-privacy-preservation-via",
+      "title": "PrivAct: Internalizing Contextual Privacy Preservation via Multi-Agent Preference Training",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "agents",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "ff2d23b08cc4a6cf",
+      "slug": "2026-08-19-reference-free-logged-energy-oracle-recovery-for-neural",
+      "title": "Reference-free logged energy-oracle recovery for neural approximations of symmetric coercive variational problems: conforming Riesz reconstruction and archive-level selection",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "ffd9810fd9a7513d",
+      "slug": "2026-08-19-midas-a-multimodal-data-acquisition-system-and-dataset-for",
+      "title": "MiDAS: A Multimodal Data Acquisition System and Dataset for Robot-Assisted Minimally Invasive Surgery",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "business",
+        "open-source",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "ffe10d4af190d087",
+      "slug": "2026-08-19-palmyra-x6-technical-report-an-agentic-tool-use-model-post",
+      "title": "Palmyra x6 Technical Report: An Agentic, Tool-Use Model Post-Trained via Anchored Supervised Fine-Tuning",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "agents",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-19T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
       "id": "37085a57bd1bc3e8",
       "slug": "2026-08-18-companies-promote-incompetent-employees-to-management-to",
       "title": "Companies promote incompetent employees to management to limit damage they do",
@@ -3179,15 +3167,15 @@
       "cluster_size": 1
     },
     {
-      "id": "e76170e28ead64e2",
-      "slug": "2026-08-19-lfm2-5-q4-0-checkpoints-from-quantization-aware-distillation",
-      "title": "LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distillation",
+      "id": "b2f569fb03d31ba3",
+      "slug": "2026-08-18-degraded-performance-for-multiple-models",
+      "title": "Degraded performance for multiple models",
       "summary": "",
-      "score": 35,
+      "score": 36,
       "tier": "minor",
       "tags": [],
       "builder_relevant": false,
-      "date": "2026-08-19T13:48:49Z",
+      "date": "2026-08-18T16:28:20Z",
       "cluster_size": 1
     },
     {
@@ -3224,6 +3212,18 @@
       "tags": [],
       "builder_relevant": true,
       "date": "2026-08-19T16:21:31Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "e76170e28ead64e2",
+      "slug": "2026-08-19-lfm2-5-q4-0-checkpoints-from-quantization-aware-distillation",
+      "title": "LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distillation",
+      "summary": "",
+      "score": 34,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-19T13:48:49Z",
       "cluster_size": 1
     },
     {
@@ -3265,18 +3265,6 @@
       ],
       "builder_relevant": false,
       "date": "2026-08-17T21:03:18Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "080f98ece37ac47d",
-      "slug": "2026-08-17-israel-creates-fake-think-tank-in-likely-attempt-to-dupe-ai",
-      "title": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
-      "summary": "",
-      "score": 34,
-      "tier": "minor",
-      "tags": [],
-      "builder_relevant": false,
-      "date": "2026-08-17T20:46:10Z",
       "cluster_size": 1
     },
     {
@@ -12911,11 +12899,23 @@
       "cluster_size": 1
     },
     {
+      "id": "080f98ece37ac47d",
+      "slug": "2026-08-17-israel-creates-fake-think-tank-in-likely-attempt-to-dupe-ai",
+      "title": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
+      "summary": "",
+      "score": 33,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-17T20:46:10Z",
+      "cluster_size": 1
+    },
+    {
       "id": "3c88a02a5217c389",
       "slug": "2026-08-19-openai-hit-the-brakes-now-what",
       "title": "OpenAI hit the brakes. Now what?",
       "summary": "",
-      "score": 32,
+      "score": 31,
       "tier": "minor",
       "tags": [
         "business"
@@ -12929,7 +12929,7 @@
       "slug": "2026-08-18-ask-hn-does-anyone-else-feel-like-nothing-matters-anymore",
       "title": "Ask HN: Does anyone else feel like nothing matters anymore?",
       "summary": "",
-      "score": 32,
+      "score": 31,
       "tier": "minor",
       "tags": [],
       "builder_relevant": false,
@@ -12941,7 +12941,7 @@
       "slug": "2026-08-18-harnessrisk-a-lifecycle-oriented-benchmark-for-agent",
       "title": "HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety",
       "summary": "",
-      "score": 32,
+      "score": 31,
       "tier": "minor",
       "tags": [
         "agents",
@@ -12994,18 +12994,6 @@
       "cluster_size": 1
     },
     {
-      "id": "cd7b123fe193fe41",
-      "slug": "2026-08-19-finally-found-a-really-solid-suno-like-minimax-music-ui",
-      "title": "Finally found a really solid suno-like minimax music UI!!",
-      "summary": "",
-      "score": 29,
-      "tier": "minor",
-      "tags": [],
-      "builder_relevant": true,
-      "date": "2026-08-19T12:27:27Z",
-      "cluster_size": 1
-    },
-    {
       "id": "1720ba4cfce7913a",
       "slug": "2026-08-18-startupbench-benchmarking-general-purpose-agents-on-market",
       "title": "StartupBench: Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows",
@@ -13035,6 +13023,20 @@
       "cluster_size": 2
     },
     {
+      "id": "ecdd56414419cd03",
+      "slug": "2026-08-18-moe-vie-mixture-of-experts-vision-encoder-for-efficient",
+      "title": "MoE-ViE: Mixture of Experts Vision Encoder for Efficient Image and Video Understanding",
+      "summary": "",
+      "score": 29,
+      "tier": "minor",
+      "tags": [
+        "infra"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-18T00:00:00Z",
+      "cluster_size": 1
+    },
+    {
       "id": "549626d11129e20f",
       "slug": "2026-08-19-meet-the-startup-helping-wall-street-put-a-price-on-ai",
       "title": "Meet the startup helping Wall Street put a price on AI compute",
@@ -13047,15 +13049,15 @@
       "cluster_size": 1
     },
     {
-      "id": "ccbb71687eaef18c",
-      "slug": "2026-08-19-meta-ai-is-getting-a-mac-app",
-      "title": "Meta AI is getting a Mac app",
+      "id": "cd7b123fe193fe41",
+      "slug": "2026-08-19-finally-found-a-really-solid-suno-like-minimax-music-ui",
+      "title": "Finally found a really solid suno-like minimax music UI!!",
       "summary": "",
       "score": 28,
       "tier": "minor",
       "tags": [],
-      "builder_relevant": false,
-      "date": "2026-08-19T17:00:00Z",
+      "builder_relevant": true,
+      "date": "2026-08-19T12:27:27Z",
       "cluster_size": 1
     },
     {
@@ -13071,15 +13073,17 @@
       "cluster_size": 1
     },
     {
-      "id": "339d82d16a159240",
-      "slug": "2026-08-18-google-wins-bankruptcy-auction-for-spirit-airlines-emails",
-      "title": "Google wins bankruptcy auction for Spirit Airlines emails, chats, documents",
+      "id": "d14e7f8acca37439",
+      "slug": "2026-08-18-incoai-qwen3-8-27b-dflash2-text-generation",
+      "title": "incoai/Qwen3.8-27B-DFlash2 (text-generation)",
       "summary": "",
       "score": 28,
       "tier": "minor",
-      "tags": [],
-      "builder_relevant": false,
-      "date": "2026-08-18T00:29:15Z",
+      "tags": [
+        "models"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-18T04:09:16Z",
       "cluster_size": 1
     },
     {
@@ -13126,6 +13130,18 @@
       ],
       "builder_relevant": true,
       "date": "2026-08-17T12:09:42Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "ccbb71687eaef18c",
+      "slug": "2026-08-19-meta-ai-is-getting-a-mac-app",
+      "title": "Meta AI is getting a Mac app",
+      "summary": "",
+      "score": 27,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-19T17:00:00Z",
       "cluster_size": 1
     },
     {
@@ -13176,6 +13192,18 @@
       ],
       "builder_relevant": true,
       "date": "2026-08-18T03:10:26Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "339d82d16a159240",
+      "slug": "2026-08-18-google-wins-bankruptcy-auction-for-spirit-airlines-emails",
+      "title": "Google wins bankruptcy auction for Spirit Airlines emails, chats, documents",
+      "summary": "",
+      "score": 27,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-18T00:29:15Z",
       "cluster_size": 1
     },
     {
@@ -13247,6 +13275,33 @@
       "cluster_size": 1
     },
     {
+      "id": "97d0a8963ad59cff",
+      "slug": "2026-08-19-qwen-3-8-27b-vs-gemini-3-7-flash-high-for-real-coding-open",
+      "title": "Qwen 3.8 27B vs Gemini 3.7 Flash (High) for real coding: open-source 27B model did a much better job",
+      "summary": "",
+      "score": 26,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "open-source"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-19T17:03:20Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "5797d5a723e382d9",
+      "slug": "2026-08-19-lfm-2-5-qad",
+      "title": "LFM 2.5 QAD",
+      "summary": "",
+      "score": 26,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-19T16:59:34Z",
+      "cluster_size": 1
+    },
+    {
       "id": "eb330890a4b90721",
       "slug": "2026-08-19-ling-3-0-flash-tiny-base-models",
       "title": "ling 3.0 flash/tiny base models",
@@ -13289,21 +13344,6 @@
       "cluster_size": 1
     },
     {
-      "id": "f0aef7de9d210b8a",
-      "slug": "2026-08-19-same-effective-batch-does-not-mean-same-training-time-with",
-      "title": "Same effective batch does not mean same training time with gradient accumulation, tested on LoRA on T4 and L4 [D]",
-      "summary": "",
-      "score": 26,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "models"
-      ],
-      "builder_relevant": false,
-      "date": "2026-08-19T14:23:22Z",
-      "cluster_size": 1
-    },
-    {
       "id": "2df82f83c584f3eb",
       "slug": "2026-08-19-venturebeat-names-rob-strechay-as-its-first-lead-analyst",
       "title": "VentureBeat names Rob Strechay as its first Lead Analyst, expanding its enterprise AI research push",
@@ -13325,30 +13365,6 @@
       "tags": [],
       "builder_relevant": false,
       "date": "2026-08-19T14:09:39Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "027bc9742c764ab8",
-      "slug": "2026-08-19-nvidia-s-new-financial-strategy-does-not-compute",
-      "title": "Nvidia’s new financial strategy does not compute",
-      "summary": "",
-      "score": 26,
-      "tier": "minor",
-      "tags": [],
-      "builder_relevant": false,
-      "date": "2026-08-19T12:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "f723fe92910f0a56",
-      "slug": "2026-08-19-ai-isn-t-close-to-curing-cancer-this-startup-says-it-knows",
-      "title": "AI isn’t close to curing cancer. This startup says it knows what it will take.",
-      "summary": "",
-      "score": 26,
-      "tier": "minor",
-      "tags": [],
-      "builder_relevant": false,
-      "date": "2026-08-19T12:00:00Z",
       "cluster_size": 1
     },
     {
@@ -13378,6 +13394,21 @@
       "cluster_size": 1
     },
     {
+      "id": "f0aef7de9d210b8a",
+      "slug": "2026-08-19-same-effective-batch-does-not-mean-same-training-time-with",
+      "title": "Same effective batch does not mean same training time with gradient accumulation, tested on LoRA on T4 and L4 [D]",
+      "summary": "",
+      "score": 25,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "models"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-19T14:23:22Z",
+      "cluster_size": 1
+    },
+    {
       "id": "737576ae1906a1cd",
       "slug": "2026-08-19-updated-unsloth-qwen3-8-27b-gguf",
       "title": "updated unsloth/Qwen3.8-27B-GGUF",
@@ -13387,6 +13418,30 @@
       "tags": [],
       "builder_relevant": false,
       "date": "2026-08-19T13:25:18Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "027bc9742c764ab8",
+      "slug": "2026-08-19-nvidia-s-new-financial-strategy-does-not-compute",
+      "title": "Nvidia’s new financial strategy does not compute",
+      "summary": "",
+      "score": 25,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-19T12:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "f723fe92910f0a56",
+      "slug": "2026-08-19-ai-isn-t-close-to-curing-cancer-this-startup-says-it-knows",
+      "title": "AI isn’t close to curing cancer. This startup says it knows what it will take.",
+      "summary": "",
+      "score": 25,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-19T12:00:00Z",
       "cluster_size": 1
     },
     {
@@ -13452,18 +13507,6 @@
       ],
       "builder_relevant": false,
       "date": "2026-08-19T10:32:34Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "8951b8367054dabe",
-      "slug": "2026-08-19-2511-07885-intelligence-per-watt-measuring-intelligence",
-      "title": "[2511.07885] Intelligence per Watt: Measuring Intelligence Efficiency of Local AI",
-      "summary": "",
-      "score": 24,
-      "tier": "minor",
-      "tags": [],
-      "builder_relevant": false,
-      "date": "2026-08-19T09:01:01Z",
       "cluster_size": 1
     },
     {
@@ -13534,17 +13577,15 @@
       "cluster_size": 1
     },
     {
-      "id": "1b07445774592caa",
-      "slug": "2026-08-16-anthropic-s-watermark-text-adulteration-in-claude-is-a",
-      "title": "Anthropic's ‘watermark’ text adulteration in Claude is a perversion of writing",
+      "id": "8951b8367054dabe",
+      "slug": "2026-08-19-2511-07885-intelligence-per-watt-measuring-intelligence",
+      "title": "[2511.07885] Intelligence per Watt: Measuring Intelligence Efficiency of Local AI",
       "summary": "",
-      "score": 24,
+      "score": 23,
       "tier": "minor",
-      "tags": [
-        "models"
-      ],
+      "tags": [],
       "builder_relevant": false,
-      "date": "2026-08-16T21:53:43Z",
+      "date": "2026-08-19T09:01:01Z",
       "cluster_size": 1
     },
     {
@@ -13625,6 +13666,34 @@
       "tags": [],
       "builder_relevant": false,
       "date": "2026-08-17T03:08:47Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "1b07445774592caa",
+      "slug": "2026-08-16-anthropic-s-watermark-text-adulteration-in-claude-is-a",
+      "title": "Anthropic's ‘watermark’ text adulteration in Claude is a perversion of writing",
+      "summary": "",
+      "score": 23,
+      "tier": "minor",
+      "tags": [
+        "models"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-16T21:53:43Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a843bbb647723223",
+      "slug": "2026-08-19-i-posit-qwen-team-will-dust-off-the-old-397b-a17b",
+      "title": "I posit QWEN team will dust off the old 397B-A17B architecture to compete with Deepseek V4 0731 Flash",
+      "summary": "",
+      "score": 22,
+      "tier": "minor",
+      "tags": [
+        "models"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-19T16:03:42Z",
       "cluster_size": 1
     },
     {
@@ -13714,37 +13783,6 @@
       "cluster_size": 1
     },
     {
-      "id": "245b03e016ebfaac",
-      "slug": "2026-08-17-phyai-real-time-physical-ai-at-the-edge-scalable-rollouts",
-      "title": "PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud",
-      "summary": "",
-      "score": 22,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "models",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-17T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "30331dfdd1d1a66d",
-      "slug": "2026-08-17-the-integer-alibi-localizing-cross-kernel-divergence-in",
-      "title": "The Integer Alibi: Localizing Cross-Kernel Divergence in INT8-Quantized LLM Inference",
-      "summary": "",
-      "score": 22,
-      "tier": "minor",
-      "tags": [
-        "infra",
-        "research"
-      ],
-      "builder_relevant": true,
-      "date": "2026-08-17T04:00:00Z",
-      "cluster_size": 1
-    },
-    {
       "id": "7d39136261f85bd8",
       "slug": "2026-08-17-on-ai-regulation-and-messaging",
       "title": "On AI regulation and messaging",
@@ -13815,6 +13853,37 @@
       "cluster_size": 1
     },
     {
+      "id": "245b03e016ebfaac",
+      "slug": "2026-08-17-phyai-real-time-physical-ai-at-the-edge-scalable-rollouts",
+      "title": "PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud",
+      "summary": "",
+      "score": 21,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "models",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-17T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "30331dfdd1d1a66d",
+      "slug": "2026-08-17-the-integer-alibi-localizing-cross-kernel-divergence-in",
+      "title": "The Integer Alibi: Localizing Cross-Kernel Divergence in INT8-Quantized LLM Inference",
+      "summary": "",
+      "score": 21,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-17T04:00:00Z",
+      "cluster_size": 1
+    },
+    {
       "id": "7089aa317dbcd243",
       "slug": "2026-08-16-models-are-getting-dumber-on-purpose",
       "title": "Models Are Getting Dumber on Purpose",
@@ -13824,20 +13893,6 @@
       "tags": [],
       "builder_relevant": false,
       "date": "2026-08-16T19:04:26Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "ed1c54ecde05abe4",
-      "slug": "2026-08-16-claude-system-prompts",
-      "title": "Claude: System Prompts",
-      "summary": "",
-      "score": 21,
-      "tier": "minor",
-      "tags": [
-        "models"
-      ],
-      "builder_relevant": false,
-      "date": "2026-08-16T12:48:21Z",
       "cluster_size": 1
     },
     {
@@ -13865,20 +13920,6 @@
       ],
       "builder_relevant": false,
       "date": "2026-08-18T19:28:30Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "ae7843106cd847d0",
-      "slug": "2026-08-18-etched-s-valuation-doubles-to-21b-in-a-month",
-      "title": "Etched’s valuation doubles to $21B in a month",
-      "summary": "",
-      "score": 20,
-      "tier": "minor",
-      "tags": [
-        "business"
-      ],
-      "builder_relevant": false,
-      "date": "2026-08-18T17:21:58Z",
       "cluster_size": 1
     },
     {
@@ -14092,15 +14133,17 @@
       "cluster_size": 1
     },
     {
-      "id": "b74b26db8241b266",
-      "slug": "2026-08-16-the-ai-credit-resale-economy",
-      "title": "The AI Credit Resale Economy",
+      "id": "ed1c54ecde05abe4",
+      "slug": "2026-08-16-claude-system-prompts",
+      "title": "Claude: System Prompts",
       "summary": "",
       "score": 20,
       "tier": "minor",
-      "tags": [],
+      "tags": [
+        "models"
+      ],
       "builder_relevant": false,
-      "date": "2026-08-16T14:44:55Z",
+      "date": "2026-08-16T12:48:21Z",
       "cluster_size": 1
     },
     {
@@ -14131,6 +14174,20 @@
       "cluster_size": 1
     },
     {
+      "id": "ae7843106cd847d0",
+      "slug": "2026-08-18-etched-s-valuation-doubles-to-21b-in-a-month",
+      "title": "Etched’s valuation doubles to $21B in a month",
+      "summary": "",
+      "score": 19,
+      "tier": "minor",
+      "tags": [
+        "business"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-18T17:21:58Z",
+      "cluster_size": 1
+    },
+    {
       "id": "59ec87bb4a30ef6a",
       "slug": "2026-08-18-warp-s-new-system-is-an-out-of-the-box-software-factory-for",
       "title": "Warp’s new system is an out-of-the-box software factory for AI development",
@@ -14140,20 +14197,6 @@
       "tags": [],
       "builder_relevant": false,
       "date": "2026-08-18T14:00:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "011405735d2851a9",
-      "slug": "2026-08-18-perplexity-s-free-ai-offer-left-it-with-millions-more-users",
-      "title": "Perplexity’s free AI offer left it with millions more users in India",
-      "summary": "",
-      "score": 19,
-      "tier": "minor",
-      "tags": [
-        "business"
-      ],
-      "builder_relevant": false,
-      "date": "2026-08-18T13:45:40Z",
       "cluster_size": 1
     },
     {
@@ -14199,39 +14242,15 @@
       "cluster_size": 1
     },
     {
-      "id": "5eb976ed898ef6be",
-      "slug": "2026-08-17-the-defender-s-window",
-      "title": "The Defender’s Window",
+      "id": "b74b26db8241b266",
+      "slug": "2026-08-16-the-ai-credit-resale-economy",
+      "title": "The AI Credit Resale Economy",
       "summary": "",
       "score": 19,
       "tier": "minor",
       "tags": [],
       "builder_relevant": false,
-      "date": "2026-08-17T05:30:00Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "bb19c2f8af295a1d",
-      "slug": "2026-08-16-the-case-against-formal-verification-50-years-later",
-      "title": "The Case Against Formal Verification, 50 Years Later",
-      "summary": "",
-      "score": 19,
-      "tier": "minor",
-      "tags": [],
-      "builder_relevant": false,
-      "date": "2026-08-16T20:38:58Z",
-      "cluster_size": 1
-    },
-    {
-      "id": "452a5490a992a6e5",
-      "slug": "2026-08-16-st-lucie-nuclear-reactor-unit-1-manually-shutdown-3-control",
-      "title": "St Lucie Nuclear Reactor Unit 1 manually shutdown, 3 control rods drop into core",
-      "summary": "",
-      "score": 19,
-      "tier": "minor",
-      "tags": [],
-      "builder_relevant": false,
-      "date": "2026-08-16T15:16:06Z",
+      "date": "2026-08-16T14:44:55Z",
       "cluster_size": 1
     },
     {
@@ -14275,6 +14294,20 @@
       "cluster_size": 1
     },
     {
+      "id": "011405735d2851a9",
+      "slug": "2026-08-18-perplexity-s-free-ai-offer-left-it-with-millions-more-users",
+      "title": "Perplexity’s free AI offer left it with millions more users in India",
+      "summary": "",
+      "score": 18,
+      "tier": "minor",
+      "tags": [
+        "business"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-18T13:45:40Z",
+      "cluster_size": 1
+    },
+    {
       "id": "8268bc5822f8241a",
       "slug": "2026-08-18-firefox-s-smart-window-promises-a-better-ai-browser",
       "title": "Firefox’s Smart Window promises a better AI browser",
@@ -14310,6 +14343,18 @@
       "tags": [],
       "builder_relevant": false,
       "date": "2026-08-18T11:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "5eb976ed898ef6be",
+      "slug": "2026-08-17-the-defender-s-window",
+      "title": "The Defender’s Window",
+      "summary": "",
+      "score": 18,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-17T05:30:00Z",
       "cluster_size": 1
     },
     {
@@ -15575,6 +15620,18 @@
       "cluster_size": 1
     },
     {
+      "id": "bb19c2f8af295a1d",
+      "slug": "2026-08-16-the-case-against-formal-verification-50-years-later",
+      "title": "The Case Against Formal Verification, 50 Years Later",
+      "summary": "",
+      "score": 18,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-16T20:38:58Z",
+      "cluster_size": 1
+    },
+    {
       "id": "111c9201d3a77990",
       "slug": "2026-08-16-red-queen-hypothesis-a-new-way-forward-for-self-improving-ai",
       "title": "Red queen hypothesis – A new way forward for self-improving AI",
@@ -15598,6 +15655,18 @@
       ],
       "builder_relevant": false,
       "date": "2026-08-16T18:17:10Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "452a5490a992a6e5",
+      "slug": "2026-08-16-st-lucie-nuclear-reactor-unit-1-manually-shutdown-3-control",
+      "title": "St Lucie Nuclear Reactor Unit 1 manually shutdown, 3 control rods drop into core",
+      "summary": "",
+      "score": 18,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-16T15:16:06Z",
       "cluster_size": 1
     },
     {

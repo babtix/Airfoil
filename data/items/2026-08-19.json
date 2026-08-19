@@ -38,6 +38,19 @@
     "metrics": {}
   },
   {
+    "id": "42ce4c1f6b027e49",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vssd63/qwen_38_27b_vs_gemini_37_flash_high_for_real",
+    "title": "Qwen 3.8 27B vs Gemini 3.7 Flash (High) for real coding: open-source 27B model did a much better job",
+    "excerpt": "TL;DR: In this real-world C++/OrcaSlicer debugging project, Qwen 3.8 27B impressed me more than Gemini 3.7 Flash High. Gemini was faster and productive, but repeatedly declared success before the tests fully justified it. Qwen was better at falsifying its own hypotheses, separating unrelated bugs…",
+    "author": "/u/GravyPoo",
+    "published_at": "2026-08-19T17:03:20Z",
+    "fetched_at": "2026-08-19T18:01:00.2703489Z",
+    "metrics": {}
+  },
+  {
     "id": "f05312c96fe3c222",
     "source_id": "theverge-ai",
     "source_name": "The Verge AI",
@@ -48,6 +61,19 @@
     "author": "Emma Roth",
     "published_at": "2026-08-19T17:00:00Z",
     "fetched_at": "2026-08-19T17:30:15.8013123Z",
+    "metrics": {}
+  },
+  {
+    "id": "917e8023ea04264a",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vss944/lfm_25_qad",
+    "title": "LFM 2.5 QAD",
+    "excerpt": "https://x.com/liquidai/status/2090078070929760295 https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF submitted by /u/jacek2023 [link] [comments]",
+    "author": "/u/jacek2023",
+    "published_at": "2026-08-19T16:59:34Z",
+    "fetched_at": "2026-08-19T18:01:00.2703489Z",
     "metrics": {}
   },
   {
@@ -63,6 +89,19 @@
     "fetched_at": "2026-08-19T16:29:52.2689593Z",
     "metrics": {},
     "repo_url": "https://github.com/unslothai/unsloth"
+  },
+  {
+    "id": "8a39771417fb2b2b",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vsqnl4/i_posit_qwen_team_will_dust_off_the_old_397ba17b",
+    "title": "I posit QWEN team will dust off the old 397B-A17B architecture to compete with Deepseek V4 0731 Flash",
+    "excerpt": "To me, it just makes rational business sense. DS4 is king on openrouter and has been pretty much since the day it was launched. It's size, cost and intelligence seems to be the sweet spot for current developer requirements. Qwen does have the old 235B-A22B architecture under their belt as well but…",
+    "author": "/u/johnnyApplePRNG",
+    "published_at": "2026-08-19T16:03:42Z",
+    "fetched_at": "2026-08-19T18:01:00.2703489Z",
+    "metrics": {}
   },
   {
     "id": "74363ab409098b74",

@@ -2,9 +2,9 @@
 :root {
   /* Core Color Palette — Dark Mode (Default / Kaioken) */
   --deep: #0a0a0a;
-  --surf: #141414;
-  --surf-hover: #1a1a1a;
-  --surf-active: #222222;
+  --surf: rgba(18, 18, 18, 0.62);
+  --surf-hover: rgba(28, 28, 28, 0.75);
+  --surf-active: rgba(38, 38, 38, 0.85);
   --prim: #f5f5f5;
   --sec: #a0a0a0;
   --line: #262626;
@@ -15,7 +15,7 @@
   --kai-dim: #992323;
 
   /* Header & Surfaces */
-  --header-bg: rgba(10, 10, 10, 0.92);
+  --header-bg: rgba(10, 10, 10, 0.88);
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   --scrollbar-thumb: #262626;
   --scrollbar-track: #0a0a0a;
@@ -40,9 +40,9 @@
 [data-theme="light"], body.light-mode {
   /* Core Color Palette — Light Mode (Claire Edition) */
   --deep: #f8f9fb;
-  --surf: #ffffff;
-  --surf-hover: #f1f3f7;
-  --surf-active: #e6e9ef;
+  --surf: rgba(255, 255, 255, 0.72);
+  --surf-hover: rgba(245, 247, 250, 0.82);
+  --surf-active: rgba(235, 238, 245, 0.92);
   --prim: #141619;
   --sec: #5f6368;
   --line: #e2e5eb;
@@ -53,7 +53,7 @@
   --kai-dim: #b81d1d;
 
   /* Header & Surfaces */
-  --header-bg: rgba(248, 249, 251, 0.94);
+  --header-bg: rgba(248, 249, 251, 0.88);
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   --scrollbar-thumb: #cfd4dc;
   --scrollbar-track: #f8f9fb;
@@ -66,3 +66,4 @@
   --tier-press-border: #9aa0a6;
   --tier-press-text: #5f6368;
 }
+

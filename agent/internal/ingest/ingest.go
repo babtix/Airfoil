@@ -54,6 +54,7 @@ func New(cfg *config.Config, log *slog.Logger) *Runner {
 		newHNAdapter(f),
 		newRedditAdapter(f, cfg.Ingest.RedditUserAgent),
 		newHFAdapter(f),
+		newHFModelsAdapter(f),
 		newGitHubAdapter(f, cfg.Ingest.GitHubToken),
 	}
 

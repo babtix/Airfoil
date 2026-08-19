@@ -14,6 +14,7 @@ import { TopPage } from './pages/TopPage';
 import { ShipPage } from './pages/ShipPage';
 import { StoryPage } from './pages/StoryPage';
 import { SearchPage } from './pages/SearchPage';
+import PixelBlast from './components/PixelBlast/PixelBlast';
 import type { Story, DateWindow } from './types/story';
 
 export function App() {
@@ -69,7 +70,37 @@ export function App() {
   const isLandingPage = location.pathname === '/';
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--deep)', transition: 'background-color 0.2s ease, color 0.2s ease' }}>
+    <>
+      {/* PixelBlast fixed full-page background — sitewide, z-index 0 */}
+      <div
+        style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: 0,
+          backgroundColor: 'var(--deep)',
+          pointerEvents: 'none',
+          transition: 'background-color 0.2s ease'
+        }}
+      >
+        <PixelBlast
+          color={theme === 'light' ? '#e62e2e' : '#ff3b3b'}
+          variant="circle"
+          pixelSize={2.5}
+          patternScale={1.8}
+          patternDensity={theme === 'light' ? 0.72 : 0.82}
+          speed={0.38}
+          enableRipples={true}
+          rippleSpeed={0.28}
+          rippleThickness={0.09}
+          rippleIntensityScale={1.4}
+          edgeFade={0.0}
+          transparent={true}
+          pixelSizeJitter={0.6}
+        />
+      </div>
+
+      {/* All site content — z-index 1, above PixelBlast */}
+      <div style={{ position: 'relative', zIndex: 1, minHeight: '100vh', display: 'flex', flexDirection: 'column', transition: 'color 0.2s ease' }}>
       {/* Fixed Telemetry Header */}
       <Header
         searchQuery={filters.query}
@@ -86,7 +117,7 @@ export function App() {
 
       {/* RENDER DEDICATED SEPARATE FULL-WIDTH HOME PAGE ON '/' */}
       {isLandingPage ? (
-        <div style={{ paddingTop: 'var(--header-height)', minHeight: 'calc(100vh - var(--header-height))', width: '100%' }}>
+        <div className="home-bg" style={{ paddingTop: 'var(--header-height)', minHeight: 'calc(100vh - var(--header-height))', width: '100%' }}>
           <div className="app-container" style={{ maxWidth: '1240px', margin: '0 auto', padding: '2rem 1rem' }}>
             <HomePage
               stories={stories}
@@ -100,7 +131,8 @@ export function App() {
         </div>
       ) : (
         /* RENDER 3-COLUMN FLIGHT DECK GRID FOR APP VIEWS (/feed, /digest, /top, /ship, /story/:slug, /search) */
-        <div className="main-grid">
+        <div className="app-glass-wrap">
+          <div className="main-grid">
           {/* Left Rail — Control Surfaces */}
           <div className="left-rail-container">
             <LeftRail
@@ -217,6 +249,7 @@ export function App() {
               onOpenStory={handleOpenStory}
             />
           </div>
+          </div>
         </div>
       )}
 
@@ -246,6 +279,7 @@ export function App() {
         onResetFilters={resetFilters}
       />
     </div>
+    </>
   );
 }
 

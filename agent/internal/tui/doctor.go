@@ -11,6 +11,7 @@ import (
 	"golang.org/x/sync/errgroup"
 
 	"github.com/papitsho/airfoil/internal/config"
+	"github.com/papitsho/airfoil/internal/ingest"
 )
 
 // doctorPage makes live calls: every feed URL and every configured provider.
@@ -102,16 +103,16 @@ func runDoctor(cfg *config.Config) tea.Cmd {
 		client := &http.Client{Timeout: 10 * time.Second}
 		sources := cfg.EnabledSources()
 
-		results := make([]checkResult, len(sources))
 		g, gctx := errgroup.WithContext(ctx)
 		g.SetLimit(6)
 
-		for i, src := range sources {
-			g.Go(func() error {
-				results[i] = probeSource(gctx, client, src)
-				return nil
-			})
-		}
+		var results []checkResult
+		g.Go(func() error {
+			for _, c := range ingest.CheckSources(gctx, cfg, sources) {
+				results = append(results, sourceCheckResult(c))
+			}
+			return nil
+		})
 
 		providers := providerChecks(cfg)
 		providerResults := make([]checkResult, len(providers))
@@ -127,30 +128,23 @@ func runDoctor(cfg *config.Config) tea.Cmd {
 	}
 }
 
-// probeSource issues a real request and reports what came back.
-func probeSource(ctx context.Context, client *http.Client, src config.Source) checkResult {
-	started := time.Now()
-	out := checkResult{group: "sources", name: src.ID}
+// sourceCheckResult adapts an ingest.Check — which mirrors the query params,
+// fallback URLs, and Reddit User-Agent the real ingest run would use — into
+// the TUI's display format, so this page can't drift from what ingest sees.
+func sourceCheckResult(c ingest.Check) checkResult {
+	out := checkResult{group: "sources", name: c.Source.ID, ms: c.Took.Milliseconds()}
 
-	req, err := http.NewRequestWithContext(ctx, http.MethodGet, src.URL, nil)
-	if err != nil {
-		out.detail = err.Error()
-		return out
-	}
-	req.Header.Set("User-Agent", "airfoil/0.1 (+https://github.com/papitsho/airfoil)")
-
-	resp, err := client.Do(req)
-	out.ms = time.Since(started).Milliseconds()
-	if err != nil {
-		out.detail = truncate(err.Error(), 60)
-		return out
-	}
-	defer resp.Body.Close()
-
-	out.ok = resp.StatusCode == http.StatusOK
-	out.detail = resp.Status
-	if !out.ok {
-		out.detail = resp.Status + "  " + truncate(src.URL, 50)
+	switch {
+	case c.Err != nil:
+		out.detail = truncate(c.Err.Error(), 60)
+	case !c.OK():
+		out.detail = fmt.Sprintf("HTTP %d  %s", c.Status, truncate(c.Source.URL, 50))
+	default:
+		out.ok = true
+		out.detail = fmt.Sprintf("%d OK", c.Status)
+		if c.Fallback() {
+			out.detail += " (via fallback URL)"
+		}
 	}
 	return out
 }

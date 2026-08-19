@@ -635,6 +635,20 @@
     "metrics": {}
   },
   {
+    "id": "23b4025cbcdecbdf",
+    "source_id": "hf-models",
+    "source_name": "Hugging Face Models",
+    "source_tier": 1,
+    "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2",
+    "title": "incoai/Qwen3.8-27B-DFlash2 (text-generation)",
+    "excerpt": "Open model weights on Hugging Face. Task: text-generation. Library: transformers. License: apache-2.0. 84 likes, 1484 downloads. Tags: qwen3, dflash2, speculative-decoding, block-diffusion, draft-model, sglang.",
+    "published_at": "2026-08-18T04:09:16Z",
+    "fetched_at": "2026-08-19T18:01:00.2703489Z",
+    "metrics": {
+      "hf_upvotes": 84
+    }
+  },
+  {
     "id": "3cd8d1ae7a9d22dd",
     "source_id": "github-trending-ai",
     "source_name": "GitHub Trending",
@@ -865,5 +879,22 @@
       "hf_upvotes": 88
     },
     "paper_url": "https://arxiv.org/abs/2608.17310"
+  },
+  {
+    "id": "282279b12ba8a13c",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.17402",
+    "title": "MoE-ViE: Mixture of Experts Vision Encoder for Efficient Image and Video Understanding",
+    "excerpt": "Vision encoders are a critical component of vision-language models, and scaling their capacity effectively improves performance. However, dense scaling increases compute cost and inference latency. Mixture-of-Experts (MoE) architectures offer a compelling alternative, having enabled efficient…",
+    "author": "Bonan Zhang",
+    "published_at": "2026-08-18T00:00:00Z",
+    "fetched_at": "2026-08-19T18:01:00.2703489Z",
+    "metrics": {
+      "hf_upvotes": 9
+    },
+    "repo_url": "https://github.com/facebookresearch/moe_vie",
+    "paper_url": "https://arxiv.org/abs/2608.17402"
   }
 ]
