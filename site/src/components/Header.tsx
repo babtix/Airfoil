@@ -69,7 +69,7 @@ export const Header: React.FC<HeaderProps> = ({
             <circle cx="12" cy="3" r="1" fill="var(--kai)" />
           </svg>
           <span style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, letterSpacing: '-0.02em', fontSize: '1.15rem' }}>
-            AIRFOIL<span style={{ color: 'var(--kai)' }}>_</span>
+            <span style={{ color: 'var(--kai)' }}>AI</span>RFOIL<span style={{ color: 'var(--kai)' }}>_</span>
           </span>
         </Link>
 
