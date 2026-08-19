@@ -542,8 +542,12 @@ func readiness(cfg *config.Config, s dataStats, width int) string {
 	}
 
 	head := mark + " " + label
-	detail := fmt.Sprintf("  ·  %d sources  ·  %s", sources, lastRun(s))
-	return head + styleDim.Render(truncate(detail, max(width-lipgloss.Width(head), 0)))
+	sub := fmt.Sprintf("%d sources  ·  %s", sources, lastRun(s))
+	combined := head + styleDim.Render("  ·  "+sub)
+	if lipgloss.Width(combined) <= width {
+		return combined
+	}
+	return head + "\n" + styleDim.Render(truncate(sub, width))
 }
 
 func lastRun(s dataStats) string {
@@ -808,6 +812,7 @@ func limitsBody(cfg *config.Config, inner int) string {
 // committed and therefore never gets looked at.
 func storageBody(s dataStats, inner int) string {
 	var b strings.Builder
+	b.WriteString(stat("last run", lastRun(s), inner))
 	b.WriteString(stat("items", humanBytes(s.ItemsBytes), inner))
 	b.WriteString(stat("embed cache", humanBytes(s.CacheBytes), inner))
 	b.WriteString(stat("seen urls", fmt.Sprint(s.SeenURLs), inner))
