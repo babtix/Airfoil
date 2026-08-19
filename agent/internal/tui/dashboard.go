@@ -212,7 +212,6 @@ type providerStatus struct {
 // key is present, not that it works — `doctor` makes the live calls.
 func providerStatuses(cfg *config.Config) []providerStatus {
 	return []providerStatus{
-		{"gemini", cfg.LLM.Gemini.Configured(), cfg.LLM.Gemini.Model},
 		{"nvidia_nim", cfg.LLM.NvidiaNIM.Configured(), cfg.LLM.NvidiaNIM.Model},
 		{"openrouter", cfg.LLM.OpenRouter.Configured(), cfg.LLM.OpenRouter.Model},
 	}

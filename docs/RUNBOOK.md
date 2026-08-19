@@ -27,7 +27,6 @@ Claude Code for review. One phase at a time. Do not batch phases.
 | Go 1.24+ | The agent | Local ingestion, clustering, scoring, and writing pipeline. Builds to a single binary |
 | Node 20+ | React + Vite frontend | `npm run dev` / `npm run build` |
 | Ollama + `nomic-embed-text` | Local embeddings & LLMs | `ollama pull nomic-embed-text` |
-| Gemini API key | Summaries, CI embeddings | Free / paid tier |
 | OpenRouter API key | Cloud LLM fallback / primary | Access to diverse models |
 | NVIDIA NIM (`nvidia_nim`) | High-throughput LLM inference | Hosted enterprise & open models via NIM endpoints |
 | GitHub repo under **personal** account | Vercel Hobby rejects Git-org repos | |
@@ -78,7 +77,7 @@ Rerun `airfoil write --dry` over the same clusters to compare fairly.
 |---|---|---|
 | One source returns nothing | Feed URL changed | `airfoil doctor`, update `sources.json` |
 | Reddit returns 429 | Missing/generic User-Agent | Set `REDDIT_USER_AGENT` |
-| All LLM calls fail | Free model rotated out | Update model ID in `.env`; the chain should already have fallen through (Gemini -> NVIDIA NIM -> OpenRouter -> Ollama) |
+| All LLM calls fail | Free model rotated out | Update model ID in `.env`; the chain should already have fallen through (NVIDIA NIM -> OpenRouter) |
 | CI cron stopped firing | Actions disables schedules after 60d repo inactivity | Should never happen — pipeline commits every run. If it does, push manually to re-arm |
 | Duplicate stories appear | `state.json` not written or pruned wrong | Check R7; the second run of `--dry` must produce zero new items |
 | Site build fails after agent run | Frontmatter violates the data schema | This is the safety net working. Fix the writer, not the schema |

@@ -162,7 +162,6 @@ func TestChainAppliesPerAttemptTimeout(t *testing.T) {
 
 func TestNewSkipsUnconfiguredProviders(t *testing.T) {
 	cfg := &config.Config{LLM: config.LLMConfig{
-		Gemini:     config.ProviderCreds{},                        // no key
 		NvidiaNIM:  config.ProviderCreds{APIKey: "k", Model: "m"}, // ready
 		OpenRouter: config.ProviderCreds{APIKey: "k"},             // no model
 	}}
@@ -178,13 +177,12 @@ func TestNewSkipsUnconfiguredProviders(t *testing.T) {
 
 func TestNewOrdersChainByFallbackPriority(t *testing.T) {
 	cfg := &config.Config{LLM: config.LLMConfig{
-		Gemini:     config.ProviderCreds{APIKey: "k", Model: "g"},
 		NvidiaNIM:  config.ProviderCreds{APIKey: "k", Model: "n"},
 		OpenRouter: config.ProviderCreds{APIKey: "k", Model: "o"},
 	}}
 
 	got := New(cfg, quietLogger()).Providers()
-	want := []string{"gemini", "nvidia_nim", "openrouter"}
+	want := []string{"nvidia_nim", "openrouter"}
 
 	if len(got) != len(want) {
 		t.Fatalf("providers = %d, want %d", len(got), len(want))

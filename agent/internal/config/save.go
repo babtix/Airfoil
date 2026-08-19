@@ -82,5 +82,5 @@ func ValidSourceTypes() []string {
 
 // Embedders lists the supported embedding providers.
 func Embedders() []string {
-	return []string{EmbedderNvidiaNIM, EmbedderGemini}
+	return []string{EmbedderNvidiaNIM}
 }

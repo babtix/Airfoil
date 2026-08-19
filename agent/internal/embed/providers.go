@@ -77,69 +77,6 @@ func (d *dims) get() int {
 	return d.n
 }
 
-// --- Gemini -----------------------------------------------------------------
-
-// geminiEmbedder uses the batchEmbedContents endpoint.
-type geminiEmbedder struct {
-	client *http.Client
-	apiKey string
-	model  string
-	dims   dims
-}
-
-func newGemini(client *http.Client, apiKey, model string) *geminiEmbedder {
-	return &geminiEmbedder{client: client, apiKey: apiKey, model: strings.TrimPrefix(model, "models/")}
-}
-
-func (g *geminiEmbedder) Name() string    { return "gemini:" + g.model }
-func (g *geminiEmbedder) Dimensions() int { return g.dims.get() }
-
-func (g *geminiEmbedder) Embed(ctx context.Context, texts []string) ([][]float32, error) {
-	// The documented ceiling for batchEmbedContents is 100 requests.
-	return embedBatches(ctx, texts, 100, g.embedBatch)
-}
-
-func (g *geminiEmbedder) embedBatch(ctx context.Context, texts []string) ([][]float32, error) {
-	type content struct {
-		Parts []map[string]string `json:"parts"`
-	}
-	type request struct {
-		Model   string  `json:"model"`
-		Content content `json:"content"`
-	}
-
-	reqs := make([]request, len(texts))
-	for i, text := range texts {
-		reqs[i] = request{
-			Model:   "models/" + g.model,
-			Content: content{Parts: []map[string]string{{"text": text}}},
-		}
-	}
-
-	var resp struct {
-		Embeddings []struct {
-			Values []float32 `json:"values"`
-		} `json:"embeddings"`
-	}
-
-	url := fmt.Sprintf("https://generativelanguage.googleapis.com/v1beta/models/%s:batchEmbedContents", g.model)
-	err := postJSON(ctx, g.client, url,
-		map[string]string{"x-goog-api-key": g.apiKey},
-		map[string]any{"requests": reqs}, &resp)
-	if err != nil {
-		return nil, fmt.Errorf("gemini: %w", err)
-	}
-
-	out := make([][]float32, len(resp.Embeddings))
-	for i, e := range resp.Embeddings {
-		out[i] = e.Values
-	}
-	if len(out) > 0 {
-		g.dims.set(len(out[0]))
-	}
-	return out, nil
-}
-
 // --- NVIDIA NIM -------------------------------------------------------------
 
 // nimEmbedder uses NVIDIA's OpenAI-compatible embeddings endpoint.

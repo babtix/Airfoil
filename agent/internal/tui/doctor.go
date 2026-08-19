@@ -163,15 +163,6 @@ type providerCheck struct {
 
 func providerChecks(cfg *config.Config) []providerCheck {
 	return []providerCheck{
-		{"gemini", func(ctx context.Context, c *http.Client) checkResult {
-			if !cfg.LLM.Gemini.Configured() {
-				return checkResult{group: "providers", name: "gemini", skip: true, detail: "GEMINI_API_KEY not set"}
-			}
-			return probeAuth(ctx, c, "providers", "gemini",
-				"https://generativelanguage.googleapis.com/v1beta/models",
-				map[string]string{"x-goog-api-key": cfg.LLM.Gemini.APIKey})
-		}},
-
 		{"nvidia_nim", func(ctx context.Context, c *http.Client) checkResult {
 			if !cfg.LLM.NvidiaNIM.Configured() {
 				return checkResult{group: "providers", name: "nvidia_nim", skip: true, detail: "NVIDIA_NIM_API_KEY not set"}
@@ -195,11 +186,6 @@ func providerChecks(cfg *config.Config) []providerCheck {
 		{"embedder", func(ctx context.Context, c *http.Client) checkResult {
 			out := checkResult{group: "embedder", name: cfg.Embed.Provider}
 			switch cfg.Embed.Provider {
-			case config.EmbedderGemini:
-				if cfg.Embed.GeminiKey == "" {
-					out.detail = "GEMINI_API_KEY not set"
-					return out
-				}
 			case config.EmbedderNvidiaNIM:
 				if cfg.Embed.NIMKey == "" {
 					out.detail = "NVIDIA_NIM_API_KEY not set"

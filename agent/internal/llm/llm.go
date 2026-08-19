@@ -63,7 +63,7 @@ type Chain struct {
 }
 
 // New builds the chain in the fallback order from .env.example:
-// gemini → nvidia_nim → openrouter. Unconfigured providers are skipped rather
+// nvidia_nim → openrouter. Unconfigured providers are skipped rather
 // than attempted and failed.
 //
 // Every provider is a hosted API. There is no local fallback: the pipeline's
@@ -72,9 +72,6 @@ type Chain struct {
 func New(cfg *config.Config, log *slog.Logger) *Chain {
 	var ps []Provider
 
-	if cfg.LLM.Gemini.Configured() {
-		ps = append(ps, newGemini(cfg.LLM.Gemini))
-	}
 	if cfg.LLM.NvidiaNIM.Configured() {
 		ps = append(ps, newOpenAICompatible(
 			"nvidia_nim", "https://integrate.api.nvidia.com/v1",

@@ -81,10 +81,10 @@ airfoil/
 │       ├── model/                  # Item, Story, Source, Cluster types
 │       ├── ingest/                 # rss, hn, reddit, hf, github
 │       ├── normalize/              # canonical URL, dedupe, excerpt
-│       ├── embed/                  # provider interface: ollama, gemini
+│       ├── embed/                  # provider interface: nvidia_nim
 │       ├── cluster/                # cosine + greedy agglomerative
 │       ├── score/                  # pure scoring function
-│       ├── llm/                    # provider chain: gemini → nvidia_nim → openrouter → ollama
+│       ├── llm/                    # provider chain: nvidia_nim → openrouter
 │       ├── write/                  # markdown + frontmatter emit
 │       ├── digest/                 # newsletter + social payloads
 │       └── store/                  # JSON read/write, atomic
@@ -258,7 +258,7 @@ type Embedder interface {
 | Provider | When | Model |
 |---|---|---|
 | `ollama` | Local runs, default | `nomic-embed-text` |
-| `gemini` | CI runs | `text-embedding-004` |
+| `nvidia_nim` | local and CI | `nvidia/nemotron-3-embed-1b` |
 
 Embed `title + " " + excerpt[:200]`. Cache by item ID in
 `data/cache/embeddings.json`, 7-day window, gitignored.
@@ -345,7 +345,7 @@ type Provider interface {
 
 | Order | Provider | Notes |
 |---|---|---|
-| 1 | Gemini free tier | Highest free daily request ceiling |
+| 1 | NVIDIA NIM | The account the project actually has |
 | 2 | OpenRouter `:free` | ~20 req/min, 50/day unfunded — fallback only |
 | 3 | Ollama local | If running locally and both above fail |
 
@@ -466,8 +466,8 @@ Vercel auto-deploys on push.
 | Vercel Hobby forbids Git-org repos | Repo must live under a personal account |
 | Free LLM models rotate out | Provider chain is config-driven |
  
-Env via GitHub Secrets: `GEMINI_API_KEY`, `NVIDIA_NIM_API_KEY`, `OPENROUTER_API_KEY`.
-Embedder in CI = `gemini`.
+Env via GitHub Secrets: `NVIDIA_NIM_API_KEY`, `OPENROUTER_API_KEY`.
+Embedder in CI = `nvidia_nim`.
  
 ---
  

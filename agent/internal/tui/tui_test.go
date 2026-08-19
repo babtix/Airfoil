@@ -845,7 +845,6 @@ func TestLLMStagesRefuseWithoutAProvider(t *testing.T) {
 	for _, name := range []string{"write", "digest"} {
 		t.Run(name, func(t *testing.T) {
 			m := testModel(t)
-			t.Setenv("GEMINI_API_KEY", "")
 			t.Setenv("NVIDIA_NIM_API_KEY", "")
 			t.Setenv("OPENROUTER_API_KEY", "")
 

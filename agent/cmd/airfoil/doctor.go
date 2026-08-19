@@ -66,11 +66,6 @@ func runDoctor(ctx context.Context, w io.Writer, cfg *config.Config, ping bool) 
 	// Embedder.
 	fmt.Fprintf(w, "\nembedder %s\n", cfg.Embed.Provider)
 	switch cfg.Embed.Provider {
-	case config.EmbedderGemini:
-		fmt.Fprintf(w, "  model    %s\n  api key  %s\n", cfg.Embed.GeminiModel, present(cfg.Embed.GeminiKey != ""))
-		if cfg.Embed.GeminiKey == "" {
-			blocking = append(blocking, "AIRFOIL_EMBEDDER=gemini but GEMINI_API_KEY is not set")
-		}
 	case config.EmbedderNvidiaNIM:
 		fmt.Fprintf(w, "  model    %s\n  api key  %s\n", cfg.Embed.NIMModel, present(cfg.Embed.NIMKey != ""))
 		if cfg.Embed.NIMKey == "" {
@@ -85,7 +80,6 @@ func runDoctor(ctx context.Context, w io.Writer, cfg *config.Config, ping bool) 
 		ok   bool
 		note string
 	}{
-		{"gemini", cfg.LLM.Gemini.Configured(), cfg.LLM.Gemini.Model},
 		{"nvidia_nim", cfg.LLM.NvidiaNIM.Configured(), cfg.LLM.NvidiaNIM.Model},
 		{"openrouter", cfg.LLM.OpenRouter.Configured(), cfg.LLM.OpenRouter.Model},
 	}

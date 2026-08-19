@@ -22,10 +22,13 @@ so work can resume without the originating conversation.
 `go test ./...` is green across all twelve packages with tests. The site builds
 and renders the real output — see §3.
 
-**No local models.** Ollama was removed from the LLM chain, the embedder, and
-config on 2026-08-18. Every provider is a hosted API, because the pipeline's
-real home is CI, where no local daemon is listening — a local fallback passes
-on a laptop and fails in the only place that matters.
+**No local models, no Gemini.** Ollama was removed on 2026-08-18 because the
+pipeline's real home is CI, where no local daemon is listening — a local
+fallback passes on a laptop and fails in the only place that matters. Gemini
+was removed the same day: the project has no Google API access, and a provider
+that can never authenticate is noise in the chain and in `doctor` output.
+
+The chain is **NVIDIA NIM → OpenRouter**, and both are verified working.
 
 ### Decisions taken (the docs hedged; these resolved them)
 
@@ -34,8 +37,9 @@ on a laptop and fails in the only place that matters.
 | Go vs Python | **Go** — matches CLAUDE.md conventions and the BUILD_SPEC struct definitions |
 | Who builds | Claude Code directly, not Antigravity handoffs |
 | Data contract | Agent writes **all three**: `.md` (canonical) + `index.json` + `stories.json`. The last one uses the **site's** field names (`ts`, `cluster`) because the site imports it directly — see §3 bug 5 |
-| Embedder | **NVIDIA NIM** (`nvidia/nemotron-3-embed-1b`) — chosen by the owner. Gemini also implemented as an alternative |
+| Embedder | **NVIDIA NIM** (`nvidia/nemotron-3-embed-1b`) — the only embedder |
 | Local models | **Removed** on owner's instruction. Hosted APIs only — see §1 |
+| Gemini | **Removed** on owner's instruction (2026-08-18): no Google API access. Chain is NIM → OpenRouter |
 
 ---
 
@@ -52,10 +56,10 @@ agent/
     ├── store/     atomic JSON r/w, items by day, state load/save
     ├── normalize/ PURE — canonical URL, ID, excerpt cap, title clean, extract
     ├── ingest/    rss · hn · reddit · hf · github, errgroup + fail-soft
-    ├── embed/     Embedder iface → nvidia_nim · gemini, + disk cache
+    ├── embed/     Embedder iface → nvidia_nim, + disk cache
     ├── cluster/   PURE — cosine, centroid, greedy agglomerative
     ├── score/     PURE — weighted formula, signals, tags, ranking
-    ├── llm/       provider chain: gemini → nvidia_nim → openrouter
+    ├── llm/       provider chain: nvidia_nim → openrouter
     ├── summarize/ PURE prompt + R1/R2 validators, plus retry orchestration
     ├── write/     markdown + frontmatter, index.json, stories.json
     ├── publish/   PURE validators + prune, then git commit
@@ -182,16 +186,20 @@ fallback until the day it is needed. Current state:
 
 | Provider | Result |
 |---|---|
-| `nvidia_nim` | **ok**, ~2s |
-| `openrouter` | **FAIL** — `401 Unauthorized: User not found` |
+| `nvidia_nim` | **ok**, ~0.9s |
+| `openrouter` | **ok**, ~0.9s |
 
-The OpenRouter key in `.env` still does not authenticate — the same failure
-reported in the very first session. Summarization works today only because NIM
-is healthy. **If NIM goes down, the pipeline stops**, since Ollama was removed
-and Gemini has no key.
+**Both providers work. The earlier "OpenRouter is dead" finding was wrong.**
 
-To restore a fallback, set a working `OPENROUTER_API_KEY` or a `GEMINI_API_KEY`
-and confirm with `airfoil doctor --ping`.
+The 401 was real, but the key in `.env` was not the cause. A stale
+`OPENROUTER_API_KEY` was exported in the shell, and the dotenv loader
+deliberately does not override a variable that is already set — that is what
+lets CI secrets take precedence over a local file. The agent kept using the old
+dead key while `curl`, reading `.env` directly, succeeded with the good one.
+
+Verified with `env -u OPENROUTER_API_KEY airfoil doctor --ping`: both providers
+answer in under a second. If `doctor --ping` ever reports a 401 that `curl` does
+not, check the shell environment before suspecting the file.
 
 ### Blocker 1 — RESOLVED 2026-08-18: embedder key works; LLM chain now verified
 
@@ -354,18 +362,14 @@ What a TUI needs to reach:
 
 All seven phases are built. What remains is tuning and operational setup.
 
-1. **Restore an LLM fallback** (§4, blocker 4). OpenRouter's key is dead, so
-   NIM is a single point of failure. Set a working `OPENROUTER_API_KEY` or
-   `GEMINI_API_KEY`, then confirm with `airfoil doctor --ping`.
+1. **Clear the stale `OPENROUTER_API_KEY` from your shell.** The key in `.env`
+   works; an older one exported in the shell shadows it and makes the fallback
+   look dead (§4, blocker 4). Nothing to fix in code.
 2. **Review `airfoil rank --explain --top 20`** and decide the HN/Reddit vs.
    tier weight balance (§4, blocker 3). This is a product-priority call, not a
    measurable one, which is why it was left alone.
-3. **Add the CI secrets** the workflow expects: `NVIDIA_NIM_API_KEY`, plus
-   `GEMINI_API_KEY` / `OPENROUTER_API_KEY` once they work. Repository
-   variables: `SITE_URL`, `REDDIT_USER_AGENT`.
-4. **Delete the ten stale mock story files** still tracked under
-   `site/src/content/stories/` (see Housekeeping) — they are fiction and the
-   writer will never overwrite them.
+3. **Add the CI secrets** the workflow expects: `NVIDIA_NIM_API_KEY` and
+   `OPENROUTER_API_KEY`. Repository variables: `SITE_URL`, `REDDIT_USER_AGENT`.
 
 ### Known issue, deferred
 

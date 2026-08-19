@@ -40,9 +40,9 @@
 
 - **Never commit `data/cache/`** — embeddings are regenerable and huge.
 - **Validation gate**: Failed validation aborts before commit (R9); never push a broken site. This includes orphaned `.md` pages that no story in `stories.json` points at.
-- **LLM fallback chain**: Gemini → NVIDIA NIM → OpenRouter. Every call has a timeout and falls through (R8). **No local models** — the pipeline's real home is CI, where no daemon is listening.
+- **LLM fallback chain**: NVIDIA NIM → OpenRouter. Every call has a timeout and falls through (R8). **No local models** and **no Gemini** — the pipeline's real home is CI, where no daemon is listening, and the project has no Google API access.
 - **Rate limits**: GitHub token optional (raises 60→5000/hr). Reddit requires descriptive `User-Agent` or returns 429.
-- **Embedder**: `AIRFOIL_EMBEDDER=nvidia_nim` (default) or `gemini`. Model IDs in env. `similarity_threshold` in `scoring.json` is tuned per embedding model — re-tune if you change it.
+- **Embedder**: `AIRFOIL_EMBEDDER=nvidia_nim` — the only supported value. Model IDs in env. `similarity_threshold` in `scoring.json` is tuned per embedding model — re-tune if you change it.
 - **Source types**: `RSS`, `HN`, `Reddit`, `HFPapers`, `GitHub` — enabled via `config/sources.json`.
 - **Scoring weights**: `config/scoring.json` — `TierWeight(tier)` for Major/Notable/Minor.
 - **Keywords**: `config/keywords.json` drives tag extraction.

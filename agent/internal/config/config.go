@@ -36,7 +36,6 @@ type Config struct {
 // the pipeline runs in CI, where no daemon is listening, so a local fallback
 // would pass on a developer machine and fail in the only place that matters.
 type LLMConfig struct {
-	Gemini     ProviderCreds
 	NvidiaNIM  ProviderCreds
 	OpenRouter ProviderCreds
 }
@@ -54,7 +53,6 @@ func (p ProviderCreds) Configured() bool {
 
 // Embedder providers.
 const (
-	EmbedderGemini    = "gemini"
 	EmbedderNvidiaNIM = "nvidia_nim"
 )
 
@@ -64,19 +62,15 @@ const (
 // against one of them, so switching providers means retuning. The embedding
 // cache is keyed by model to keep vectors from two providers from mixing.
 type EmbedConfig struct {
-	Provider    string // gemini | nvidia_nim
-	GeminiKey   string
-	GeminiModel string
-	NIMKey      string
-	NIMModel    string
-	NIMBaseURL  string
+	Provider   string // nvidia_nim
+	NIMKey     string
+	NIMModel   string
+	NIMBaseURL string
 }
 
 // Model returns the model ID for the selected provider.
 func (e EmbedConfig) Model() string {
 	switch e.Provider {
-	case EmbedderGemini:
-		return e.GeminiModel
 	default:
 		return e.NIMModel
 	}
@@ -137,10 +131,6 @@ func Load(opts Options) (*Config, error) {
 		SiteURL:   os.Getenv("SITE_URL"),
 
 		LLM: LLMConfig{
-			Gemini: ProviderCreds{
-				APIKey: os.Getenv("GEMINI_API_KEY"),
-				Model:  firstNonEmpty(os.Getenv("GEMINI_MODEL"), "gemini-2.0-flash"),
-			},
 			NvidiaNIM: ProviderCreds{
 				APIKey: os.Getenv("NVIDIA_NIM_API_KEY"),
 				Model:  firstNonEmpty(os.Getenv("NVIDIA_NIM_MODEL"), "meta/llama-3.3-70b-instruct"),
@@ -152,12 +142,10 @@ func Load(opts Options) (*Config, error) {
 		},
 
 		Embed: EmbedConfig{
-			Provider:    firstNonEmpty(os.Getenv("AIRFOIL_EMBEDDER"), EmbedderNvidiaNIM),
-			GeminiKey:   os.Getenv("GEMINI_API_KEY"),
-			GeminiModel: firstNonEmpty(os.Getenv("GEMINI_EMBED_MODEL"), "text-embedding-004"),
-			NIMKey:      os.Getenv("NVIDIA_NIM_API_KEY"),
-			NIMModel:    firstNonEmpty(os.Getenv("NVIDIA_NIM_EMBED_MODEL"), "nvidia/nv-embedqa-e5-v5"),
-			NIMBaseURL:  firstNonEmpty(os.Getenv("NVIDIA_NIM_BASE_URL"), "https://integrate.api.nvidia.com/v1"),
+			Provider:   firstNonEmpty(os.Getenv("AIRFOIL_EMBEDDER"), EmbedderNvidiaNIM),
+			NIMKey:     os.Getenv("NVIDIA_NIM_API_KEY"),
+			NIMModel:   firstNonEmpty(os.Getenv("NVIDIA_NIM_EMBED_MODEL"), "nvidia/nv-embedqa-e5-v5"),
+			NIMBaseURL: firstNonEmpty(os.Getenv("NVIDIA_NIM_BASE_URL"), "https://integrate.api.nvidia.com/v1"),
 		},
 
 		Ingest: IngestConfig{
@@ -242,10 +230,10 @@ func (c *Config) Validate() error {
 	// config without ever embedding. The key is required at the point of use,
 	// where embed.New reports it precisely, and doctor --ping proves it works.
 	switch c.Embed.Provider {
-	case EmbedderGemini, EmbedderNvidiaNIM:
+	case EmbedderNvidiaNIM:
 	default:
-		problems = append(problems, fmt.Sprintf("AIRFOIL_EMBEDDER=%q: want one of %q, %q",
-			c.Embed.Provider, EmbedderGemini, EmbedderNvidiaNIM))
+		problems = append(problems, fmt.Sprintf("AIRFOIL_EMBEDDER=%q: want %q",
+			c.Embed.Provider, EmbedderNvidiaNIM))
 	}
 
 	if len(problems) > 0 {

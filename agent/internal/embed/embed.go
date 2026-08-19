@@ -1,6 +1,6 @@
 // Package embed turns item text into vectors for clustering.
 //
-// Two hosted providers are supported: Gemini and NVIDIA NIM. They produce
+// One hosted provider is supported: NVIDIA NIM. Providers produce
 // different dimensionalities and different similarity distributions, so the
 // clustering threshold is tuned per provider and the cache is keyed by model.
 //
@@ -36,12 +36,6 @@ func New(cfg *config.Config) (Embedder, error) {
 	client := &http.Client{Timeout: requestTimeout}
 
 	switch cfg.Embed.Provider {
-	case config.EmbedderGemini:
-		if cfg.Embed.GeminiKey == "" {
-			return nil, fmt.Errorf("embed: AIRFOIL_EMBEDDER=gemini requires GEMINI_API_KEY")
-		}
-		return newGemini(client, cfg.Embed.GeminiKey, cfg.Embed.GeminiModel), nil
-
 	case config.EmbedderNvidiaNIM:
 		if cfg.Embed.NIMKey == "" {
 			return nil, fmt.Errorf("embed: AIRFOIL_EMBEDDER=nvidia_nim requires NVIDIA_NIM_API_KEY")
