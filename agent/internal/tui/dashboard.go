@@ -7,6 +7,7 @@ import (
 	"time"
 
 	tea "github.com/charmbracelet/bubbletea"
+	"github.com/charmbracelet/lipgloss"
 
 	"github.com/papitsho/airfoil/internal/config"
 	"github.com/papitsho/airfoil/internal/model"
@@ -133,73 +134,168 @@ func (d *dashboard) Footer() string {
 	return styleKey.Render("R") + styleFooter.Render(" refresh")
 }
 
+// bannerMinHeight is the body height below which the wordmark gives way to the
+// numbers. Five rows of block face plus its margins are a poor trade on a short
+// terminal.
+const bannerMinHeight = 22
+
 func (d *dashboard) View(m *Model, width, height int) string {
-	cfg := m.cfg
-	half := max(width/2-2, 30)
+	cfg, s := m.cfg, d.stats
 
-	var left strings.Builder
-	left.WriteString(styleHeader.Render("pipeline") + "\n")
-	s := d.stats
-	left.WriteString(statLine("items on disk", fmt.Sprintf("%d across %d days", s.Items, s.ItemDays)))
-	left.WriteString(statLine("clusters", fmt.Sprintf("%d (%d multi-source)", s.Clusters, s.MultiSource)))
-	left.WriteString(statLine("ranked", fmt.Sprintf("%d — %d major, %d notable", s.Ranked, s.Major, s.Notable)))
-	left.WriteString(statLine("stories", fmt.Sprintf("%d (%d markdown files)", s.Stories, s.Markdown)))
-	left.WriteString(statLine("digest files", fmt.Sprint(s.DigestFiles)))
-	left.WriteString(statLine("seen urls", fmt.Sprint(s.SeenURLs)))
+	// Two columns of panels, a single blank column between them.
+	colWidth := max((width-1)/2, 24)
+	inner := max(colWidth-4, 12)
 
-	lastRun := styleDim.Render("never")
-	if s.LastRun != nil {
-		lastRun = styleValue.Render(relativeTime(*s.LastRun))
+	left := lipgloss.JoinVertical(lipgloss.Left,
+		panel("pipeline", d.pipelineBody(inner), colWidth),
+		panel("providers", providersBody(cfg, inner), colWidth),
+	)
+	right := lipgloss.JoinVertical(lipgloss.Left,
+		panel("configuration", configBody(cfg, inner), colWidth),
+		panel("sources by tier", tierBody(cfg, inner), colWidth),
+	)
+
+	var b strings.Builder
+
+	// The mark leads the first screen when the terminal has room for it; the
+	// numbers win the space otherwise.
+	if banner := logoBanner(width); banner != "" && height >= bannerMinHeight {
+		b.WriteString(banner + "\n")
 	}
-	left.WriteString(styleLabel.Render(pad("last run", 18)) + lastRun + "\n")
+	b.WriteString(center(readiness(cfg, s, width), width) + "\n\n")
+	b.WriteString(lipgloss.JoinHorizontal(lipgloss.Top, left, " ", right))
 
 	if s.Err != nil {
-		left.WriteString("\n" + styleError.Render(truncate(s.Err.Error(), half)))
+		b.WriteString("\n" + styleError.Render(truncate(s.Err.Error(), width)))
 	}
+	return b.String()
+}
 
-	var right strings.Builder
-	right.WriteString(styleHeader.Render("configuration") + "\n")
+// readiness answers the only question the dashboard exists to answer: can the
+// agent run right now, and how stale is what is on disk.
+func readiness(cfg *config.Config, s dataStats, width int) string {
+	sources := len(cfg.EnabledSources())
 
-	enabled := cfg.EnabledSources()
-	right.WriteString(statLine("sources", fmt.Sprintf("%d of %d enabled", len(enabled), len(cfg.Sources))))
-	right.WriteString(statLine("embedder", cfg.Embed.Provider+" · "+cfg.Embed.Model()))
-	right.WriteString(statLine("threshold", fmt.Sprintf("%.2f over %dh",
-		cfg.Scoring.Clustering.SimilarityThreshold, cfg.Scoring.Clustering.WindowHours)))
-	right.WriteString(statLine("llm budget", fmt.Sprintf("%d calls per run", cfg.Scoring.Caps.LLMCallsPerRun)))
-	right.WriteString(statLine("config dir", cfg.ConfigDir))
-	right.WriteString(statLine("data dir", cfg.DataDir))
-
-	body := columns(left.String(), right.String(), half, 2)
-
-	// Provider readiness: the thing most likely to stop a run.
-	var providers strings.Builder
-	providers.WriteString("\n" + styleHeader.Render("providers") + "\n")
+	ready := 0
 	for _, p := range providerStatuses(cfg) {
-		mark := styleDim.Render("missing")
 		if p.ready {
-			mark = styleOK.Render("ready")
+			ready++
 		}
-		providers.WriteString("  " + styleLabel.Render(pad(p.name, 14)) +
-			pad(mark, 18) + styleDim.Render(p.detail) + "\n")
 	}
 
-	var sources strings.Builder
-	sources.WriteString("\n" + styleHeader.Render("sources by tier") + "\n")
+	mark, label := styleOK.Render("●"), styleOK.Render("ready")
+	switch {
+	case ready == 0 || sources == 0:
+		mark, label = styleError.Render("●"), styleError.Render("not runnable")
+	case ready < len(providerStatuses(cfg)):
+		mark, label = styleWarn.Render("●"), styleWarn.Render("degraded — one provider")
+	}
+
+	last := "never run"
+	if s.LastRun != nil {
+		last = "last run " + relativeTime(*s.LastRun)
+	}
+
+	head := mark + " " + label
+	detail := fmt.Sprintf("  ·  %d sources  ·  %d stories  ·  %s", sources, s.Stories, last)
+	return head + styleDim.Render(truncate(detail, max(width-lipgloss.Width(head), 0)))
+}
+
+// pipelineBody draws the funnel: how many items survived each narrowing, with a
+// bar in the same solid block the wordmark is cut from.
+func (d *dashboard) pipelineBody(inner int) string {
+	s := d.stats
+	if !d.loaded {
+		return styleDim.Render("reading data/…")
+	}
+
+	rows := []struct {
+		label string
+		n     int
+		note  string
+	}{
+		{"items", s.Items, fmt.Sprintf("%d days", s.ItemDays)},
+		{"clusters", s.Clusters, fmt.Sprintf("%d multi", s.MultiSource)},
+		{"ranked", s.Ranked, fmt.Sprintf("%d maj·%d not", s.Major, s.Notable)},
+		{"stories", s.Stories, fmt.Sprintf("%d md", s.Markdown)},
+	}
+
+	peak := 1
+	for _, r := range rows {
+		peak = max(peak, r.n)
+	}
+
+	// label + count + bar + note, with the bar taking what the fixed fields
+	// leave and never dropping below a stub.
+	const labelW, countW, noteW = 9, 6, 14
+	barW := max(inner-labelW-countW-noteW-3, 4)
+
+	var b strings.Builder
+	for _, r := range rows {
+		b.WriteString(styleLabel.Render(pad(r.label, labelW)) +
+			styleValue.Render(padLeft(fmt.Sprint(r.n), countW)) + " " +
+			bar(r.n, peak, barW) + " " +
+			styleDim.Render(truncate(r.note, noteW)) + "\n")
+	}
+	b.WriteString(stat("digests", fmt.Sprint(s.DigestFiles), inner))
+	b.WriteString(stat("seen urls", fmt.Sprint(s.SeenURLs), inner))
+	return strings.TrimRight(b.String(), "\n")
+}
+
+func configBody(cfg *config.Config, inner int) string {
+	var b strings.Builder
+	b.WriteString(stat("sources", fmt.Sprintf("%d of %d enabled",
+		len(cfg.EnabledSources()), len(cfg.Sources)), inner))
+	b.WriteString(stat("embedder", cfg.Embed.Provider+" · "+cfg.Embed.Model(), inner))
+	b.WriteString(stat("threshold", fmt.Sprintf("%.2f over %dh",
+		cfg.Scoring.Clustering.SimilarityThreshold, cfg.Scoring.Clustering.WindowHours), inner))
+	b.WriteString(stat("llm budget", fmt.Sprintf("%d calls per run",
+		cfg.Scoring.Caps.LLMCallsPerRun), inner))
+	b.WriteString(stat("config dir", cfg.ConfigDir, inner))
+	b.WriteString(stat("data dir", cfg.DataDir, inner))
+	return strings.TrimRight(b.String(), "\n")
+}
+
+func providersBody(cfg *config.Config, inner int) string {
+	var b strings.Builder
+	for _, p := range providerStatuses(cfg) {
+		mark := styleDim.Render(pad("missing", 8))
+		if p.ready {
+			mark = styleOK.Render(pad("ready", 8))
+		}
+		b.WriteString(styleLabel.Render(pad(p.name, 12)) + mark +
+			styleDim.Render(truncate(p.detail, max(inner-20, 6))) + "\n")
+	}
+	return strings.TrimRight(b.String(), "\n")
+}
+
+// tierBody groups the enabled sources the way scoring weights them, so a tier
+// that has quietly emptied out is visible at a glance.
+func tierBody(cfg *config.Config, inner int) string {
 	byTier := map[int][]string{}
-	for _, src := range enabled {
+	for _, src := range cfg.EnabledSources() {
 		byTier[src.Tier] = append(byTier[src.Tier], src.ID)
 	}
+	peak := 1
+	for _, ids := range byTier {
+		peak = max(peak, len(ids))
+	}
+
+	var b strings.Builder
 	for tier := 1; tier <= 5; tier++ {
 		ids := byTier[tier]
 		if len(ids) == 0 {
 			continue
 		}
-		sources.WriteString("  " + tierStyle(tier).Render(fmt.Sprintf("tier %d", tier)) +
-			styleDim.Render(fmt.Sprintf(" (%d)  ", len(ids))) +
-			styleLabel.Render(truncate(strings.Join(ids, ", "), max(width-24, 20))) + "\n")
+		const labelW, barW = 7, 8
+		b.WriteString(tierStyle(tier).Render(pad(fmt.Sprintf("tier %d", tier), labelW)) +
+			tierStyle(tier).Render(pad(repeat("█", scale(len(ids), peak, barW)), barW)) + " " +
+			styleDim.Render(truncate(strings.Join(ids, ", "), max(inner-labelW-barW-1, 6))) + "\n")
 	}
-
-	return body + providers.String() + sources.String()
+	if b.Len() == 0 {
+		return styleWarn.Render("no sources enabled")
+	}
+	return strings.TrimRight(b.String(), "\n")
 }
 
 type providerStatus struct {
@@ -217,8 +313,11 @@ func providerStatuses(cfg *config.Config) []providerStatus {
 	}
 }
 
-func statLine(label, value string) string {
-	return styleLabel.Render(pad(label, 18)) + styleValue.Render(value) + "\n"
+// stat renders one "label  value" row, giving the label at most half the room.
+func stat(label, value string, inner int) string {
+	labelW := min(18, max(inner/2, 6))
+	return styleLabel.Render(pad(label, labelW)) +
+		styleValue.Render(truncate(value, max(inner-labelW, 4))) + "\n"
 }
 
 func relativeTime(t time.Time) string {

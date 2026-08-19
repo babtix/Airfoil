@@ -105,6 +105,28 @@ func truncate(s string, n int) string {
 	return string(r[:n-1]) + "…"
 }
 
+// statLine renders a fixed-width "label   value" row.
+func statLine(label, value string) string {
+	return styleLabel.Render(pad(label, 18)) + styleValue.Render(value) + "\n"
+}
+
+// padLeft left-pads s to n display cells, for right-aligned numbers.
+func padLeft(s string, n int) string {
+	r := []rune(s)
+	if len(r) >= n {
+		return s
+	}
+	return repeat(" ", n-len(r)) + s
+}
+
+// center centres s in width. It is ANSI-aware, so already-styled text survives.
+func center(s string, width int) string {
+	if width < 1 {
+		return s
+	}
+	return lipgloss.NewStyle().Width(width).Align(lipgloss.Center).Render(s)
+}
+
 // pad right-pads s to n display cells.
 func pad(s string, n int) string {
 	r := []rune(s)

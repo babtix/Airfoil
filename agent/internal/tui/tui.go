@@ -227,7 +227,7 @@ func (m *Model) chromeHeight() int {
 }
 
 func (m *Model) headerView() string {
-	title := styleTitle.Render("AIRFOIL")
+	title := logoWordmark()
 	sub := styleDim.Render("  ai intelligence pipeline")
 
 	var tabline strings.Builder
@@ -322,7 +322,7 @@ func (m *Model) helpView() string {
 	}
 
 	var b strings.Builder
-	b.WriteString(styleTitle.Render("AIRFOIL — keys"))
+	b.WriteString(logoWordmark() + styleTitle.Render(" — keys"))
 	b.WriteString("\n\n")
 
 	for _, s := range sections {
@@ -338,11 +338,12 @@ func (m *Model) helpView() string {
 	return b.String()
 }
 
-// panel renders a titled box sized to width.
+// panel renders a titled box whose total width, borders included, is width.
+// lipgloss counts padding inside Width but draws the border outside it, so the
+// text a caller may fit is width-4.
 func panel(title string, body string, width int) string {
-	inner := max(width-4, 10)
 	content := styleHeader.Render(title) + "\n" + body
-	return stylePanel.Width(inner).Render(content)
+	return stylePanel.Width(max(width-2, 10)).Render(content)
 }
 
 // columns lays out two blocks side by side.
