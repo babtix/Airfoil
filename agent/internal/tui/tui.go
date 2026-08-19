@@ -37,6 +37,7 @@ const (
 	viewSources
 	viewScoring
 	viewKeywords
+	viewProviders
 	viewDoctor
 	viewBrowse
 )
@@ -50,8 +51,9 @@ var tabs = []struct {
 	{viewSources, "3 Sources"},
 	{viewScoring, "4 Scoring"},
 	{viewKeywords, "5 Keywords"},
-	{viewDoctor, "6 Doctor"},
-	{viewBrowse, "7 Browse"},
+	{viewProviders, "6 Providers"},
+	{viewDoctor, "7 Doctor"},
+	{viewBrowse, "8 Browse"},
 }
 
 // Model is the root Bubble Tea model.
@@ -90,6 +92,7 @@ func New(cfg *config.Config, log *slog.Logger, sink *LogSink) *Model {
 		viewSources:   newSourcesPage(cfg),
 		viewScoring:   newScoringPage(cfg),
 		viewKeywords:  newKeywordsPage(cfg),
+		viewProviders: newProvidersPage(cfg),
 		viewDoctor:    newDoctorPage(),
 		viewBrowse:    newBrowsePage(),
 	}
@@ -167,7 +170,7 @@ func (m *Model) handleKey(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	case "shift+tab":
 		return m, m.switchTo(viewID((int(m.view) - 1 + len(tabs)) % len(tabs)))
 
-	case "1", "2", "3", "4", "5", "6", "7":
+	case "1", "2", "3", "4", "5", "6", "7", "8":
 		idx := int(msg.String()[0] - '1')
 		if idx < len(tabs) {
 			return m, m.switchTo(tabs[idx].id)
@@ -268,7 +271,7 @@ func (m *Model) helpView() string {
 		keys  [][2]string
 	}{
 		{"Global", [][2]string{
-			{"1 – 7", "jump to a tab"},
+			{"1 – 8", "jump to a tab"},
 			{"tab / shift+tab", "cycle tabs"},
 			{"?", "toggle this help"},
 			{"q / ctrl+c", "quit"},
@@ -299,6 +302,13 @@ func (m *Model) helpView() string {
 			{"D", "delete an entry (Keywords)"},
 			{"s", "save"},
 			{"r", "reload from disk"},
+		}},
+		{"Providers", [][2]string{
+			{"↑ ↓", "select provider or credential field"},
+			{"enter", "edit API key, model ID, or URL"},
+			{"← →", "cycle options (e.g. log level)"},
+			{"s", "save changes directly to .env"},
+			{"r", "reload from runtime configuration"},
 		}},
 		{"Doctor", [][2]string{
 			{"enter", "run the checks"},

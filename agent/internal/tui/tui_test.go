@@ -885,7 +885,7 @@ func stageIndex(t *testing.T, key string) int {
 
 func TestBrowseCyclesEveryMode(t *testing.T) {
 	m := testModel(t)
-	key(m, "7")
+	key(m, "8")
 	page := m.pages[viewBrowse].(*browsePage)
 
 	seen := map[int]bool{page.mode: true}

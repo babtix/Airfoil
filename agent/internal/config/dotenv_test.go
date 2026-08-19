@@ -1,6 +1,10 @@
 package config
 
-import "testing"
+import (
+	"os"
+	"path/filepath"
+	"testing"
+)
 
 func TestParseDotEnvLine(t *testing.T) {
 	tests := []struct {
@@ -45,5 +49,36 @@ func TestParseDotEnvLine(t *testing.T) {
 				t.Errorf("val = %q, want %q", val, tt.wantVal)
 			}
 		})
+	}
+}
+
+func TestSaveDotEnv(t *testing.T) {
+	dir := t.TempDir()
+	envPath := filepath.Join(dir, ".env")
+
+	initial := "# Comments\nFOO=bar\n# another\nBAZ=qux\n"
+	if err := os.WriteFile(envPath, []byte(initial), 0o644); err != nil {
+		t.Fatal(err)
+	}
+
+	updates := map[string]string{
+		"FOO":                "new_bar",
+		"NVIDIA_NIM_API_KEY": "nvapi-test1234",
+	}
+
+	if err := SaveDotEnv(envPath, updates); err != nil {
+		t.Fatalf("SaveDotEnv() = %v", err)
+	}
+
+	cfg := validConfig()
+	cfg.SyncEnv(updates)
+
+	if cfg.LLM.NvidiaNIM.APIKey != "nvapi-test1234" {
+		t.Errorf("cfg.LLM.NvidiaNIM.APIKey = %q, want %q", cfg.LLM.NvidiaNIM.APIKey, "nvapi-test1234")
+	}
+
+	envMap := cfg.AsEnvMap()
+	if envMap["NVIDIA_NIM_API_KEY"] != "nvapi-test1234" {
+		t.Errorf("envMap[NVIDIA_NIM_API_KEY] = %q, want %q", envMap["NVIDIA_NIM_API_KEY"], "nvapi-test1234")
 	}
 }

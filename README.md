@@ -74,8 +74,9 @@ go run ./cmd/airfoil
 3. **3 Sources**: Toggle, edit, add, or delete ingestion sources.
 4. **4 Scoring**: Tune similarity thresholds, tier weights, decay half-life, and LLM call caps with instant feedback.
 5. **5 Keywords**: Manage builder signals and hype filter keywords.
-6. **6 Doctor**: Live connectivity probes for all upstream feeds and LLM provider endpoints.
-7. **7 Browse**: Interactive inspection of raw ingested items, vector clusters, ranked outputs, and final stories.
+6. **6 Providers**: Configure and persist API keys, models (NVIDIA NIM, OpenRouter), embedding endpoints, and ingest tokens directly to `.env`.
+7. **7 Doctor**: Live connectivity probes for all upstream feeds and LLM provider endpoints.
+8. **8 Browse**: Interactive inspection of raw ingested items, vector clusters, ranked outputs, and final stories.
 
 ---
 

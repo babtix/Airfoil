@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/fs"
 	"os"
+	"path/filepath"
 	"strings"
 )
 
@@ -81,4 +82,115 @@ func parseDotEnvLine(raw string) (key, val string, ok bool) {
 		}
 	}
 	return name, value, true
+}
+
+// SaveDotEnv updates or creates a .env file with the given key-value updates.
+// Existing comments, non-modified keys, and overall formatting are preserved.
+func SaveDotEnv(path string, updates map[string]string) error {
+	var lines []string
+	updatedKeys := make(map[string]bool)
+
+	if f, err := os.Open(path); err == nil {
+		sc := bufio.NewScanner(f)
+		for sc.Scan() {
+			raw := sc.Text()
+			key, _, ok := parseDotEnvLine(raw)
+			if ok && key != "" {
+				if newVal, exists := updates[key]; exists {
+					lines = append(lines, fmt.Sprintf("%s=%s", key, newVal))
+					updatedKeys[key] = true
+					continue
+				}
+			}
+			lines = append(lines, raw)
+		}
+		_ = sc.Err()
+		_ = f.Close()
+	}
+
+	// Append any new keys that were not already in the file
+	var appended []string
+	for k, v := range updates {
+		if !updatedKeys[k] && v != "" {
+			appended = append(appended, fmt.Sprintf("%s=%s", k, v))
+		}
+	}
+	if len(appended) > 0 {
+		if len(lines) > 0 && lines[len(lines)-1] != "" {
+			lines = append(lines, "")
+		}
+		lines = append(lines, appended...)
+	}
+
+	content := strings.Join(lines, "\n")
+	if len(lines) > 0 && !strings.HasSuffix(content, "\n") {
+		content += "\n"
+	}
+
+	dir := filepath.Dir(path)
+	if dir != "" && dir != "." {
+		if err := os.MkdirAll(dir, 0o755); err != nil {
+			return fmt.Errorf("config: mkdir %s: %w", dir, err)
+		}
+	}
+	tmp := filepath.Join(dir, fmt.Sprintf(".env.tmp.%d", os.Getpid()))
+	if err := os.WriteFile(tmp, []byte(content), 0o600); err != nil {
+		return fmt.Errorf("config: write %s: %w", tmp, err)
+	}
+	if err := os.Rename(tmp, path); err != nil {
+		_ = os.Remove(tmp)
+		if err2 := os.WriteFile(path, []byte(content), 0o600); err2 != nil {
+			return fmt.Errorf("config: save %s: %w", path, err2)
+		}
+	}
+	return nil
+}
+
+// SyncEnv applies the key-value updates to the active Config and process environment.
+func (c *Config) SyncEnv(updates map[string]string) {
+	for k, v := range updates {
+		_ = os.Setenv(k, v)
+		switch k {
+		case "NVIDIA_NIM_API_KEY":
+			c.LLM.NvidiaNIM.APIKey = v
+			c.Embed.NIMKey = v
+		case "NVIDIA_NIM_MODEL":
+			c.LLM.NvidiaNIM.Model = v
+		case "OPENROUTER_API_KEY":
+			c.LLM.OpenRouter.APIKey = v
+		case "OPENROUTER_MODEL":
+			c.LLM.OpenRouter.Model = v
+		case "AIRFOIL_EMBEDDER":
+			c.Embed.Provider = v
+		case "NVIDIA_NIM_EMBED_MODEL":
+			c.Embed.NIMModel = v
+		case "NVIDIA_NIM_BASE_URL":
+			c.Embed.NIMBaseURL = v
+		case "GITHUB_TOKEN":
+			c.Ingest.GitHubToken = v
+		case "REDDIT_USER_AGENT":
+			c.Ingest.RedditUserAgent = v
+		case "SITE_URL":
+			c.SiteURL = v
+		case "AIRFOIL_LOG_LEVEL":
+			c.LogLevel = v
+		}
+	}
+}
+
+// AsEnvMap returns a map of all configurable environment keys from the current Config.
+func (c *Config) AsEnvMap() map[string]string {
+	return map[string]string{
+		"NVIDIA_NIM_API_KEY":     c.LLM.NvidiaNIM.APIKey,
+		"NVIDIA_NIM_MODEL":       c.LLM.NvidiaNIM.Model,
+		"OPENROUTER_API_KEY":     c.LLM.OpenRouter.APIKey,
+		"OPENROUTER_MODEL":       c.LLM.OpenRouter.Model,
+		"AIRFOIL_EMBEDDER":       c.Embed.Provider,
+		"NVIDIA_NIM_EMBED_MODEL": c.Embed.NIMModel,
+		"NVIDIA_NIM_BASE_URL":    c.Embed.NIMBaseURL,
+		"GITHUB_TOKEN":           c.Ingest.GitHubToken,
+		"REDDIT_USER_AGENT":      c.Ingest.RedditUserAgent,
+		"SITE_URL":               c.SiteURL,
+		"AIRFOIL_LOG_LEVEL":      c.LogLevel,
+	}
 }
