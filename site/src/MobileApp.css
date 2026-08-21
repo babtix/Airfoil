@@ -1,0 +1,45 @@
+/* Airfoil Mobile App Shell Styles */
+
+.mobile-app-shell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--deep);
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255, 59, 59, 0.08), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 50% 120%, rgba(255, 59, 59, 0.04), transparent 60%);
+  background-attachment: fixed;
+  color: var(--prim);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+
+[data-theme="light"] .mobile-app-shell {
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(230, 46, 46, 0.06), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 50% 120%, rgba(230, 46, 46, 0.03), transparent 60%);
+}
+
+.mobile-content-wrap {
+  flex: 1;
+  padding-top: calc(var(--header-height) + var(--safe-top) + 0.65rem);
+  padding-bottom: calc(var(--bottom-nav-height) + var(--safe-bottom) + 1.25rem);
+  padding-left: var(--mobile-pad);
+  padding-right: var(--mobile-pad);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  animation: fadeIn 0.15s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.85;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

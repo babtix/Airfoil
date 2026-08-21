@@ -1,0 +1,718 @@
+[
+  {
+    "id": "f84cbbf9d5e402e9",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://openrouter.ai/stealth/ox-alpha",
+    "title": "Ox Alpha",
+    "excerpt": "https://twitter.com/OpenRouter/status/2090544970923184269, https://xcancel.com/OpenRouter/status/2090544970923184269",
+    "author": "mtokmak06",
+    "published_at": "2026-08-20T23:56:35Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 210,
+      "hn_comments": 165
+    }
+  },
+  {
+    "id": "f4be18b465971910",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates",
+    "title": "OpenAI is gaining on Anthropic with business users, new data indicates",
+    "excerpt": "Businesses are willing to flop back and forth as each lab releases new models, volatility that should give both companies' investors pause about how \"sticky\" enterprise AI spending really is.",
+    "author": "Julie Bort",
+    "published_at": "2026-08-20T22:36:37Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "5139cb7756590ae9",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin",
+    "title": "ChatGPT can now send texts for you with new Apple Messages plug-in",
+    "excerpt": "Ever wanted someone else to do your texting for you? ChatGPT is being offered up as an automated text scribe via a new Apple Messages integration.",
+    "author": "Lucas Ropek",
+    "published_at": "2026-08-20T22:09:51Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "bdb698ec663c3ddc",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
+    "title": "Google Discover is getting an AI chatbot-tuned feed",
+    "excerpt": "Google will soon allow you to customize your Discover feed by describing what you want to see. The new feature, rolling out to the Google app in the \"coming days,\" will use AI to automatically tweak your feed and \"remember\" your preferences for future visits. You'll find the option within the…",
+    "author": "Emma Roth",
+    "published_at": "2026-08-20T21:50:22Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "29ff6fb816f0a351",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-pee",
+    "title": "OK, can we actually cool data centers with our pee?",
+    "excerpt": "Jason Kelce joked that people should cool data centers with their pee, rather than potable water -- but his suggestion is not completely ludicrous.",
+    "author": "Amanda Silberling",
+    "published_at": "2026-08-20T20:53:13Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "028f0ad47110eebb",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vtvaue/notes_on_hamiltonian_monte_carlo_from_a_purely",
+    "title": "Notes on Hamiltonian Monte Carlo from a purely probabilistic perspective [P]",
+    "excerpt": "I’ve been studying Hamiltonian Monte Carlo and wrote a set of notes explaining HMC without relying on the usual physics-based motivation. The notes develop HMC from a probabilistic/MCMC perspective, starting from introducing an auxiliary variable, constructing the corresponding Markov chain, and…",
+    "author": "/u/aybehrouz",
+    "published_at": "2026-08-20T20:37:08Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "8f23da7e56640502",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead",
+    "title": "The August 17 outage",
+    "excerpt": "",
+    "author": "0xedb",
+    "published_at": "2026-08-20T19:22:24Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 610,
+      "hn_comments": 706
+    }
+  },
+  {
+    "id": "cba8417ecebda099",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses",
+    "title": "Google gives publishers a new way to fight AI-driven traffic losses",
+    "excerpt": "Google is giving publishers a new button that lets readers make them a preferred source across Search, Discover, and Google News, potentially boosting their traffic as AI search sends fewer clicks to the web.",
+    "author": "Sarah Perez",
+    "published_at": "2026-08-20T19:18:21Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "79fdd08ae106be4e",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/runlayer-rippling-drop-lawsuits-but-the-brouhaha-is-still-a-cautionary-tale-for-founders",
+    "title": "Runlayer, Rippling drop lawsuits — but the brouhaha is still a cautionary tale for founders",
+    "excerpt": "Runlayer and Rippling have dropped their lawsuits. No money was paid. Rippling celebrated by releasing a competing product.",
+    "author": "Julie Bort",
+    "published_at": "2026-08-20T19:15:05Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "807ef9c2e44da735",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.danielvaughn.dev/posts/huzzah",
+    "title": "Show HN: Huzzah – a novel approach to coding with AI",
+    "excerpt": "Hello everyone. I've been working on this experimental editor called Huzzah. I've been working almost exclusively with coding agents since January of this year, and over the past few months I began to feel utterly exhausted by them. They're great, but I'm finding it more and more tedious to write…",
+    "author": "danielvaughn",
+    "published_at": "2026-08-20T19:05:36Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 350,
+      "hn_comments": 199
+    }
+  },
+  {
+    "id": "161fa86044d10b9d",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/linkdazes-smart-calendar-is-built-to-run-a-household-not-just-track-a-schedule",
+    "title": "Linkdaze’s smart calendar is built to run a household, not just track a schedule",
+    "excerpt": "Linkdaze's smart digital calendar stands out for not putting its features behind a paywall, including an AI meal planner tool.",
+    "author": "Lauren Forristal",
+    "published_at": "2026-08-20T18:20:35Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "ea44c5e04e1ffa98",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vtrdem/is_kv_cache_in_a_high_dimensional_vector_space_d",
+    "title": "Is KV Cache in a high dimensional vector space? [D]",
+    "excerpt": "I've been doing some research on this question: At inference time a large part of a model's working memory lives in the KV cache, plus whatever external memory the harness bolts on. I've been poking at the storage-and-retrieval side of this, treating that cache as an index, and what stands out is…",
+    "author": "/u/Electrical_Offer5667",
+    "published_at": "2026-08-20T18:18:10Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {},
+    "repo_url": "https://github.com/Regan-Milne/kvspace"
+  },
+  {
+    "id": "8d06568a0a14da4b",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://radi8.dev/blog/uplink",
+    "title": "Show HN: We chased a weather balloon across Montana and never found it",
+    "excerpt": "Since April, I have been working with Sam Flynn (https://drook.dev) to make this balloon payload, UpLink. We did a similar launch last year with Hack Club but this was our first independent launch. UpLink was a 491 gram payload testing the insulation properties of 3D printing filaments, while also…",
+    "author": "radeeyate",
+    "published_at": "2026-08-20T17:33:32Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 58,
+      "hn_comments": 25
+    }
+  },
+  {
+    "id": "3e25c33330e7022b",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users",
+    "title": "Grok keeps sending gibberish responses to users",
+    "excerpt": "Affected users told TechCrunch they were using Grok Lite, and noticed the issues as early as Wednesday morning.",
+    "author": "Russell Brandom",
+    "published_at": "2026-08-20T17:32:16Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "57b344cf3390de69",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds",
+    "title": "A third of web pages published since ChatGPT launched were written by AI, study finds",
+    "excerpt": "ChatGPT and other AI models are now authoring and editing much of the new web.",
+    "author": "Sarah Perez",
+    "published_at": "2026-08-20T17:18:58Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "eab5285cfdebeb65",
+    "source_id": "hf-blog",
+    "source_name": "Hugging Face Blog",
+    "source_tier": 2,
+    "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+    "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
+    "excerpt": "",
+    "published_at": "2026-08-20T16:52:57Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "3766519138678db6",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router",
+    "title": "Ramp launches its own AI model router, called Router",
+    "excerpt": "Ramp has launched its own AI model routing service, dubbed Router, that lets users and companies use and switch between various large language models via an API.",
+    "author": "Ram Iyer",
+    "published_at": "2026-08-20T16:46:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "30ed338aa1befde7",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users",
+    "title": "Meta brings Pocket, an app that lets you vibe-code and share games, to US users",
+    "excerpt": "Meta is bringing Pocket, its experimental AI-powered app for creating and sharing interactive games, to users across the U.S. after quietly testing it in Brazil.",
+    "author": "Sarah Perez",
+    "published_at": "2026-08-20T16:07:26Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "6c3ce81e2922b58d",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/inertia-enterprises-finds-a-way-to-make-its-fusion-fuel-fast",
+    "title": "Inertia Enterprises finds a way to make its fusion fuel fast",
+    "excerpt": "Fusion power startup Inertia Enterprises reduced the fuel filling process from a week to just a few hours. It's one of 10 hurdles the company must overcome to make a profitable power plant.",
+    "author": "Tim De Chant",
+    "published_at": "2026-08-20T16:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "08dde364f7c2aa81",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
+    "title": "It’s Greg Brockman’s OpenAI now",
+    "excerpt": "OpenAI has had a hell of a year. The company spent months battling former cofounder Elon Musk in a sensational jury trial, was hit with a high-profile trade secrets lawsuit from Apple, and faced widespread scrutiny after an unreleased model hacked another AI company. As it prepares for an IPO, a…",
+    "author": "Hayden Field",
+    "published_at": "2026-08-20T15:45:55Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "cd5d17946e93023b",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/runvendo/vendo",
+    "title": "Launch HN: Vendo (YC S26) – Let users build features on top of your product",
+    "excerpt": "Hi HN, we’re Yousef \u0026 Nour, founders of Vendo (https://vendo.run). Vendo lets users create new features inside the software they already use. A user describes the dashboard, workflow, or small app they need, and Vendo builds it on top of the product’s existing data, API, and interface. Demo…",
+    "author": "yousefh409",
+    "published_at": "2026-08-20T15:29:52Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 55,
+      "hn_comments": 22
+    },
+    "repo_url": "https://github.com/runvendo/vendo"
+  },
+  {
+    "id": "09523f683853cee9",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/zachahn/vomit",
+    "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
+    "excerpt": "",
+    "author": "Bluestein",
+    "published_at": "2026-08-20T15:26:02Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 288,
+      "hn_comments": 280
+    },
+    "repo_url": "https://github.com/zachahn/vomit"
+  },
+  {
+    "id": "26d9ae1b925943ff",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://blog.yaros.ae/anti-ai-fonts-are-useless-and-harmful",
+    "title": "Anti-AI fonts are useless and harmful",
+    "excerpt": "",
+    "author": "speckx",
+    "published_at": "2026-08-20T15:06:53Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 193,
+      "hn_comments": 150
+    }
+  },
+  {
+    "id": "deee4cc2fe70d847",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://zoneless.com",
+    "title": "Show HN: Open-source Stripe Connect alternative",
+    "excerpt": "Hey, I'm Ben. I built Zoneless because I was paying so much to use Stripe Connect on my own marketplace. The fees were really, really bad, and it was also limiting in terms of the seller countries I could onboard. To give you an idea, I was paying around $9,000 per month in fees just to run…",
+    "author": "tinyprojects",
+    "published_at": "2026-08-20T14:38:45Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 78,
+      "hn_comments": 33
+    }
+  },
+  {
+    "id": "cc6262844054fad5",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/paulsp94/omacosy",
+    "title": "Show HN: Omacosy – Omarchy-style tiling desktop for macOS, no SIP",
+    "excerpt": "I have been using omarchy on my tower since nearly a year now, shortly after it was released first. I really love the experience I am having with it but I still use my macbook for daly work, so I wanted to recreate a similar experience on it. Thats why I created omacosy, a setup for tiling…",
+    "author": "paulsp",
+    "published_at": "2026-08-20T14:12:08Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 56,
+      "hn_comments": 43
+    },
+    "repo_url": "https://github.com/paulsp94/omacosy"
+  },
+  {
+    "id": "acf4cd57263162cd",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.mikekasberg.com/blog/2026/08/19/hacking-with-claude-on-a-27-smart-watch.html",
+    "title": "Hacking with Claude on a $27 smart watch",
+    "excerpt": "",
+    "author": "speckx",
+    "published_at": "2026-08-20T14:08:09Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 101,
+      "hn_comments": 55
+    }
+  },
+  {
+    "id": "4e1b63a2e790f293",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis",
+    "title": "Welcome to the AI crisis in math",
+    "excerpt": "Today on Decoder, I’m talking with Robert Hart, The Verge’s London-based AI reporter, about what AI is doing to the field of mathematics and the existential crisis many lead mathematicians are having about it. OpenAI just published a set of solutions to longstanding problems in math that went off…",
+    "author": "Nilay Patel",
+    "published_at": "2026-08-20T14:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "1eff5265d94ac054",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vtjotb/mapping_intrinsic_rank_and_informational_gravity",
+    "title": "Mapping intrinsic rank and informational gravity in complex tabular data: I developed a non-parametric, model-agnostic, information-theoretic diagnostic to bypass the limits of linear, rank, and Euclidean baselines. [R]",
+    "excerpt": "Links: Preprint: https://doi.org/10.5281/zenodo.22028087 Entropic Scree Function v1.0.0 / GitHub: https://github.com/tjleestjohn/Entropic-Scree TL;DR: Standard PCA fundamentally fractures non-linear dependencies into \"Spurious Orthogonal Dimensions,\" drastically overestimating the true rank of…",
+    "author": "/u/Chocolate_Milk_Son",
+    "published_at": "2026-08-20T13:34:28Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {},
+    "repo_url": "https://github.com/tjleestjohn/Entropic-Scree"
+  },
+  {
+    "id": "529b49c6610ea84d",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware",
+    "title": "Malicious Rust crate Arrayref runs a build-time payload",
+    "excerpt": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on... https://github.com/rustsec/advisory-db/issues/3161",
+    "author": "abhisek",
+    "published_at": "2026-08-20T13:23:12Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 533,
+      "hn_comments": 478
+    }
+  },
+  {
+    "id": "2f17e3b184ca196a",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps",
+    "title": "Meta AI’s new Mac app wants you to talk to your apps",
+    "excerpt": "The company said that the dictation feature works across all apps, just like other tools such as Wispr Flow, Superwhisper, and Monologue.",
+    "author": "Ivan Mehta",
+    "published_at": "2026-08-20T12:11:57Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "e716395f6bcd4fb3",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://simedw.com/2026/08/20/midi-autocomplete",
+    "title": "Show HN: I trained a 125M model to autocomplete piano on-device",
+    "excerpt": "I trained a 125M-parameter transformer to autocomplete piano performances in real time (~108 notes/sec on an iPhone 15). The idea is basically GitHub Copilot or Tabnine, except instead of prompting it with code, you prompt it by playing a few notes on a MIDI piano. The model then continues what…",
+    "author": "simedw",
+    "published_at": "2026-08-20T12:04:38Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 568,
+      "hn_comments": 113
+    }
+  },
+  {
+    "id": "afd54bbe19c44fc2",
+    "source_id": "mistral",
+    "source_name": "Mistral AI",
+    "source_tier": 1,
+    "url": "https://mistral.ai/news/agentic-search",
+    "title": "Agentic Search. More accurate and efficient results from your AI systems.",
+    "excerpt": "The retrieval layer that helps AI systems navigate, read, and verify information inside even the most complex documents",
+    "published_at": "2026-08-20T12:00:17Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "a9f0044edd6fada4",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
+    "title": "Slack is launching collaborative vibe-coding channels",
+    "excerpt": "Slack is introducing dedicated channels where teams can vibe-code together with AI agents instead of jumping between different tools and conversations. The Slack Code launch includes open, project-specific code channels with dedicated user tabs, alongside features that compare coding changes and…",
+    "author": "Jess Weatherbed",
+    "published_at": "2026-08-20T12:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "ca42568d1452a5bb",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vth6d9/resizing_images_from_flutter_camera_stream_for",
+    "title": "Resizing images from Flutter Camera Stream for TFLite modle [P]",
+    "excerpt": "Hi everyone. So I built a CNN modle using MobileNetv3 then converted it into TFLite. It performed well during training but once I integrated it into my application, it is making large errors. From flutter, the camera stream sends frames and those are processed before the model makes predictions…",
+    "author": "/u/Defiant-Ad3530",
+    "published_at": "2026-08-20T11:45:15Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "d18808a6ba61703f",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://franciscotrindade.me/blog/the-kids-are-really-alright",
+    "title": "AI didn't erase the junior engineer's value, it increased it it",
+    "excerpt": "",
+    "author": "franciscomt",
+    "published_at": "2026-08-20T11:42:20Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 87,
+      "hn_comments": 143
+    }
+  },
+  {
+    "id": "90cbbd23c4a81752",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vtgw1g/aigenerated_code_detection_in_cicd_looking_for",
+    "title": "AI-generated code detection in CI/CD — looking for approaches and real-world experience [D]",
+    "excerpt": "I'm working on a system to estimate whether code committed to a repository was generated with AI coding tools. My current approach is based on Git/commit-level signals such as AI-related commit trailers, commit metadata, LOC changes, number of files changed, addition/deletion patterns, etc. The…",
+    "author": "/u/Ancient_Mango_1576",
+    "published_at": "2026-08-20T11:31:12Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "84b88bfcd28c836f",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vtfimo/the_spectral_neuron_an_ml_primitive_for_scalable",
+    "title": "The spectral neuron - an ML primitive for scalable and interpretable models [R]",
+    "excerpt": "Worked some time ago on one of the ad teams at Yahoo, and this grew out of a question I kept returning to while there are there \"simple\" models that are both simple, scalable, interpretable, and controllable at the same time? Decided to explore it, first in a blog (starting here), then in a new…",
+    "author": "/u/alexsht1",
+    "published_at": "2026-08-20T10:20:47Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {},
+    "repo_url": "https://github.com/alexshtf/spectral_neuron_paper",
+    "paper_url": "https://arxiv.org/abs/2608.08003"
+  },
+  {
+    "id": "e587d6d486cec351",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users",
+    "title": "Binance now lets AI agents trade, but keeping them in check is largely up to users",
+    "excerpt": "Binance's Agent OS works with tools such as ChatGPT, Claude Code, and Cursor.",
+    "author": "Jagmeet Singh",
+    "published_at": "2026-08-20T09:30:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "1142299a4d83fa54",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vtdpve/discussion_thread_for_emnlp_2026",
+    "title": "Discussion thread for EMNLP 2026 Notifications/Results [D]",
+    "excerpt": "Discussion thread for EMNLP 2026 notifications/results which should be released today. Wishing everybody to be in Budapest. submitted by /u/sweetsalt10 [link] [comments]",
+    "author": "/u/sweetsalt10",
+    "published_at": "2026-08-20T08:37:17Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "7cca4edec26f1d66",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://dontpastetheai.com",
+    "title": "Don't paste the AI, please",
+    "excerpt": "",
+    "author": "pjerem",
+    "published_at": "2026-08-20T08:20:44Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hn_points": 1024,
+      "hn_comments": 570
+    }
+  },
+  {
+    "id": "d3e3233312d15304",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.19758",
+    "title": "FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving",
+    "excerpt": "Long-context modeling is a pivotal capability for Large Language Models, yet the quadratic complexity of attention remains a critical bottleneck, particularly during the compute-intensive prefilling phase. Our previous work, FlashPrefill, mitigates this cost through instantaneous pattern discovery…",
+    "author": "Qihang Fan",
+    "published_at": "2026-08-20T08:02:55Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hf_upvotes": 7
+    },
+    "paper_url": "https://arxiv.org/abs/2608.19758"
+  },
+  {
+    "id": "234941caae6e161e",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vtctaz/about_the_impact_of_grouping_classes_in",
+    "title": "About the impact of grouping classes in multiclass classification [D]",
+    "excerpt": "A premise: I hope this question is \"worth\" of this subreddit, I did a decent amount of research before posting, I thought it was potentially interesting enough for it, but possibly not basic enough for r/learnmachinelearning . Is there any agreement/indication about how harmful (if at all) it is…",
+    "author": "/u/neonhexe",
+    "published_at": "2026-08-20T07:42:20Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "fc1a9abd82b35a9c",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/introducing-ai-futures",
+    "title": "Introducing AI Futures",
+    "excerpt": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
+    "published_at": "2026-08-20T07:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "ad89fb510e3c78c2",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/stampli",
+    "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
+    "excerpt": "With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days.",
+    "published_at": "2026-08-20T00:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {}
+  },
+  {
+    "id": "fa811c1700f53070",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.19799",
+    "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+    "excerpt": "Software increasingly functions as part of the scientific instrument itself, making failures in scientific code capable of compromising not only program behavior but also the evidence underlying scientific conclusions. Yet existing evaluations of coding agents largely emphasize aggregate task…",
+    "author": "Zhipeng Xu",
+    "published_at": "2026-08-20T00:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hf_upvotes": 50
+    },
+    "paper_url": "https://arxiv.org/abs/2608.19799"
+  },
+  {
+    "id": "c021417a74df503f",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.19854",
+    "title": "Repo0: Design-Driven Zero-to-All Code Generation",
+    "excerpt": "Large language model agents have made substantial progress in code generation, yet most existing systems assume a predefined repository architecture. This assumption does not hold in zero-to-all code generation, where an agent must construct an entire software project directly from…",
+    "author": "Silin Chen",
+    "published_at": "2026-08-20T00:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hf_upvotes": 10
+    },
+    "paper_url": "https://arxiv.org/abs/2608.19854"
+  },
+  {
+    "id": "e031588d6b621984",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.20335",
+    "title": "4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
+    "excerpt": "We present 4DAnyone, a framework for reconstructing 4D humans from an uncalibrated monocular video by generating reconstruction-grade multiview-consistent videos and lifting them into 4D Gaussian Splatting (4DGS). Existing camera-controlled video diffusion models synthesize plausible novel-view…",
+    "author": "Yudong Jin",
+    "published_at": "2026-08-20T00:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hf_upvotes": 45
+    },
+    "paper_url": "https://arxiv.org/abs/2608.20335"
+  },
+  {
+    "id": "cd28c9c52c228547",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.20202",
+    "title": "MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
+    "excerpt": "Memory has become a key component of large language models, enabling them to retain information and learn from long-term interactions. However, existing memory benchmarks mainly evaluate whether information is correctly extracted, stored, and retrieved, while largely overlooking how retrieved…",
+    "author": "Mengru Wang",
+    "published_at": "2026-08-20T00:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hf_upvotes": 24
+    },
+    "paper_url": "https://arxiv.org/abs/2608.20202"
+  },
+  {
+    "id": "49f44e19ac2a5e70",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.20336",
+    "title": "WithEveryone: Unified Planning and Identity Grounding for Group Image Generation",
+    "excerpt": "Identity-preserving image generation becomes increasingly unreliable when a scene must contain many specified people. Beyond retaining each identity, the model must bind every reference to a distinct person and location, while training-time identity losses must establish correspondence among…",
+    "author": "Hengyuan Xu",
+    "published_at": "2026-08-20T00:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hf_upvotes": 33
+    },
+    "paper_url": "https://arxiv.org/abs/2608.20336"
+  },
+  {
+    "id": "e7a0ed5e125a96bd",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.19880",
+    "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
+    "excerpt": "LLM agents learn by interacting with environments, yet these environments are hand-built and static: blind to an agent's weaknesses, and quickly left behind as it improves. While recent environment generation methods attempt to address this, they require domain-specific pipelines, rely on…",
+    "author": "Chengsong Huang",
+    "published_at": "2026-08-20T00:00:00Z",
+    "fetched_at": "2026-08-21T15:42:10.8290901Z",
+    "metrics": {
+      "hf_upvotes": 217
+    },
+    "paper_url": "https://arxiv.org/abs/2608.19880"
+  }
+]

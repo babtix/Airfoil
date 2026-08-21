@@ -67,3 +67,17 @@
   --tier-press-text: #5f6368;
 }
 
+/* Mobile Specific Tokens */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 3.125rem; /* 50px */
+    --bottom-nav-height: 3.75rem; /* 60px */
+    --touch-target: 44px;
+    --mobile-pad: 0.875rem;
+    --card-radius: 8px;
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+

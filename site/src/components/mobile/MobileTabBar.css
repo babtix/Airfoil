@@ -1,0 +1,70 @@
+/* Airfoil Mobile Tab Bar Styles */
+
+.mobile-tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(var(--bottom-nav-height) + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+  background-color: var(--header-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 50;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.mobile-tab-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  height: 100%;
+  color: var(--sec);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.15s ease, transform 0.12s ease;
+  position: relative;
+  touch-action: manipulation;
+}
+
+.mobile-tab-item:active {
+  transform: scale(0.92);
+}
+
+.mobile-tab-item.active {
+  color: var(--kai);
+  font-weight: 600;
+}
+
+.mobile-tab-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mobile-tab-item.active .mobile-tab-icon {
+  transform: scale(1.1);
+}
+
+.mobile-tab-indicator {
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 2px;
+  background-color: var(--kai);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 1px 6px var(--kai);
+}

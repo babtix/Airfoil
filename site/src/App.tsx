@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { useAirfoilSignals } from './hooks/useAirfoilSignals';
 import { useTheme } from './hooks/useTheme';
+import { useIsMobile } from './hooks/useIsMobile';
+import { MobileApp } from './MobileApp';
 import { Header } from './components/Header';
 import { LeftRail } from './components/LeftRail';
 import { RightRail } from './components/RightRail';
@@ -21,6 +23,7 @@ export function App() {
   const navigate = useNavigate();
   const location = useLocation();
   const { theme, toggleTheme } = useTheme();
+  const { isMobile } = useIsMobile();
 
   const {
     stories,
@@ -65,6 +68,28 @@ export function App() {
       navigate('/feed');
     }
   };
+
+  if (isMobile) {
+    return (
+      <MobileApp
+        stories={stories}
+        filteredStories={filteredStories}
+        filters={filters}
+        allTags={allTags}
+        topSources={topSources}
+        topStory={topStory}
+        totalSourcesCount={totalSourcesCount}
+        setDate={setDate}
+        setTag={setTag}
+        setSource={setSource}
+        setQuery={setQuery}
+        setSortBy={setSortBy}
+        resetFilters={resetFilters}
+        theme={theme}
+        toggleTheme={toggleTheme}
+      />
+    );
+  }
 
   const isStoryView = location.pathname.startsWith('/story/');
   const isLandingPage = location.pathname === '/';

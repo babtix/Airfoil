@@ -1,0 +1,102 @@
+/* Airfoil Mobile Design Stylesheet — Kaioken Mobile Edition */
+
+@media (max-width: 768px) {
+  /* Tap and Interaction */
+  button, a, input, select {
+    touch-action: manipulation;
+  }
+
+  /* Compact header & safe bottom for app */
+  .mobile-shell-root {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--deep);
+  }
+
+  .mobile-main-content {
+    flex: 1;
+    padding-top: calc(var(--header-height) + var(--safe-top));
+    padding-bottom: calc(var(--bottom-nav-height) + var(--safe-bottom) + 1.25rem);
+    padding-left: var(--mobile-pad);
+    padding-right: var(--mobile-pad);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Touch Cards */
+  .mobile-card {
+    background-color: var(--surf);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--line);
+    border-radius: var(--card-radius);
+    padding: 0.95rem 1rem;
+    transition: transform 0.1s ease, border-color 0.15s ease, background-color 0.15s ease;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .mobile-card:active {
+    transform: scale(0.985);
+    background-color: var(--surf-active);
+    border-color: var(--kai-border);
+  }
+
+  /* Horizontal Pill Scroller */
+  .mobile-pill-scroller {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 0.4rem;
+    padding: 0.35rem 0.1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .mobile-pill-scroller::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Large touch targets */
+  .mobile-tagpill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--surf);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--sec);
+    white-space: nowrap;
+    min-height: 28px;
+  }
+
+  .mobile-tagpill-active {
+    border-color: var(--kai) !important;
+    color: var(--kai) !important;
+    background-color: rgba(255, 59, 59, 0.15) !important;
+  }
+
+  /* Bottom sheet drawer animation */
+  @keyframes slideUpDrawer {
+    from {
+      transform: translateY(100%);
+      opacity: 0.6;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .mobile-drawer-content {
+    animation: slideUpDrawer 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+}
