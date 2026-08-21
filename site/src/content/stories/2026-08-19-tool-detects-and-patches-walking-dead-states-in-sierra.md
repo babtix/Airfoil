@@ -2,8 +2,8 @@
 id: "b54ad377dd58ce65"
 title: "Tool detects and patches walking-dead states in Sierra adventure games"
 summary: "Lucasartsifier is a tool that automatically detects walking-dead states in Sierra adventure games and applies patches to restore playability, helping players avoid dead ends without manual save management."
-score: 44
-tier: "notable"
+score: 23
+tier: "minor"
 tags: ["open-source", "tools", "coding"]
 builder_relevant: true
 date: 2026-08-19T01:58:33Z

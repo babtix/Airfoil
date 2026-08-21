@@ -2,8 +2,8 @@
 id: "5670397364c3ff0f"
 title: "Geolocating a random island with geometry and CUDA"
 summary: "The article explains how to determine the location of a random island by applying geometric formulas and implementing them in CUDA for GPU acceleration, providing code snippets and performance considerations."
-score: 51
-tier: "notable"
+score: 26
+tier: "minor"
 tags: ["coding", "tools"]
 builder_relevant: true
 date: 2026-08-19T12:19:52Z

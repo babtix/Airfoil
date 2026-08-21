@@ -2,8 +2,8 @@
 id: "38b12468c180277b"
 title: "Safety alignment easily removed from open-weight LLMs via abliteration"
 summary: "Safety alignment in open-weight language models can be stripped via abliteration in minutes, and the paper notes that no existing release-time defense durably prevents this removal."
-score: 43
-tier: "notable"
+score: 22
+tier: "minor"
 tags: ["models", "safety", "research"]
 builder_relevant: true
 date: 2026-08-19T04:00:00Z

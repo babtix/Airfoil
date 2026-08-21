@@ -2,7 +2,7 @@
 id: "24facd7a33cdc1b7"
 title: "Cerebras CS-4 announcement details lacking"
 summary: "The provided sources contain only the title 'Cerebras CS-4' from a Hacker News post with 405 points; no further details are available to summarize the announcement."
-score: 46
+score: 24
 tier: "minor"
 tags: ["hardware"]
 builder_relevant: false

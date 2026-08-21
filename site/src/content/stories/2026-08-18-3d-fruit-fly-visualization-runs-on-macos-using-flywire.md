@@ -2,8 +2,8 @@
 id: "db79310acf13e6ee"
 title: "3D Fruit Fly Visualization Runs on macOS Using FlyWire Connectome"
 summary: "A developer released an open‑source macOS application that renders a three‑dimensional model of a fruit fly brain using data from the FlyWire connectome project. The visualization runs on the desktop and lets users explore neural structures in real time."
-score: 46
-tier: "notable"
+score: 24
+tier: "minor"
 tags: ["open-source", "tools", "models"]
 builder_relevant: true
 date: 2026-08-18T21:50:33Z
