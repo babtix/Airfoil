@@ -80,8 +80,8 @@ func runDoctor(ctx context.Context, w io.Writer, cfg *config.Config, ping bool) 
 		ok   bool
 		note string
 	}{
-		{"nvidia_nim", cfg.LLM.NvidiaNIM.Configured(), cfg.LLM.NvidiaNIM.Model},
 		{"openrouter", cfg.LLM.OpenRouter.Configured(), cfg.LLM.OpenRouter.Model},
+		{"nvidia_nim", cfg.LLM.NvidiaNIM.Configured(), cfg.LLM.NvidiaNIM.Model},
 	}
 	configured := 0
 	for _, p := range chain {

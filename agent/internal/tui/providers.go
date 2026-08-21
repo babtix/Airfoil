@@ -62,7 +62,20 @@ func providerRows() []providerRow {
 	}
 
 	return []providerRow{
-		{section: "NVIDIA NIM (Primary LLM & Embedder)"},
+		{section: "OpenRouter (Primary LLM)"},
+		{
+			key:   "OPENROUTER_API_KEY",
+			label: "OpenRouter key",
+			help:  "OpenRouter API key (sk-or-...)",
+			mask:  true,
+		},
+		{
+			key:   "OPENROUTER_MODEL",
+			label: "primary model",
+			help:  "Primary LLM for synthesis (e.g. meta-llama/llama-3.3-70b-instruct:free)",
+		},
+
+		{section: "NVIDIA NIM (Fallback LLM & Embedder)"},
 		{
 			key:   "NVIDIA_NIM_API_KEY",
 			label: "NIM API key",
@@ -71,8 +84,8 @@ func providerRows() []providerRow {
 		},
 		{
 			key:   "NVIDIA_NIM_MODEL",
-			label: "summarizer model",
-			help:  "Primary LLM for synthesis (e.g. meta/llama-3.3-70b-instruct)",
+			label: "fallback model",
+			help:  "Fallback LLM for synthesis (e.g. meta/llama-3.3-70b-instruct)",
 		},
 		{
 			key:   "AIRFOIL_EMBEDDER",
@@ -88,19 +101,6 @@ func providerRows() []providerRow {
 			key:   "NVIDIA_NIM_BASE_URL",
 			label: "NIM base url",
 			help:  "NVIDIA NIM API base URL",
-		},
-
-		{section: "OpenRouter (Fallback LLM)"},
-		{
-			key:   "OPENROUTER_API_KEY",
-			label: "OpenRouter key",
-			help:  "OpenRouter API key (sk-or-...)",
-			mask:  true,
-		},
-		{
-			key:   "OPENROUTER_MODEL",
-			label: "fallback model",
-			help:  "Fallback LLM (e.g. meta-llama/llama-3.3-70b-instruct:free)",
 		},
 
 		{section: "Ingestion Credentials & Rate Limits"},

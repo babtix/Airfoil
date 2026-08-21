@@ -182,7 +182,7 @@ func TestNewOrdersChainByFallbackPriority(t *testing.T) {
 	}}
 
 	got := New(cfg, quietLogger()).Providers()
-	want := []string{"nvidia_nim", "openrouter"}
+	want := []string{"openrouter", "nvidia_nim"}
 
 	if len(got) != len(want) {
 		t.Fatalf("providers = %d, want %d", len(got), len(want))

@@ -25,6 +25,7 @@ func Run(cfg *config.Config, verbose bool) error {
 	program := tea.NewProgram(
 		New(cfg, log, sink),
 		tea.WithAltScreen(),
+		tea.WithMouseCellMotion(),
 	)
 	if _, err := program.Run(); err != nil {
 		return fmt.Errorf("tui: %w", err)

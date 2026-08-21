@@ -62,8 +62,8 @@ type Chain struct {
 	log       *slog.Logger
 }
 
-// New builds the chain in the fallback order from .env.example:
-// nvidia_nim → openrouter. Unconfigured providers are skipped rather
+// New builds the chain in the fallback order:
+// openrouter → nvidia_nim. Unconfigured providers are skipped rather
 // than attempted and failed.
 //
 // Every provider is a hosted API. There is no local fallback: the pipeline's
@@ -72,11 +72,6 @@ type Chain struct {
 func New(cfg *config.Config, log *slog.Logger) *Chain {
 	var ps []Provider
 
-	if cfg.LLM.NvidiaNIM.Configured() {
-		ps = append(ps, newOpenAICompatible(
-			"nvidia_nim", "https://integrate.api.nvidia.com/v1",
-			cfg.LLM.NvidiaNIM.APIKey, cfg.LLM.NvidiaNIM.Model, nil))
-	}
 	if cfg.LLM.OpenRouter.Configured() {
 		ps = append(ps, newOpenAICompatible(
 			"openrouter", "https://openrouter.ai/api/v1",
@@ -86,6 +81,11 @@ func New(cfg *config.Config, log *slog.Logger) *Chain {
 				"HTTP-Referer": "https://github.com/papitsho/airfoil",
 				"X-Title":      "Airfoil",
 			}))
+	}
+	if cfg.LLM.NvidiaNIM.Configured() {
+		ps = append(ps, newOpenAICompatible(
+			"nvidia_nim", "https://integrate.api.nvidia.com/v1",
+			cfg.LLM.NvidiaNIM.APIKey, cfg.LLM.NvidiaNIM.Model, nil))
 	}
 	return &Chain{providers: ps, log: log}
 }

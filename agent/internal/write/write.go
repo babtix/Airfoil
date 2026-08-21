@@ -113,7 +113,7 @@ func (w *Writer) Run(results []summarize.Result, now time.Time, dry bool) (Stats
 	if err := store.WriteJSON(w.StoriesPath(), published); err != nil {
 		return stats, fmt.Errorf("write stories: %w", err)
 	}
-	if err := store.WriteJSON(w.IndexPath(), buildIndex(published, now)); err != nil {
+	if err := store.WriteJSON(w.IndexPath(), BuildIndex(published, now)); err != nil {
 		return stats, fmt.Errorf("write index: %w", err)
 	}
 
@@ -260,7 +260,8 @@ func storySource(item model.Item) model.StorySource {
 	return src
 }
 
-func buildIndex(stories []model.Story, now time.Time) model.Index {
+// BuildIndex creates an Index model from a list of published stories.
+func BuildIndex(stories []model.Story, now time.Time) model.Index {
 	idx := model.Index{
 		GeneratedAt: now.UTC(),
 		Stories:     make([]model.IndexEntry, 0, len(stories)),

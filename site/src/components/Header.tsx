@@ -35,7 +35,8 @@ export const Header: React.FC<HeaderProps> = ({
     { name: 'FEED', path: '/feed' },
     { name: 'DIGEST', path: '/digest' },
     { name: 'TOP', path: '/top' },
-    { name: 'SHIP', path: '/ship' }
+    { name: 'SHIP', path: '/ship' },
+    { name: 'PURGE', path: '/purge' }
   ];
 
   return (

@@ -92,6 +92,7 @@ func newRootCmd() *cobra.Command {
 		newWriteCmd(&a),
 		newPublishCmd(&a),
 		newDigestCmd(&a),
+		newPurgeCmd(&a),
 		newRunCmd(&a),
 		newTUICmd(&a, &verbose),
 	)

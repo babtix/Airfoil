@@ -9,6 +9,7 @@ import { MobileTopPage } from './pages/mobile/MobileTopPage';
 import { MobileShipPage } from './pages/mobile/MobileShipPage';
 import { MobileSearchPage } from './pages/mobile/MobileSearchPage';
 import { MobileStoryDetail } from './components/mobile/MobileStoryDetail';
+import { PurgePage } from './pages/PurgePage';
 import type { Story, DateWindow, SortOrder, FilterState } from './types/story';
 import type { Theme } from './hooks/useTheme';
 import './MobileApp.css';
@@ -228,6 +229,19 @@ export const MobileApp: React.FC<MobileAppProps> = ({
                 onSelectTag={handleSelectTag}
                 tags={allTags}
               />
+            }
+          />
+          <Route
+            path="/purge"
+            element={
+              <div style={{ padding: '0.5rem 0.25rem' }}>
+                <PurgePage
+                  stories={stories}
+                  allTags={allTags}
+                  topSources={topSources}
+                  onOpenStory={handleOpenStory}
+                />
+              </div>
             }
           />
           <Route

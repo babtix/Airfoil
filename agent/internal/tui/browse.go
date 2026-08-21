@@ -28,6 +28,7 @@ var modeLabels = [modeCount]string{"items", "clusters", "ranked", "stories"}
 // browsePage inspects what the agent actually produced at every stage. This is
 // where a bad threshold or a bad weight becomes visible.
 type browsePage struct {
+	cfg      *config.Config
 	mode     int
 	items    []model.Item
 	clusters []model.Cluster
@@ -47,9 +48,15 @@ type browseDataMsg struct {
 	err      error
 }
 
-func newBrowsePage() *browsePage { return &browsePage{} }
+func newBrowsePage(cfg *config.Config) *browsePage { return &browsePage{cfg: cfg} }
 
-func (p *browsePage) Init() tea.Cmd { return nil }
+func (p *browsePage) Init() tea.Cmd {
+	p.loaded = true
+	if p.cfg != nil {
+		return loadBrowseData(p.cfg)
+	}
+	return nil
+}
 
 func (p *browsePage) Footer() string {
 	if p.detail {
@@ -58,7 +65,7 @@ func (p *browsePage) Footer() string {
 	return styleKey.Render("←→") + styleFooter.Render(" stage  ") +
 		styleKey.Render("↑↓") + styleFooter.Render(" move  ") +
 		styleKey.Render("enter") + styleFooter.Render(" detail  ") +
-		styleKey.Render("R") + styleFooter.Render(" reload")
+		styleKey.Render("r") + styleFooter.Render(" reload")
 }
 
 func (p *browsePage) Update(msg tea.Msg, m *Model) (tea.Cmd, bool) {
@@ -106,7 +113,7 @@ func (p *browsePage) Update(msg tea.Msg, m *Model) (tea.Cmd, bool) {
 			}
 			return nil, false
 
-		case "R":
+		case "r", "R":
 			p.loaded = false
 			return loadBrowseData(m.cfg), true
 		}

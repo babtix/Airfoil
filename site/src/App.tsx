@@ -16,6 +16,7 @@ import { TopPage } from './pages/TopPage';
 import { ShipPage } from './pages/ShipPage';
 import { StoryPage } from './pages/StoryPage';
 import { SearchPage } from './pages/SearchPage';
+import { PurgePage } from './pages/PurgePage';
 import PixelBlast from './components/PixelBlast/PixelBlast';
 import type { Story, DateWindow } from './types/story';
 
@@ -261,6 +262,17 @@ export function App() {
                     selectedTag={filters.tag}
                     onSelectTag={handleSelectTag}
                     tags={allTags}
+                  />
+                }
+              />
+              <Route
+                path="/purge"
+                element={
+                  <PurgePage
+                    stories={stories}
+                    allTags={allTags}
+                    topSources={topSources}
+                    onOpenStory={handleOpenStory}
                   />
                 }
               />

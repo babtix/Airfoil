@@ -136,6 +136,10 @@ func Load(opts Options) (*Config, error) {
 		} else {
 			dataDir = "./data"
 		}
+	} else if !filepath.IsAbs(dataDir) && root != "." {
+		if _, err := os.Stat(filepath.Join(root, dataDir)); err == nil {
+			dataDir = filepath.Join(root, dataDir)
+		}
 	}
 
 	configDir := firstNonEmpty(opts.ConfigDir, os.Getenv("AIRFOIL_CONFIG_DIR"))
@@ -145,6 +149,10 @@ func Load(opts Options) (*Config, error) {
 		} else {
 			configDir = "./config"
 		}
+	} else if !filepath.IsAbs(configDir) && root != "." {
+		if _, err := os.Stat(filepath.Join(root, configDir)); err == nil {
+			configDir = filepath.Join(root, configDir)
+		}
 	}
 
 	storiesDir := firstNonEmpty(os.Getenv("AIRFOIL_STORIES_DIR"))
@@ -153,6 +161,10 @@ func Load(opts Options) (*Config, error) {
 			storiesDir = filepath.Join(root, "site", "src", "content", "stories")
 		} else {
 			storiesDir = filepath.Join("site", "src", "content", "stories")
+		}
+	} else if !filepath.IsAbs(storiesDir) && root != "." {
+		if _, err := os.Stat(filepath.Join(root, storiesDir)); err == nil {
+			storiesDir = filepath.Join(root, storiesDir)
 		}
 	}
 

@@ -37,7 +37,7 @@ func TestProvidersPageEditAndMask(t *testing.T) {
 	p := newProvidersPage(cfg)
 	m := testModel(t)
 
-	// Select first editable row (NVIDIA_NIM_API_KEY)
+	// Select first editable row (OPENROUTER_API_KEY)
 	p.cursor = 1
 	p.Update(tea.KeyMsg{Type: tea.KeyEnter}, m)
 	if !p.active {
@@ -45,7 +45,7 @@ func TestProvidersPageEditAndMask(t *testing.T) {
 	}
 
 	// Type new key
-	p.input.SetValue("nvapi-secret-key-123456")
+	p.input.SetValue("sk-or-v1-secret-key-123456")
 	p.Update(tea.KeyMsg{Type: tea.KeyEnter}, m)
 
 	if p.active {
@@ -54,8 +54,8 @@ func TestProvidersPageEditAndMask(t *testing.T) {
 	if !p.dirty {
 		t.Fatal("expected dirty=true after edit")
 	}
-	if p.values["NVIDIA_NIM_API_KEY"] != "nvapi-secret-key-123456" {
-		t.Errorf("value = %q, want %q", p.values["NVIDIA_NIM_API_KEY"], "nvapi-secret-key-123456")
+	if p.values["OPENROUTER_API_KEY"] != "sk-or-v1-secret-key-123456" {
+		t.Errorf("value = %q, want %q", p.values["OPENROUTER_API_KEY"], "sk-or-v1-secret-key-123456")
 	}
 
 	// Verify display masking

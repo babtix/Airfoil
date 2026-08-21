@@ -40,6 +40,7 @@ const (
 	viewProviders
 	viewDoctor
 	viewBrowse
+	viewPurge
 )
 
 var tabs = []struct {
@@ -54,6 +55,7 @@ var tabs = []struct {
 	{viewProviders, "6 Providers"},
 	{viewDoctor, "7 Doctor"},
 	{viewBrowse, "8 Browse"},
+	{viewPurge, "9 Purge"},
 }
 
 // Model is the root Bubble Tea model.
@@ -87,14 +89,15 @@ func New(cfg *config.Config, log *slog.Logger, sink *LogSink) *Model {
 	}
 
 	m.pages = map[viewID]page{
-		viewDashboard: newDashboard(),
+		viewDashboard: newDashboard(cfg),
 		viewRun:       newRunPage(),
 		viewSources:   newSourcesPage(cfg),
 		viewScoring:   newScoringPage(cfg),
 		viewKeywords:  newKeywordsPage(cfg),
 		viewProviders: newProvidersPage(cfg),
 		viewDoctor:    newDoctorPage(),
-		viewBrowse:    newBrowsePage(),
+		viewBrowse:    newBrowsePage(cfg),
+		viewPurge:     newPurgeTUIPage(cfg),
 	}
 	return m
 }
@@ -122,6 +125,17 @@ func (m *Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		// Keep pulling log lines for as long as the program runs.
 		return m, m.sink.Wait()
 
+	case tea.MouseMsg:
+		if (msg.Button == tea.MouseButtonLeft && msg.Action == tea.MouseActionPress) || msg.Type == tea.MouseLeft {
+			if msg.Y == 1 {
+				if id, ok := tabAt(msg.X); ok {
+					return m, m.switchTo(id)
+				}
+			}
+		}
+		cmd, _ := m.pages[m.view].Update(msg, m)
+		return m, cmd
+
 	case tea.KeyMsg:
 		// The active page sees every key first, so a text field can swallow
 		// digits and letters that would otherwise switch tabs.
@@ -137,6 +151,19 @@ func (m *Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 	cmd, _ := m.pages[m.view].Update(msg, m)
 	return m, cmd
+}
+
+// tabAt returns the viewID corresponding to the click X coordinate on the tab bar.
+func tabAt(x int) (viewID, bool) {
+	cur := 0
+	for _, t := range tabs {
+		w := len(t.label) + 4
+		if x >= cur && x < cur+w {
+			return t.id, true
+		}
+		cur += w
+	}
+	return 0, false
 }
 
 // handleKey processes global keys the active page did not claim.
@@ -170,7 +197,7 @@ func (m *Model) handleKey(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	case "shift+tab":
 		return m, m.switchTo(viewID((int(m.view) - 1 + len(tabs)) % len(tabs)))
 
-	case "1", "2", "3", "4", "5", "6", "7", "8":
+	case "1", "2", "3", "4", "5", "6", "7", "8", "9":
 		idx := int(msg.String()[0] - '1')
 		if idx < len(tabs) {
 			return m, m.switchTo(tabs[idx].id)
@@ -319,6 +346,19 @@ func (m *Model) helpView() string {
 			{"↑ ↓", "move"},
 			{"enter", "open the detail pane"},
 			{"R", "reload from disk"},
+		}},
+		{"Purge", [][2]string{
+			{"tab", "cycle filter fields / jump to list"},
+			{"← →", "adjust selected filter"},
+			{"↑ ↓", "move through story list"},
+			{"space", "toggle selection for cursor story"},
+			{"a", "select all matching"},
+			{"n", "deselect all"},
+			{"i", "invert selection"},
+			{"s", "toggle show-selected-only view"},
+			{"enter", "arm delete (shows confirmation)"},
+			{"y", "confirm and execute delete"},
+			{"r", "reload stories from disk"},
 		}},
 		{"Stages", [][2]string{
 			{"Ingest", "sources into data/items/"},

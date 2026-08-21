@@ -20,6 +20,7 @@ import (
 // dashboard is the at-a-glance view: what is configured, what is on disk, and
 // whether the agent can actually run right now.
 type dashboard struct {
+	cfg    *config.Config
 	stats  dataStats
 	loaded bool
 }
@@ -74,9 +75,15 @@ type dataStats struct {
 
 type statsMsg dataStats
 
-func newDashboard() *dashboard { return &dashboard{} }
+func newDashboard(cfg *config.Config) *dashboard { return &dashboard{cfg: cfg} }
 
-func (d *dashboard) Init() tea.Cmd { return nil }
+func (d *dashboard) Init() tea.Cmd {
+	d.loaded = true
+	if d.cfg != nil {
+		return loadStats(d.cfg)
+	}
+	return nil
+}
 
 func (d *dashboard) Update(msg tea.Msg, m *Model) (tea.Cmd, bool) {
 	switch msg := msg.(type) {
@@ -85,12 +92,13 @@ func (d *dashboard) Update(msg tea.Msg, m *Model) (tea.Cmd, bool) {
 		return nil, false
 
 	case tea.KeyMsg:
-		if msg.String() == "R" {
+		if msg.String() == "r" || msg.String() == "R" {
+			d.loaded = false
 			return loadStats(m.cfg), true
 		}
 	}
 
-	// Load lazily on the first render rather than blocking startup.
+	// Load lazily if not yet loaded.
 	if !d.loaded {
 		d.loaded = true
 		return loadStats(m.cfg), false
@@ -281,7 +289,7 @@ func humanBytes(n int64) string {
 }
 
 func (d *dashboard) Footer() string {
-	return styleKey.Render("R") + styleFooter.Render(" refresh")
+	return styleKey.Render("r") + styleFooter.Render(" refresh")
 }
 
 // statsMinWidth is the narrowest a readable stats column gets. Below the rail
@@ -879,8 +887,8 @@ type providerStatus struct {
 // key is present, not that it works — `doctor` makes the live calls.
 func providerStatuses(cfg *config.Config) []providerStatus {
 	return []providerStatus{
-		{"nvidia_nim", cfg.LLM.NvidiaNIM.Configured(), cfg.LLM.NvidiaNIM.Model},
 		{"openrouter", cfg.LLM.OpenRouter.Configured(), cfg.LLM.OpenRouter.Model},
+		{"nvidia_nim", cfg.LLM.NvidiaNIM.Configured(), cfg.LLM.NvidiaNIM.Model},
 	}
 }
 
