@@ -1,0 +1,692 @@
+[
+  {
+    "id": "627f5c4c4f2430f6",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/runetes/maiao",
+    "title": "Maiao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others",
+    "excerpt": "",
+    "author": "zdw",
+    "published_at": "2026-08-25T22:40:07Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 110,
+      "hn_comments": 66
+    },
+    "repo_url": "https://github.com/runetes/maiao"
+  },
+  {
+    "id": "4806861b94d077f9",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/swimmingbrain/texbrain",
+    "title": "Show HN: TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM",
+    "excerpt": "I'm a master's engineering student and a big fan of LaTeX, which I used for my thesis and research articles. I have used Overleaf and that was fine until I wanted to git sync, which unfortunately sits behind a paywall. Since I didn't want to pay subscriptions for things that should simply just…",
+    "author": "swimmingbrain",
+    "published_at": "2026-08-25T22:08:50Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 111,
+      "hn_comments": 27
+    },
+    "repo_url": "https://github.com/swimmingbrain/texbrain"
+  },
+  {
+    "id": "e825eacb926a575f",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
+    "title": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
+    "excerpt": "The company's new fundraising total now stands at $232 million.",
+    "author": "Lucas Ropek",
+    "published_at": "2026-08-25T19:03:47Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "f28cbb45176a54d6",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vy8a9g/d_looking_for_advice_modelling_a_medicinereminder",
+    "title": "[D] Looking for advice: Modelling a medicine-reminder agent that must decide “remind / wait / notify” under incomplete information[D]",
+    "excerpt": "Hi everyone, I’m researching how to design an AI agent for a medicine-reminder system. The agent has to decide, at each relevant time, whether to: send a reminder, wait (do nothing for now), or notify another person (e.g. caregiver), when it does not have complete information about the patient…",
+    "author": "/u/Senior_Disaster_7307",
+    "published_at": "2026-08-25T18:34:35Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "c5401387773bd6a8",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat",
+    "title": "Claude Cowork finally remembers what you told the app in chat",
+    "excerpt": "Anthropic is giving Claude a shared memory across chat and Cowork, so users no longer have to repeatedly brief the AI on projects, preferences, and other context.",
+    "author": "Sarah Perez",
+    "published_at": "2026-08-25T17:50:33Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "d11fef79fbcc328f",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/leodeim/vpsmon",
+    "title": "Show HN: Lightweight system monitor for Linux VPS written in Go",
+    "excerpt": "",
+    "author": "ygagaga",
+    "published_at": "2026-08-25T17:13:59Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 60,
+      "hn_comments": 17
+    },
+    "repo_url": "https://github.com/leodeim/vpsmon"
+  },
+  {
+    "id": "25847b3565db870b",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/zedeus/nitter/issues/1442",
+    "title": "Nitter and XCancel receive cease and desist notices",
+    "excerpt": "https://github.com/zedeus/nitter/issues/1442 https://xcancel.com/",
+    "author": "Banditoz",
+    "published_at": "2026-08-25T17:08:21Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 1109,
+      "hn_comments": 1059
+    },
+    "repo_url": "https://github.com/zedeus/nitter"
+  },
+  {
+    "id": "04948a8ea524304c",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.judegomila.com/posts/riemann-lambda-0.1787854",
+    "title": "A new ceiling for Λ: the de Bruijn–Newman constant",
+    "excerpt": "",
+    "author": "judegomila",
+    "published_at": "2026-08-25T16:59:31Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 51,
+      "hn_comments": 27
+    }
+  },
+  {
+    "id": "1741d977cb7cebae",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/jeffhajewski/latticedb",
+    "title": "Show HN: LatticeDB – Like SQLite but for graph databases",
+    "excerpt": "We have been using graph DBs more and more at work. I found them painful to work with locally and decided to try and build something better.",
+    "author": "smiths1999",
+    "published_at": "2026-08-25T16:52:05Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 174,
+      "hn_comments": 48
+    },
+    "repo_url": "https://github.com/jeffhajewski/latticedb"
+  },
+  {
+    "id": "0f881d1e2cf8e9d7",
+    "source_id": "google-ai",
+    "source_name": "Google AI Blog",
+    "source_tier": 1,
+    "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips",
+    "title": "5 ways to upgrade your home decor with Google Search",
+    "excerpt": "Learn how to use Google Search tools to find home decor inspiration, shop for furniture, and tackle DIY projects.",
+    "author": "\u003cname\u003eMegan Stoner\u003c/name\u003e\u003ctitle\u003eContributor\u003c/title\u003e\u003cdepartment/\u003e\u003ccompany/\u003e",
+    "published_at": "2026-08-25T16:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "2bdab5be337a9dcc",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+    "title": "How much of HN is AI?",
+    "excerpt": "",
+    "author": "surprisetalk",
+    "published_at": "2026-08-25T15:23:41Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 272,
+      "hn_comments": 340
+    }
+  },
+  {
+    "id": "93551b217a1b5318",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/ThinkOffApp/CarWatch",
+    "title": "Show HN: I made a Raspberry with Qwen my local car AI",
+    "excerpt": "Found that you can actually run a 35B Qwen model on a Pi with very impressive intelligence and stability. Built connectors for car ODB to read all about car internals, and manufacturer's cloud service for stuff like changing AC or opening/ locking doors. Gave it info such as the full car manual.…",
+    "author": "petruspennanen",
+    "published_at": "2026-08-25T15:20:20Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 144,
+      "hn_comments": 46
+    },
+    "repo_url": "https://github.com/ThinkOffApp/CarWatch"
+  },
+  {
+    "id": "d21068479952e403",
+    "source_id": "hf-blog",
+    "source_name": "Hugging Face Blog",
+    "source_tier": 2,
+    "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+    "title": "Granite 4.2 LLMs: How They're Built",
+    "excerpt": "",
+    "published_at": "2026-08-25T15:14:14Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "fc24cc252e631bc7",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/25/gamma-acquires-accel-backed-design-startup-lica",
+    "title": "Gamma acquires Accel-backed design startup Lica",
+    "excerpt": "Lica co-founders are going to work on Gamma's new research team.",
+    "author": "Ivan Mehta",
+    "published_at": "2026-08-25T15:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "ea439fd975889fad",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds",
+    "title": "AI is hitting entry-level jobs hardest, Stanford study finds",
+    "excerpt": "",
+    "author": "Brajeshwar",
+    "published_at": "2026-08-25T14:48:58Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 142,
+      "hn_comments": 169
+    }
+  },
+  {
+    "id": "0c7fd51720556fba",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show",
+    "title": "OpenAI’s Jalapeño chip is built for fast inference at scale, benchmarks show",
+    "excerpt": "Tested on SemiAnalysis’ InferenceX benchmark, Jalapeño registered both more tokens per user and more throughput per kilowatt than the currently available state-of-the art.",
+    "author": "Russell Brandom",
+    "published_at": "2026-08-25T14:22:04Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "cd36e34ebecc2c2e",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/984290/openai-jalapeno-ai-chip-benchmarks",
+    "title": "OpenAI says its Jalapeño chip can power faster AI responses than the competition",
+    "excerpt": "OpenAI says its new AI chip, Jalapeño, completes tasks more efficiently and returns responses faster than other AI systems, according to a blog post published on Tuesday. During a briefing with reporters, OpenAI hardware vice president Richard Ho said Jalapeño offers the \"best of both worlds\" with…",
+    "author": "Emma Roth",
+    "published_at": "2026-08-25T14:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "70d9591070e5e4e0",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vy0ki7/what_would_a_fair_benchmark_for_agent",
+    "title": "What would a fair benchmark for agent architecture look like? [D]",
+    "excerpt": "I am working on an evaluation design and would appreciate criticism before running it. Most coding-agent benchmarks collapse the model and its harness into one score. If a run fails, it is difficult to tell whether the cause was model capability, context assembly, task decomposition, tool design…",
+    "author": "/u/jonah_omninode",
+    "published_at": "2026-08-25T13:55:48Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "b8a7b6f8afd0a113",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
+    "title": "Apple introduces M6 and M5 Ultra",
+    "excerpt": "https://techcrunch.com/2026/08/25/apple-debuts-its-most-powe... https://9to5mac.com/2026/08/25/m6-mac-mini-vs-m4-mac-mini-he...",
+    "author": "interpol_p",
+    "published_at": "2026-08-25T13:01:22Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 1272,
+      "hn_comments": 1226
+    }
+  },
+  {
+    "id": "706dcdf4cbb7e612",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents",
+    "title": "Accel-backed Keenable is indexing the web for AI agents",
+    "excerpt": "Now exiting stealth mode with a $26 million seed round, Keenable has been building a vast web search index for AI agents.",
+    "author": "Anna Heim",
+    "published_at": "2026-08-25T13:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "7eaabce7ab9b0f24",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.cybernetica.fr/piratage-des-impots-comment-en-est-on-arrive-la",
+    "title": "France's tax agency got hacked (in French)",
+    "excerpt": "",
+    "author": "zakxxi",
+    "published_at": "2026-08-25T12:44:35Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 116,
+      "hn_comments": 53
+    }
+  },
+  {
+    "id": "4052ea05ad7c8c45",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vxyrsr/how_we_built_a_sota_search_engine_using",
+    "title": "How we built a SOTA search engine using PostgreSQL, pgvector, and Qwen3 embeddings [P]",
+    "excerpt": "I wrote a technical breakdown of how search works on Papers with Code. The system combines keyword and semantic search, which produced better results than either approach alone. The stack includes: PostgreSQL with pgvector Qwen3-Embedding-0.6B for text embeddings Hugging Face Jobs with an NVIDIA…",
+    "author": "/u/NielsRogge",
+    "published_at": "2026-08-25T12:42:36Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "2003db0c3844e6bd",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users",
+    "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
+    "excerpt": "",
+    "author": "MC995",
+    "published_at": "2026-08-25T12:33:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 117,
+      "hn_comments": 121
+    }
+  },
+  {
+    "id": "d9bffbbc29b49296",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux",
+    "title": "‘The world seems to be ready’: An interview with OpenAI head of product Thibault Sottiaux",
+    "excerpt": "TechCrunch talks agents, UX, and reporting to Greg Brockman with OpenAI's head of product.",
+    "author": "Tim Fernholz",
+    "published_at": "2026-08-25T12:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "b0f0da4e7a611595",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/PlummersSoftwareLLC/HelloAssembly",
+    "title": "HelloAssembly: The smallest possible complete Windows application (2021)",
+    "excerpt": "https://www.youtube.com/watch?v=b0zxIfJJLAY",
+    "author": "Bluestein",
+    "published_at": "2026-08-25T11:40:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 89,
+      "hn_comments": 50
+    },
+    "repo_url": "https://github.com/PlummersSoftwareLLC/HelloAssembly"
+  },
+  {
+    "id": "f1c76f23a788b688",
+    "source_id": "hf-blog",
+    "source_name": "Hugging Face Blog",
+    "source_tier": 2,
+    "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+    "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+    "excerpt": "",
+    "published_at": "2026-08-25T11:39:24Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "6d47d83bc6b8e7dc",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.bbc.com/future/article/20260824-this-quantum-battery-charges-faster-the-larger-it-gets",
+    "title": "Quantum battery upends the rules of charging",
+    "excerpt": "",
+    "author": "reconnecting",
+    "published_at": "2026-08-25T10:34:12Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 56,
+      "hn_comments": 67
+    }
+  },
+  {
+    "id": "5bf057fc39587c6d",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vxvzju/continual_learning_of_frontier_models_for",
+    "title": "Continual Learning of Frontier Models for SovereignAI. Tech Report + Open Weights Model [R]",
+    "excerpt": "Paper: https://huggingface.co/spaces/tri-fair-lab/publications/blob/main/Thomson_1_0_Technical_Report.pdf The development of frontier models is commonly perceived to be in the exclusive remit of a small number of heavily funded players, creating an information, economic and power asymmetry between…",
+    "author": "/u/Forsaken_Scientist",
+    "published_at": "2026-08-25T10:30:17Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "6c2861183e872b5c",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack",
+    "title": "OpenAI subpoenaed by Alabama AG over Hugging Face hack",
+    "excerpt": "Alabama's attorney general issued a subpoena to OpenAI on Monday as part of an investigation into how one of its AI agents escaped a supposedly secure testing environment and autonomously hacked another company last month. The investigation seeks to determine whether OpenAI's safety practices…",
+    "author": "Robert Hart",
+    "published_at": "2026-08-25T09:15:03Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "cc10b8be69bd0985",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vxui1x/travel_and_stay_accommodation_for_emnlp_d",
+    "title": "Travel and stay accommodation for EMNLP [D]",
+    "excerpt": "Hi I am a PhD student, My paper got accepted in EMNLP 2026, As this is my first paper I wanted some information. My professor has agreed to give the registration costs, but I am on my own for the travel and stay costs. I am currently in a Singapore university but south Asian. No funding from…",
+    "author": "/u/Happy_Today_3288",
+    "published_at": "2026-08-25T09:05:13Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "51cfe3db04ed0bd3",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+    "title": "The full stack behind abundant intelligence",
+    "excerpt": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.",
+    "published_at": "2026-08-25T07:05:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "b9406ae170bd9133",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/jalapeno-first-results",
+    "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+    "excerpt": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.",
+    "published_at": "2026-08-25T07:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "abd79a5409009538",
+    "source_id": "reddit-ml",
+    "source_name": "r/MachineLearning",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1vxryws/reviewing_4_papers_for_aaai_2027_and_none_have",
+    "title": "Reviewing 4 papers for AAAI 2027 and none have code, Reject? [D]",
+    "excerpt": "I got my batch of four papers for AAAI 2027. All four papers make empirical claims, none include code, data, or anything I can actually check. Just the PDF and the checklist. AAAI-27's own rules say code/data should be provided at submission, and \"we'll release it after acceptance\" doesn't count…",
+    "author": "/u/SimpleObvious4048",
+    "published_at": "2026-08-25T06:34:35Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "93cd3ee5c8e7f399",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/dragthelake/ambient-context",
+    "title": "Show HN: Screen memory without screenshots, just text to Markdown",
+    "excerpt": "It's a macOS menu bar app that reads the text of your focused window every few seconds through the Accessibility API. No screenshots, no video, or OCR. It writes plain markdown, one file per day, into a folder you choose. Point Claude Code (or anything with file access) at the folder and ask \"what…",
+    "author": "Dramatize",
+    "published_at": "2026-08-25T04:33:24Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 61,
+      "hn_comments": 25
+    },
+    "repo_url": "https://github.com/dragthelake/ambient-context"
+  },
+  {
+    "id": "253f6697afdfe3b4",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents",
+    "title": "Headlong: A microharness for persistent agents",
+    "excerpt": "",
+    "author": "lbw1215",
+    "published_at": "2026-08-25T03:54:19Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hn_points": 121,
+      "hn_comments": 53
+    }
+  },
+  {
+    "id": "2600a6f3e6c45305",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec",
+    "title": "Situational Awareness, star AI hedge fund that nearly imploded, now being probed by the SEC",
+    "excerpt": "The AI hedge fund went from \"the talk of Wall Street\" to \"subject of federal subpoenas\" faster than you can say \"diversify your portfolio.\"",
+    "author": "Lucas Ropek",
+    "published_at": "2026-08-25T00:23:12Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "62003111f3b592c5",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+    "title": "Disrupting a new covert influence campaign from Russia",
+    "excerpt": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "33eae878317d27dc",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/introducing-admin-plugin",
+    "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+    "excerpt": "Use the Admin plugin for ChatGPT Work and Codex to analyze workspace usage, manage members and permissions, adjust limits, and act on admin requests.",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "9b54a38fa1b1a3f1",
+    "source_id": "hf-blog",
+    "source_name": "Hugging Face Blog",
+    "source_tier": 2,
+    "url": "https://huggingface.co/blog/gradio-workflow-guide",
+    "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+    "excerpt": "",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {}
+  },
+  {
+    "id": "391ecd06e4dfa741",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.24680",
+    "title": "Game2World Engine: Unlocking In-the-Wild Gameplay Videos for World Model Training",
+    "excerpt": "Video games provide a scalable source of training data for video world models, offering diverse environments, complex interactions, and abundant in-the-wild gameplay videos. However, raw gameplay footage entangles the game world with screen-space interfaces, introducing game-specific biases and…",
+    "author": "Wenxuan Shen",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hf_upvotes": 8
+    },
+    "repo_url": "https://github.com/Dongping-Chen/Game2World",
+    "paper_url": "https://arxiv.org/abs/2608.24680"
+  },
+  {
+    "id": "e7f6cf9a049f09fb",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.24877",
+    "title": "From Seeing to Acting: Smart Glasses as First-Person Intelligence Platforms",
+    "excerpt": "Smart glasses are evolving from capture and display accessories into first-person intelligence platforms that connect human perception, persistent context, and digital or physical action. Their on-body viewpoint aligns with the wearer's vision, audition, motion, and hand-object interaction, but…",
+    "author": "Jiangning Zhang",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hf_upvotes": 8
+    },
+    "paper_url": "https://arxiv.org/abs/2608.24877"
+  },
+  {
+    "id": "4788c09a329548be",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.24053",
+    "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+    "excerpt": "Universal multimodal embeddings are becoming a core component of modern AI systems, enabling heterogeneous content to be represented in a shared space for applications such as retrieval, recommendation, classification, and agentic systems. In this report, we present WeMM-Embedding, a family of…",
+    "author": "Junjie Zhou",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hf_upvotes": 54
+    },
+    "repo_url": "https://github.com/Tencent/WeMM-Embedding",
+    "paper_url": "https://arxiv.org/abs/2608.24053"
+  },
+  {
+    "id": "fa32d23e59749827",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.23566",
+    "title": "Best Practice Critic Optimization",
+    "excerpt": "Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt. A reliable critic could instead estimate token-level advantages from one response, but standard critic-based training recipes are often…",
+    "author": "Penghui Qi",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hf_upvotes": 11
+    },
+    "repo_url": "https://github.com/QPHutu/golden_critic",
+    "paper_url": "https://arxiv.org/abs/2608.23566"
+  },
+  {
+    "id": "8b81970555633faa",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.24696",
+    "title": "On-policy Distillation with Verifiable Reward",
+    "excerpt": "Reinforcement Learning with Verifiable Rewards (RLVR) and on-policy distillation (OPD) have become two widely adopted paradigms for post-training large language models. However, RLVR suffers from sparse task-level feedback, while OPD provides dense token-level guidance but ignores trajectory…",
+    "author": "Wenze Lin",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hf_upvotes": 11
+    },
+    "repo_url": "https://github.com/LeapLabTHU/OPDVR",
+    "paper_url": "https://arxiv.org/abs/2608.24696"
+  },
+  {
+    "id": "7811bf82152e2367",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.24646",
+    "title": "On-Policy Self-Distillation in Diffusion Models",
+    "excerpt": "Reinforcement learning can align diffusion models with human preferences and task-specific objectives, but endpoint rewards do not specify how an intermediate denoising prediction should change. We introduce DiffusionOPSD as an on-policy self-distillation framework that converts image-level reward…",
+    "author": "Wei Zhou",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hf_upvotes": 47
+    },
+    "paper_url": "https://arxiv.org/abs/2608.24646"
+  },
+  {
+    "id": "db3c79bc7aa90eee",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.24876",
+    "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+    "excerpt": "Recursive self-improvement (RSI) remains hard in long-horizon tasks, where growing histories obscure the task state and misalign skill invocation. We introduce Recuris, a recursive Experiential-Working Memory architecture for long-horizon agent harnesses, in which Working Memory tracks task…",
+    "author": "Zhaochen Yu",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hf_upvotes": 19
+    },
+    "repo_url": "https://github.com/Gen-Verse/Recuris",
+    "paper_url": "https://arxiv.org/abs/2608.24876"
+  },
+  {
+    "id": "19b9f1e8bafc48eb",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2608.24735",
+    "title": "Meta^n: Recursive Self-Improvement through Emergent Depth",
+    "excerpt": "Self-improving LLM agents refine answers, not the process that produces those answers. Systems that add a meta-level hold that level fixed, and those that edit themselves must leave part of their own editing machinery untouched to stay stable, capping the meta-depth they realize at roughly two. We…",
+    "author": "Zae Myung Kim",
+    "published_at": "2026-08-25T00:00:00Z",
+    "fetched_at": "2026-08-26T17:17:01.2153284Z",
+    "metrics": {
+      "hf_upvotes": 7
+    },
+    "repo_url": "https://github.com/minnesotanlp/meta-n",
+    "paper_url": "https://arxiv.org/abs/2608.24735"
+  }
+]

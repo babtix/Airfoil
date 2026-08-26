@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "text": "Z.ai is releasing public weights for its new Ox Alpha GLM-series model, expanding the available ecosystem for local inference and fine-tuning. More updates below.",
+      "url": ""
+    },
+    {
+      "text": "Z.ai releases Ox Alpha weights. https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek",
+      "url": ""
+    },
+    {
+      "text": "Z.ai published GLM-5.3-Flash, focusing on intelligence and pricing benchmarks for production deployment. https://z.ai/blog/glm-5.3-flash",
+      "url": ""
+    },
+    {
+      "text": "Qwen announced Qwen3.8-Flash-Next, a new architecture optimized for inference cost efficiency. https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "url": ""
+    },
+    {
+      "text": "Gemini 3.5 Transcribe adds three models to strip filler words and handle 85+ languages. https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+      "url": ""
+    },
+    {
+      "text": "GitHub reported service disruptions affecting repository access and CI/CD pipelines. Monitoring status page for resolution. https://www.githubstatus.com/incidents/hcbtzksccj2f",
+      "url": ""
+    },
+    {
+      "text": "Full coverage and daily digests: https://airfoil-iota.vercel.app/",
+      "url": ""
+    }
+  ]
+}
