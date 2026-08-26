@@ -7,6 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+	"time"
 
 	tea "github.com/charmbracelet/bubbletea"
 
@@ -194,6 +195,16 @@ func TestTabNavigation(t *testing.T) {
 	key(m, "tab")
 	if m.view != viewScoring {
 		t.Errorf("tab went to %v, want scoring", m.view)
+	}
+
+	key(m, "9")
+	if m.view != viewDigest {
+		t.Errorf("9 went to %v, want digest", m.view)
+	}
+
+	key(m, "0")
+	if m.view != viewPurge {
+		t.Errorf("0 went to %v, want purge", m.view)
 	}
 
 	key(m, "1")
@@ -784,6 +795,47 @@ func TestRunPageTogglesDryAndPush(t *testing.T) {
 	}
 }
 
+func TestRunPageLoopToggleAndInterval(t *testing.T) {
+	m := testModel(t)
+	key(m, "2")
+	page := m.pages[viewRun].(*runPage)
+
+	if page.loop {
+		t.Fatal("loop should start off")
+	}
+	if page.interval != 24*time.Hour {
+		t.Errorf("interval = %v, want 24h", page.interval)
+	}
+
+	key(m, "l")
+	if !page.loop {
+		t.Error("l did not turn loop mode on")
+	}
+	if page.nextRun.IsZero() {
+		t.Error("nextRun was not set after turning loop on")
+	}
+
+	// Test interval cycling with L
+	key(m, "L")
+	if page.interval != 12*time.Hour {
+		t.Errorf("interval = %v, want 12h", page.interval)
+	}
+
+	key(m, "L")
+	if page.interval != 6*time.Hour {
+		t.Errorf("interval = %v, want 6h", page.interval)
+	}
+
+	// Test turning loop off
+	key(m, "l")
+	if page.loop {
+		t.Error("l did not turn loop mode off")
+	}
+	if !page.nextRun.IsZero() {
+		t.Error("nextRun was not cleared after turning loop off")
+	}
+}
+
 // Pushing reaches outside this machine, so it must never start on one keypress.
 func TestPublishAsksBeforePushing(t *testing.T) {
 	m := testModel(t)
@@ -908,5 +960,99 @@ func TestBrowseModeLabelsAreComplete(t *testing.T) {
 		if label == "" {
 			t.Errorf("browse mode %d has no label", i)
 		}
+	}
+}
+
+// --- digest coverage --------------------------------------------------------
+
+func TestDigestPageCyclesFormats(t *testing.T) {
+	m := testModel(t)
+	key(m, "9")
+	if m.view != viewDigest {
+		t.Fatalf("view = %v, want digest", m.view)
+	}
+
+	page := m.pages[viewDigest].(*digestPage)
+	if page.format != formatNewsletter {
+		t.Errorf("format = %v, want newsletter", page.format)
+	}
+
+	key(m, "2")
+	if page.format != formatLinkedIn {
+		t.Errorf("2 went to %v, want linkedin", page.format)
+	}
+
+	key(m, "3")
+	if page.format != formatThread {
+		t.Errorf("3 went to %v, want thread", page.format)
+	}
+
+	key(m, "4")
+	if page.format != formatHTML {
+		t.Errorf("4 went to %v, want html", page.format)
+	}
+
+	key(m, "right")
+	if page.format != formatNewsletter {
+		t.Errorf("right went to %v, want newsletter (wrapped)", page.format)
+	}
+
+	key(m, "left")
+	if page.format != formatHTML {
+		t.Errorf("left went to %v, want html (wrapped)", page.format)
+	}
+}
+
+func TestDigestPageWithFiles(t *testing.T) {
+	m := testModel(t)
+	digestDir := filepath.Join(m.cfg.DataDir, "digest")
+	if err := os.MkdirAll(digestDir, 0o755); err != nil {
+		t.Fatal(err)
+	}
+
+	// Write mock digest files for two dates
+	_ = os.WriteFile(filepath.Join(digestDir, "2026-08-25-newsletter.txt"), []byte("AIRFOIL — Aug 25\nNewsletter content"), 0o644)
+	_ = os.WriteFile(filepath.Join(digestDir, "2026-08-26-newsletter.txt"), []byte("AIRFOIL — Aug 26\n1. [70] Top story\nSummary here"), 0o644)
+	_ = os.WriteFile(filepath.Join(digestDir, "2026-08-26-linkedin.md"), []byte("# LinkedIn draft\nPost text"), 0o644)
+	_ = os.WriteFile(filepath.Join(digestDir, "2026-08-26-x.json"), []byte(`{"posts":[{"text":"Post 1"},{"text":"Post 2"}]}`), 0o644)
+	_ = os.WriteFile(filepath.Join(digestDir, "2026-08-26-newsletter.html"), []byte("<html><body>Airfoil</body></html>"), 0o644)
+
+	key(m, "9")
+	cmd := loadDigestData(m.cfg)
+	m.Update(cmd())
+
+	page := m.pages[viewDigest].(*digestPage)
+	if len(page.days) != 2 {
+		t.Fatalf("got %d days, want 2", len(page.days))
+	}
+	if page.days[0] != "2026-08-26" {
+		t.Errorf("latest day = %q, want 2026-08-26", page.days[0])
+	}
+
+	// Test scrolling
+	key(m, "down")
+	key(m, "up")
+
+	// Test date switching
+	key(m, "[")
+	if page.dayIdx != 1 {
+		t.Errorf("dayIdx = %d, want 1 after [", page.dayIdx)
+	}
+	key(m, "]")
+	if page.dayIdx != 0 {
+		t.Errorf("dayIdx = %d, want 0 after ]", page.dayIdx)
+	}
+
+	// Test rendering
+	out := m.View()
+	if !strings.Contains(out, "Newsletter (.txt)") {
+		t.Error("missing Newsletter tab in digest view")
+	}
+
+	// Test copy trigger
+	key(m, "y")
+	if !strings.Contains(m.status, "copied") && !m.statusErr {
+		// In headless test environments clipboard might return error or success
+		t.Logf("copy status: %s", m.status)
 	}
 }

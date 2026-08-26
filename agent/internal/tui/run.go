@@ -98,7 +98,7 @@ var stages = []stage{
 			if err != nil {
 				return "", err
 			}
-			summary := fmt.Sprintf("%d stories, %d files", len(r.Stories), len(r.Files))
+			summary := fmt.Sprintf("%d stories, %d files (view in 9 Digest)", len(r.Stories), len(r.Files))
 			if len(r.Failures) > 0 {
 				summary += fmt.Sprintf(", %d parts not generated", len(r.Failures))
 			}
@@ -124,8 +124,10 @@ var stages = []stage{
 				return "", err
 			}
 			switch {
-			case r.Pushed:
+			case r.Pushed && r.Committed:
 				return fmt.Sprintf("%d stories committed and pushed — %s", r.Stories, r.Commit), nil
+			case r.Pushed:
+				return fmt.Sprintf("%d stories up to date — pushed to remote", r.Stories), nil
 			case r.Committed:
 				return fmt.Sprintf("%d stories committed — %s", r.Stories, r.Commit), nil
 			default:
@@ -138,6 +140,7 @@ var stages = []stage{
 		name:     "Run all",
 		about:    "Ingest, cluster, rank, then write — in order",
 		needsLLM: true,
+		confirms: true,
 		run: func(ctx context.Context, p *pipeline.Pipeline, o stageOpts) (string, error) {
 			ing, err := p.Ingest(ctx, o.Options)
 			if err != nil {
@@ -161,22 +164,48 @@ var stages = []stage{
 			if err != nil {
 				return "", err
 			}
-			return fmt.Sprintf("%d items into %d clusters, %d major and %d notable, %d summarized, %d created",
-				cl.Items, len(cl.Clusters), rk.Major, rk.Notable, wr.Summarized, wr.Stats.Created), nil
+			baseSummary := fmt.Sprintf("%d items into %d clusters, %d major and %d notable, %d summarized, %d created",
+				cl.Items, len(cl.Clusters), rk.Major, rk.Notable, wr.Summarized, wr.Stats.Created)
+			if o.Push {
+				root, err := p.RepoRoot()
+				if err != nil {
+					return "", err
+				}
+				pub, err := p.Publish(ctx, publish.Options{Push: true}, root)
+				if err != nil {
+					if len(pub.Problems) > 0 {
+						return "", fmt.Errorf("%w — first problem: %v", err, pub.Problems[0])
+					}
+					return "", err
+				}
+				return baseSummary + fmt.Sprintf(" — published and pushed %s", pub.Commit), nil
+			}
+			return baseSummary, nil
 		},
 	},
 }
 
+var loopIntervals = []time.Duration{
+	24 * time.Hour,
+	12 * time.Hour,
+	6 * time.Hour,
+	1 * time.Hour,
+	30 * time.Minute,
+}
+
 // runPage drives the pipeline and shows its log as it happens.
 type runPage struct {
-	cursor  int
-	dry     bool
-	push    bool
-	running bool
-	current string
-	started time.Time
-	cancel  context.CancelFunc
-	elapsed time.Duration
+	cursor   int
+	dry      bool
+	push     bool
+	loop     bool
+	interval time.Duration
+	nextRun  time.Time
+	running  bool
+	current  string
+	started  time.Time
+	cancel   context.CancelFunc
+	elapsed  time.Duration
 
 	// confirming holds the stage awaiting a y/n answer, for anything that
 	// reaches outside this machine.
@@ -195,9 +224,18 @@ type stageDoneMsg struct {
 
 type tickMsg time.Time
 
-func newRunPage() *runPage { return &runPage{} }
+func newRunPage() *runPage {
+	return &runPage{
+		interval: 24 * time.Hour,
+	}
+}
 
-func (r *runPage) Init() tea.Cmd { return nil }
+func (r *runPage) Init() tea.Cmd {
+	if r.loop || r.running {
+		return tickEvery()
+	}
+	return nil
+}
 
 func (r *runPage) Footer() string {
 	if r.confirming != nil {
@@ -213,6 +251,8 @@ func (r *runPage) Footer() string {
 		styleKey.Render("enter") + styleFooter.Render(" run  ") +
 		styleKey.Render("d") + styleFooter.Render(" dry  ") +
 		styleKey.Render("p") + styleFooter.Render(" push  ") +
+		styleKey.Render("l") + styleFooter.Render(fmt.Sprintf(" loop (%s)  ", formatInterval(r.interval))) +
+		styleKey.Render("L") + styleFooter.Render(" interval  ") +
 		styleKey.Render("c") + styleFooter.Render(" clear log")
 }
 
@@ -230,12 +270,30 @@ func (r *runPage) Update(msg tea.Msg, m *Model) (tea.Cmd, bool) {
 			m.setStatus("%s complete in %s — %s", msg.stage,
 				msg.elapsed.Round(time.Millisecond), msg.summary)
 		}
+		if r.loop {
+			r.nextRun = time.Now().Add(r.interval)
+			m.log.Info("scheduled next loop run", "interval", r.interval, "at", r.nextRun.Format(time.TimeOnly))
+		}
 		// Refresh the counts now that what is on disk has changed.
 		return loadStats(m.cfg), false
 
 	case tickMsg:
 		if r.running {
 			r.elapsed = time.Since(r.started)
+		}
+		if r.loop && !r.running && !r.nextRun.IsZero() && time.Now().After(r.nextRun) {
+			runAllStage := stages[len(stages)-1]
+			for _, s := range stages {
+				if s.key == "run" {
+					runAllStage = s
+					break
+				}
+			}
+			m.setStatus("starting scheduled loop run (%s interval)…", formatInterval(r.interval))
+			r.nextRun = time.Now().Add(r.interval)
+			return r.launch(m, runAllStage), false
+		}
+		if r.running || r.loop {
 			return tickEvery(), false
 		}
 		return nil, false
@@ -291,6 +349,48 @@ func (r *runPage) handleKey(msg tea.KeyMsg, m *Model) (tea.Cmd, bool) {
 		if !r.running {
 			r.push = !r.push
 			m.setStatus("push on publish %s", onOff(r.push))
+		}
+		return nil, true
+
+	case "l":
+		r.loop = !r.loop
+		if r.loop {
+			if !r.running {
+				runAllStage := stages[len(stages)-1]
+				for _, s := range stages {
+					if s.key == "run" {
+						runAllStage = s
+						break
+					}
+				}
+				r.nextRun = time.Now().Add(r.interval)
+				m.setStatus("loop mode ON — running every %s (next in %s)",
+					formatInterval(r.interval), formatCountdown(time.Until(r.nextRun)))
+				return r.launch(m, runAllStage), true
+			}
+			r.nextRun = time.Now().Add(r.interval)
+			m.setStatus("loop mode ON — scheduled next run in %s", formatInterval(r.interval))
+			return tickEvery(), true
+		}
+		r.nextRun = time.Time{}
+		m.setStatus("loop mode OFF")
+		return nil, true
+
+	case "L", "i":
+		curIdx := 0
+		for idx, d := range loopIntervals {
+			if r.interval == d {
+				curIdx = idx
+				break
+			}
+		}
+		r.interval = loopIntervals[(curIdx+1)%len(loopIntervals)]
+		if r.loop {
+			r.nextRun = time.Now().Add(r.interval)
+			m.setStatus("loop interval set to %s (next run in %s)",
+				formatInterval(r.interval), formatCountdown(time.Until(r.nextRun)))
+		} else {
+			m.setStatus("loop interval set to %s", formatInterval(r.interval))
 		}
 		return nil, true
 
@@ -375,6 +475,36 @@ func onOff(v bool) string {
 	return "off"
 }
 
+func formatInterval(d time.Duration) string {
+	if d >= 24*time.Hour && d%(24*time.Hour) == 0 {
+		return fmt.Sprintf("%dd", int(d.Hours()/24))
+	}
+	if d >= time.Hour && d%time.Hour == 0 {
+		return fmt.Sprintf("%dh", int(d.Hours()))
+	}
+	if d >= time.Minute && d%time.Minute == 0 {
+		return fmt.Sprintf("%dm", int(d.Minutes()))
+	}
+	return d.String()
+}
+
+func formatCountdown(d time.Duration) string {
+	if d <= 0 {
+		return "now"
+	}
+	d = d.Round(time.Second)
+	h := int(d.Hours())
+	m := int(d.Minutes()) % 60
+	s := int(d.Seconds()) % 60
+	if h > 0 {
+		return fmt.Sprintf("%02dh %02dm %02ds", h, m, s)
+	}
+	if m > 0 {
+		return fmt.Sprintf("%02dm %02ds", m, s)
+	}
+	return fmt.Sprintf("%02ds", s)
+}
+
 func (r *runPage) View(m *Model, width, height int) string {
 	var b strings.Builder
 
@@ -384,6 +514,15 @@ func (r *runPage) View(m *Model, width, height int) string {
 	}
 	if r.push {
 		b.WriteString(styleError.Render("   push armed"))
+	}
+	if r.loop {
+		countdown := "now"
+		if remain := time.Until(r.nextRun); remain > 0 {
+			countdown = formatCountdown(remain)
+		}
+		b.WriteString(styleOK.Render(fmt.Sprintf("   ● loop ON (%s) · next in %s", formatInterval(r.interval), countdown)))
+	} else {
+		b.WriteString(styleDim.Render(fmt.Sprintf("   ○ loop off (%s)", formatInterval(r.interval))))
 	}
 	b.WriteString("\n")
 

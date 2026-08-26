@@ -70,13 +70,15 @@ go run ./cmd/airfoil
 
 ### Console Tabs:
 1. **1 Dashboard**: Live pipeline funnel, source volume bars, readiness status, storage footprint, and topic breakdowns.
-2. **2 Run**: Execute individual pipeline stages (`Ingest`, `Cluster`, `Rank`, `Write`, `Digest`, `Publish`) or full automated runs with dry-run support.
+2. **2 Run**: Execute pipeline stages, full automated runs, and recurring 24h loop mode with dry-run support.
 3. **3 Sources**: Toggle, edit, add, or delete ingestion sources.
 4. **4 Scoring**: Tune similarity thresholds, tier weights, decay half-life, and LLM call caps with instant feedback.
 5. **5 Keywords**: Manage builder signals and hype filter keywords.
 6. **6 Providers**: Configure and persist API keys, models (NVIDIA NIM, OpenRouter), embedding endpoints, and ingest tokens directly to `.env`.
 7. **7 Doctor**: Live connectivity probes for all upstream feeds and LLM provider endpoints.
 8. **8 Browse**: Interactive inspection of raw ingested items, vector clusters, ranked outputs, and final stories.
+9. **9 Digest**: Multi-format daily digest viewer (Newsletter, LinkedIn draft, X thread cards, HTML email) with instant copy-to-clipboard.
+10. **0 Purge**: Interactive multi-select story curation and bulk deletion.
 
 ---
 

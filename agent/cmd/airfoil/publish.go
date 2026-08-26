@@ -68,9 +68,13 @@ func runPublish(ctx context.Context, a *app, out io.Writer, opts publish.Options
 		fmt.Fprintf(out, "dry run — would commit %q\n", res.Message)
 	case res.Committed:
 		fmt.Fprintf(out, "committed %s — %s\n", res.Commit, res.Message)
-		if !res.Pushed {
+		if res.Pushed {
+			fmt.Fprintln(out, "pushed to remote.")
+		} else {
 			fmt.Fprintln(out, "not pushed. Re-run with --push, or push manually.")
 		}
+	case res.Pushed:
+		fmt.Fprintln(out, "nothing new to commit — pushed to remote.")
 	default:
 		fmt.Fprintln(out, "nothing to commit — output is unchanged")
 	}

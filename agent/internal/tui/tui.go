@@ -40,6 +40,7 @@ const (
 	viewProviders
 	viewDoctor
 	viewBrowse
+	viewDigest
 	viewPurge
 )
 
@@ -55,7 +56,8 @@ var tabs = []struct {
 	{viewProviders, "6 Providers"},
 	{viewDoctor, "7 Doctor"},
 	{viewBrowse, "8 Browse"},
-	{viewPurge, "9 Purge"},
+	{viewDigest, "9 Digest"},
+	{viewPurge, "0 Purge"},
 }
 
 // Model is the root Bubble Tea model.
@@ -97,6 +99,7 @@ func New(cfg *config.Config, log *slog.Logger, sink *LogSink) *Model {
 		viewProviders: newProvidersPage(cfg),
 		viewDoctor:    newDoctorPage(),
 		viewBrowse:    newBrowsePage(cfg),
+		viewDigest:    newDigestPage(cfg),
 		viewPurge:     newPurgeTUIPage(cfg),
 	}
 	return m
@@ -197,9 +200,14 @@ func (m *Model) handleKey(msg tea.KeyMsg) (tea.Model, tea.Cmd) {
 	case "shift+tab":
 		return m, m.switchTo(viewID((int(m.view) - 1 + len(tabs)) % len(tabs)))
 
-	case "1", "2", "3", "4", "5", "6", "7", "8", "9":
-		idx := int(msg.String()[0] - '1')
-		if idx < len(tabs) {
+	case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
+		var idx int
+		if msg.String() == "0" {
+			idx = 9
+		} else {
+			idx = int(msg.String()[0] - '1')
+		}
+		if idx >= 0 && idx < len(tabs) {
 			return m, m.switchTo(tabs[idx].id)
 		}
 	}
@@ -298,7 +306,7 @@ func (m *Model) helpView() string {
 		keys  [][2]string
 	}{
 		{"Global", [][2]string{
-			{"1 – 8", "jump to a tab"},
+			{"1 – 9, 0", "jump to a tab"},
 			{"tab / shift+tab", "cycle tabs"},
 			{"?", "toggle this help"},
 			{"q / ctrl+c", "quit"},
@@ -308,6 +316,8 @@ func (m *Model) helpView() string {
 			{"enter", "start the selected stage"},
 			{"d", "toggle dry run — write nothing"},
 			{"p", "arm push, so publish reaches the remote"},
+			{"l", "toggle 24h loop mode ON / OFF"},
+			{"L", "cycle loop interval (24h, 12h, 6h, 1h, 30m)"},
 			{"y / n", "answer the push confirmation"},
 			{"ctrl+x", "cancel a running stage"},
 			{"c", "clear the log"},
@@ -346,6 +356,14 @@ func (m *Model) helpView() string {
 			{"↑ ↓", "move"},
 			{"enter", "open the detail pane"},
 			{"R", "reload from disk"},
+		}},
+		{"Digest", [][2]string{
+			{"1 – 4 / ← →", "switch format (Newsletter, LinkedIn, X Thread, HTML)"},
+			{"↑ ↓ / j k", "scroll text or select post"},
+			{"[ ] / p n", "previous / next day"},
+			{"y / c", "copy current content to clipboard"},
+			{"Y / C", "copy entire X thread"},
+			{"r", "reload from disk"},
 		}},
 		{"Purge", [][2]string{
 			{"tab", "cycle filter fields / jump to list"},

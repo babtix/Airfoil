@@ -51,6 +51,22 @@
     "metrics": {}
   },
   {
+    "id": "b218531862c000a3",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.ssp.sh/brain/using-obsidian-with-ai",
+    "title": "It's so hard to finish an idea that is not yours (and suggested by AI)",
+    "excerpt": "",
+    "author": "zazuke",
+    "published_at": "2026-08-26T15:30:05Z",
+    "fetched_at": "2026-08-26T17:45:22.8409405Z",
+    "metrics": {
+      "hn_points": 58,
+      "hn_comments": 27
+    }
+  },
+  {
     "id": "be42c3506a8c3570",
     "source_id": "hn",
     "source_name": "Hacker News",
@@ -64,6 +80,22 @@
     "metrics": {
       "hn_points": 134,
       "hn_comments": 74
+    }
+  },
+  {
+    "id": "c4e8b0b5ee794d1f",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents",
+    "title": "WebMCP: Teaching Your Website to Talk to AI Agents",
+    "excerpt": "",
+    "author": "sreenathmenon",
+    "published_at": "2026-08-26T15:02:15Z",
+    "fetched_at": "2026-08-26T17:45:22.8409405Z",
+    "metrics": {
+      "hn_points": 53,
+      "hn_comments": 48
     }
   },
   {
@@ -338,6 +370,30 @@
       "hn_points": 383,
       "hn_comments": 132
     }
+  },
+  {
+    "id": "fa2791fbc9af008f",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+    "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+    "excerpt": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
+    "published_at": "2026-08-26T10:00:00Z",
+    "fetched_at": "2026-08-26T17:45:22.8409405Z",
+    "metrics": {}
+  },
+  {
+    "id": "832a12c8f33a104e",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/learning-never-stops",
+    "title": "Learning never stops: How AI makes learning continuous",
+    "excerpt": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
+    "published_at": "2026-08-26T10:00:00Z",
+    "fetched_at": "2026-08-26T17:45:22.8409405Z",
+    "metrics": {}
   },
   {
     "id": "603ef3ae293d3cb8",

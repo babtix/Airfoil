@@ -116,6 +116,13 @@ func (p *Publisher) Run(ctx context.Context, opts Options, now time.Time) (Resul
 	}
 	if !changed {
 		p.log.Info("nothing to commit — output is unchanged since the last publish")
+		if opts.Push {
+			if err := p.push(ctx); err != nil {
+				return res, fmt.Errorf("publish: push: %w", err)
+			}
+			res.Pushed = true
+			p.log.Info("pushed")
+		}
 		return res, nil
 	}
 
@@ -128,7 +135,7 @@ func (p *Publisher) Run(ctx context.Context, opts Options, now time.Time) (Resul
 	p.log.Info("committed", "sha", commit, "message", res.Message)
 
 	if opts.Push {
-		if err := p.git(ctx, "push"); err != nil {
+		if err := p.push(ctx); err != nil {
 			return res, fmt.Errorf("publish: push: %w", err)
 		}
 		res.Pushed = true
@@ -136,6 +143,16 @@ func (p *Publisher) Run(ctx context.Context, opts Options, now time.Time) (Resul
 	}
 
 	return res, nil
+}
+
+func (p *Publisher) push(ctx context.Context) error {
+	if err := p.git(ctx, "push"); err != nil {
+		// Fallback to origin HEAD if no tracking branch is configured on the current branch.
+		if err2 := p.git(ctx, "push", "origin", "HEAD"); err2 != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 // stage adds the generated paths and reports whether anything actually differs.

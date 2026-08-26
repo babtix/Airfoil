@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"io"
+	"time"
 
 	"github.com/spf13/cobra"
 
@@ -13,8 +14,10 @@ import (
 
 func newRunCmd(a *app) *cobra.Command {
 	var (
-		dry  bool
-		push bool
+		dry      bool
+		push     bool
+		loop     bool
+		interval string
 	)
 
 	cmd := &cobra.Command{
@@ -23,19 +26,55 @@ func newRunCmd(a *app) *cobra.Command {
 		Long: "Run chains every stage in order.\n\n" +
 			"--dry does everything except write files, call the LLM chain, or\n" +
 			"commit. Publishing is opt-in: without --push nothing leaves the\n" +
-			"machine, and the commit step only runs when --push is given.",
+			"machine, and the commit step only runs when --push is given.\n\n" +
+			"--loop runs repeatedly on a recurring interval (default 24h).",
 		Args: cobra.NoArgs,
 		RunE: func(cmd *cobra.Command, _ []string) error {
-			return runAll(cmd.Context(), a, cmd.OutOrStdout(), dry, push)
+			dur := 24 * time.Hour
+			if interval != "" {
+				parsed, err := time.ParseDuration(interval)
+				if err != nil {
+					return fmt.Errorf("--interval %q: invalid duration: %w", interval, err)
+				}
+				if parsed <= 0 {
+					return fmt.Errorf("--interval %q: must be positive", interval)
+				}
+				dur = parsed
+			}
+			return runAll(cmd.Context(), a, cmd.OutOrStdout(), dry, push, loop, dur)
 		},
 	}
 	cmd.Flags().BoolVar(&dry, "dry", false, "run every stage without writing, summarizing, or committing")
 	cmd.Flags().BoolVar(&push, "push", false, "commit and push the result when the run succeeds")
+	cmd.Flags().BoolVar(&loop, "loop", false, "run repeatedly in a continuous loop")
+	cmd.Flags().StringVar(&interval, "interval", "24h", "loop interval duration, e.g. 24h, 12h, 6h, 1h")
 
 	return cmd
 }
 
-func runAll(ctx context.Context, a *app, out io.Writer, dry, push bool) error {
+func runAll(ctx context.Context, a *app, out io.Writer, dry, push, loop bool, interval time.Duration) error {
+	for {
+		err := runSinglePass(ctx, a, out, dry, push)
+		if err != nil {
+			if !loop {
+				return err
+			}
+			fmt.Fprintf(out, "\nrun error: %v (will retry in %s)\n", err, interval)
+		}
+		if !loop {
+			return nil
+		}
+		fmt.Fprintf(out, "\n[loop active] sleeping for %s until next run (press Ctrl+C to stop)...\n", interval)
+		select {
+		case <-ctx.Done():
+			return ctx.Err()
+		case <-time.After(interval):
+			fmt.Fprintln(out, "\n[loop trigger] starting scheduled pipeline run...")
+		}
+	}
+}
+
+func runSinglePass(ctx context.Context, a *app, out io.Writer, dry, push bool) error {
 	p := a.pipeline()
 	opts := pipeline.Options{Since: a.since, Dry: dry}
 
