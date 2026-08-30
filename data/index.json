@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T17:25:34.6948604Z",
+  "generated_at": "2026-08-30T17:35:56.2367976Z",
   "stories": [
     {
       "id": "9fd55c5c0e2da92d",
@@ -61,6 +61,37 @@
       "cluster_size": 2
     },
     {
+      "id": "8e8e404f7e9f66fb",
+      "slug": "2026-08-30-claude-code-now-defaults-to-appending-session-urls-to",
+      "title": "claude-code now defaults to appending session URLs to commits and PRs",
+      "summary": "The claude-code CLI now automatically appends session URLs to git commits and pull requests, allowing developers to jump directly from version control to the relevant AI conversation. Updating the tool enables this behavior by default, removing the need to manually copy links into code reviews or logs.",
+      "score": 52,
+      "tier": "notable",
+      "tags": [
+        "tools",
+        "coding",
+        "open-source"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-30T12:50:54Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "1458af0779e81027",
+      "slug": "2026-08-30-hacker-news-thread-titled-no-ai-fridays",
+      "title": "Hacker News Thread Titled No AI Fridays",
+      "summary": "The input provides only a title and engagement metrics without article content. Insufficient details exist to summarize the event or determine how it affects software engineering practices.",
+      "score": 52,
+      "tier": "minor",
+      "tags": [
+        "tools",
+        "business"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-30T12:31:05Z",
+      "cluster_size": 1
+    },
+    {
       "id": "fbac622d39c46ffa",
       "slug": "2026-08-26-disruption-with-some-github-services",
       "title": "Disruption with Some GitHub Services",
@@ -104,6 +135,22 @@
       "builder_relevant": true,
       "date": "2026-08-26T04:00:00Z",
       "cluster_size": 2
+    },
+    {
+      "id": "e96b5515c9ab9999",
+      "slug": "2026-08-30-california-passes-linux-exemption-from-age-verification-law",
+      "title": "California Passes Linux Exemption From Age-Verification Law",
+      "summary": "California lawmakers have unanimously passed a Linux exemption from the state’s age-verification law. Engineers building software for the California market can now distribute Linux-based applications without implementing the required identity-checking systems. The adjustment removes verification integration steps for maintainers working within the operating system ecosystem.",
+      "score": 50,
+      "tier": "notable",
+      "tags": [
+        "policy",
+        "open-source",
+        "infra"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-30T03:15:36Z",
+      "cluster_size": 1
     },
     {
       "id": "1a713e82ea05655d",
@@ -445,6 +492,21 @@
       "cluster_size": 1
     },
     {
+      "id": "943138187c5ea4f0",
+      "slug": "2026-08-30-open-source-server-adds-aim-and-icq-protocol-support",
+      "title": "Open-source server adds AIM and ICQ protocol support",
+      "summary": "An open-source repository now hosts a server implementation compatible with AIM and ICQ clients, giving developers a self-contained option for legacy protocol support. Teams can use the code to maintain backward compatibility or run internal messaging gateways without depending on discontinued third-party services.",
+      "score": 43,
+      "tier": "notable",
+      "tags": [
+        "open-source",
+        "tools"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-30T00:33:35Z",
+      "cluster_size": 1
+    },
+    {
       "id": "6abf4b22d77a20c1",
       "slug": "2026-08-26-value-classes-still-need-compiler-sympathy",
       "title": "Value Classes Still Need Compiler Sympathy",
@@ -608,6 +670,36 @@
       ],
       "builder_relevant": true,
       "date": "2026-08-20T15:26:02Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "2b41ab6456610339",
+      "slug": "2026-08-30-fair-work-commission-addresses-ai-legal-advice-accuracy",
+      "title": "Fair Work Commission addresses AI legal advice accuracy",
+      "summary": "Input lacks sufficient detail beyond a single headline. Unable to summarize the event or determine implications for software engineers.",
+      "score": 42,
+      "tier": "minor",
+      "tags": [
+        "policy",
+        "tools"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-30T10:20:11Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "178b22d6479841ba",
+      "slug": "2026-08-29-hn-thread-highlights-workplace-culture-versus-ai",
+      "title": "HN Thread Highlights Workplace Culture Versus AI Productivity",
+      "summary": "The input provides only a headline and engagement metrics. No substantive details, technical changes, or verifiable facts are present to summarize.",
+      "score": 42,
+      "tier": "minor",
+      "tags": [
+        "business",
+        "tools"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-29T17:19:47Z",
       "cluster_size": 1
     },
     {
@@ -1092,6 +1184,21 @@
       "cluster_size": 2
     },
     {
+      "id": "96d0fe866d80be5a",
+      "slug": "2026-08-29-debian-votes-to-permit-generative-ai-usage",
+      "title": "Debian votes to permit generative AI usage",
+      "summary": "Debian voted to permit generative AI usage, but the input is too thin to explain compliance steps or toolchain adjustments for developers.",
+      "score": 40,
+      "tier": "minor",
+      "tags": [
+        "open-source",
+        "policy"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-29T14:02:10Z",
+      "cluster_size": 1
+    },
+    {
       "id": "0f6297fb6c655fad",
       "slug": "2026-08-26-parameter-efficient-self-supervised-adaptation-for-eeg-fm",
       "title": "Parameter-Efficient Self-Supervised Adaptation for EEG-FM under Fixed Computational Budgets",
@@ -1425,6 +1532,20 @@
       "builder_relevant": false,
       "date": "2026-08-19T17:32:38Z",
       "cluster_size": 2
+    },
+    {
+      "id": "6183c82b3a832338",
+      "slug": "2026-08-29-vllm-v0-28-0",
+      "title": "vLLM v0.28.0",
+      "summary": "",
+      "score": 39,
+      "tier": "minor",
+      "tags": [
+        "infra"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-29T18:22:00Z",
+      "cluster_size": 1
     },
     {
       "id": "48b286368003f4bf",
@@ -4438,6 +4559,32 @@
       "cluster_size": 1
     },
     {
+      "id": "a415daa1bfd8ee98",
+      "slug": "2026-08-29-what-we-want-is-a-hunter-gatherer-lifestyle-with-space-age",
+      "title": "What we want is a hunter gatherer lifestyle with space age tools (2022)",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-29T20:53:56Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "addd4b1ce663f0ac",
+      "slug": "2026-08-29-stemdeck-a-free-open-source-and-local-ai-stem-separator",
+      "title": "StemDeck, a free, open-source and local AI stem separator",
+      "summary": "",
+      "score": 36,
+      "tier": "minor",
+      "tags": [
+        "open-source"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-29T01:24:13Z",
+      "cluster_size": 1
+    },
+    {
       "id": "c526568418b5c1bb",
       "slug": "2026-08-25-show-hn-lightweight-system-monitor-for-linux-vps-written-in",
       "title": "Show HN: Lightweight system monitor for Linux VPS written in Go",
@@ -4459,6 +4606,22 @@
       "tags": [],
       "builder_relevant": false,
       "date": "2026-08-25T14:48:58Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "2af2e7e28a9e2be6",
+      "slug": "2026-08-29-useagenthq-useagent-hand-off-the-work-get-back-the-result",
+      "title": "useagenthq/useagent: Hand off the work. Get back the result. The open-source AI coworker for your team: agents with their own cloud computer, your tools and context, handing back finished work - websites, decks, spreadsheets, reports, PRs. Runs Claude Code, Codex, OpenCode on your subscription.",
+      "summary": "",
+      "score": 35,
+      "tier": "minor",
+      "tags": [
+        "coding",
+        "models",
+        "open-source"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-29T21:14:31Z",
       "cluster_size": 1
     },
     {
@@ -4485,6 +4648,44 @@
       ],
       "builder_relevant": false,
       "date": "2026-08-20T14:08:09Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "b1b53177f55d9a12",
+      "slug": "2026-08-29-warp-builds-self-improving-agents-on-claude",
+      "title": "Warp builds self-improving agents on Claude",
+      "summary": "",
+      "score": 34,
+      "tier": "minor",
+      "tags": [
+        "models"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-29T19:09:33Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "d2a8833790f04f86",
+      "slug": "2026-08-29-llms-are-making-me-lose-my-savviness",
+      "title": "LLMs are making me lose my savviness",
+      "summary": "",
+      "score": 34,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-29T18:38:52Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "0a9fb75bd2766d9b",
+      "slug": "2026-08-28-boot-a-virtual-iphone-via-apple-s-virtualization-framework",
+      "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
+      "summary": "",
+      "score": 34,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-28T23:02:21Z",
       "cluster_size": 1
     },
     {
@@ -10180,6 +10381,45 @@
       ],
       "builder_relevant": false,
       "date": "2026-08-17T21:03:18Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "c18bb213ce766cf3",
+      "slug": "2026-08-30-got-minimax-h3-video-generation-running-in-tensorsharp",
+      "title": "Got MiniMax H3 video generation running in TensorSharp",
+      "summary": "",
+      "score": 33,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "models"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-30T14:14:25Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "be4fbf04eb189d08",
+      "slug": "2026-08-29-the-growing-divide-between-ai-hype-and-software-engineering",
+      "title": "The growing divide between AI hype and software engineering reality",
+      "summary": "",
+      "score": 33,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-29T16:16:32Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "815f16b4de92f281",
+      "slug": "2026-08-29-turbokv-insanely-fast-rust-key-value-store",
+      "title": "TurboKV: Insanely fast Rust key-value store",
+      "summary": "",
+      "score": 33,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-29T02:23:37Z",
       "cluster_size": 1
     },
     {
@@ -16822,6 +17062,21 @@
       "cluster_size": 1
     },
     {
+      "id": "6f4222b379d9d15e",
+      "slug": "2026-08-30-intresting-paper-based-on-hbf-2607-10186-flashaccel",
+      "title": "{INTRESTING PAPER BASED ON HBF}2607.10186] FlashAccel: Leveraging High-Bandwidth Flash (HBF) for High-Throughput LLM Inference",
+      "summary": "",
+      "score": 32,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "research"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-30T12:45:10Z",
+      "cluster_size": 1
+    },
+    {
       "id": "0b8bc0885dc4c29a",
       "slug": "2026-08-21-measuring-benchmark-optimization-in-speech-recognition",
       "title": "Measuring benchmark optimization in speech recognition",
@@ -16858,6 +17113,18 @@
       "builder_relevant": false,
       "date": "2026-08-19T17:40:06Z",
       "cluster_size": 2
+    },
+    {
+      "id": "abd10f41b375779b",
+      "slug": "2026-08-28-i-accidentally-turned-llm-memory-into-program-analysis",
+      "title": "I accidentally turned LLM memory into program analysis",
+      "summary": "",
+      "score": 31,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-28T23:27:45Z",
+      "cluster_size": 1
     },
     {
       "id": "0e99dcb23d37094d",
@@ -16992,6 +17259,32 @@
       ],
       "builder_relevant": false,
       "date": "2026-08-17T19:47:15Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "38adb9efd6283d6d",
+      "slug": "2026-08-30-uncensored-multi-model-releases-longcat-flash-lite-sparse",
+      "title": "Uncensored Multi-Model Releases, LongCat-Flash-Lite-Sparse with MTPs and LSAs, Qwen3.8-27B with MTPs, Qwen3.5-122B-A10B with MTPs, Qwen3-Coder-Next and Laguna-S2.1 with Vision, All Available in GGUF Format! Bonus: Links to my llama.cpp Fork for LongCat-Flash-Lite Support and J-Wash Enhanced Fork!",
+      "summary": "",
+      "score": 29,
+      "tier": "minor",
+      "tags": [
+        "models"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-30T14:16:07Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "a0425c7c61ccf771",
+      "slug": "2026-08-30-qwen3-8-flash-next-nvfp4-2xdgx-spark-config-50t-s-decode-2",
+      "title": "Qwen3.8-Flash-Next NVFP4 2xDGX Spark config: 50t/s decode, 2,900t/s prefill",
+      "summary": "",
+      "score": 29,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": true,
+      "date": "2026-08-30T14:12:41Z",
       "cluster_size": 1
     },
     {
@@ -17209,6 +17502,71 @@
       ],
       "builder_relevant": true,
       "date": "2026-08-17T12:09:42Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "05d27f07899c8042",
+      "slug": "2026-08-30-qwen3-8-flash-next-turns-4xr9700-into-a-local-ai-powerhouse",
+      "title": "Qwen3.8-Flash-Next turns 4xR9700 into a local AI powerhouse! 120 t/s TG and 12k t/s PP single request with optimized vLLM",
+      "summary": "",
+      "score": 27,
+      "tier": "minor",
+      "tags": [
+        "infra",
+        "models"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-30T17:00:57Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "931abadd03ab48a7",
+      "slug": "2026-08-30-musk-s-faster-path-to-more-gas-turbines-comes-with",
+      "title": "Musk’s faster path to more gas turbines comes with pollution problem",
+      "summary": "",
+      "score": 27,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-30T16:54:25Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "4e8156b0c36dd14b",
+      "slug": "2026-08-30-texas-governor-abbott-blocks-funding-for-more-flock-cameras",
+      "title": "Texas Governor Abbott blocks funding for more Flock cameras",
+      "summary": "",
+      "score": 27,
+      "tier": "minor",
+      "tags": [
+        "business"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-30T15:35:10Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "ce9b216a1a11b9c8",
+      "slug": "2026-08-30-caterpillar-is-bringing-to-ai-deployment-what-it-learned",
+      "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+      "summary": "",
+      "score": 27,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-30T15:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "f5ac014f2a3be013",
+      "slug": "2026-08-30-koboldcpp-v1-120-released",
+      "title": "Koboldcpp v1.120 released",
+      "summary": "",
+      "score": 27,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": true,
+      "date": "2026-08-30T08:42:07Z",
       "cluster_size": 1
     },
     {
@@ -17499,6 +17857,30 @@
       "cluster_size": 1
     },
     {
+      "id": "c26f66318621cdfa",
+      "slug": "2026-08-28-identifying-fake-cosmetics-using-ai",
+      "title": "Identifying fake cosmetics using AI",
+      "summary": "",
+      "score": 25,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-28T22:18:27Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "bb17707a64ac21a5",
+      "slug": "2026-08-28-bye-bye-github",
+      "title": "Bye, Bye GitHub",
+      "summary": "",
+      "score": 25,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-28T19:12:11Z",
+      "cluster_size": 1
+    },
+    {
       "id": "22f783a7102beeff",
       "slug": "2026-08-26-bill-gates-is-deeply-worried-about-ai-and-he-s-no-longer",
       "title": "Bill Gates is deeply worried about AI, and he’s no longer staying quiet",
@@ -17642,6 +18024,32 @@
       "cluster_size": 1
     },
     {
+      "id": "ee3193d2b8e2bd18",
+      "slug": "2026-08-30-is-it-possible-to-run-dlss-5-on-rtx-3000-series-gpus-with",
+      "title": "Is it possible to run DLSS 5 on RTX 3000-series GPUs with an INT8 conversion?",
+      "summary": "",
+      "score": 24,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-30T11:27:23Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "484b800e538e65ed",
+      "slug": "2026-08-30-i-fine-tuned-a-0-8b-local-model-for-dictation-cleanup-it",
+      "title": "I fine-tuned a 0.8B local model for dictation cleanup. It matched a hosted frontier model on this narrow task",
+      "summary": "",
+      "score": 24,
+      "tier": "minor",
+      "tags": [
+        "models"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-30T11:03:04Z",
+      "cluster_size": 1
+    },
+    {
       "id": "56e37d7bc7b4c21f",
       "slug": "2026-08-25-quantization-aware-healing-a-compressed-4-bit-model-that",
       "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
@@ -17763,6 +18171,47 @@
       "builder_relevant": false,
       "date": "2026-08-17T15:19:31Z",
       "cluster_size": 1
+    },
+    {
+      "id": "fe2255a8055950db",
+      "slug": "2026-08-30-unpopular-opinion-qwen-3-8-is-hard-to-understand",
+      "title": "Unpopular opinion Qwen 3.8 is hard to understand",
+      "summary": "",
+      "score": 23,
+      "tier": "minor",
+      "tags": [
+        "models"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-30T17:15:49Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "e806eed9efc28946",
+      "slug": "2026-08-30-qwen3-8-flash-next-optimised-for-macs",
+      "title": "Qwen3.8-Flash-Next optimised for Macs",
+      "summary": "",
+      "score": 23,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-30T05:54:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "34cf465193bb924c",
+      "slug": "2026-08-29-qwen-3-8-27b-at-50-tok-s-with-100k-context-on-a-16gb-gpu",
+      "title": "Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)",
+      "summary": "",
+      "score": 23,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "infra"
+      ],
+      "builder_relevant": true,
+      "date": "2026-08-29T12:50:05Z",
+      "cluster_size": 2
     },
     {
       "id": "82636b0397b5561b",
@@ -17967,6 +18416,45 @@
       ],
       "builder_relevant": false,
       "date": "2026-08-16T21:53:43Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "cfc32d75c179be08",
+      "slug": "2026-08-30-best-settings-for-harness-work-with-llama-cpp-qwen-3-8",
+      "title": "Best settings for harness work with llama.cpp + qwen 3.8",
+      "summary": "",
+      "score": 22,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "coding"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-30T16:07:22Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "b7dc6c30a0b5a7bf",
+      "slug": "2026-08-30-oh-so-that-s-where-my-pcie-lanes-went",
+      "title": "Oh so that's where my PCIe lanes went...",
+      "summary": "",
+      "score": 22,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-30T14:27:23Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "89d111f8f9be856f",
+      "slug": "2026-08-30-anyone-want-to-sell-their-house-for-ram-or-go-in-halvsies",
+      "title": "Anyone want to sell their house for Ram… or go in halvsies?",
+      "summary": "",
+      "score": 22,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-30T14:11:58Z",
       "cluster_size": 1
     },
     {
@@ -18235,6 +18723,33 @@
       "cluster_size": 1
     },
     {
+      "id": "62cfe926d10b8780",
+      "slug": "2026-08-30-experience-report-qwen-3-8-flash-next-on-memory-rich-gpu",
+      "title": "Experience report - Qwen 3.8 Flash Next on memory rich, GPU poor setup",
+      "summary": "",
+      "score": 21,
+      "tier": "minor",
+      "tags": [
+        "models",
+        "infra"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-30T10:36:09Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "4ac1a9a225482222",
+      "slug": "2026-08-30-qwen3-8-flash-next-nvfp4-day-3-support-for-4xv100",
+      "title": "Qwen3.8-Flash-Next NVFP4 Day-3 support for 4xV100",
+      "summary": "",
+      "score": 21,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": true,
+      "date": "2026-08-30T06:31:25Z",
+      "cluster_size": 2
+    },
+    {
       "id": "560a39d629051dec",
       "slug": "2026-08-25-what-would-a-fair-benchmark-for-agent-architecture-look",
       "title": "What would a fair benchmark for agent architecture look like? [D]",
@@ -18376,6 +18891,70 @@
       "tags": [],
       "builder_relevant": false,
       "date": "2026-08-16T19:04:26Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "ebd7df5c09d194af",
+      "slug": "2026-08-30-when-you-say-because-i-can-limits-of-x870e",
+      "title": "When you say, because I can. Limits of X870e",
+      "summary": "",
+      "score": 20,
+      "tier": "minor",
+      "tags": [
+        "models"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-30T10:02:30Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "5dbb001d0a1e0fa0",
+      "slug": "2026-08-30-some-people-said-the-minecraft-clone-i-fully-vibecoded-with",
+      "title": "Some people said the Minecraft clone I fully vibecoded with Qwen3.8-27B Q4 is not that impressive because Minecraft is in the training data, so I had the model add 4 things that are probably not.",
+      "summary": "",
+      "score": 20,
+      "tier": "minor",
+      "tags": [
+        "models"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-30T09:28:27Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "8cddf2cb78e11d8a",
+      "slug": "2026-08-29-sony-music-warner-sue-anthropic-alleging-a-brazen-campaign",
+      "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+      "summary": "",
+      "score": 20,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-29T18:41:59Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "9906b56bf6fef0b0",
+      "slug": "2026-08-29-sony-music-publishing-and-warner-chappell-are-suing",
+      "title": "Sony Music Publishing and Warner Chappell are suing Anthropic",
+      "summary": "",
+      "score": 20,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-29T18:19:53Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "bc55036da292a7b0",
+      "slug": "2026-08-29-we-re-not-doing-30-bets-a-year-vijay-pande-on-betting-small",
+      "title": "“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z",
+      "summary": "",
+      "score": 20,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-29T17:36:47Z",
       "cluster_size": 1
     },
     {
@@ -19386,6 +19965,32 @@
       ],
       "builder_relevant": false,
       "date": "2026-08-15T22:41:51Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "751c2bf669d299c7",
+      "slug": "2026-08-30-it-s-official-192gb-framework",
+      "title": "It's official! 192GB Framework",
+      "summary": "",
+      "score": 19,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-30T05:39:44Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "42f500e01a9dee65",
+      "slug": "2026-08-30-an-unscientific-qwen-3-8-flash-next-and-glm-5-3-flash",
+      "title": "an unscientific qwen 3.8 flash next and glm 5.3 flash comparison",
+      "summary": "",
+      "score": 19,
+      "tier": "minor",
+      "tags": [
+        "models"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-30T05:06:24Z",
       "cluster_size": 1
     },
     {
@@ -21699,6 +22304,44 @@
       "tags": [],
       "builder_relevant": false,
       "date": "2026-08-15T23:22:59Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "22d18b4d41b8fb4e",
+      "slug": "2026-08-29-tencent-compressed-hy4-preview-from-1-5tb-to-about-200gb",
+      "title": "Tencent compressed Hy4-preview from 1.5TB to about 200GB GGUF and kept about 98% performance.",
+      "summary": "",
+      "score": 18,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-29T14:31:38Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "d7db9858baddb7aa",
+      "slug": "2026-08-29-nvidia-s-ai-advantage-is-moving-beyond-the-gpu",
+      "title": "Nvidia’s AI advantage is moving beyond the GPU",
+      "summary": "",
+      "score": 18,
+      "tier": "minor",
+      "tags": [
+        "infra"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-29T13:00:00Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "cf5d20b90240fa0c",
+      "slug": "2026-08-29-musicians-turned-detectives-are-hunting-for-ai-grifters",
+      "title": "Musicians-turned-detectives are hunting for AI grifters",
+      "summary": "",
+      "score": 18,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-29T12:00:00Z",
       "cluster_size": 1
     },
     {
@@ -37755,6 +38398,32 @@
       "cluster_size": 1
     },
     {
+      "id": "55025dcb6b4d0e34",
+      "slug": "2026-08-28-an-anthropic-researcher-just-gave-us-a-peek-at-self",
+      "title": "An Anthropic researcher just gave us a peek at self-improving AI",
+      "summary": "",
+      "score": 16,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-28T19:30:38Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "77c23fd4d1e6566c",
+      "slug": "2026-08-28-open-weight-ai-companies-are-the-valley-s-hottest",
+      "title": "Open-weight AI companies are the Valley’s hottest acquisition targets",
+      "summary": "",
+      "score": 16,
+      "tier": "minor",
+      "tags": [
+        "business"
+      ],
+      "builder_relevant": false,
+      "date": "2026-08-28T18:19:40Z",
+      "cluster_size": 1
+    },
+    {
       "id": "90be62f46369819f",
       "slug": "2026-08-25-d-looking-for-advice-modelling-a-medicine-reminder-agent",
       "title": "[D] Looking for advice: Modelling a medicine-reminder agent that must decide “remind / wait / notify” under incomplete information[D]",
@@ -38151,6 +38820,18 @@
       "tags": [],
       "builder_relevant": false,
       "date": "2026-08-16T06:55:04Z",
+      "cluster_size": 1
+    },
+    {
+      "id": "de1e932b39c3dc6f",
+      "slug": "2026-08-28-neocloud-lambda-secures-1b-in-debt-to-buy-more-chips",
+      "title": "Neocloud Lambda secures $1B in debt to buy more chips",
+      "summary": "",
+      "score": 14,
+      "tier": "minor",
+      "tags": [],
+      "builder_relevant": false,
+      "date": "2026-08-28T20:24:11Z",
       "cluster_size": 1
     },
     {

@@ -141,6 +141,73 @@
     "body": []
   },
   {
+    "id": "8e8e404f7e9f66fb",
+    "slug": "2026-08-30-claude-code-now-defaults-to-appending-session-urls-to",
+    "title": "claude-code now defaults to appending session URLs to commits and PRs",
+    "summary": "The claude-code CLI now automatically appends session URLs to git commits and pull requests, allowing developers to jump directly from version control to the relevant AI conversation. Updating the tool enables this behavior by default, removing the need to manually copy links into code reviews or logs.",
+    "score": 52,
+    "tier": "notable",
+    "tags": [
+      "tools",
+      "coding",
+      "open-source"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-30T12:50:54Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://github.com/anthropics/claude-code/issues/66504",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 113,
+          "comments": 140
+        }
+      }
+    ],
+    "takeaways": [
+      "Session links auto-injected into git history and PRs",
+      "Update claude-code to enable automatic URL tracking",
+      "Removes manual link sharing between code and conversations"
+    ],
+    "body": []
+  },
+  {
+    "id": "1458af0779e81027",
+    "slug": "2026-08-30-hacker-news-thread-titled-no-ai-fridays",
+    "title": "Hacker News Thread Titled No AI Fridays",
+    "summary": "The input provides only a title and engagement metrics without article content. Insufficient details exist to summarize the event or determine how it affects software engineering practices.",
+    "score": 52,
+    "tier": "minor",
+    "tags": [
+      "tools",
+      "business"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-30T12:31:05Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://noaifridays.com",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 238,
+          "comments": 155
+        }
+      }
+    ],
+    "takeaways": [
+      "Input lacks substantive article text",
+      "Engagement metrics show community attention",
+      "Cannot assess impact on development workflows"
+    ],
+    "body": []
+  },
+  {
     "id": "fbac622d39c46ffa",
     "slug": "2026-08-26-disruption-with-some-github-services",
     "title": "Disruption with Some GitHub Services",
@@ -237,6 +304,40 @@
       "TabDPT-Turbo optimizes in-context learning for faster tabular predictions.",
       "GEAR reduces memory and latency via two-stage model distillation.",
       "Both methods target production-ready deployment of tabular foundation models."
+    ],
+    "body": []
+  },
+  {
+    "id": "e96b5515c9ab9999",
+    "slug": "2026-08-30-california-passes-linux-exemption-from-age-verification-law",
+    "title": "California Passes Linux Exemption From Age-Verification Law",
+    "summary": "California lawmakers have unanimously passed a Linux exemption from the state’s age-verification law. Engineers building software for the California market can now distribute Linux-based applications without implementing the required identity-checking systems. The adjustment removes verification integration steps for maintainers working within the operating system ecosystem.",
+    "score": 50,
+    "tier": "notable",
+    "tags": [
+      "policy",
+      "open-source",
+      "infra"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-30T03:15:36Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 607,
+          "comments": 283
+        }
+      }
+    ],
+    "takeaways": [
+      "California exempts Linux from age-verification mandates",
+      "Linux developers skip identity-check integration",
+      "Compliance steps removed for OS maintainers"
     ],
     "body": []
   },
@@ -992,6 +1093,39 @@
     "body": []
   },
   {
+    "id": "943138187c5ea4f0",
+    "slug": "2026-08-30-open-source-server-adds-aim-and-icq-protocol-support",
+    "title": "Open-source server adds AIM and ICQ protocol support",
+    "summary": "An open-source repository now hosts a server implementation compatible with AIM and ICQ clients, giving developers a self-contained option for legacy protocol support. Teams can use the code to maintain backward compatibility or run internal messaging gateways without depending on discontinued third-party services.",
+    "score": 43,
+    "tier": "notable",
+    "tags": [
+      "open-source",
+      "tools"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-30T00:33:35Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://github.com/mk6i/open-oscar-server",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 53,
+          "comments": 18
+        }
+      }
+    ],
+    "takeaways": [
+      "Self-hosted server for legacy messaging protocols",
+      "GitHub repository available for developer integration",
+      "Supports discontinued AIM and ICQ client standards"
+    ],
+    "body": []
+  },
+  {
     "id": "6abf4b22d77a20c1",
     "slug": "2026-08-26-value-classes-still-need-compiler-sympathy",
     "title": "Value Classes Still Need Compiler Sympathy",
@@ -1293,6 +1427,71 @@
       "Vomit uses a separate LLM to post-process Claude 5 token output.",
       "The tool is available as an open-source GitHub repo.",
       "It aims to improve readability of Claude 5 responses for developers."
+    ],
+    "body": []
+  },
+  {
+    "id": "2b41ab6456610339",
+    "slug": "2026-08-30-fair-work-commission-addresses-ai-legal-advice-accuracy",
+    "title": "Fair Work Commission addresses AI legal advice accuracy",
+    "summary": "Input lacks sufficient detail beyond a single headline. Unable to summarize the event or determine implications for software engineers.",
+    "score": 42,
+    "tier": "minor",
+    "tags": [
+      "policy",
+      "tools"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-30T10:20:11Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://www.abc.net.au/news/2026-08-29/fair-work-commission-condemns-ai-legal-advice/107089766",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 53,
+          "comments": 26
+        }
+      }
+    ],
+    "takeaways": [
+      "Insufficient source material for detailed analysis",
+      "Headline references regulatory action on AI advice"
+    ],
+    "body": []
+  },
+  {
+    "id": "178b22d6479841ba",
+    "slug": "2026-08-29-hn-thread-highlights-workplace-culture-versus-ai",
+    "title": "HN Thread Highlights Workplace Culture Versus AI Productivity",
+    "summary": "The input provides only a headline and engagement metrics. No substantive details, technical changes, or verifiable facts are present to summarize.",
+    "score": 42,
+    "tier": "minor",
+    "tags": [
+      "business",
+      "tools"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-29T17:19:47Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 428,
+          "comments": 109
+        }
+      }
+    ],
+    "takeaways": [
+      "Input lacks substantive content beyond a headline.",
+      "High engagement noted on Hacker News.",
+      "No technical details or product changes reported."
     ],
     "body": []
   },
@@ -2150,6 +2349,39 @@
     "body": []
   },
   {
+    "id": "96d0fe866d80be5a",
+    "slug": "2026-08-29-debian-votes-to-permit-generative-ai-usage",
+    "title": "Debian votes to permit generative AI usage",
+    "summary": "Debian voted to permit generative AI usage, but the input is too thin to explain compliance steps or toolchain adjustments for developers.",
+    "score": 40,
+    "tier": "minor",
+    "tags": [
+      "open-source",
+      "policy"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-29T14:02:10Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://lwn.net/Articles/1091231",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 493,
+          "comments": 460
+        }
+      }
+    ],
+    "takeaways": [
+      "Debian community approved generative AI usage.",
+      "Policy scope and developer impact remain unspecified.",
+      "Vote recorded on August 29, 2026."
+    ],
+    "body": []
+  },
+  {
     "id": "0f6297fb6c655fad",
     "slug": "2026-08-26-parameter-efficient-self-supervised-adaptation-for-eeg-fm",
     "title": "Parameter-Efficient Self-Supervised Adaptation for EEG-FM under Fixed Computational Budgets",
@@ -2702,6 +2934,33 @@
         "metrics": {
           "points": 951,
           "comments": 490
+        }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "6183c82b3a832338",
+    "slug": "2026-08-29-vllm-v0-28-0",
+    "title": "vLLM v0.28.0",
+    "summary": "",
+    "score": 39,
+    "tier": "minor",
+    "tags": [
+      "infra"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-29T18:22:00Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 107,
+          "comments": 37
         }
       }
     ],
@@ -7600,6 +7859,58 @@
     "body": []
   },
   {
+    "id": "a415daa1bfd8ee98",
+    "slug": "2026-08-29-what-we-want-is-a-hunter-gatherer-lifestyle-with-space-age",
+    "title": "What we want is a hunter gatherer lifestyle with space age tools (2022)",
+    "summary": "",
+    "score": 36,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-29T20:53:56Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://www.strangeloopcanon.com/p/what-we-want-is-a-hunter-gatherer",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 78,
+          "comments": 88
+        }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "addd4b1ce663f0ac",
+    "slug": "2026-08-29-stemdeck-a-free-open-source-and-local-ai-stem-separator",
+    "title": "StemDeck, a free, open-source and local AI stem separator",
+    "summary": "",
+    "score": 36,
+    "tier": "minor",
+    "tags": [
+      "open-source"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-29T01:24:13Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://github.com/stemdeckapp/stemdeck",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 235,
+          "comments": 61
+        }
+      }
+    ],
+    "body": []
+  },
+  {
     "id": "c526568418b5c1bb",
     "slug": "2026-08-25-show-hn-lightweight-system-monitor-for-linux-vps-written-in",
     "title": "Show HN: Lightweight system monitor for Linux VPS written in Go",
@@ -7644,6 +7955,34 @@
         "metrics": {
           "points": 142,
           "comments": 169
+        }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "2af2e7e28a9e2be6",
+    "slug": "2026-08-29-useagenthq-useagent-hand-off-the-work-get-back-the-result",
+    "title": "useagenthq/useagent: Hand off the work. Get back the result. The open-source AI coworker for your team: agents with their own cloud computer, your tools and context, handing back finished work - websites, decks, spreadsheets, reports, PRs. Runs Claude Code, Codex, OpenCode on your subscription.",
+    "summary": "",
+    "score": 35,
+    "tier": "minor",
+    "tags": [
+      "coding",
+      "models",
+      "open-source"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-29T21:14:31Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "GitHub Trending",
+        "url": "https://github.com/useagenthq/useagent",
+        "tier": 3,
+        "type": "lab",
+        "metrics": {
+          "stars": 124
         }
       }
     ],
@@ -7696,6 +8035,83 @@
         "metrics": {
           "points": 101,
           "comments": 55
+        }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "b1b53177f55d9a12",
+    "slug": "2026-08-29-warp-builds-self-improving-agents-on-claude",
+    "title": "Warp builds self-improving agents on Claude",
+    "summary": "",
+    "score": 34,
+    "tier": "minor",
+    "tags": [
+      "models"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-29T19:09:33Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 58,
+          "comments": 57
+        }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "d2a8833790f04f86",
+    "slug": "2026-08-29-llms-are-making-me-lose-my-savviness",
+    "title": "LLMs are making me lose my savviness",
+    "summary": "",
+    "score": 34,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-29T18:38:52Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://pgaleone.eu/ai/2026/08/29/losing-savviness",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 60,
+          "comments": 76
+        }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "0a9fb75bd2766d9b",
+    "slug": "2026-08-28-boot-a-virtual-iphone-via-apple-s-virtualization-framework",
+    "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
+    "summary": "",
+    "score": 34,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-28T23:02:21Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://github.com/Lakr233/vphone-cli",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 405,
+          "comments": 111
         }
       }
     ],
@@ -16983,6 +17399,80 @@
         "metrics": {
           "points": 625,
           "comments": 448
+        }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "c18bb213ce766cf3",
+    "slug": "2026-08-30-got-minimax-h3-video-generation-running-in-tensorsharp",
+    "title": "Got MiniMax H3 video generation running in TensorSharp",
+    "summary": "",
+    "score": 33,
+    "tier": "minor",
+    "tags": [
+      "infra",
+      "models"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-30T14:14:25Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2ip5z/got_minimax_h3_video_generation_running_in",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "be4fbf04eb189d08",
+    "slug": "2026-08-29-the-growing-divide-between-ai-hype-and-software-engineering",
+    "title": "The growing divide between AI hype and software engineering reality",
+    "summary": "",
+    "score": 33,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-29T16:16:32Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://optimizedbyotto.com/post/why-open-source-projects-ban-ai",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 64,
+          "comments": 85
+        }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "815f16b4de92f281",
+    "slug": "2026-08-29-turbokv-insanely-fast-rust-key-value-store",
+    "title": "TurboKV: Insanely fast Rust key-value store",
+    "summary": "",
+    "score": 33,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-29T02:23:37Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://github.com/kingroryg/turbokv",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 179,
+          "comments": 85
         }
       }
     ],
@@ -27780,6 +28270,30 @@
     "body": []
   },
   {
+    "id": "6f4222b379d9d15e",
+    "slug": "2026-08-30-intresting-paper-based-on-hbf-2607-10186-flashaccel",
+    "title": "{INTRESTING PAPER BASED ON HBF}2607.10186] FlashAccel: Leveraging High-Bandwidth Flash (HBF) for High-Throughput LLM Inference",
+    "summary": "",
+    "score": 32,
+    "tier": "minor",
+    "tags": [
+      "infra",
+      "research"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-30T12:45:10Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2gmn5/intresting_paper_based_on_hbf260710186_flashaccel",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
     "id": "0b8bc0885dc4c29a",
     "slug": "2026-08-21-measuring-benchmark-optimization-in-speech-recognition",
     "title": "Measuring benchmark optimization in speech recognition",
@@ -27857,6 +28371,31 @@
         "metrics": {
           "points": 365,
           "comments": 218
+        }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "abd10f41b375779b",
+    "slug": "2026-08-28-i-accidentally-turned-llm-memory-into-program-analysis",
+    "title": "I accidentally turned LLM memory into program analysis",
+    "summary": "",
+    "score": 31,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-28T23:27:45Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://pwning.systems/posts/llm-memory-program-analysis",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 298,
+          "comments": 81
         }
       }
     ],
@@ -28126,6 +28665,50 @@
     "takeaways": [
       "No substantive information provided in the source.",
       "Cannot determine any facts or changes."
+    ],
+    "body": []
+  },
+  {
+    "id": "38adb9efd6283d6d",
+    "slug": "2026-08-30-uncensored-multi-model-releases-longcat-flash-lite-sparse",
+    "title": "Uncensored Multi-Model Releases, LongCat-Flash-Lite-Sparse with MTPs and LSAs, Qwen3.8-27B with MTPs, Qwen3.5-122B-A10B with MTPs, Qwen3-Coder-Next and Laguna-S2.1 with Vision, All Available in GGUF Format! Bonus: Links to my llama.cpp Fork for LongCat-Flash-Lite Support and J-Wash Enhanced Fork!",
+    "summary": "",
+    "score": 29,
+    "tier": "minor",
+    "tags": [
+      "models"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-30T14:16:07Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2iqos/uncensored_multimodel_releases",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "a0425c7c61ccf771",
+    "slug": "2026-08-30-qwen3-8-flash-next-nvfp4-2xdgx-spark-config-50t-s-decode-2",
+    "title": "Qwen3.8-Flash-Next NVFP4 2xDGX Spark config: 50t/s decode, 2,900t/s prefill",
+    "summary": "",
+    "score": 29,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": true,
+    "ts": "2026-08-30T14:12:41Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2inlp/qwen38flashnext_nvfp4_2xdgx_spark_config_50ts",
+        "tier": 5,
+        "type": "community"
+      }
     ],
     "body": []
   },
@@ -28581,6 +29164,116 @@
     "takeaways": [
       "GPT 5.6 Sol is OpenAI's top vision model",
       "Developers gain access to advanced image understanding"
+    ],
+    "body": []
+  },
+  {
+    "id": "05d27f07899c8042",
+    "slug": "2026-08-30-qwen3-8-flash-next-turns-4xr9700-into-a-local-ai-powerhouse",
+    "title": "Qwen3.8-Flash-Next turns 4xR9700 into a local AI powerhouse! 120 t/s TG and 12k t/s PP single request with optimized vLLM",
+    "summary": "",
+    "score": 27,
+    "tier": "minor",
+    "tags": [
+      "infra",
+      "models"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-30T17:00:57Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2my8q/qwen38flashnext_turns_4xr9700_into_a_local_ai",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "931abadd03ab48a7",
+    "slug": "2026-08-30-musk-s-faster-path-to-more-gas-turbines-comes-with",
+    "title": "Musk’s faster path to more gas turbines comes with pollution problem",
+    "summary": "",
+    "score": 27,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-30T16:54:25Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem",
+        "tier": 4,
+        "type": "press"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "4e8156b0c36dd14b",
+    "slug": "2026-08-30-texas-governor-abbott-blocks-funding-for-more-flock-cameras",
+    "title": "Texas Governor Abbott blocks funding for more Flock cameras",
+    "summary": "",
+    "score": 27,
+    "tier": "minor",
+    "tags": [
+      "business"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-30T15:35:10Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "The Verge AI",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
+        "tier": 4,
+        "type": "press"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "ce9b216a1a11b9c8",
+    "slug": "2026-08-30-caterpillar-is-bringing-to-ai-deployment-what-it-learned",
+    "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+    "summary": "",
+    "score": 27,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-30T15:00:00Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining",
+        "tier": 4,
+        "type": "press"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "f5ac014f2a3be013",
+    "slug": "2026-08-30-koboldcpp-v1-120-released",
+    "title": "Koboldcpp v1.120 released",
+    "summary": "",
+    "score": 27,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": true,
+    "ts": "2026-08-30T08:42:07Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2c4el/koboldcpp_v1120_released",
+        "tier": 5,
+        "type": "community"
+      }
     ],
     "body": []
   },
@@ -29115,6 +29808,56 @@
     "body": []
   },
   {
+    "id": "c26f66318621cdfa",
+    "slug": "2026-08-28-identifying-fake-cosmetics-using-ai",
+    "title": "Identifying fake cosmetics using AI",
+    "summary": "",
+    "score": 25,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-28T22:18:27Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://groverlab.org/hnbfpr/2026-08-26-ai-counterfeit-cosmetics.html",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 61,
+          "comments": 26
+        }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "bb17707a64ac21a5",
+    "slug": "2026-08-28-bye-bye-github",
+    "title": "Bye, Bye GitHub",
+    "summary": "",
+    "score": 25,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-28T19:12:11Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "Hacker News",
+        "url": "https://log.ozgur.works/bye-bye-github.html",
+        "tier": 5,
+        "type": "community",
+        "metrics": {
+          "points": 71,
+          "comments": 73
+        }
+      }
+    ],
+    "body": []
+  },
+  {
     "id": "22f783a7102beeff",
     "slug": "2026-08-26-bill-gates-is-deeply-worried-about-ai-and-he-s-no-longer",
     "title": "Bill Gates is deeply worried about AI, and he’s no longer staying quiet",
@@ -29395,6 +30138,50 @@
     "body": []
   },
   {
+    "id": "ee3193d2b8e2bd18",
+    "slug": "2026-08-30-is-it-possible-to-run-dlss-5-on-rtx-3000-series-gpus-with",
+    "title": "Is it possible to run DLSS 5 on RTX 3000-series GPUs with an INT8 conversion?",
+    "summary": "",
+    "score": 24,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-30T11:27:23Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2f1lf/is_it_possible_to_run_dlss_5_on_rtx_3000series",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "484b800e538e65ed",
+    "slug": "2026-08-30-i-fine-tuned-a-0-8b-local-model-for-dictation-cleanup-it",
+    "title": "I fine-tuned a 0.8B local model for dictation cleanup. It matched a hosted frontier model on this narrow task",
+    "summary": "",
+    "score": 24,
+    "tier": "minor",
+    "tags": [
+      "models"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-30T11:03:04Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2elkb/i_finetuned_a_08b_local_model_for_dictation",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
     "id": "56e37d7bc7b4c21f",
     "slug": "2026-08-25-quantization-aware-healing-a-compressed-4-bit-model-that",
     "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
@@ -29627,6 +30414,80 @@
           "points": 98,
           "comments": 78
         }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "fe2255a8055950db",
+    "slug": "2026-08-30-unpopular-opinion-qwen-3-8-is-hard-to-understand",
+    "title": "Unpopular opinion Qwen 3.8 is hard to understand",
+    "summary": "",
+    "score": 23,
+    "tier": "minor",
+    "tags": [
+      "models"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-30T17:15:49Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2ncr5/unpopular_opinion_qwen_38_is_hard_to_understand",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "e806eed9efc28946",
+    "slug": "2026-08-30-qwen3-8-flash-next-optimised-for-macs",
+    "title": "Qwen3.8-Flash-Next optimised for Macs",
+    "summary": "",
+    "score": 23,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-30T05:54:00Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w296bx/qwen38flashnext_optimised_for_macs",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "34cf465193bb924c",
+    "slug": "2026-08-29-qwen-3-8-27b-at-50-tok-s-with-100k-context-on-a-16gb-gpu",
+    "title": "Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)",
+    "summary": "",
+    "score": 23,
+    "tier": "minor",
+    "tags": [
+      "models",
+      "infra"
+    ],
+    "builder_relevant": true,
+    "ts": "2026-08-29T12:50:05Z",
+    "cluster": 2,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1lq7u/qwen_38_27b_at_50_toks_with_100k_context_on_a",
+        "tier": 5,
+        "type": "community"
+      },
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2i963/dont_sleep_on_exl3_quants",
+        "tier": 5,
+        "type": "community"
       }
     ],
     "body": []
@@ -30059,6 +30920,72 @@
           "points": 749,
           "comments": 659
         }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "cfc32d75c179be08",
+    "slug": "2026-08-30-best-settings-for-harness-work-with-llama-cpp-qwen-3-8",
+    "title": "Best settings for harness work with llama.cpp + qwen 3.8",
+    "summary": "",
+    "score": 22,
+    "tier": "minor",
+    "tags": [
+      "models",
+      "coding"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-30T16:07:22Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2ljy7/best_settings_for_harness_work_with_llamacpp_qwen",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "b7dc6c30a0b5a7bf",
+    "slug": "2026-08-30-oh-so-that-s-where-my-pcie-lanes-went",
+    "title": "Oh so that's where my PCIe lanes went...",
+    "summary": "",
+    "score": 22,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-30T14:27:23Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2j0pc/oh_so_thats_where_my_pcie_lanes_went",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "89d111f8f9be856f",
+    "slug": "2026-08-30-anyone-want-to-sell-their-house-for-ram-or-go-in-halvsies",
+    "title": "Anyone want to sell their house for Ram… or go in halvsies?",
+    "summary": "",
+    "score": 22,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-30T14:11:58Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2imwl/anyone_want_to_sell_their_house_for_ram_or_go_in",
+        "tier": 5,
+        "type": "community"
       }
     ],
     "body": []
@@ -30549,6 +31476,57 @@
     "body": []
   },
   {
+    "id": "62cfe926d10b8780",
+    "slug": "2026-08-30-experience-report-qwen-3-8-flash-next-on-memory-rich-gpu",
+    "title": "Experience report - Qwen 3.8 Flash Next on memory rich, GPU poor setup",
+    "summary": "",
+    "score": 21,
+    "tier": "minor",
+    "tags": [
+      "models",
+      "infra"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-30T10:36:09Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2e40k/experience_report_qwen_38_flash_next_on_memory",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "4ac1a9a225482222",
+    "slug": "2026-08-30-qwen3-8-flash-next-nvfp4-day-3-support-for-4xv100",
+    "title": "Qwen3.8-Flash-Next NVFP4 Day-3 support for 4xV100",
+    "summary": "",
+    "score": 21,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": true,
+    "ts": "2026-08-30T06:31:25Z",
+    "cluster": 2,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w29ukk/qwen38flashnext_nvfp4_day3_support_for_4xv100",
+        "tier": 5,
+        "type": "community"
+      },
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2b2j0/qwen38flashnext_at_170k_context_on_a_single_96_gb",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
     "id": "560a39d629051dec",
     "slug": "2026-08-25-what-would-a-fair-benchmark-for-agent-architecture-look",
     "title": "What would a fair benchmark for agent architecture look like? [D]",
@@ -30799,6 +31777,115 @@
           "points": 327,
           "comments": 186
         }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "ebd7df5c09d194af",
+    "slug": "2026-08-30-when-you-say-because-i-can-limits-of-x870e",
+    "title": "When you say, because I can. Limits of X870e",
+    "summary": "",
+    "score": 20,
+    "tier": "minor",
+    "tags": [
+      "models"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-30T10:02:30Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2dij0/when_you_say_because_i_can_limits_of_x870e",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "5dbb001d0a1e0fa0",
+    "slug": "2026-08-30-some-people-said-the-minecraft-clone-i-fully-vibecoded-with",
+    "title": "Some people said the Minecraft clone I fully vibecoded with Qwen3.8-27B Q4 is not that impressive because Minecraft is in the training data, so I had the model add 4 things that are probably not.",
+    "summary": "",
+    "score": 20,
+    "tier": "minor",
+    "tags": [
+      "models"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-30T09:28:27Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2cxcw/some_people_said_the_minecraft_clone_i_fully",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "8cddf2cb78e11d8a",
+    "slug": "2026-08-29-sony-music-warner-sue-anthropic-alleging-a-brazen-campaign",
+    "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+    "summary": "",
+    "score": 20,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-29T18:41:59Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft",
+        "tier": 4,
+        "type": "press"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "9906b56bf6fef0b0",
+    "slug": "2026-08-29-sony-music-publishing-and-warner-chappell-are-suing",
+    "title": "Sony Music Publishing and Warner Chappell are suing Anthropic",
+    "summary": "",
+    "score": 20,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-29T18:19:53Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "The Verge AI",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+        "tier": 4,
+        "type": "press"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "bc55036da292a7b0",
+    "slug": "2026-08-29-we-re-not-doing-30-bets-a-year-vijay-pande-on-betting-small",
+    "title": "“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z",
+    "summary": "",
+    "score": 20,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-29T17:36:47Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z",
+        "tier": 4,
+        "type": "press"
       }
     ],
     "body": []
@@ -32475,6 +33562,50 @@
           "points": 56,
           "comments": 7
         }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "751c2bf669d299c7",
+    "slug": "2026-08-30-it-s-official-192gb-framework",
+    "title": "It's official! 192GB Framework",
+    "summary": "",
+    "score": 19,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-30T05:39:44Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w28x8u/its_official_192gb_framework",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "42f500e01a9dee65",
+    "slug": "2026-08-30-an-unscientific-qwen-3-8-flash-next-and-glm-5-3-flash",
+    "title": "an unscientific qwen 3.8 flash next and glm 5.3 flash comparison",
+    "summary": "",
+    "score": 19,
+    "tier": "minor",
+    "tags": [
+      "models"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-30T05:06:24Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w28alw/an_unscientific_qwen_38_flash_next_and_glm_53",
+        "tier": 5,
+        "type": "community"
       }
     ],
     "body": []
@@ -36262,6 +37393,71 @@
           "points": 64,
           "comments": 94
         }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "22d18b4d41b8fb4e",
+    "slug": "2026-08-29-tencent-compressed-hy4-preview-from-1-5tb-to-about-200gb",
+    "title": "Tencent compressed Hy4-preview from 1.5TB to about 200GB GGUF and kept about 98% performance.",
+    "summary": "",
+    "score": 18,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-29T14:31:38Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1o324/tencent_compressed_hy4preview_from_15tb_to_about",
+        "tier": 5,
+        "type": "community"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "d7db9858baddb7aa",
+    "slug": "2026-08-29-nvidia-s-ai-advantage-is-moving-beyond-the-gpu",
+    "title": "Nvidia’s AI advantage is moving beyond the GPU",
+    "summary": "",
+    "score": 18,
+    "tier": "minor",
+    "tags": [
+      "infra"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-29T13:00:00Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu",
+        "tier": 4,
+        "type": "press"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "cf5d20b90240fa0c",
+    "slug": "2026-08-29-musicians-turned-detectives-are-hunting-for-ai-grifters",
+    "title": "Musicians-turned-detectives are hunting for AI grifters",
+    "summary": "",
+    "score": 18,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-29T12:00:00Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "The Verge AI",
+        "url": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
+        "tier": 4,
+        "type": "press"
       }
     ],
     "body": []
@@ -62580,6 +63776,50 @@
     "body": []
   },
   {
+    "id": "55025dcb6b4d0e34",
+    "slug": "2026-08-28-an-anthropic-researcher-just-gave-us-a-peek-at-self",
+    "title": "An Anthropic researcher just gave us a peek at self-improving AI",
+    "summary": "",
+    "score": 16,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-28T19:30:38Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai",
+        "tier": 4,
+        "type": "press"
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "77c23fd4d1e6566c",
+    "slug": "2026-08-28-open-weight-ai-companies-are-the-valley-s-hottest",
+    "title": "Open-weight AI companies are the Valley’s hottest acquisition targets",
+    "summary": "",
+    "score": 16,
+    "tier": "minor",
+    "tags": [
+      "business"
+    ],
+    "builder_relevant": false,
+    "ts": "2026-08-28T18:19:40Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets",
+        "tier": 4,
+        "type": "press"
+      }
+    ],
+    "body": []
+  },
+  {
     "id": "90be62f46369819f",
     "slug": "2026-08-25-d-looking-for-advice-modelling-a-medicine-reminder-agent",
     "title": "[D] Looking for advice: Modelling a medicine-reminder agent that must decide “remind / wait / notify” under incomplete information[D]",
@@ -63270,6 +64510,27 @@
           "points": 54,
           "comments": 79
         }
+      }
+    ],
+    "body": []
+  },
+  {
+    "id": "de1e932b39c3dc6f",
+    "slug": "2026-08-28-neocloud-lambda-secures-1b-in-debt-to-buy-more-chips",
+    "title": "Neocloud Lambda secures $1B in debt to buy more chips",
+    "summary": "",
+    "score": 14,
+    "tier": "minor",
+    "tags": [],
+    "builder_relevant": false,
+    "ts": "2026-08-28T20:24:11Z",
+    "cluster": 1,
+    "sources": [
+      {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips",
+        "tier": 4,
+        "type": "press"
       }
     ],
     "body": []

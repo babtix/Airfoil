@@ -1,0 +1,106 @@
+[
+  {
+    "id": "78c9161f7394a8c6",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://pwning.systems/posts/llm-memory-program-analysis",
+    "title": "I accidentally turned LLM memory into program analysis",
+    "excerpt": "",
+    "author": "matt_d",
+    "published_at": "2026-08-28T23:27:45Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 298,
+      "hn_comments": 81
+    }
+  },
+  {
+    "id": "bd488c1cb70b7284",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/Lakr233/vphone-cli",
+    "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
+    "excerpt": "",
+    "author": "hentrep",
+    "published_at": "2026-08-28T23:02:21Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 405,
+      "hn_comments": 111
+    },
+    "repo_url": "https://github.com/Lakr233/vphone-cli"
+  },
+  {
+    "id": "4ffd2b68fb033f12",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://groverlab.org/hnbfpr/2026-08-26-ai-counterfeit-cosmetics.html",
+    "title": "Identifying fake cosmetics using AI",
+    "excerpt": "",
+    "author": "wgrover",
+    "published_at": "2026-08-28T22:18:27Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 61,
+      "hn_comments": 26
+    }
+  },
+  {
+    "id": "1bdef960944d20b7",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips",
+    "title": "Neocloud Lambda secures $1B in debt to buy more chips",
+    "excerpt": "Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It's the latest in a string of loans, underscoring the high cost of the AI boom.",
+    "author": "Rebecca Bellan",
+    "published_at": "2026-08-28T20:24:11Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {}
+  },
+  {
+    "id": "14adab6546acabca",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai",
+    "title": "An Anthropic researcher just gave us a peek at self-improving AI",
+    "excerpt": "Given 10 benchmarks for specific misaligned behaviors, the automated systems were able to improve performance on every single one without degrading overall performance.",
+    "author": "Russell Brandom",
+    "published_at": "2026-08-28T19:30:38Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {}
+  },
+  {
+    "id": "e9bbd99ee683fddc",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://log.ozgur.works/bye-bye-github.html",
+    "title": "Bye, Bye GitHub",
+    "excerpt": "",
+    "author": "iozguradem",
+    "published_at": "2026-08-28T19:12:11Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 71,
+      "hn_comments": 73
+    }
+  },
+  {
+    "id": "7bbb293c57c5ff6b",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets",
+    "title": "Open-weight AI companies are the Valley’s hottest acquisition targets",
+    "excerpt": "There's a lot of capital pouring into the business of giving models away.",
+    "author": "Tim Fernholz",
+    "published_at": "2026-08-28T18:19:40Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {}
+  }
+]

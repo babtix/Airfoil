@@ -1,0 +1,257 @@
+[
+  {
+    "id": "85fab472a605296c",
+    "source_id": "github-trending-ai",
+    "source_name": "GitHub Trending",
+    "source_tier": 3,
+    "url": "https://github.com/useagenthq/useagent",
+    "title": "useagenthq/useagent: Hand off the work. Get back the result. The open-source AI coworker for your team: agents with their own cloud computer, your tools and context, handing back finished work - websites, decks, spreadsheets, reports, PRs. Runs Claude Code, Codex, OpenCode on your subscription.",
+    "excerpt": "Hand off the work. Get back the result. The open-source AI coworker for your team: agents with their own cloud computer, your tools and context, handing back finished work - websites, decks, spreadsheets, reports, PRs. Runs Claude Code, Codex, OpenCode on your subscription.",
+    "author": "useagenthq",
+    "published_at": "2026-08-29T21:14:31Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "github_stars": 124
+    },
+    "repo_url": "https://github.com/useagenthq/useagent"
+  },
+  {
+    "id": "b25ae668f080dcda",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.strangeloopcanon.com/p/what-we-want-is-a-hunter-gatherer",
+    "title": "What we want is a hunter gatherer lifestyle with space age tools (2022)",
+    "excerpt": "",
+    "author": "bilsbie",
+    "published_at": "2026-08-29T20:53:56Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 78,
+      "hn_comments": 88
+    }
+  },
+  {
+    "id": "9e96ce557e8e0998",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
+    "title": "Warp builds self-improving agents on Claude",
+    "excerpt": "",
+    "author": "shenli3514",
+    "published_at": "2026-08-29T19:09:33Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 58,
+      "hn_comments": 57
+    }
+  },
+  {
+    "id": "c814ad604b71034c",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft",
+    "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+    "excerpt": "This latest lawsuit is particularly broad and homes in on accusations of illegal piracy.",
+    "author": "Kirsten Korosec",
+    "published_at": "2026-08-29T18:41:59Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {}
+  },
+  {
+    "id": "a4c84c945e2d68dd",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://pgaleone.eu/ai/2026/08/29/losing-savviness",
+    "title": "LLMs are making me lose my savviness",
+    "excerpt": "",
+    "author": "me2too",
+    "published_at": "2026-08-29T18:38:52Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 60,
+      "hn_comments": 76
+    }
+  },
+  {
+    "id": "99ece13e787f3487",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
+    "title": "vLLM v0.28.0",
+    "excerpt": "",
+    "author": "mrrrcs",
+    "published_at": "2026-08-29T18:22:00Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 107,
+      "hn_comments": 37
+    },
+    "repo_url": "https://github.com/vllm-project/vllm"
+  },
+  {
+    "id": "f593ff968abe8d62",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+    "title": "Sony Music Publishing and Warner Chappell are suing Anthropic",
+    "excerpt": "Sony Music Publishing and Warner Chappell have filed suit against Anthropic in the US District Court for the Northern District of California seeking damages for \"tens of thousands\" copyrighted works. The companies are asking for up to $150,000 per work, plus up to $25,000 for each instance when…",
+    "author": "Terrence O’Brien",
+    "published_at": "2026-08-29T18:19:53Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {}
+  },
+  {
+    "id": "0a6f07cbdcc6e807",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z",
+    "title": "“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z",
+    "excerpt": "Vijay Pande — who left a16z's roughly $4 billion biotech practice last year to start the much smaller, AI-native VZVC — talks about why biology is finally shifting from a \"discovery\" science to an \"engineering\" one, why clinical trials are still brutally expensive, and why he thinks open, shared…",
+    "author": "Connie Loizos",
+    "published_at": "2026-08-29T17:36:47Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {}
+  },
+  {
+    "id": "c9cf59b44a2d246e",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+    "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
+    "excerpt": "",
+    "author": "gpi",
+    "published_at": "2026-08-29T17:19:47Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 428,
+      "hn_comments": 109
+    }
+  },
+  {
+    "id": "3eb20d3739f8f9c3",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://optimizedbyotto.com/post/why-open-source-projects-ban-ai",
+    "title": "The growing divide between AI hype and software engineering reality",
+    "excerpt": "",
+    "author": "jruohonen",
+    "published_at": "2026-08-29T16:16:32Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 64,
+      "hn_comments": 85
+    }
+  },
+  {
+    "id": "73c796b73e89d83f",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1o324/tencent_compressed_hy4preview_from_15tb_to_about",
+    "title": "Tencent compressed Hy4-preview from 1.5TB to about 200GB GGUF and kept about 98% performance.",
+    "excerpt": "submitted by /u/RedditUsr2 [link] [comments]",
+    "author": "/u/RedditUsr2",
+    "published_at": "2026-08-29T14:31:38Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {}
+  },
+  {
+    "id": "87dc39ec3c636f9b",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://lwn.net/Articles/1091231",
+    "title": "Debian votes to allow \"responsible use of generative AI\"",
+    "excerpt": "",
+    "author": "pluc",
+    "published_at": "2026-08-29T14:02:10Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 493,
+      "hn_comments": 460
+    }
+  },
+  {
+    "id": "ec3126d6bd370413",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu",
+    "title": "Nvidia’s AI advantage is moving beyond the GPU",
+    "excerpt": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
+    "author": "Russell Brandom",
+    "published_at": "2026-08-29T13:00:00Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {}
+  },
+  {
+    "id": "54ec1813b545b032",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1lq7u/qwen_38_27b_at_50_toks_with_100k_context_on_a",
+    "title": "Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)",
+    "excerpt": "I wanted to share my successful setup for running a Qwen 3.8 27B model with a massive context window on a consumer 16GB GPU (RTX 4070 Ti SUPER). The goal was to fit everything into VRAM without sacrificing quality or speed. 🧠 Key Components Model: Qwen3.8-27B-i1-IQ4_XS-GGUF-Smaller from jrell on…",
+    "author": "/u/qaf23",
+    "published_at": "2026-08-29T12:50:05Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {},
+    "repo_url": "https://github.com/Anbeeld/beellama.cpp"
+  },
+  {
+    "id": "4ed9a280c24da513",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
+    "title": "Musicians-turned-detectives are hunting for AI grifters",
+    "excerpt": "As audio-focused generative tools and platforms have gotten more sophisticated, the internet has become increasingly filled with AI-generated music whose melodies and vocals are algorithmically derived from the work of human artists. While some of the people pumping out this kind of content…",
+    "author": "Charles Pulliam-Moore",
+    "published_at": "2026-08-29T12:00:00Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {}
+  },
+  {
+    "id": "6fd2644d171d9462",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/kingroryg/turbokv",
+    "title": "TurboKV: Insanely fast Rust key-value store",
+    "excerpt": "",
+    "author": "rgbimbochamp",
+    "published_at": "2026-08-29T02:23:37Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 179,
+      "hn_comments": 85
+    },
+    "repo_url": "https://github.com/kingroryg/turbokv"
+  },
+  {
+    "id": "f067a4ae268cdf65",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/stemdeckapp/stemdeck",
+    "title": "StemDeck, a free, open-source and local AI stem separator",
+    "excerpt": "",
+    "author": "thclpr",
+    "published_at": "2026-08-29T01:24:13Z",
+    "fetched_at": "2026-08-30T17:34:11.9094881Z",
+    "metrics": {
+      "hn_points": 235,
+      "hn_comments": 61
+    },
+    "repo_url": "https://github.com/stemdeckapp/stemdeck"
+  }
+]
