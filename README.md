@@ -1,4 +1,4 @@
-# AIRFOIL
+<img width="1851" height="491" alt="Airfoil-logo" src="https://github.com/user-attachments/assets/5aecae90-37f0-4ec1-aa16-f46307898107" />
 
 <p align="center">
   <strong>High-velocity, low-drag AI intelligence pipeline.</strong>
