@@ -1,10 +1,9 @@
 name: pipeline
 
 on:
-  schedule:
-    # 06:00, 12:00, 18:00 UTC. Because the run commits on every pass, the
-    # repository never goes idle and Actions never disables this cron.
-    - cron: "0 6,12,18 * * *"
+  # Schedule disabled to avoid recurring CI failures when API secrets are not configured.
+  # schedule:
+  #   - cron: "0 6,12,18 * * *"
   workflow_dispatch:
     inputs:
       dry:
