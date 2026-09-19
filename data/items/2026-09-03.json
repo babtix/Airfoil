@@ -1,0 +1,1043 @@
+[
+  {
+    "id": "34ad0b7bd9aa46cf",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w6nihk/can_the_bubble_pop_please",
+    "title": "Can the bubble pop please?",
+    "excerpt": "submitted by /u/hedonihilistic [link] [comments]",
+    "author": "/u/hedonihilistic",
+    "published_at": "2026-09-03T23:18:09Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "45b78db25bf14f6e",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w6myn6/the_benchmarks_the_big_labs_dont_want_you_to_see",
+    "title": "The benchmarks the big labs don't want you to see",
+    "excerpt": "submitted by /u/jd_3d [link] [comments]",
+    "author": "/u/jd_3d",
+    "published_at": "2026-09-03T22:54:58Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "4a3d58256b45cb5f",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w6lmmg/i_released_sanotts_smallest_complete_tts_stack_in",
+    "title": "I released sanoTTS: smallest complete TTS stack in 294k params (337 KB) that runs on $3 microcontroller and a 1.46m one that beats models 3x and 10x it's size",
+    "excerpt": "I have been trying to squeeze TTS stack down far enough to run in a $3 chip which has 512kb of SRAM without NPU. While trying to get to that milestone i built sanoTTS which has - 11 voices, 6 languages - params size ranging from 294k - 2.2m. For comparison we are 244x smaller than kokoro, 9000x…",
+    "author": "/u/Affectionate_Hat_585",
+    "published_at": "2026-09-03T22:01:27Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {},
+    "repo_url": "https://github.com/ampixa/sanoTTS"
+  },
+  {
+    "id": "6379e22bcefbb3cd",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://armature.tech/blog/which-tools-coding-agents-install",
+    "title": "Which tools do Claude, Codex and Cursor choose? We measured 17k runs to find out",
+    "excerpt": "",
+    "author": "screm",
+    "published_at": "2026-09-03T21:20:34Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 285,
+      "hn_comments": 139
+    }
+  },
+  {
+    "id": "e3da911f76180810",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://arcprize.org/blog/astra",
+    "title": "OpenAI's GPT-6 Astra on ARC-AGI-3",
+    "excerpt": "",
+    "author": "vignesh_warar",
+    "published_at": "2026-09-03T19:45:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 229,
+      "hn_comments": 141
+    }
+  },
+  {
+    "id": "e337a0b2496955f5",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation",
+    "title": "Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation",
+    "excerpt": "The high-profile startup's annual revenue run rate stands at over $100 million.",
+    "author": "Marina Temkin",
+    "published_at": "2026-09-03T19:36:29Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "039a4975e102cb53",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://openai.com/index/gpt-6-astra",
+    "title": "GPT-6 Astra",
+    "excerpt": "System Card: https://deploymentsafety.openai.com/gpt-6-astra Related ongoing threads: OpenAI's GPT-6 Astra on ARC-AGI-3 - https://news.ycombinator.com/item?id=49555691 GPT-6 Astra makes major gains in the Artificial Analysis Coding Agent Index - https://news.ycombinator.com/item?id=49556147",
+    "author": "kibae",
+    "published_at": "2026-09-03T18:41:05Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 2083,
+      "hn_comments": 1898
+    }
+  },
+  {
+    "id": "0f98e72e20a4fc0e",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails",
+    "title": "Abliteration.ai is making a business out of removing AI guardrails",
+    "excerpt": "Abliteration.AI is making powerful AI models without guardrails easier to access, arguing that giving defenders the same tools as bad actors could ultimately improve cybersecurity.",
+    "author": "Rebecca Bellan",
+    "published_at": "2026-09-03T18:37:57Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "45a86641ba677818",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://inference-docs.cerebras.ai/models/overview",
+    "title": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
+    "excerpt": "",
+    "author": "altertable",
+    "published_at": "2026-09-03T18:32:13Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 661,
+      "hn_comments": 218
+    }
+  },
+  {
+    "id": "d3d0374ce494049c",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model",
+    "title": "Meta is paying to peek at how you use their latest AI model",
+    "excerpt": "For its new Muse Spark model, intended for operating coding and other agents, Meta is offering an explicit discount averaging out to about 95% for users who \"contribute\" to the development of future models by sharing their prompts and model outputs.",
+    "author": "Tim Fernholz",
+    "published_at": "2026-09-03T18:19:56Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "b0e46c0d689ae709",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+    "title": "OpenAI begins rolling out GPT-6 Astra",
+    "excerpt": "https://thenewstack.io/openai-gpt6-astra-benchmarks/, image: https://cdn.thenewstack.io/media/2026/09/358eb84a-screenshot... https://venturebeat.com/technology/welcome-to-the-agi-era-op... https://www.theverge.com/ai-artificial-intelligence/988334/o...…",
+    "author": "maskil",
+    "published_at": "2026-09-03T18:18:22Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 275,
+      "hn_comments": 251
+    }
+  },
+  {
+    "id": "939b4e3dff1a8fd0",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model",
+    "title": "OpenAI launches Astra, its powerful (and controversial) new model",
+    "excerpt": "OpenAI claims that Astra represents \"a new frontier on computer and browser use,\" and that it handles tasks with unmatched \"speed, accuracy, and safety.\"",
+    "author": "Lucas Ropek",
+    "published_at": "2026-09-03T18:01:45Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "d309bdab2a0a0b8e",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
+    "title": "OpenAI’s next big AI model has ‘entered the AGI era’",
+    "excerpt": "OpenAI's next big model is here: GPT-6 Astra. The company calls it a \"generational leap in capability\" for areas like cybersecurity, professional work, software engineering, science, and computer use. As OpenAI announced earlier this week, it's also the first model designated as meeting OpenAI's…",
+    "author": "Hayden Field",
+    "published_at": "2026-09-03T18:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "1ecd56402065f979",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w6egid/bernie_sanders_proposes_to_ban_ai",
+    "title": "Bernie Sanders proposes to ban AI",
+    "excerpt": "Defined as AI exceeding human cognitive abilities. 20 years in prison. Plenty of local models already fall under that big of an umbrella in some capacities. This is why it's not enough to say that you could torrent open models so who cares what the politicians do. They want you to not have access…",
+    "author": "/u/the320x200",
+    "published_at": "2026-09-03T17:44:45Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "2037c3a42cb0eb7a",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development",
+    "title": "Sanders introduces bill to ban artificial superintelligence and pause AI",
+    "excerpt": "",
+    "author": "-_-",
+    "published_at": "2026-09-03T17:20:29Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 60,
+      "hn_comments": 76
+    }
+  },
+  {
+    "id": "35fa00eb05c9f31d",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/03/ollie-is-betting-privacy-can-win-the-ai-assistant-race",
+    "title": "Ollie is betting its focus on privacy can help it win the AI assistant race",
+    "excerpt": "The family-focused AI assistant wants access to the details of your everyday life, but says it won’t use that data to train AI models or share it with others.",
+    "author": "Sarah Perez",
+    "published_at": "2026-09-03T16:09:01Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "2a2935aeb1a6a8de",
+    "source_id": "meta-ai",
+    "source_name": "Meta Engineering",
+    "source_tier": 1,
+    "url": "https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta",
+    "title": "ZGateway: Learnings from Putting a Proxy in Front of ZippyDB",
+    "excerpt": "We’re introducing ZGateway, the proxy we are using to unify traffic through ZippyDB, Meta’s most widely-used key value store. As a bonus, it also enables admission control, load balancing, cross-region resilience, and richer operations. ZippyDB is the most widely used key value store at Meta…",
+    "published_at": "2026-09-03T16:00:20Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "90c599e2da9dd5b7",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
+    "title": "Nvidia launches free tool that links idle computers into a personal AI data center",
+    "excerpt": "Nvidia is announcing its new Personal AI Router (PAIR), a free tool that syncs up your home computers for tackling local AI inference tasks with tools like Ollama and LM Studio. Let's get the obvious thing out of the way, despite what its name might imply: PAIR is not a hardware router. It's…",
+    "author": "Antonio G. Di Benedetto",
+    "published_at": "2026-09-03T16:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {},
+    "repo_url": "https://github.com/NVIDIA/Personal-AI-Router"
+  },
+  {
+    "id": "77ec9e2706bf2008",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w6aw2a/apparently_chatgpt_claude_and_grok_were_down",
+    "title": "Apparently ChatGPT, Claude, and Grok were down",
+    "excerpt": "submitted by /u/mailto_devnull [link] [comments]",
+    "author": "/u/mailto_devnull",
+    "published_at": "2026-09-03T15:38:06Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "2649e5d991b83e5a",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://ifm.ai/blog/k2",
+    "title": "K2 Horizon: A connected fleet of six open models",
+    "excerpt": "",
+    "author": "karimf",
+    "published_at": "2026-09-03T15:36:43Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 328,
+      "hn_comments": 125
+    }
+  },
+  {
+    "id": "345cc884bc05303d",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.macrumors.com/2026/09/03/chatgpt-claude-and-grok-are-down",
+    "title": "ChatGPT, Claude, and Grok Are Down",
+    "excerpt": "",
+    "author": "tosh",
+    "published_at": "2026-09-03T15:30:10Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 75,
+      "hn_comments": 1
+    }
+  },
+  {
+    "id": "0cf5438dbe34602f",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://status.x.ai",
+    "title": "Grok outage",
+    "excerpt": "",
+    "author": "samaysharma",
+    "published_at": "2026-09-03T15:26:01Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 159,
+      "hn_comments": 156
+    }
+  },
+  {
+    "id": "929c67df92b47164",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://news.ycombinator.com/item?id=49551096",
+    "title": "Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?",
+    "excerpt": "https://status.openai.com https://status.claude.com https://status.x.ai ChatGPT outage – Resolved - https://news.ycombinator.com/item?id=49550614 (315 comments) Claude outage – Resolved - https://news.ycombinator.com/item?id=49549676 (146 comments) Grok outage…",
+    "author": "halcdev",
+    "published_at": "2026-09-03T15:07:01Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 386,
+      "hn_comments": 547
+    }
+  },
+  {
+    "id": "d5ea4bcadd66b1af",
+    "source_id": "deepmind",
+    "source_name": "Google DeepMind",
+    "source_tier": 1,
+    "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "excerpt": "",
+    "published_at": "2026-09-03T15:02:08Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "e5a7e10db615029f",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella",
+    "title": "Google’s latest AI weather model gives you no excuse to forget your umbrella",
+    "excerpt": "WeatherNext 3 is the latest wave of a sea change in meteorology brought out by deep learning techniques. Google says it will start feeding into weather information users see in search, Google Maps, and Gemini.",
+    "author": "Tim Fernholz",
+    "published_at": "2026-09-03T15:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "4692da59ed3afd35",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/openai/codex/issues/28756",
+    "title": "Codex outage",
+    "excerpt": "",
+    "author": "armcat",
+    "published_at": "2026-09-03T14:54:31Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 102,
+      "hn_comments": 1
+    },
+    "repo_url": "https://github.com/openai/codex"
+  },
+  {
+    "id": "6df785973a8ba965",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot",
+    "title": "Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly",
+    "excerpt": "These are my notes from porting my Amiga game, which I originally built in Baghdad in 1993 in MC68000 assembly, to Godot, using Claude Fable 5 during last July holiday. It took an evening! Getting the feel right and shipping it took a few more weekends and evenings. I spent the last few weeks…",
+    "author": "rabahs",
+    "published_at": "2026-09-03T14:28:18Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 357,
+      "hn_comments": 123
+    }
+  },
+  {
+    "id": "3bd0d5d6ab186e81",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://reason.com/2026/09/02/virginia-mom-gets-6-month-suspended-jail-sentence-for-letting-5-year-old-walk-to-the-pond",
+    "title": "Mom gets 6-month suspended sentence for letting 5-year-old walk to the pond",
+    "excerpt": "",
+    "author": "softwaredoug",
+    "published_at": "2026-09-03T14:12:19Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 278,
+      "hn_comments": 277
+    }
+  },
+  {
+    "id": "5c6552db2980b568",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://status.claude.com/incidents/461yvfrzpwtt",
+    "title": "Claude outage – Resolved",
+    "excerpt": "",
+    "author": "__vivek",
+    "published_at": "2026-09-03T13:29:12Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 205,
+      "hn_comments": 151
+    }
+  },
+  {
+    "id": "fc40ddafdd41e0cc",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+    "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+    "excerpt": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+    "published_at": "2026-09-03T13:15:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "fffbcba03b0b217e",
+    "source_id": "hf-blog",
+    "source_name": "Hugging Face Blog",
+    "source_tier": 2,
+    "url": "https://huggingface.co/blog/Hcompany/neomme",
+    "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+    "excerpt": "",
+    "published_at": "2026-09-03T13:13:48Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "8335331bc7576864",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion",
+    "title": "Nvidia confirms it will buy Hugging Face for $12.9 billion",
+    "excerpt": "Nvidia said Hugging Face hosts over 3 million models and is used by over 18 million developers.",
+    "author": "Ivan Mehta",
+    "published_at": "2026-09-03T12:42:45Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "c1931b706a8320cc",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://reactoratlas.com",
+    "title": "Show HN: Reactor Atlas",
+    "excerpt": "Hi HN, I'm a nuclear engineer and tech entrepreneur. After working for 3 years in the National Atomic Energy Commision (CNEA) in HPC software for nuclear simulations, I co-founded ratherlabs.com, a software company providing blockchain solutions for startups. Rather Labs business reached ~6…",
+    "author": "fedecaccia",
+    "published_at": "2026-09-03T12:33:01Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 59,
+      "hn_comments": 23
+    }
+  },
+  {
+    "id": "d3cae84482b68e25",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w65uhf/its_official_nvidia_to_acquire_hugging_face_for",
+    "title": "It's official! Nvidia to acquire Hugging Face for 12.9 billion dollars.",
+    "excerpt": "submitted by /u/SarcasticBaka [link] [comments]",
+    "author": "/u/SarcasticBaka",
+    "published_at": "2026-09-03T12:22:05Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "bec25165c52bf034",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html",
+    "title": "Nvidia to acquire Hugging Face",
+    "excerpt": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face...",
+    "author": "tosh",
+    "published_at": "2026-09-03T12:10:33Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 323,
+      "hn_comments": 103
+    }
+  },
+  {
+    "id": "9281d6906e8350b6",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+    "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+    "excerpt": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
+    "published_at": "2026-09-03T12:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "325e9dcd840a97e9",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/playco-game-prototyping-with-astra",
+    "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+    "excerpt": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
+    "published_at": "2026-09-03T12:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "0f5780a3c608314d",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://news.ycombinator.com/item?id=49548600",
+    "title": "Ask HN: Who is using MCP in production?",
+    "excerpt": "I’ve been following MCP since it first came out. It got a lot of attention early on, but I haven’t come across many people using it in production. I may simply have missed them. If you’re using MCP in production, what are you using it for? What advantages have you found over a normal API or direct…",
+    "author": "sukit",
+    "published_at": "2026-09-03T11:21:18Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 150,
+      "hn_comments": 167
+    }
+  },
+  {
+    "id": "318a31e3b0c43b8b",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://chinaonchina.com/article/chen-dawei-returns-enters-the-large-model-sector",
+    "title": "A dark horse enters China's AI race: StartLux",
+    "excerpt": "",
+    "author": "try-working",
+    "published_at": "2026-09-03T11:12:57Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 54,
+      "hn_comments": 29
+    }
+  },
+  {
+    "id": "f519b6f605b220ae",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://twitter.com/GergelyOrosz/status/2095453567955968398",
+    "title": "Google Antigravity TOS: 3rd party usage can get Google account suspended",
+    "excerpt": "",
+    "author": "tosh",
+    "published_at": "2026-09-03T11:01:04Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 326,
+      "hn_comments": 216
+    }
+  },
+  {
+    "id": "b9197b873957814a",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0",
+    "title": "Audacity 4.0",
+    "excerpt": "",
+    "author": "ClydeN",
+    "published_at": "2026-09-03T10:53:08Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 1126,
+      "hn_comments": 261
+    },
+    "repo_url": "https://github.com/audacity/audacity"
+  },
+  {
+    "id": "b5557b71094c2a70",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.theguardian.com/books/2026/sep/03/gloria-steinem-groundbreaking-feminist-campaigner-dies-aged-92",
+    "title": "Gloria Steinem has died",
+    "excerpt": "https://www.nytimes.com/2026/09/03/us/politics/gloria-steine..., https://archive.ph/cfC1K",
+    "author": "mellosouls",
+    "published_at": "2026-09-03T10:31:18Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 150,
+      "hn_comments": 60
+    }
+  },
+  {
+    "id": "4a77cb2e9e2fca24",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://claude.com/blog/claude-for-commerce-agents",
+    "title": "Claude for Commerce Agents",
+    "excerpt": "",
+    "author": "ashazal",
+    "published_at": "2026-09-03T09:37:55Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 61,
+      "hn_comments": 60
+    }
+  },
+  {
+    "id": "c9a65342ad9a9646",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.theguardian.com/world/2026/sep/02/japan-new-speed-limit-30kmh-narrow-city-streets",
+    "title": "Japan halves speed limit to 30km/h on all narrow city streets",
+    "excerpt": "",
+    "author": "haunter",
+    "published_at": "2026-09-03T09:21:53Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 85,
+      "hn_comments": 92
+    }
+  },
+  {
+    "id": "27acc28abc1a28cf",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://compute.cheap",
+    "title": "Show HN: The cheapest GPU cloud – H100s at $2.04/HR, H200s at $3/HR",
+    "excerpt": "",
+    "author": "EmiCorleone",
+    "published_at": "2026-09-03T02:50:47Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 54,
+      "hn_comments": 20
+    }
+  },
+  {
+    "id": "5e8d258a0f8644bf",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
+    "title": "Go grandmaster Shin defeats AI KataGo with a two-stone handicap",
+    "excerpt": "",
+    "author": "gmays",
+    "published_at": "2026-09-03T01:11:22Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 444,
+      "hn_comments": 170
+    }
+  },
+  {
+    "id": "001199a44a810ddf",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.sciencealert.com/gps-glitched-across-the-us-by-as-much-as-33-feet-scientists-have-never-seen-this-before",
+    "title": "GPS glitched across the US by as much as 33 feet",
+    "excerpt": "",
+    "author": "thread_id",
+    "published_at": "2026-09-03T00:49:07Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hn_points": 209,
+      "hn_comments": 129
+    }
+  },
+  {
+    "id": "39210f987919e80e",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/safety-overview-gpt-6-astra",
+    "title": "Safety overview: GPT-6 Astra",
+    "excerpt": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework.",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "a139f80b159295ad",
+    "source_id": "hf-blog",
+    "source_name": "Hugging Face Blog",
+    "source_tier": 2,
+    "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+    "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+    "excerpt": "",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "cdd1118267ee925c",
+    "source_id": "hf-blog",
+    "source_name": "Hugging Face Blog",
+    "source_tier": 2,
+    "url": "https://huggingface.co/blog/funes",
+    "title": "Give Your Coding Agents a Memory You Own",
+    "excerpt": "",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "b5500bc6503561c6",
+    "source_id": "hf-blog",
+    "source_name": "Hugging Face Blog",
+    "source_tier": 2,
+    "url": "https://huggingface.co/blog/train-to-paint-with-code",
+    "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+    "excerpt": "",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {}
+  },
+  {
+    "id": "c02969cb109d161e",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04094",
+    "title": "DRACO: Fine-Grained Credit Assignment with Dynamic Rubrics for Long-Horizon Agent Training",
+    "excerpt": "Reinforcement Learning from Verifiable Rewards works well when a task has a programmatic checker, but most long-horizon agent domains have none. We work in the outcome-blind setting, where ground-truth success signals are not available. Multi-criteria rubrics are a popular way to supply such a…",
+    "author": "Shubham Gandhi",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 7
+    },
+    "repo_url": "https://github.com/IBM/draco",
+    "paper_url": "https://arxiv.org/abs/2609.04094"
+  },
+  {
+    "id": "4c1fe2fa5ea6d725",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04173",
+    "title": "Last Translation Benchmark",
+    "excerpt": "For scientific progress, we need benchmarks that test the limits of state-of-the-art models, and evaluation methods that inform us about failure cases. As models get stronger, standard benchmarks for machine translation are approaching saturation. Further, automatic translation metrics are…",
+    "author": "Vilém Zouhar",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 13
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04173"
+  },
+  {
+    "id": "b6b5a37f861306e0",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.03820",
+    "title": "Select, Compress, Reinvest: A Controlled Study of Visual-Token Allocation in Long-Video MLLMs",
+    "excerpt": "Long-video language models cannot look at every frame: an hour sampled once per second is 3,600 images, and a system keeps only a small fixed slice of that pool. Which frames survive that slice is usually treated as a preprocessing detail; we test whether it should be. Published selectors make the…",
+    "author": "Prakhar Khatri",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 9
+    },
+    "paper_url": "https://arxiv.org/abs/2609.03820"
+  },
+  {
+    "id": "f4bf120ae5f246a5",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04201",
+    "title": "Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction",
+    "excerpt": "Online 3D reconstruction models perform poorly on long videos. This happens because regressing poses relative to a fixed first-frame anchor forces extrapolation far beyond the training distribution. Small drifts accumulate and amplify into significant geometric collapse. However, we observe that…",
+    "author": "Chin-Yang Lin",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 31
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04201"
+  },
+  {
+    "id": "c57c9c8e73619e34",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04199",
+    "title": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+    "excerpt": "Many recurring text functions are easy to describe but difficult to implement with rules, while calling a large remote model for every input introduces repeated cost, latency, and dependency on a provider. We present compile by training, which turns a natural-language specification into a reusable…",
+    "author": "Yuntian Deng",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 211
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04199"
+  },
+  {
+    "id": "420a35d687cb1d64",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.03293",
+    "title": "PACE: Towards Surfacing Hidden Conflicts in User Requests",
+    "excerpt": "Personalized assistants should not only comply with user requests but also assess whether those requests are appropriate given the user's current circumstances. However, prior work has primarily focused on accurately executing requests, overlooking the need for assistants to account for context…",
+    "author": "Yoojin Kim",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 16
+    },
+    "paper_url": "https://arxiv.org/abs/2609.03293"
+  },
+  {
+    "id": "d8159e963b262247",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04196",
+    "title": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
+    "excerpt": "We propose Puffin-World, a unified multimodal architecture that integrates physical understanding, spatial simulation, and 3D world generation and reconstruction without relying on external offline modules. To reliably construct and interact with 3D worlds, our framework jointly models three…",
+    "author": "Kang Liao",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 56
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04196"
+  },
+  {
+    "id": "b1a879ca74ccb36d",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04131",
+    "title": "Beyond Retrieval: Progressive Latent Memory Evolution for Streaming Video Understanding",
+    "excerpt": "Streaming video understanding requires multimodal large language models (MLLMs) to process continuous visual inputs and respond to user queries under strict causality and bounded memory. Existing approaches typically compress historical observations into an external memory bank and retrieve…",
+    "author": "Hongyu Qu",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 22
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04131"
+  },
+  {
+    "id": "d6719e49eb6bac71",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.03563",
+    "title": "FlashRender: Few-Step Generative Rendering via Camera-Controlled Video MeanFlow",
+    "excerpt": "We present FlashRender, a few-step generative rendering framework that retakes a source video along a target camera trajectory in seconds. We identify sampling-step-dependent camera control as a prominent manifestation of discretization error in existing multi-step generative rendering models and…",
+    "author": "Byeongjun Park",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 11
+    },
+    "paper_url": "https://arxiv.org/abs/2609.03563"
+  },
+  {
+    "id": "6b3c65619e63e28c",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.03952",
+    "title": "WorldReward: Reward Modeling for Camera-Conditioned World Models",
+    "excerpt": "Camera-conditioned world models generate interactive videos in which commanded actions should induce the expected scene changes while appearance, geometry, and temporal dynamics remain coherent. Existing rewards assess these requirements separately: geometry-based rewards estimate trajectory…",
+    "author": "Yibin Wang",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 15
+    },
+    "paper_url": "https://arxiv.org/abs/2609.03952"
+  },
+  {
+    "id": "38ddb85ec8a3a39e",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.03430",
+    "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+    "excerpt": "Large language models achieve superior performance on tasks that require extended reasoning, but long chains of thought make the KV cache a severe memory bottleneck. Existing KV cache compression methods share one paradigm: score each cached token by some estimate of how much it will matter later…",
+    "author": "Heng Wang",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 103
+    },
+    "repo_url": "https://github.com/SalesforceAIResearch/Random-Attention",
+    "paper_url": "https://arxiv.org/abs/2609.03430"
+  },
+  {
+    "id": "e5e13db9b72da5ed",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04172",
+    "title": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
+    "excerpt": "On-policy distillation (OPD) combines student-generated rollouts with dense token-level supervision from a teacher. Existing work has mainly studied its algorithmic behavior, leaving the role of training data unclear. We examine this role at the data-minimal limit by training on a single query.…",
+    "author": "Zixuan Fu",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 63
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04172"
+  },
+  {
+    "id": "64aa137250d47a9d",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04083",
+    "title": "CORE: Improving Compositional Reasoning in MLLM Embedding via Reranker Distillation",
+    "excerpt": "MLLM-based embedding models remain limited in compositional retrieval, often failing to distinguish scenes containing the same concepts but different attribute-object bindings. Yet the same backbone can resolve such distinctions when used as a cross-attentive reranker, motivating us to distill its…",
+    "author": "Tingyu Song",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 18
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04083"
+  },
+  {
+    "id": "e0da0ff4dd0265ad",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04034",
+    "title": "Editable Visual Design",
+    "excerpt": "While diffusion base models such as GPT-Image-2 and Nano-Banana exhibit remarkable visual expressiveness, their end-to-end generation inherently yields flattened bitmaps with error-prone text, precluding layer-wise post-editing. Conversely, code-based visual generation via Coding Agents provides…",
+    "author": "Junyan Ye",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 31
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04034"
+  },
+  {
+    "id": "7985a8cd480edbf2",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04128",
+    "title": "Environment Evolution for Terminal Agents",
+    "excerpt": "Scaling interactive and verifiable environments is critical for training terminal agents. As frontier models become more capable, environments synthesized from scratch become less challenging and thus provide limited learning signals. Recent co-evolution methods iteratively synthesize environments…",
+    "author": "Zhiyuan Fan",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 10
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04128"
+  },
+  {
+    "id": "30c1215804d581dc",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04200",
+    "title": "Principia: Relational Physics Tests for Video Models",
+    "excerpt": "Evaluating physical reasoning in video models is difficult because absolute motion measurements depend on frame rate, object scale, and camera calibration, all of which are often ambiguous or unavailable in generated video. We propose a different approach. When two objects in the same scene obey…",
+    "author": "Varun Varma Thozhiyoor",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 9
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04200"
+  },
+  {
+    "id": "813565b31be852c2",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04148",
+    "title": "Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments",
+    "excerpt": "As terminal-based code agents become prevalent, agent trajectories have accumulated at scale, while realistic, executable environments remain scarce. However, environments are what agent post-training actually requires: each can be re-queried into many verifiable tasks and provides execution…",
+    "author": "Jie Wu",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 204
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04148"
+  },
+  {
+    "id": "ad337bab181aafb7",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.03796",
+    "title": "LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
+    "excerpt": "We introduce LLaDA-Image, a unified framework that pairs a 6B Diffusion Transformer (DiT) trained from scratch with a frozen vision-language understanding module built on the LLaDA2.0-Mini diffusion language model backbone. Instead of relying heavily on paired image-text data from the beginning…",
+    "author": "Chuyan Chen",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 170
+    },
+    "paper_url": "https://arxiv.org/abs/2609.03796"
+  },
+  {
+    "id": "4faa6151853bd0bc",
+    "source_id": "hf-papers",
+    "source_name": "HF Daily Papers",
+    "source_tier": 2,
+    "url": "https://huggingface.co/papers/2609.04098",
+    "title": "Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM",
+    "excerpt": "Hybrid LLMs pair softmax attention with linear-attention layers such as Gated DeltaNet (GDN), whose recurrent state summarizes the context in fixed size. Early community 4-bit quantizations of Qwen3.8-27B (48 GDN layers, 16 attention layers) left the GDN block in 8- or 16-bit precision…",
+    "author": "Sergii Kozyrev",
+    "published_at": "2026-09-03T00:00:00Z",
+    "fetched_at": "2026-09-04T18:10:51.9425307Z",
+    "metrics": {
+      "hf_upvotes": 65
+    },
+    "paper_url": "https://arxiv.org/abs/2609.04098"
+  }
+]

@@ -1,0 +1,699 @@
+[
+  {
+    "id": "2cf33901ecc68ddc",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.scmp.com/tech/big-tech/article/3368055/alibaba-open-sources-medical-ai-model-can-detect-cancer-and-nearly-150-conditions",
+    "title": "Alibaba open-sources AI model that can detect cancer and nearly 150 conditions",
+    "excerpt": "",
+    "author": "yogthos",
+    "published_at": "2026-09-18T23:54:42Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 141,
+      "hn_comments": 20
+    }
+  },
+  {
+    "id": "415291b734cbb8a6",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai",
+    "title": "A startup that builds other startups raised $100M and is all-in on physical AI",
+    "excerpt": "UP.Labs, now doing business under the name Vantora, is building startups for industrial corporations.",
+    "author": "Kirsten Korosec",
+    "published_at": "2026-09-18T23:25:01Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "26c5ca2c4a68e3f0",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments",
+    "title": "Anthropic is operating a lab that conducts biology experiments",
+    "excerpt": "AI leaders have been promising that AI is the key to curing human disease. Anthropic researchers have also been warning that AI might kill us all.",
+    "author": "Julie Bort",
+    "published_at": "2026-09-18T23:13:31Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "87654fce97950fc5",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation",
+    "title": "AI hallucination nearly triggers US military operation",
+    "excerpt": "“It’s important for service members to understand the uncertainty inherent to LLMs,\" a GovAI research scholar warns.",
+    "author": "Aditya Mehta",
+    "published_at": "2026-09-18T23:12:32Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "3e1dd1f8d6770e09",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://spectrum.ieee.org/llms-for-chip-design",
+    "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+    "excerpt": "",
+    "author": "maxall4",
+    "published_at": "2026-09-18T23:04:17Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 187,
+      "hn_comments": 125
+    }
+  },
+  {
+    "id": "e88f2ebb1ff3d572",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture",
+    "title": "Anthropic’s first embedded evaluator is … Accenture?",
+    "excerpt": "Accenture is about to take on its most high-risk consulting engagement ever.",
+    "author": "Tim Fernholz",
+    "published_at": "2026-09-18T21:44:33Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "1bc0911d200ab4e3",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
+    "title": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
+    "excerpt": "Recently unsealed court documents in the New York Times' case against OpenAI and Microsoft are pretty damning. The companies' own documentation warned that it was starting a \"doom loop\" that would damage the web, characterized its scraping of data to train its models as the \"largest theft of labor…",
+    "author": "Terrence O’Brien",
+    "published_at": "2026-09-18T21:07:24Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "3d68ad8e1324eb33",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://code.claude.com/docs/en/changelog",
+    "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+    "excerpt": "",
+    "author": "datadrivenangel",
+    "published_at": "2026-09-18T21:00:32Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 709,
+      "hn_comments": 262
+    }
+  },
+  {
+    "id": "941b6d53ec342c57",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/world-model-companies-are-keeping-a-lot-of-secrets",
+    "title": "World model companies are keeping a lot of secrets",
+    "excerpt": "Everyone in the world-models space is sitting on a pile of cash and a ton of buzz, but good luck getting anyone — from the founders to their own data suppliers — to tell you what they're actually building.",
+    "author": "Russell Brandom",
+    "published_at": "2026-09-18T20:18:14Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "cc32df64448167b8",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wk11dq/m5_ultra_and_m6_chip_benchmark_results_reveal",
+    "title": "M5 Ultra and M6 Chip Benchmark Results Reveal Graphics Performance",
+    "excerpt": "First benchmarks submitted by /u/DustNearby2848 [link] [comments]",
+    "author": "/u/DustNearby2848",
+    "published_at": "2026-09-18T20:11:46Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "57b9a9818428775f",
+    "source_id": "github-trending-ai",
+    "source_name": "GitHub Trending",
+    "source_tier": 3,
+    "url": "https://github.com/incoai/splash",
+    "title": "incoai/splash: A local inference engine for Apple silicon, built around the model.",
+    "excerpt": "A local inference engine for Apple silicon, built around the model.",
+    "author": "incoai",
+    "published_at": "2026-09-18T20:01:48Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "github_stars": 253
+    },
+    "repo_url": "https://github.com/incoai/splash"
+  },
+  {
+    "id": "1fddc235ce712d60",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://lemire.me/blog/2026/09/18/how-did-amd-ryzen-get-50-faster-in-two-years",
+    "title": "How did AMD Ryzen get 50% faster in two years?",
+    "excerpt": "",
+    "author": "ibobev",
+    "published_at": "2026-09-18T19:01:03Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 65,
+      "hn_comments": 10
+    }
+  },
+  {
+    "id": "d35c7bfffe978d42",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://arxiv.org/abs/2609.02852",
+    "title": "The Implications of Linguistic Illegibility for LLM Security",
+    "excerpt": "",
+    "author": "tomjakubowski",
+    "published_at": "2026-09-18T19:00:06Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 76,
+      "hn_comments": 29
+    },
+    "paper_url": "https://arxiv.org/abs/2609.02852"
+  },
+  {
+    "id": "5f30185a2f4d3e3f",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://arxiv.org/abs/2510.03215",
+    "title": "Cache-to-Cache: Direct Semantic Communication Between LLMs (2025)",
+    "excerpt": "",
+    "author": "rochansinha",
+    "published_at": "2026-09-18T18:55:35Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 101,
+      "hn_comments": 18
+    },
+    "paper_url": "https://arxiv.org/abs/2510.03215"
+  },
+  {
+    "id": "b0f2fc35950c2479",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers",
+    "title": "A new kind of AI model from a ChatGPT inventor is thrilling developers",
+    "excerpt": "Jev, a new kind of AI model, is showing developers a cheaper and faster path to software intelligence.",
+    "author": "Tim Fernholz",
+    "published_at": "2026-09-18T18:49:30Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "2bb148ba4931da4b",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wjyn95/is_hf_starting_to_move_against_abliterated_models",
+    "title": "Is HF starting to move against abliterated models?",
+    "excerpt": "Baseten launched a new safety infrastructure standard alongside its Base Labs research arm on Wednesday, partnering with Hugging Face and Goodfire AI to build safety evaluation and monitoring infrastructure for open-weight models. The announcement lands amid debate for the safety of open-weight…",
+    "author": "/u/returnity",
+    "published_at": "2026-09-18T18:43:03Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "0a255d7c17cbd4b0",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+    "title": "Virginia governor creates an AI task force and moves to restrain data centers",
+    "excerpt": "Virginia Gov. Abigail Spanberger ordered the state government to take steps that could empower local communities to have a larger say in data center development and slow down approvals in a state that is already home to the data center capital of the world. Executive Order 22 bans executive branch…",
+    "author": "Lauren Feiner",
+    "published_at": "2026-09-18T18:29:17Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "bc853dab02e9efe1",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://twitter.com/trq212/status/2101009392611278961",
+    "title": "Anthropic finally adds AGENTS.md support to Claude Code",
+    "excerpt": "",
+    "author": "deaux",
+    "published_at": "2026-09-18T18:26:34Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 51,
+      "hn_comments": 10
+    }
+  },
+  {
+    "id": "f4d3ae8707e3bc05",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/disneys-first-cto-led-an-ai-startup-it-once-accused-of-copying-its-characters",
+    "title": "Disney’s first CTO led an AI startup it once accused of copying its characters",
+    "excerpt": "The former CEO of Character.AI, which Disney previously sent a cease-and-desist letter to, will serve as the company's first-ever chief technology officer.",
+    "author": "Lucas Ropek",
+    "published_at": "2026-09-18T17:59:53Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "4c6167b67b89d08a",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households",
+    "title": "Google’s new ‘CC’ is an AI agent that helps families run their households",
+    "excerpt": "Google is refocusing its CC AI agent on household coordination, letting families share emails, schedules, and tasks so the AI can manage calendars, fill out forms, make shopping lists, plan meals, and more.",
+    "author": "Sarah Perez",
+    "published_at": "2026-09-18T17:33:50Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "e23fae26ca174658",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+    "title": "US Military had close call after using AI for hallucinated intelligence report",
+    "excerpt": "",
+    "author": "realsarm",
+    "published_at": "2026-09-18T17:28:01Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 490,
+      "hn_comments": 366
+    }
+  },
+  {
+    "id": "d277e19284fef86a",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow",
+    "title": "Dario Amodei and other AI leaders want to ‘Pace the Frontier’ but…how?",
+    "excerpt": "A week after an Anthropic researcher’s doomsday warning rattled the AI world, the company’s CEO Dario Amodei has outlined his plan to “pace the frontier” of AI development. The proposal leans on independent safety evaluators and coordination between AI labs in democratic countries, and it’s…",
+    "author": "Theresa Loconsolo",
+    "published_at": "2026-09-18T17:09:56Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "f05d4ddd7b6f2680",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/podcast/automattics-33-hour-coup-and-can-ai-labs-police-themselves",
+    "title": "Automattic’s 33-Hour Coup, and can AI labs police themselves?",
+    "excerpt": "A week after an Anthropic researcher’s doomsday warning rattled the AI world, the company’s CEO Dario Amodei has outlined his plan to “pace the frontier” of AI development. The proposal leans on independent safety evaluators and coordination between AI labs in democratic countries, and it’s…",
+    "author": "Anthony Ha, Theresa Loconsolo, Kirsten Korosec, Sean O'Kane",
+    "published_at": "2026-09-18T17:06:32Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "2857cdaa497d7608",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+    "title": "Gavin Newsom is pushing for an AI kill switch",
+    "excerpt": "California Gov. Gavin Newsom (D) is positioning the state to take the lead on AI oversight, including the potential to mandate a \"kill switch\" for frontier models, with a new executive order issued Friday. Newsom's order directs the state to convene a group of experts that will deliver…",
+    "author": "Lauren Feiner",
+    "published_at": "2026-09-18T17:04:51Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "577ab8eeab8374f9",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops",
+    "title": "Manus seeks $4B valuation in new $500M fundraise as it resumes independent ops",
+    "excerpt": "Manus, which earlier this year had to break off a merger with Meta, is in discussions to raise $500M at a $4B valuation.",
+    "author": "Ram Iyer",
+    "published_at": "2026-09-18T16:35:49Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "a5c8c93d0bf68863",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings",
+    "title": "What Hollywood thinks about existential AI warnings",
+    "excerpt": "As the tech sector sounds alarms about AI's potential to destroy humanity, entertainment labor groups are urging the public to stay focused on what's already happening. The Verge reached out to Disney, Netflix, Amazon, Lionsgate, and other studios who have started using AI, as well film startups…",
+    "author": "Charles Pulliam-Moore",
+    "published_at": "2026-09-18T16:35:19Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "5e051ef34a6d6335",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/browserbase/stagehand",
+    "title": "We made Playwright 2x faster and 80% more token efficient",
+    "excerpt": "",
+    "author": "wittydeveloper",
+    "published_at": "2026-09-18T16:25:23Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 118,
+      "hn_comments": 34
+    },
+    "repo_url": "https://github.com/browserbase/stagehand"
+  },
+  {
+    "id": "88391dbee63d2157",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
+    "title": "Security researchers used Claude to help them hack into OpenAI",
+    "excerpt": "A team of three independent security researchers at Hacktron says it took less than 72 hours for them to hack into OpenAI employee accounts using Anthropic's Claude Opus 4.8 and 5, The Wall Street Journal reports. They were able to access OpenAI's GitHub repository, called \"Monorepo,\" which…",
+    "author": "Stevie Bonifield",
+    "published_at": "2026-09-18T15:30:16Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "e5b345de9f7dd6e2",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/open-or-closed-ai-nvidias-nader-khalil-and-sydney-sykes-take-on-one-of-the-decisions-shaping-next-gen-startups-at-techcrunch-disrupt-2026",
+    "title": "Open or closed AI? Nvidia’s Nader Khalil and Sydney Sykes take on one of the decisions shaping next-gen startups at TechCrunch Disrupt 2026",
+    "excerpt": "Nvidia's Nader Khalil and Sydney Sykes discuss one of the decisions shaping next-gen startups on the Builders Stage at TechCrunch Disrupt 2026.",
+    "author": "TechCrunch Events",
+    "published_at": "2026-09-18T15:30:00Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "564b9804828f6950",
+    "source_id": "techcrunch-ai",
+    "source_name": "TechCrunch AI",
+    "source_tier": 4,
+    "url": "https://techcrunch.com/2026/09/18/metas-muse-hits-mac-letting-the-ai-take-actions-on-your-computer",
+    "title": "Meta’s Muse hits Mac, letting the AI take actions on your computer",
+    "excerpt": "Muse is now available on the Mac, where it can work with your files and apps to take action on your behalf.",
+    "author": "Sarah Perez",
+    "published_at": "2026-09-18T15:22:48Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "327d7fcbfc1c0842",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.thebignewsletter.com/p/ai-is-an-elite-crime-spree",
+    "title": "AI is an elite crime spree",
+    "excerpt": "",
+    "author": "chmaynard",
+    "published_at": "2026-09-18T15:15:33Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 118,
+      "hn_comments": 42
+    }
+  },
+  {
+    "id": "39600e1daf940d27",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://montrealgazette.com/news/photos-anti-ai-protest-in-montreal",
+    "title": "AI Protest in Montreal",
+    "excerpt": "",
+    "author": "hmokiguess",
+    "published_at": "2026-09-18T14:45:41Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 52,
+      "hn_comments": 86
+    }
+  },
+  {
+    "id": "e67173ec00bbb406",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://overreacted.io/how-i-vibed-a-proof-of-conways-conjecture",
+    "title": "I vibed a proof of Conway's conjecture",
+    "excerpt": "https://github.com/gaearon/conway-refinement#why-i-think-its...",
+    "author": "m-hodges",
+    "published_at": "2026-09-18T14:36:10Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 256,
+      "hn_comments": 288
+    }
+  },
+  {
+    "id": "960c51158140bf0f",
+    "source_id": "reddit-localllama",
+    "source_name": "r/LocalLLaMA",
+    "source_tier": 5,
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wjr59t/768gb_vram_for_less_than_the_price_of_one_rtx_6000",
+    "title": "768gb vram for less than the price of one RTX 6000",
+    "excerpt": "I have always posted about budget builds on here, and often asked how we are going to run the next big models. Often Plenty of downvotes too or folks telling me that it's not running if I'm getting 5tk/sec. But whatever, the hunger and desire to go big has always kept me on the edge and looking…",
+    "author": "/u/segmond",
+    "published_at": "2026-09-18T14:04:42Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "2ad49dd9b65fe3ae",
+    "source_id": "google-ai",
+    "source_name": "Google AI Blog",
+    "source_tier": 1,
+    "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench",
+    "title": "New experts join Google’s AI \u0026 Economy team",
+    "excerpt": "We are expanding our AI \u0026 Economy team with world-class academic advisors, fellows, and core internal researchers.",
+    "author": "\u003cname\u003eZanna Iscenko\u003c/name\u003e\u003ctitle\u003eAI \u0026 Economy Lead\u003c/title\u003e\u003cdepartment\u003eChief Economist's Office\u003c/department\u003e\u003ccompany/\u003e",
+    "published_at": "2026-09-18T14:00:00Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "b4a94615cb64fa6b",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.science.org/content/article/ai-chatbots-are-becoming-experts-changing-people-s-minds-what-s-their-secret",
+    "title": "AI chatbots are becoming experts at changing people's minds",
+    "excerpt": "",
+    "author": "rbanffy",
+    "published_at": "2026-09-18T13:39:27Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 117,
+      "hn_comments": 99
+    }
+  },
+  {
+    "id": "332bec2b752a921d",
+    "source_id": "google-ai",
+    "source_name": "Google AI Blog",
+    "source_tier": 1,
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week",
+    "title": "Co-creating the future of fashion with Google",
+    "excerpt": "Google worked side-by-side with designers Jane Wade and Sergio Hudson to custom-design Google Flow tools to prep for NYFW.",
+    "author": "\u003cname\u003eYeawon Choi\u003c/name\u003e\u003ctitle\u003eUX Designer\u003c/title\u003e\u003cdepartment\u003eEnvisioning Studio\u003c/department\u003e\u003ccompany/\u003e",
+    "published_at": "2026-09-18T13:00:00Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "a00923bf4ddda715",
+    "source_id": "openai",
+    "source_name": "OpenAI",
+    "source_tier": 1,
+    "url": "https://openai.com/index/australian-youth-safety-blueprint",
+    "title": "Introducing the Australian Youth Safety Blueprint",
+    "excerpt": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people.",
+    "published_at": "2026-09-18T12:00:00Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "084a8ea6d1f7cd39",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
+    "title": "Flash floods can strike without warning — this new technology could change that",
+    "excerpt": "On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beginning to flood her yard. \"I look over to where the barn is over there, and I see…",
+    "author": "Megan Wollerton",
+    "published_at": "2026-09-18T11:00:00Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "69fc18ebf5136059",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+    "title": "ZCode, the GLM coding agent, silently uploads your Git history",
+    "excerpt": "",
+    "author": "cdnsteve",
+    "published_at": "2026-09-18T10:35:28Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 261,
+      "hn_comments": 14
+    }
+  },
+  {
+    "id": "a19cf11219778d36",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+    "title": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+    "excerpt": "",
+    "author": "pluc",
+    "published_at": "2026-09-18T09:45:07Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 910,
+      "hn_comments": 810
+    }
+  },
+  {
+    "id": "cfe27b35bbc8ee40",
+    "source_id": "github-trending-ai",
+    "source_name": "GitHub Trending",
+    "source_tier": 3,
+    "url": "https://github.com/Continuum-AI-Corp/OrcaBonsai-27B-Uncensored",
+    "title": "Continuum-AI-Corp/OrcaBonsai-27B-Uncensored: Runtime behavioral ablation for compressed LLMs. First target: Ternary Bonsai 2 27B — no weight modification or re-quantization. by OrcaRouter team",
+    "excerpt": "Runtime behavioral ablation for compressed LLMs. First target: Ternary Bonsai 2 27B — no weight modification or re-quantization. by OrcaRouter team",
+    "author": "Continuum-AI-Corp",
+    "published_at": "2026-09-18T06:45:54Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "github_stars": 456
+    },
+    "repo_url": "https://github.com/Continuum-AI-Corp/OrcaBonsai-27B-Uncensored"
+  },
+  {
+    "id": "22da7f64591d6904",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload",
+    "title": "Inside ZCode: Silently uploading your Git history to the cloud",
+    "excerpt": "",
+    "author": "csmantle",
+    "published_at": "2026-09-18T06:11:17Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 322,
+      "hn_comments": 108
+    }
+  },
+  {
+    "id": "f435854cfdeec955",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/jemalloc/jemalloc/releases/tag/5.4.0",
+    "title": "Jemalloc 5.4.0",
+    "excerpt": "",
+    "author": "gkfasdfasdf",
+    "published_at": "2026-09-18T04:20:24Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 332,
+      "hn_comments": 94
+    },
+    "repo_url": "https://github.com/jemalloc/jemalloc"
+  },
+  {
+    "id": "75cf44fc7696b5d8",
+    "source_id": "github-trending-ai",
+    "source_name": "GitHub Trending",
+    "source_tier": 3,
+    "url": "https://github.com/indada/repopilot",
+    "title": "indada/repopilot: Verification-driven AI software iteration, powered by the OpenAI Codex SDK. Self-hosted agents turn goals, GitHub Issues and PR feedback into tested, reviewable changes, with bounded execution and human control over merging and deployment.",
+    "excerpt": "Verification-driven AI software iteration, powered by the OpenAI Codex SDK. Self-hosted agents turn goals, GitHub Issues and PR feedback into tested, reviewable changes, with bounded execution and human control over merging and deployment.",
+    "author": "indada",
+    "published_at": "2026-09-18T03:36:12Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "github_stars": 152
+    },
+    "repo_url": "https://github.com/indada/repopilot"
+  },
+  {
+    "id": "b3615add02cfa21d",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.hacktron.ai/blog/hacking-openai",
+    "title": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+    "excerpt": "",
+    "author": "Handy-Man",
+    "published_at": "2026-09-18T02:47:24Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 481,
+      "hn_comments": 205
+    }
+  },
+  {
+    "id": "3d396801f8516bd8",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/aardappel/goose/tree/master",
+    "title": "Goose Programming Language",
+    "excerpt": "",
+    "author": "bobbydigitales",
+    "published_at": "2026-09-18T01:04:54Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 53,
+      "hn_comments": 69
+    },
+    "repo_url": "https://github.com/aardappel/goose"
+  },
+  {
+    "id": "d7dddac5c9c6043e",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://cactuscompute.com/needle",
+    "title": "Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
+    "excerpt": "Hey HN, Henry from Cactus here. We submitted Needle 2 here a few weeks ago, and the feedback in the discussion thread was incredibly valuable, thanks! Thanks to all that feedback, we’ve been able to move quickly to release Needle 3 and I'd love to hear what you think again. The key features: 1)…",
+    "author": "HenryNdubuaku",
+    "published_at": "2026-09-18T00:11:44Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 220,
+      "hn_comments": 90
+    }
+  }
+]

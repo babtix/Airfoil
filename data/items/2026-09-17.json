@@ -1,0 +1,141 @@
+[
+  {
+    "id": "ae2e0db66b011e92",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://scry.io",
+    "title": "Show HN: Scry, programmable internet search w/ congestion pricing",
+    "excerpt": "Meet Scry, a 500 TB NVMe internet index in ClickHouse that you can run ~arbitrary readonly SQL and some of Datalog over, and I handle the problem of resource-contention with congestion-based micro-auction pricing. When there's capacity, the service is free for non-commercial use. --- Hello. It's…",
+    "author": "Xyra",
+    "published_at": "2026-09-17T23:15:57Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 59,
+      "hn_comments": 23
+    }
+  },
+  {
+    "id": "13ef434401cf612b",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+    "title": "Qwen 3.8 Omni Flash",
+    "excerpt": "",
+    "author": "jjcm",
+    "published_at": "2026-09-17T23:05:48Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 337,
+      "hn_comments": 135
+    }
+  },
+  {
+    "id": "b23e52dd9b0cbd43",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm",
+    "title": "How to Write with an LLM",
+    "excerpt": "",
+    "author": "joeriddles",
+    "published_at": "2026-09-17T21:48:38Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 587,
+      "hn_comments": 367
+    }
+  },
+  {
+    "id": "ddb3434cf852cdaf",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://www.iankduncan.com/personal/2026-09-16-sex-ai-and-the-apocalypse",
+    "title": "Sex, AI, and the Apocalypse",
+    "excerpt": "",
+    "author": "Anon84",
+    "published_at": "2026-09-17T21:15:52Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 228,
+      "hn_comments": 277
+    }
+  },
+  {
+    "id": "7d12fb6a0d1f0f89",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://github.com/Tombert/office365_flake",
+    "title": "Show HN: Microsoft Office running with Wine on Linux with no virtualization",
+    "excerpt": "Microsoft Office famously hasn't worked well with Wine since Office 2007. There are lots of solutions out there to work around this, but all of them involve fairly heavy virtualization. Multiple people have told me that their biggest hangup for switching to Linux from Windows is the lack of the…",
+    "author": "tombert",
+    "published_at": "2026-09-17T20:52:22Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 88,
+      "hn_comments": 85
+    },
+    "repo_url": "https://github.com/Tombert/office365_flake"
+  },
+  {
+    "id": "b04fafad53ee85a7",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://bend-lang.com",
+    "title": "Bend – a language that blocks AI mistakes via proof and runs on GPUs",
+    "excerpt": "",
+    "author": "nicolas-siplis",
+    "published_at": "2026-09-17T20:36:13Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 603,
+      "hn_comments": 308
+    }
+  },
+  {
+    "id": "3dc5ace0f577c042",
+    "source_id": "hn",
+    "source_name": "Hacker News",
+    "source_tier": 5,
+    "url": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history",
+    "title": "Microsoft, OpenAI lose fight to hide internal docs admitting scraping is theft",
+    "excerpt": "",
+    "author": "pseudolus",
+    "published_at": "2026-09-17T20:16:52Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {
+      "hn_points": 53,
+      "hn_comments": 15
+    }
+  },
+  {
+    "id": "57bb3f72439b837e",
+    "source_id": "google-ai",
+    "source_name": "Google AI Blog",
+    "source_tier": 1,
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform",
+    "title": "Making global data easier to explore",
+    "excerpt": "Google and the UN system have launched the UN System Data Commons, a new open platform making global statistics accessible and easy to search.",
+    "author": "\u003cname\u003ePrem Ramaswami\u003c/name\u003e\u003ctitle\u003eHead of Data Commons\u003c/title\u003e\u003cdepartment/\u003e\u003ccompany/\u003e",
+    "published_at": "2026-09-17T20:00:00Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  },
+  {
+    "id": "8092c8022d580cab",
+    "source_id": "theverge-ai",
+    "source_name": "The Verge AI",
+    "source_tier": 4,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+    "title": "The AI Superintelligence Slowdown",
+    "excerpt": "Remember when tech leaders would tell their employees to “move fast and break things”? It seemed that would be the way of AI too. But after a summer where rogue AI agents became reality, and researchers warned that AI could kill us all, a number of leading US AI companies are publicly suggesting…",
+    "author": "Sean Hollister",
+    "published_at": "2026-09-17T19:28:24Z",
+    "fetched_at": "2026-09-19T19:25:58.9891138Z",
+    "metrics": {}
+  }
+]
